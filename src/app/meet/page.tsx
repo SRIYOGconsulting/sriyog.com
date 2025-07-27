@@ -14,7 +14,7 @@ export default function MeetPage() {
       { time: "11:00 AM – 11:45 AM", title: "UI/UX" },
       { time: "12:15 PM – 1:00 PM", title: "App Development" },
       { time: "1:15 PM – 2:00 PM", title: "Web Development" },
-      { time: "3:00 PM – 3:45 PM", title: "SMM" },
+      { time: "3:00 PM – 3:45 PM", title: "Social Media Management" },
       { time: "4:15 PM – 5:00 PM", title: "Interview" },
       { time: "5:00 PM – 5:45 PM", title: "Training / Product Showcase" },
       { time: "8:00 PM – 8:45 PM", title: "Digital Journalism" },
@@ -23,7 +23,7 @@ export default function MeetPage() {
     Monday: [
       { time: "11:00 AM – 11:45 AM", title: "Interview" },
       { time: "12:15 PM – 1:00 PM", title: "Training / Product Showcase" },
-      { time: "1:15 PM – 2:00 PM", title: "SMM" },
+      { time: "1:15 PM – 2:00 PM", title: "Social Media Management" },
       { time: "3:00 PM – 3:45 PM", title: "Web Development" },
       { time: "4:15 PM – 5:00 PM", title: "UI/UX" },
       { time: "5:00 PM – 5:45 PM", title: "Training / Product Showcase" },
@@ -34,7 +34,7 @@ export default function MeetPage() {
       { time: "11:00 AM – 11:45 AM", title: "Web Development" },
       { time: "12:15 PM – 1:00 PM", title: "Interview" },
       { time: "1:15 PM – 2:00 PM", title: "Digital Journalism Demo" },
-      { time: "3:00 PM – 3:45 PM", title: "SMM" },
+      { time: "3:00 PM – 3:45 PM", title: "Social Media Management" },
       { time: "4:15 PM – 5:00 PM", title: "App Development" },
       { time: "5:00 PM – 5:45 PM", title: "Training / Product Showcase" },
       { time: "8:00 PM – 8:45 PM", title: "Digital Journalism" },
@@ -52,7 +52,7 @@ export default function MeetPage() {
     ],
     Thursday: [
       { time: "11:00 AM – 11:45 AM", title: "App Development" },
-      { time: "12:15 PM – 1:00 PM", title: "SMM" },
+      { time: "12:15 PM – 1:00 PM", title: "Social Media Management" },
       { time: "1:15 PM – 2:00 PM", title: "Interview" },
       { time: "3:00 PM – 3:45 PM", title: "Web Development" },
       { time: "4:15 PM – 5:00 PM", title: "App Development" },
@@ -64,7 +64,7 @@ export default function MeetPage() {
       { time: "11:00 AM – 11:45 AM", title: "UI/UX" },
       { time: "12:15 PM – 1:00 PM", title: "App Development" },
       { time: "1:15 PM – 2:00 PM", title: "Web Development" },
-      { time: "3:00 PM – 3:45 PM", title: "SMM" },
+      { time: "3:00 PM – 3:45 PM", title: "Social Media Management" },
       { time: "4:15 PM – 5:00 PM", title: "Data Science" },
       { time: "5:00 PM – 5:45 PM", title: "Training / Product Showcase" },
       { time: "8:00 PM – 8:45 PM", title: "Digital Journalism" },
@@ -79,7 +79,6 @@ export default function MeetPage() {
     if (isSpecial) return specialLink;
     return defaultLink;
   };
-
   return (
     <>
       <Ribbon name="Meet" des="" />
@@ -89,7 +88,7 @@ export default function MeetPage() {
             key={day}
             className="w-full bg-white border border-gray-200 rounded-[15px] shadow p-4 mt-12"
           >
-            <div className="flex items-center gap-4 mb-4">
+            <div className="flex items-start flex-col sm:flex-row sm:items-center gap-4 mb-4">
               <Image
                 src="/assets/images/meet/meet.jpg"
                 width={250}
