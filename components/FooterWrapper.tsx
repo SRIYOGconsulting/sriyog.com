@@ -5,9 +5,9 @@ import Footer from "@/components/Footer";
 
 export default function FooterWrapper() {
   const pathname = usePathname();
-  const noFooterPaths = ["/techfriday"]; 
+  const noFooterPaths = ["/techfriday"];
 
-  if (noFooterPaths.includes(pathname)) {
+  if (!pathname || noFooterPaths.includes(pathname)) {
     return null;
   }
 

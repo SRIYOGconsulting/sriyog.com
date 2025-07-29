@@ -6,6 +6,7 @@ import Navbar from "@/components/Navbar";
 import FloatingIcons from "@/components/FloatingIcons";
 import Script from "next/script";
 import FooterWrapper from "@/components/FooterWrapper";
+import { Toaster } from "react-hot-toast";
 
 const bellota_text = Bellota_Text({
   variable: "--font-sans",
@@ -76,6 +77,8 @@ export default function RootLayout({
       </head>
       <body className={`${bellota_text.variable} antialiased`}>
         <Header />
+        <Toaster position="top-center" />
+
         <Navbar />
         {children}
         <FloatingIcons />

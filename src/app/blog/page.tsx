@@ -3,7 +3,7 @@ import Image from "next/image";
 import { Metadata } from "next";
 
 export const metadata:Metadata= {
-  title: "Blog | SRIYOG Consulting"
+  title: "SRIYOG Blog | SRIYOG Consulting"
 } 
 export default function BlogPage() {
 

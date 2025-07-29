@@ -94,7 +94,7 @@ const Feedback = () => {
                 type="email"
                 name=""
                 id="email"
-                placeholder="info@gmail.com"
+                placeholder="eg: Youndhen@sriyog.com"
                 required
                 className="w-full p-2 rounded-md border border-[#4b4b4b] focus:outline-none mt-2"
               />
