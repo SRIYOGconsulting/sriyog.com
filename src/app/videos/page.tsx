@@ -1,5 +1,6 @@
 import React from "react";
 import { Metadata } from "next";
+import Ribbon from "@/components/Ribbon";
 
 export const metadata: Metadata = {
   title: "Videos | SRIYOG Consulting",
@@ -102,6 +103,8 @@ const page = () => {
     // </>
 
     <>
+      <Ribbon name="Videos" des="" />
+
       <section className="lg:w-[1180px] mx-auto max-lg:container max-lg:px-3 mb-[45px]">
         <div className="bg-[#0D5D59] px-4 py-14 text-center ">
           <h1 className="my-8 text-center text-[34px] md:text-[32px] font-semibold text-white inline-block">

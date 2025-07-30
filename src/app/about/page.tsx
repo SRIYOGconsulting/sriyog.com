@@ -1,3 +1,4 @@
+
 import Services from "@/components/Services";
 import Image from "next/image";
 import Link from "next/link";
@@ -183,16 +184,7 @@ export default function Aboutpage() {
               <div className="pt-12 flex flex-col gap-1">
                 <p className="font-bold">PRACAS Upreti</p>
                 <ul className="flex gap-2 items-center">
-                  {/* <li>
-                    <Link href="https://t.me/pracasupreti" target="_blank">
-                      <Image
-                        src={"/assets/icons/telegram1.svg"}
-                        width={20}
-                        height={20}
-                        alt="telegram"
-                      />
-                    </Link>
-                  </li> */}
+            
                   <li>
                     <Link href=" https://x.com/pracas" target="_blank">
                       <Image

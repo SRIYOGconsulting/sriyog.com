@@ -1,17 +1,19 @@
+
 import type { Metadata } from "next";
-import {  Bellota_Text} from "next/font/google";
+import { Bellota_Text } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import Navbar from "@/components/Navbar";
-import FloatingIcons from "@/components/FloatingIcons";
 import Script from "next/script";
 import FooterWrapper from "@/components/FooterWrapper";
 import { Toaster } from "react-hot-toast";
+import { FloatingIconsProvider } from "../context/FloatingIconContext";
+import Floating from "@/components/Floating";
 
 const bellota_text = Bellota_Text({
   variable: "--font-sans",
   subsets: ["latin"],
-  weight: ["300","400", "700"],
+  weight: ["300", "400", "700"],
 });
 
 export const metadata: Metadata = {
@@ -55,6 +57,7 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+
   return (
     <html lang="en">
       <head>
@@ -76,13 +79,15 @@ export default function RootLayout({
         />
       </head>
       <body className={`${bellota_text.variable} antialiased`}>
-        <Header />
-        <Toaster position="top-center" />
+        <FloatingIconsProvider>
+          <Header />
+          <Toaster position="top-center" />
 
-        <Navbar />
-        {children}
-        <FloatingIcons />
-        <FooterWrapper />
+          <Navbar />
+          {children}
+         <Floating/>
+          <FooterWrapper />
+        </FloatingIconsProvider>
       </body>
     </html>
   );

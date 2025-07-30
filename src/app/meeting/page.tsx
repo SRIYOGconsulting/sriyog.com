@@ -1,8 +1,10 @@
+import Ribbon from "@/components/Ribbon";
 import React from "react";
 
 const page = () => {
-  return (
-    <section className="lg:w-[1180px] mx-auto mb-[45px]">
+  return (<>
+  <Ribbon name="Meeting" des=""/>
+  <section className="lg:w-[1180px] mx-auto mb-[45px]">
       <div>
         <iframe
           className="airtable-embed"
@@ -13,6 +15,8 @@ const page = () => {
         ></iframe>
       </div>
     </section>
+  </>  
+
   );
 };
 

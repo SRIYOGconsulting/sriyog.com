@@ -23,6 +23,15 @@ export default function Footer() {
                 {
                   label: (
                     <>
+                      <Link prefetch={true} href="/meeting">
+                        Book a Meeting
+                      </Link>
+                    </>
+                  ),
+                },
+                {
+                  label: (
+                    <>
                       <Link prefetch={true} href="/faq">
                         FAQs
                       </Link>
@@ -68,6 +77,15 @@ export default function Footer() {
                 },
               ],
               [
+                 {
+                  label: (
+                    <>
+                      <Link prefetch={true} href="/survey">
+                        IT Survey
+                      </Link>
+                    </>
+                  ),
+                },
                 {
                   label: (
                     <>
@@ -124,6 +142,14 @@ export default function Footer() {
                 },
               ],
               [
+                {
+                  label: (
+                    <>
+                      <Link prefetch={true} href="/quote">
+                        Request Quote
+                      </Link>
+                    </>
+                  ),},
                 {
                   label: (
                     <Link
@@ -186,6 +212,15 @@ export default function Footer() {
                 },
               ],
               [
+                {
+                  label: (
+                    <>
+                      <Link prefetch={true} href="/videos">
+                        Videos
+                      </Link>
+                    </>
+                  ),
+                },
                 {
                   label: (
                     <>

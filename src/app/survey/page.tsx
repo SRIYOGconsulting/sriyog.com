@@ -1,3 +1,4 @@
+import Ribbon from "@/components/Ribbon";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -5,7 +6,9 @@ export const metadata: Metadata = {
 };
 export default function Page(){
     return(<>
+    <Ribbon name="Survey" des=""/>
      <section className="pt-[90px] lg:w-full lg:pt-[60px] md:pt-[52px]">
+
         {/* form field of request quote */}
         <div className=" py-12">
           <div className="max-w-[1180px] mx-auto my-0 lg:max-w-[920px] md:max-w-[720px]  lg:px-12">

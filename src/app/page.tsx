@@ -5,7 +5,7 @@ import React, { useEffect, useState } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-
+import { useFloatingIcons } from "../context/FloatingIconContext";
 export default function Home() {
   const [overlay, setOverlay] = useState(true);
   const [categoriesOpen, setCategoriesOpen] = useState(false);
@@ -14,6 +14,7 @@ export default function Home() {
   const [eventsOpen, setEventsOpen] = useState(false);
   const [getImage, setGetImage] = useState("");
   const getdate = new Date().toISOString().slice(5, 10);
+  const { setShowFloatingIcons } = useFloatingIcons();
 
   const events = [
     {
@@ -225,7 +226,9 @@ export default function Home() {
             </div>
             <button
               className="absolute top-[-10px] z-10 right-[-15px] px-3 py-1 text-xl hover:cursor-pointer rounded-sm bg-[#055d59] font-semibold  hover:bg-[#315856] text-white transition-all duration-300 ease-in-out"
-              onClick={() => setOverlay(false)}
+              onClick={() => {setOverlay(false)
+                        setShowFloatingIcons(true);}
+              }
             >
               X
             </button>
