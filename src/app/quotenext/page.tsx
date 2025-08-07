@@ -2,6 +2,8 @@
 
 import { useState } from "react";
 import Ribbon from "@/components/Ribbon";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const inputStyle =
   "w-full mt-1 outline-none bg-white shadow-[#CBD0DB2E] shadow-xl p-2 border-[#EAEAEA] border rounded mb-4";
@@ -92,13 +94,116 @@ const Page = () => {
     "Others",
   ];
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    console.log("Submitted Form Data: ", form);
+  const sanitizeDate = (value: string) => {
+    const date = new Date(value);
+    return isNaN(date.getTime()) ? undefined : date.toISOString().split("T")[0];
   };
 
-  const renderInput = (id: keyof typeof form, label: string, type = "text") => (
-    <div>
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+
+    // Validate PAN / VAT Number as number or empty
+    const panVatValue = form.panvat.trim();
+    const panVatNumber = Number(panVatValue);
+
+    if (panVatValue !== "" && isNaN(panVatNumber)) {
+      toast.error("PAN / VAT Number must be a valid number");
+      return;
+    }
+
+    const airtableData = {
+      records: [
+        {
+          fields: {
+            "Name": form.contact,
+            "Name of Organisation": form.name,
+            "Address": form.address,
+            "Phone Number": form.phonenumber,
+            "Email": form.email,
+            "WhatsApp Number": form.whatsapp,
+            "Select a Service": [form.service],
+            "Project Budget in NPR": form.budget,
+            "Competitor 1 ": form.competitor,
+            "Reference Website link ( URL )": form.reference,
+            "Project Start Date": sanitizeDate(form.startDate),
+            "Project Ending Date": sanitizeDate(form.endDate),
+            "Scope of Work ": form.scope,
+            "Preferred Technology Stack or Software Platforms ": form.technology,
+            "Is your business on Profit?": form.business,
+            "What's your monthly IT Budget ?": form.monthlyBudget,
+            "Name of your existing IT Vendor": form.vendor,
+            "Organisation Registration Type": form.registration,
+            "Industry Type": form.industry,
+            "Organisation PAN/ VAT Number": panVatNumber,
+            "Referral Name": form.referralName,
+            "Referral Phone": form.referralPhone,
+            "How did you know about us?": form.how,
+            "Message": form.message,
+            "Country": "Nepal",
+          },
+        },
+      ],
+    };
+
+    try {
+      const res = await fetch(
+        "https://api.airtable.com/v0/app30hmkatmLiojps/Request-a-Quotation",
+        {
+          method: "POST",
+          headers: {
+            Authorization:
+              "Bearer pat30hTRCJ83wIxWg.4c324b6fd7f92e0afd2aef8315cb147759cef9be32cd97a5b430c7b7ac77cb18",
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(airtableData),
+        }
+      );
+
+      const data = await res.json();
+      if (res.ok) {
+        toast.success("Your quotation request was submitted successfully!");
+        setForm({
+          name: "",
+          address: "",
+          contact: "",
+          phonenumber: "",
+          email: "",
+          whatsapp: "",
+          service: "",
+          budget: "",
+          competitor: "",
+          reference: "",
+          startDate: "",
+          endDate: "",
+          scope: "",
+          technology: "",
+          business: "",
+          monthlyBudget: "",
+          vendor: "",
+          registration: "",
+          industry: "",
+          panvat: "",
+          referralName: "",
+          referralPhone: "",
+          how: "",
+          message: "",
+        });
+      } else {
+        console.error("Airtable error:", data);
+        toast.error("Failed to submit. Please try again.");
+      }
+    } catch (err) {
+      console.error("Request failed:", err);
+      toast.error("Something went wrong. Please try again.");
+    }
+  };
+
+  const renderInput = (
+    id: keyof typeof form,
+    label: string,
+    type: "text" | "email" | "date" = "text"
+  ) => (
+    <div key={id}>
       <label htmlFor={id} className={labelStyle}>
         {label}
       </label>
@@ -113,8 +218,12 @@ const Page = () => {
     </div>
   );
 
-  const renderSelect = (id: keyof typeof form, label: string, options: string[]) => (
-    <div>
+  const renderSelect = (
+    id: keyof typeof form,
+    label: string,
+    options: string[]
+  ) => (
+    <div key={id}>
       <label htmlFor={id} className={labelStyle}>
         {label}
       </label>
@@ -163,8 +272,8 @@ const Page = () => {
             {renderSelect("budget", "Project Budget (NPR)", budgets)}
             {renderInput("competitor", "Competitor Name")}
             {renderInput("reference", "Reference Website URL")}
-            {renderInput("startDate", "Project Start Date")}
-            {renderInput("endDate", "Project End Date")}
+            {renderInput("startDate", "Project Start Date", "date")}
+            {renderInput("endDate", "Project End Date", "date")}
             {renderInput("scope", "Scope of Work")}
             {renderInput("technology", "Preferred Tech Stack")}
             {renderSelect("business", "Is your business profitable?", businessStatuses)}
@@ -189,6 +298,7 @@ const Page = () => {
           </div>
         </form>
       </section>
+      <ToastContainer position="top-center" />
     </>
   );
 };
