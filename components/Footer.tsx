@@ -70,7 +70,7 @@ export default function Footer() {
                   label: (
                     <>
                       <Link prefetch={true} href="/meet">
-                        Meet
+                        Virtual Meeting 
                       </Link>
                     </>
                   ),

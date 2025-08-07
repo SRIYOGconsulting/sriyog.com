@@ -94,7 +94,7 @@ export default function PortfolioPage() {
             {
       id: 14,
       image: "/assets/images/portfolio/4.png",
-      title: "Lumantic Group",
+      title: "Lumanti Group",
       path:"https://lumantigroup.com/"
     },
             {
