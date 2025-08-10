@@ -85,6 +85,30 @@ export default function Testimonials() {
       image: "/assets/images/testimonials/dr-sita-rai-kopila-clinic.png",
        addr:"Damak"
     },
+         {
+      title: "BIRATINFO",
+      desc: "Partnering with SRIYOG Consulting has been a transformative experience for our organization. Their team brought a level of technical expertise and professionalism that exceeded our expectations. From planning to deployment, the entire process was smooth, transparent, and incredibly efficient.",
+      name: "Sudhir Nepal",
+      stack: "Editor-in-Chief",
+      image: "/assets/images/testimonials/sudir-nepal-biratinfo.png",
+       addr:"Kathmandu"
+    },
+         {
+      title: "Baskota Consulting",
+      desc: "We worked with SRIYOG Consulting to create a fully customized corporate website for our business. Their team understood our vision, offered creative solutions, and delivered a sleek, user-friendly platform on time. Their commitment to quality and technical excellence is great.",
+      name: "Kishor Baskota",
+      stack: "Founder & CEO",
+      image: "/assets/images/testimonials/baskota-consulting-kishorBastoka.png",
+       addr:"Kathmandu"
+    },
+         {
+      title: "Nepal Motor",
+      desc: "We recently partnered with SRIYOG Consulting for the development of a custom car portal and ongoing social media management services. From the initial consultation to final deployment, their team demonstrated a high level of professionalism & technical expertise.",
+      name: "Yogendra Dhamala",
+      stack: "Director",
+      image: "/assets/images/testimonials/yogendra-dhamala-nepalMoter.png",
+       addr:"Kathmandu"
+    },
 
   ];
   return (

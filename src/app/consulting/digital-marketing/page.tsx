@@ -118,7 +118,7 @@ const consulting = [
     img: "/assets/images/consultingPage/seo-sem-services.jpg",
     title: "SEO/SEM Services",
     desc: `Our team of experienced SEO experts can help you improve your website's visibility and drive more traffic to your site.`,
-    link: "seo-sem",
+    link: "seo-sem-services",
   },
   {
     img: "/assets/images/consultingPage/social-media-management.jpg",
@@ -148,7 +148,7 @@ const consulting = [
     img: "/assets/images/consultingPage/UI-UX.jpg",
     title: "UI/UX Designing",
     desc: "We offer a range of UI/ UX designing services, including wireframing, prototyping, and user testing.",
-    link: "uiux",
+    link: "ui-ux-designing",
   },
   {
     img: "/assets/images/consultingPage/video-content-email-marketing.jpg",

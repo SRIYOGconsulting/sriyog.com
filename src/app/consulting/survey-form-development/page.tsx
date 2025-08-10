@@ -119,7 +119,7 @@ export default function DataProcessing() {
       img: "/assets/images/consultingPage/seo-sem-services.jpg",
       title: "SEO/SEM Services",
       desc: `Our team of experienced SEO experts can help you improve your website's visibility and drive more traffic to your site.`,
-      link: "seo-sem",
+      link: "seo-sem-services",
     },
     {
       img: "/assets/images/consultingPage/social-media-management.jpg",
@@ -149,7 +149,7 @@ export default function DataProcessing() {
       img: "/assets/images/consultingPage/UI-UX.jpg",
       title: "UI/UX Designing",
       desc: "We offer a range of UI/ UX designing services, including wireframing, prototyping, and user testing.",
-      link: "uiux",
+      link: "ui-ux-designing",
     },
     {
       img: "/assets/images/consultingPage/video-content-email-marketing.jpg",
@@ -173,12 +173,10 @@ export default function DataProcessing() {
           className=" border-1 border-blue-50 mb-[45px] rounded-[15px]"
         />
         <h1 className="font-extrabold text-[34px] text-center">
-          Web Application Development
+          Survey Form Development
         </h1>
         <p className="text-center text-[16px] mb-[45px]">
-          Specialize in creating responsive, user-friendly, and secure web
-          applications tailored to meet the specific requirements of your
-          business.
+         Whether you&apos;re running employee engagement studies, market research, or customer experience evaluations, we ensure your survey is engaging.
         </p>
         {/* <div className="flex flex-col sm:flex-row gap-4 justify-between items-center mt-8 mb-[45px]">
           {services.map((service) => (

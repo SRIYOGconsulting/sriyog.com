@@ -118,7 +118,7 @@ export default function DataAnalysis() {
       img: "/assets/images/consultingPage/seo-sem-services.jpg",
       title: "SEO/SEM Services",
       desc: `Our team of experienced SEO experts can help you improve your website's visibility and drive more traffic to your site.`,
-      link: "seo-sem",
+      link: "seo-sem-services",
     },
     {
       img: "/assets/images/consultingPage/social-media-management.jpg",
@@ -148,7 +148,7 @@ export default function DataAnalysis() {
       img: "/assets/images/consultingPage/UI-UX.jpg",
       title: "UI/UX Designing",
       desc: "We offer a range of UI/ UX designing services, including wireframing, prototyping, and user testing.",
-      link: "uiux",
+      link: "ui-ux-designing",
     },
     {
       img: "/assets/images/consultingPage/video-content-email-marketing.jpg",
@@ -163,20 +163,20 @@ export default function DataAnalysis() {
         name="UI/UX Designing"
         des=""
       />
-      <section className="max-w-[1180px] mx-auto mb-[45px]  px-6 lg:px-0 ">
+          <section className="max-w-[1180px] mx-auto mb-[45px]  px-6 lg:px-0 ">
         <Image
-          src="/assets/images/consultingPage/UI-UX-designing.jpg"
+          src="/assets/images/consultingPage/ui-ux-designing.jpg"
           width={1140}
           height={597}
           alt="top_image"
           className=" border-1 border-blue-50 mb-[45px] rounded-[15px]"
         />
-        <h1 className="font-extrabold text-[34px] text-center">
-          Business Email
+        <h1 className="font-extrabold text-[34px] text-center mb-4">
+          UI/UX Designing
         </h1>
         <p className="text-center text-[16px] mb-[45px]">
-          Our services include everything from list segmentation and campaign
-          strategy to email design, content creation, and performance tracking.
+          Our designers combine aesthetics with purpose - every color, icon, and
+          animation is carefully chosen to enhance usability and engagement.
         </p>
         {/* <div className="flex flex-col sm:flex-row gap-4 justify-between items-center mt-8 mb-[45px]">
           {services.map((service) => (
@@ -198,26 +198,24 @@ export default function DataAnalysis() {
 
         <div className="max-w-[1180px] mx-auto text-[15px] text-justify leading-[23px] flex flex-col gap-4">
           <p>
-            Our business email marketing services are designed to help you
-            connect with your audience in a personal, professional, and
-            impactful way. Whether you&apos;re reaching out to existing customers or
-            nurturing leads, we craft tailored email campaigns that drive
-            engagement, build trust, and encourage action. Our services include
-            everything from list segmentation and campaign strategy to email
-            design, content creation, and performance tracking. We utilize
-            industry-leading platforms to ensure your emails are delivered
-            successfully and comply with privacy regulations such as GDPR and
-            CAN-SPAM.{" "}
+            Our UI/UX design services are focused on creating digital
+            experiences that are not only visually appealing but also highly
+            functional and user-centric. We start with in-depth research and
+            wireframing to understand user behavior, pain points, and
+            interaction flows. From there, we create high-fidelity prototypes
+            and conduct user testing to ensure the final product meets usability
+            standards and business goals. Our designers combine aesthetics with
+            purpose — every color, icon, and animation is carefully chosen to
+            enhance usability and engagement.{" "}
           </p>
-
           <p>
-            From promotional blasts and newsletters to automated drip campaigns,
-            we help you maintain consistent communication that adds value and
-            reinforces your brand. Every email is designed to be
-            mobile-friendly, visually appealing, and optimized for high open and
-            click-through rates. With ongoing A/B testing and analytics, we
-            continuously refine our approach to maximize your results and help
-            your business stay top-of-mind with your audience.{" "}
+            Whether you’re building a web app, mobile app, or software
+            interface, we ensure the design is responsive, accessible, and
+            aligned with your brand identity. We also collaborate closely with
+            developers to ensure that our designs are seamlessly implemented in
+            the final product. With a strong focus on both function and form,
+            our UI/UX services help you deliver intuitive experiences that keep
+            users coming back.{" "}
           </p>
         </div>
       </section>
@@ -262,100 +260,113 @@ export default function DataAnalysis() {
       </section> */}
 
       {/*FAQ */}
-<section className="max-w-[1180px] mx-auto mb-[45px] px-6 lg:px-0">
-  {/* Section Title */}
-  <h2 className="text-center text-3xl md:text-4xl mb-3 font-extrabold">FAQ</h2>
-  <p className="text-center text-sm text-gray-800 mb-8">
-    Here are some of the UI/UX Designing frequently asked questions
-  </p>
+      <section className="max-w-[1180px] mx-auto mb-[45px] px-6 lg:px-0">
+        {/* Section Title */}
+        <h2 className="text-center text-3xl md:text-4xl mb-3 font-extrabold">
+          FAQ
+        </h2>
+        <p className="text-center text-sm text-gray-800 mb-8">
+          Here are some of the Business Email Marketing frequently asked
+          questions
+        </p>
 
-  <div className="flex flex-col lg:flex-row gap-10">
-    {/* Column 1 */}
-    <div className="w-full lg:w-1/2 flex flex-col gap-8">
-      {[
-        {
-          question: "What services are included in your IT consultancy management?",
-          answer:
-            "We provide strategic guidance and hands-on support for infrastructure design, system implementation, cybersecurity, cloud migration, and digital transformation.",
-        },
-        {
-          question: "How do your IT consultants work with businesses?",
-          answer:
-            "Our consultants collaborate closely with your internal teams to understand your objectives and deliver tailored solutions.",
-        },
-        {
-          question: "What kind of expertise do your IT consultants offer?",
-          answer:
-            "We specialize in selecting and deploying enterprise software, integrating systems, and optimizing IT operations.",
-        },
-      ].map((faq, i) => (
-        <div key={i} className="relative flex items-start gap-5 group">
-          <div className="w-10 h-10 flex items-center justify-center bg-[#055D59] text-white font-bold rounded-full mt-1 shrink-0">
-            <Image
-              src="/assets/images/consulting/target.svg"
-              alt={`FAQ ${i + 1}`}
-              width={40}
-              height={40}
-            />
+        <div className="flex flex-col lg:flex-row gap-10">
+          {/* Column 1 */}
+          <div className="w-full lg:w-1/2 flex flex-col gap-8">
+            {[
+              {
+                question:
+                  "What services are included in your business email marketing?",
+                answer:
+                  "Our services include list segmentation, campaign strategy, email design, content creation, and performance tracking.",
+              },
+              {
+                question:
+                  "How do your email campaigns help businesses connect with their audience?",
+                answer:
+                  "We craft tailored email campaigns that drive engagement, build trust, and encourage action, helping you connect with existing customers or nurture leads.",
+              },
+              {
+                question: "What platforms do you use to send emails?",
+                answer:
+                  "We utilize industry-leading platforms to ensure successful email delivery.",
+              },
+            ].map((faq, i) => (
+              <div key={i} className="relative flex items-start gap-5 group">
+                <div className="w-10 h-10 flex items-center justify-center bg-[#055D59] text-white font-bold rounded-full mt-1 shrink-0">
+                  <Image
+                    src="/assets/images/consulting/target.svg"
+                    alt={`FAQ ${i + 1}`}
+                    width={40}
+                    height={40}
+                  />
+                </div>
+                {i !== 2 && (
+                  <div className="absolute left-[19px] top-12 h-[50px] w-[2px] bg-gray-300" />
+                )}
+                <div>
+                  <h3 className="font-semibold text-lg text-gray-800 mb-1">
+                    {faq.question}
+                  </h3>
+                  <p className="text-sm text-gray-600 leading-relaxed">
+                    {faq.answer}
+                  </p>
+                </div>
+              </div>
+            ))}
           </div>
-          {i !== 2 && (
-            <div className="absolute left-[19px] top-12 h-[50px] w-[2px] bg-gray-300" />
-          )}
-          <div>
-            <h3 className="font-semibold text-lg text-gray-800 mb-1">{faq.question}</h3>
-            <p className="text-sm text-gray-600 leading-relaxed">{faq.answer}</p>
+
+          {/* Column 2 */}
+          <div className="w-full lg:w-1/2 flex flex-col gap-8">
+            {[
+              {
+                question:
+                  "Do your email marketing services comply with privacy regulations?",
+                answer:
+                  "Yes, our services comply with privacy regulations such as GDPR and CAN-SPAM.",
+              },
+              {
+                question: "What types of email campaigns do you offer?",
+                answer:
+                  "We offer promotional blasts, newsletters, and automated drip campaigns.",
+              },
+              {
+                question:
+                  "How do you ensure emails are effective and visually appealing?",
+                answer:
+                  "Every email is designed to be mobile-friendly, visually appealing, and optimized for high open and click-through rates.",
+              },
+              {
+                question: "How do you maximize the results of email campaigns?",
+                answer:
+                  "We continuously refine our approach with ongoing A/B testing and analytics to maximize your results.",
+              },
+            ].map((faq, i) => (
+              <div key={i} className="relative flex items-start gap-5 group">
+                <div className="w-10 h-10 flex items-center justify-center bg-[#055D59] text-white font-bold rounded-full mt-1 shrink-0">
+                  <Image
+                    src="/assets/images/consulting/target.svg"
+                    alt={`FAQ ${i + 4}`}
+                    width={40}
+                    height={40}
+                  />
+                </div>
+                {i !== 3 && (
+                  <div className="absolute left-[19px] top-12 h-[50px] w-[2px] bg-gray-300" />
+                )}
+                <div>
+                  <h3 className="font-semibold text-lg text-gray-800 mb-1">
+                    {faq.question}
+                  </h3>
+                  <p className="text-sm text-gray-600 leading-relaxed">
+                    {faq.answer}
+                  </p>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
-      ))}
-    </div>
-
-    {/* Column 2 */}
-    <div className="w-full lg:w-1/2 flex flex-col gap-8">
-      {[
-        {
-          question: "Do you offer support after system implementation?",
-          answer:
-            "Yes, we provide post-implementation support and training to ensure smooth transitions and maximize ROI.",
-        },
-        {
-          question: "How do your IT consultancy services benefit businesses?",
-          answer:
-            "Our services enhance efficiency, reduce costs, support scalability, and help you leverage technology as a strategic asset.",
-        },
-        {
-          question: "Do you handle both short-term projects and long-term partnerships?",
-          answer:
-            "Yes, we deliver results aligned with your business goals and technical needs for both short-term and long-term engagements.",
-        },
-        {
-          question: "Can you help with modernizing existing IT environments?",
-          answer:
-            "Absolutely, whether modernizing your IT environment or planning a full-scale overhaul, our consultancy services can assist.",
-        },
-      ].map((faq, i) => (
-        <div key={i} className="relative flex items-start gap-5 group">
-          <div className="w-10 h-10 flex items-center justify-center bg-[#055D59] text-white font-bold rounded-full mt-1 shrink-0">
-            <Image
-              src="/assets/images/consulting/target.svg"
-              alt={`FAQ ${i + 4}`}
-              width={40}
-              height={40}
-            />
-          </div>
-          {i !== 3 && (
-            <div className="absolute left-[19px] top-12 h-[50px] w-[2px] bg-gray-300" />
-          )}
-          <div>
-            <h3 className="font-semibold text-lg text-gray-800 mb-1">{faq.question}</h3>
-            <p className="text-sm text-gray-600 leading-relaxed">{faq.answer}</p>
-          </div>
-        </div>
-      ))}
-    </div>
-  </div>
-</section>
-
-      
+      </section>
 
       {/*Pricing */}
 
@@ -410,41 +421,45 @@ export default function DataAnalysis() {
       </section> */}
 
       {/* Related Blog Section */}
-   <section className="max-w-[1180px] mx-auto mb-[45px] px-6 lg:px-0">
-  <h1 className="text-center text-xl font-[800]">Related Consulting</h1>
+      {/* Related Consulting Section */}
+      <section className="max-w-[1180px] mx-auto mb-[45px] px-6 lg:px-0">
+        <h1 className="text-center text-xl font-[800]">Related Consulting</h1>
 
-  <div className="flex flex-col sm:flex-row flex-wrap gap-4 justify-between items-center mt-8 mb-[80px]">
-    {consulting
-      .filter((item) => item.link !== "uiux") // Exclude current
-      .slice(0, 6) // Only show 6
-      .map((blog) => (
-        <div
-          key={blog.title}
-          className="w-full sm:max-w-[316px] h-auto flex flex-col gap-1 mb-6"
-        >
-          <Link
-            href={`/consulting/${blog.link}`}
-            className="hover:underline font-[800] text-sm"
-          >
-          <Image
-            src={blog.img}
-            width={316}
-            height={195}
-            alt={blog.title}
-            className="w-full h-auto rounded-[15px] mb-2 "
-          />
+        <div className="flex flex-col sm:flex-row flex-wrap gap-4 justify-between items-center mt-8 mb-[80px]">
+          {consulting
+            .filter((item) => item.link !== "ui-ux-designing") // Exclude current
+            .slice(0, 6) // Only show 6
+            .map((blog) => (
+              <div
+                key={blog.title}
+                className="w-full sm:max-w-[316px] h-auto flex flex-col gap-1 mb-6"
+              >
+                <Link
+                  href={`/consulting/${blog.link}`}
+                  className="hover:underline font-[800] text-sm"
+                >
+                  <Image
+                    src={blog.img}
+                    width={316}
+                    height={195}
+                    alt={blog.title}
+                    className="w-full h-auto rounded-[15px] mb-2 "
+                  />
+                </Link>
 
-                    </Link>
+                <h1 className="font-[900] text-center">{blog.title}</h1>
+                <p className="text-sm">{blog.desc}</p>
 
-          <h1 className="font-[900] text-center">{blog.title}</h1>
-          <p className="text-sm">{blog.desc}</p>
-
-        <Link href={`/consulting/${blog.link}`} className=" mt-2 w-[35%] px-5 py-2 text-sm border border-[#055D59] text-[#055D59] hover:bg-[#055D59] hover:text-white rounded-[8px] transition"
-              >Read More</Link>
+                <Link
+                  href={`/consulting/${blog.link}`}
+                  className=" mt-2 w-[35%] px-5 py-2 text-sm border border-[#055D59] text-[#055D59] hover:bg-[#055D59] hover:text-white rounded-[8px] transition"
+                >
+                  Read More
+                </Link>
+              </div>
+            ))}
         </div>
-      ))}
-  </div>
-</section>
+      </section>
     </>
   );
 }

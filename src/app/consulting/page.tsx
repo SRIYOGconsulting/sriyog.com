@@ -54,9 +54,9 @@ export default function Consulting() {
     },
     {
       img: "/assets/images/consulting/seo.svg",
-      title: "SEO/SEM Services",
+      title: "SEO/SEMServices",
       desc: `Our team of experienced SEO experts can help you improve your website's visibility and drive more traffic to your site.`,
-      link: "seo-sem",
+      link: "seo-sem-services",
     },
     {
       img: "/assets/images/consulting/social-media.svg",
@@ -86,7 +86,7 @@ export default function Consulting() {
       img: "/assets/images/consulting/ui-ux.svg",
       title: "UI/UX Designing",
       desc: "We offer a range of UI/ UX designing services, including wireframing, prototyping, and user testing.",
-      link: "uiux",
+      link: "ui-ux-designing",
     },
     {
       img: "/assets/images/consulting/video-content.svg",

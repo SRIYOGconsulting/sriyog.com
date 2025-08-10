@@ -65,98 +65,98 @@ export default function DataProcessing() {
   //   },
   // ];
 
-const consulting = [
-  {
-    img: "/assets/images/consultingPage/data-processing.jpg",
-    title: "Data Processing",
-    desc: "We have a proven track record of delivering high-quality data analysis and reporting solutions that meet the needs of our clients.",
-    link: "data-processing",
-  },
-  {
-    img: "/assets/images/consultingPage/database-management.jpg",
-    title: "Database Management",
-    desc: "We offer a range of database management services, including database design, implementation, and optimization.",
-    link: "data-management",
-  },
-  {
-    img: "/assets/images/consultingPage/data-analysis.jpg",
-    title: "Data Analysis",
-    desc: "Our team of experienced data analysts can help you extract insights from your data and make data-driven decisions.",
-    link: "data-analysis",
-  },
-  {
-    img: "/assets/images/consultingPage/software-development.jpg",
-    title: "Software Development",
-    desc: "We offer a range of software development services, including coding, testing, and debugging.",
-    link: "software-development",
-  },
-  {
-    img: "/assets/images/consultingPage/web-application-development.jpg",
-    title: "Web Application Development",
-    desc: "We offer a range of web application development services, including design, development, and deployment.",
-    link: "web-application-development",
-  },
-  {
-    img: "/assets/images/consultingPage/payment-processing.jpg",
-    title: "Payment Processing",
-    desc: "Our team of experienced developers can help you build high-quality payment processing solutions that meet your business needs.",
-    link: "payment-processing",
-  },
-  {
-    img: "/assets/images/consultingPage/survey-form-development.jpg",
-    title: "Survey Form Development",
-    desc: "We offer a range of survey form development services, including survey creation, data collection, and analysis.",
-    link: "survey-form-development",
-  },
-  {
-    img: "/assets/images/consultingPage/digital-marketing.jpg",
-    title: "Digital Marketing",
-    desc: "We offer a range of digital marketing services, including SEO, social media management, and content creation.",
-    link: "digital-marketing",
-  },
-  {
-    img: "/assets/images/consultingPage/seo-sem-services.jpg",
-    title: "SEO/SEM Services",
-    desc: `Our team of experienced SEO experts can help you improve your website's visibility and drive more traffic to your site.`,
-    link: "seo-sem",
-  },
-  {
-    img: "/assets/images/consultingPage/social-media-management.jpg",
-    title: "Social Media Management",
-    desc: "Our team of experienced marketers can help you build high-quality social media campaigns that drive traffic and engagement.",
-    link: "social-media-management",
-  },
-  {
-    img: "/assets/images/consultingPage/business-email.jpg",
-    title: "Business Email",
-    desc: "Our team of experienced marketers can help you build high-quality business eMail campaigns that drive traffic and engagement.",
-    link: "business-email",
-  },
-  {
-    img: "/assets/images/consultingPage/human-resource-management.jpg",
-    title: "Human Resource Management",
-    desc: "We offer a range of human resource management services, including recruitment, onboarding, and performance management.",
-    link: "human-resource-management",
-  },
-  {
-    img: "/assets/images/consultingPage/it-consultancy-management.jpg",
-    title: "IT Consultancy Management",
-    desc: "We offer a range of IT consultancy services, including system design, implementation, and support.",
-    link: "IT-consultancy-management",
-  },
-  {
-    img: "/assets/images/consultingPage/UI-UX.jpg",
-    title: "UI/UX Designing",
-    desc: "We offer a range of UI/ UX designing services, including wireframing, prototyping, and user testing.",
-    link: "uiux",
-  },
-  {
-    img: "/assets/images/consultingPage/video-content-email-marketing.jpg",
-    title: "Video/Content/Email Marketing",
-    desc: "We offer a range of video / email / content marketing services, including video creation, email marketing, and content creation.",
-    link: "video-content-email",
-  },
-];
+  const consulting = [
+    {
+      img: "/assets/images/consultingPage/data-processing.jpg",
+      title: "Data Processing",
+      desc: "We have a proven track record of delivering high-quality data analysis and reporting solutions that meet the needs of our clients.",
+      link: "data-processing",
+    },
+    {
+      img: "/assets/images/consultingPage/database-management.jpg",
+      title: "Database Management",
+      desc: "We offer a range of database management services, including database design, implementation, and optimization.",
+      link: "data-management",
+    },
+    {
+      img: "/assets/images/consultingPage/data-analysis.jpg",
+      title: "Data Analysis",
+      desc: "Our team of experienced data analysts can help you extract insights from your data and make data-driven decisions.",
+      link: "data-analysis",
+    },
+    {
+      img: "/assets/images/consultingPage/software-development.jpg",
+      title: "Software Development",
+      desc: "We offer a range of software development services, including coding, testing, and debugging.",
+      link: "software-development",
+    },
+    {
+      img: "/assets/images/consultingPage/web-application-development.jpg",
+      title: "Web Application Development",
+      desc: "We offer a range of web application development services, including design, development, and deployment.",
+      link: "web-application-development",
+    },
+    {
+      img: "/assets/images/consultingPage/payment-processing.jpg",
+      title: "Payment Processing",
+      desc: "Our team of experienced developers can help you build high-quality payment processing solutions that meet your business needs.",
+      link: "payment-processing",
+    },
+    {
+      img: "/assets/images/consultingPage/survey-form-development.jpg",
+      title: "Survey Form Development",
+      desc: "We offer a range of survey form development services, including survey creation, data collection, and analysis.",
+      link: "survey-form-development",
+    },
+    {
+      img: "/assets/images/consultingPage/digital-marketing.jpg",
+      title: "Digital Marketing",
+      desc: "We offer a range of digital marketing services, including SEO, social media management, and content creation.",
+      link: "digital-marketing",
+    },
+    {
+      img: "/assets/images/consultingPage/seo-sem-services.jpg",
+      title: "SEO/SEM Services",
+      desc: `Our team of experienced SEO experts can help you improve your website's visibility and drive more traffic to your site.`,
+      link: "seo-sem-services",
+    },
+    {
+      img: "/assets/images/consultingPage/social-media-management.jpg",
+      title: "Social Media Management",
+      desc: "Our team of experienced marketers can help you build high-quality social media campaigns that drive traffic and engagement.",
+      link: "social-media-management",
+    },
+    {
+      img: "/assets/images/consultingPage/business-email.jpg",
+      title: "Business Email",
+      desc: "Our team of experienced marketers can help you build high-quality business eMail campaigns that drive traffic and engagement.",
+      link: "business-email",
+    },
+    {
+      img: "/assets/images/consultingPage/human-resource-management.jpg",
+      title: "Human Resource Management",
+      desc: "We offer a range of human resource management services, including recruitment, onboarding, and performance management.",
+      link: "human-resource-management",
+    },
+    {
+      img: "/assets/images/consultingPage/it-consultancy-management.jpg",
+      title: "IT Consultancy Management",
+      desc: "We offer a range of IT consultancy services, including system design, implementation, and support.",
+      link: "IT-consultancy-management",
+    },
+    {
+      img: "/assets/images/consultingPage/UI-UX.jpg",
+      title: "UI/UX Designing",
+      desc: "We offer a range of UI/ UX designing services, including wireframing, prototyping, and user testing.",
+      link: "ui-ux-designing",
+    },
+    {
+      img: "/assets/images/consultingPage/video-content-email-marketing.jpg",
+      title: "Video/Content/Email Marketing",
+      desc: "We offer a range of video / email / content marketing services, including video creation, email marketing, and content creation.",
+      link: "video-content-email",
+    },
+  ];
   return (
     <>
       <Ribbon name="Data Processing" des="" />
@@ -417,41 +417,44 @@ const consulting = [
       </section> */}
 
       {/* Related Blog Section */}
-     <section className="max-w-[1180px] mx-auto mb-[45px] px-6 lg:px-0">
-  <h1 className="text-center text-xl font-[800]">Related Consulting</h1>
+      <section className="max-w-[1180px] mx-auto mb-[45px] px-6 lg:px-0">
+        <h1 className="text-center text-xl font-[800]">Related Consulting</h1>
 
-  <div className="flex flex-col sm:flex-row flex-wrap gap-4 justify-between items-center mt-8 mb-[80px]">
-    {consulting
-      .filter((item) => item.link !== "data-processing") // Exclude current
-      .slice(0, 6) // Only show 6
-      .map((blog) => (
-        <div
-          key={blog.title}
-          className="w-full sm:max-w-[316px] h-auto flex flex-col gap-1 mb-6"
-        >
-          <Link
-            href={`/consulting/${blog.link}`}
-            className="hover:underline font-[800] text-sm"
-          >
-          <Image
-            src={blog.img}
-            width={316}
-            height={195}
-            alt={blog.title}
-            className="w-full h-auto rounded-[15px] mb-2 "
-          />
+        <div className="flex flex-col sm:flex-row flex-wrap gap-4 justify-between items-center mt-8 mb-[80px]">
+          {consulting
+            .filter((item) => item.link !== "data-processing") // Exclude current
+            .slice(0, 6) // Only show 6
+            .map((blog) => (
+              <div
+                key={blog.title}
+                className="w-full sm:max-w-[316px] h-auto flex flex-col gap-1 mb-6"
+              >
+                <Link
+                  href={`/consulting/${blog.link}`}
+                  className="hover:underline font-[800] text-sm"
+                >
+                  <Image
+                    src={blog.img}
+                    width={316}
+                    height={195}
+                    alt={blog.title}
+                    className="w-full h-auto rounded-[15px] mb-2 "
+                  />
+                </Link>
 
-                    </Link>
+                <h1 className="font-[900] text-center">{blog.title}</h1>
+                <p className="text-sm">{blog.desc}</p>
 
-          <h1 className="font-[900] text-center">{blog.title}</h1>
-          <p className="text-sm">{blog.desc}</p>
-
-        <Link href={`/consulting/${blog.link}`} className=" mt-2 w-[35%] px-5 py-2 text-sm border border-[#055D59] text-[#055D59] hover:bg-[#055D59] hover:text-white rounded-[8px] transition"
-              >Read More</Link>
+                <Link
+                  href={`/consulting/${blog.link}`}
+                  className=" mt-2 px-2 sm:px-12 py-2 text-sm border border-[#055D59] text-[#055D59] hover:bg-[#055D59] hover:text-white rounded-[8px] transition"
+                >
+                  Read More
+                </Link>
+              </div>
+            ))}
         </div>
-      ))}
-  </div>
-</section>
+      </section>
     </>
   );
 }

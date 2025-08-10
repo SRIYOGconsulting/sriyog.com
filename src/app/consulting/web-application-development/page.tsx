@@ -26,8 +26,6 @@ export default function DataProcessing() {
   //   },
   // ];
 
-
-
   // const pricingPlans = [
   //   {
   //     id: 1,
@@ -68,7 +66,7 @@ export default function DataProcessing() {
   //   },
   // ];
 
-   const consulting = [
+  const consulting = [
     {
       img: "/assets/images/consultingPage/data-processing.jpg",
       title: "Data Processing",
@@ -121,7 +119,7 @@ export default function DataProcessing() {
       img: "/assets/images/consultingPage/seo-sem-services.jpg",
       title: "SEO/SEM Services",
       desc: `Our team of experienced SEO experts can help you improve your website's visibility and drive more traffic to your site.`,
-      link: "seo-sem",
+      link: "seo-sem-services",
     },
     {
       img: "/assets/images/consultingPage/social-media-management.jpg",
@@ -151,7 +149,7 @@ export default function DataProcessing() {
       img: "/assets/images/consultingPage/UI-UX.jpg",
       title: "UI/UX Designing",
       desc: "We offer a range of UI/ UX designing services, including wireframing, prototyping, and user testing.",
-      link: "uiux",
+      link: "ui-ux-designing",
     },
     {
       img: "/assets/images/consultingPage/video-content-email-marketing.jpg",
@@ -162,10 +160,7 @@ export default function DataProcessing() {
   ];
   return (
     <>
-      <Ribbon
-        name="Web Application Development"
-        des=""
-      />
+      <Ribbon name="Web Application Development" des="" />
       <section className="max-w-[1180px] mx-auto mb-[45px]  px-6 lg:px-0 ">
         <Image
           src="/assets/images/consultingPage/web-application-development.jpg"
@@ -175,35 +170,37 @@ export default function DataProcessing() {
           className=" border-1 border-blue-50 mb-[45px] rounded-[15px]"
         />
         <h1 className="font-extrabold text-[34px] text-center">
-Web Application Development
-
-
-
+          Web Application Development
         </h1>
         <p className="text-center text-[16px] mb-[45px]">
-Specialize in creating responsive, user-friendly, and secure web applications tailored to meet the specific requirements of your business.
-
-
-
+          Specialize in creating responsive, user-friendly, and secure web
+          applications tailored to meet the specific requirements of your
+          business.
         </p>
-       
 
         <div className="max-w-[1180px] mx-auto text-[15px] text-justify leading-[23px] flex flex-col gap-4">
           <p>
-Our web application development services cover everything from conceptual design to final deployment and ongoing support. We specialize in creating responsive, user-friendly, and secure web applications tailored to meet the specific requirements of your business. Whether you need a customer-facing portal, internal tool, or eCommerce platform, we bring your vision to life using the latest technologies and development frameworks.
-
-
-{" "}
+            Our web application development services cover everything from
+            conceptual design to final deployment and ongoing support. We
+            specialize in creating responsive, user-friendly, and secure web
+            applications tailored to meet the specific requirements of your
+            business. Whether you need a customer-facing portal, internal tool,
+            or eCommerce platform, we bring your vision to life using the latest
+            technologies and development frameworks.{" "}
           </p>
 
           <p>
-Our team ensures that each application is scalable, intuitive, and optimized for performance across all devices and browsers. We emphasize seamless user experience, data security, and integration with existing systems to maximize the value of your digital investment. With an agile development approach, we deliver working prototypes quickly and refine them through collaborative feedback. From front-end aesthetics to back-end architecture, our web applications are built for reliability, speed, and long-term performance, ensuring your business remains competitive in the digital landscape.
-
-
-{" "}
+            Our team ensures that each application is scalable, intuitive, and
+            optimized for performance across all devices and browsers. We
+            emphasize seamless user experience, data security, and integration
+            with existing systems to maximize the value of your digital
+            investment. With an agile development approach, we deliver working
+            prototypes quickly and refine them through collaborative feedback.
+            From front-end aesthetics to back-end architecture, our web
+            applications are built for reliability, speed, and long-term
+            performance, ensuring your business remains competitive in the
+            digital landscape.{" "}
           </p>
-
-         
         </div>
       </section>
 
@@ -245,102 +242,115 @@ Our team ensures that each application is scalable, intuitive, and optimized for
           />
         </div>
       </section> */}
-{/*. FAQ */}
-<section className="max-w-[1180px] mx-auto mb-[45px] px-6 lg:px-0">
-  {/* Section Title */}
-  <h2 className="text-center text-3xl md:text-4xl mb-3 font-extrabold">FAQ</h2>
-  <p className="text-center text-sm text-gray-800 mb-8">
-    Here are some of the Web Application Development frequently asked questions
-  </p>
+      {/*. FAQ */}
+      <section className="max-w-[1180px] mx-auto mb-[45px] px-6 lg:px-0">
+        {/* Section Title */}
+        <h2 className="text-center text-3xl md:text-4xl mb-3 font-extrabold">
+          FAQ
+        </h2>
+        <p className="text-center text-sm text-gray-800 mb-8">
+          Here are some of the Web Application Development frequently asked
+          questions
+        </p>
 
-  <div className="flex flex-col lg:flex-row gap-10">
-    {/* Column 1 */}
-    <div className="w-full lg:w-1/2 flex flex-col gap-8">
-      {[
-        {
-          question: "What is included in your web application development services?",
-          answer:
-            "We cover everything from conceptual design to final deployment and ongoing support.",
-        },
-        {
-          question: "What kind of web applications do you specialize in creating?",
-          answer:
-            "We specialize in creating responsive, user-friendly, and secure web applications tailored to your business, including customer-facing portals, internal tools, and eCommerce platforms.",
-        },
-        {
-          question: "What technologies and frameworks do you use?",
-          answer:
-            "We use the latest technologies and development frameworks to bring your vision to life.",
-        },
-      ].map((faq, i) => (
-        <div key={i} className="relative flex items-start gap-5 group">
-          <div className="w-10 h-10 flex items-center justify-center bg-[#055D59] text-white font-bold rounded-full mt-1 shrink-0">
-            <Image src="/assets/images/consulting/target.svg" alt={`FAQ ${i + 1}`} width={40} height={40} />
+        <div className="flex flex-col lg:flex-row gap-10">
+          {/* Column 1 */}
+          <div className="w-full lg:w-1/2 flex flex-col gap-8">
+            {[
+              {
+                question:
+                  "What is included in your web application development services?",
+                answer:
+                  "We cover everything from conceptual design to final deployment and ongoing support.",
+              },
+              {
+                question:
+                  "What kind of web applications do you specialize in creating?",
+                answer:
+                  "We specialize in creating responsive, user-friendly, and secure web applications tailored to your business, including customer-facing portals, internal tools, and eCommerce platforms.",
+              },
+              {
+                question: "What technologies and frameworks do you use?",
+                answer:
+                  "We use the latest technologies and development frameworks to bring your vision to life.",
+              },
+            ].map((faq, i) => (
+              <div key={i} className="relative flex items-start gap-5 group">
+                <div className="w-10 h-10 flex items-center justify-center bg-[#055D59] text-white font-bold rounded-full mt-1 shrink-0">
+                  <Image
+                    src="/assets/images/consulting/target.svg"
+                    alt={`FAQ ${i + 1}`}
+                    width={40}
+                    height={40}
+                  />
+                </div>
+                {i !== 2 && (
+                  <div className="absolute left-[19px] top-12 h-[50px] w-[2px] bg-gray-300" />
+                )}
+                <div>
+                  <h3 className="font-semibold text-lg text-gray-800 mb-1">
+                    {faq.question}
+                  </h3>
+                  <p className="text-sm text-gray-600 leading-relaxed">
+                    {faq.answer}
+                  </p>
+                </div>
+              </div>
+            ))}
           </div>
-          {i !== 2 && (
-            <div className="absolute left-[19px] top-12 h-[50px] w-[2px] bg-gray-300" />
-          )}
-          <div>
-            <h3 className="font-semibold text-lg text-gray-800 mb-1">
-              {faq.question}
-            </h3>
-            <p className="text-sm text-gray-600 leading-relaxed">
-              {faq.answer}
-            </p>
+
+          {/* Column 2 */}
+          <div className="w-full lg:w-1/2 flex flex-col gap-8">
+            {[
+              {
+                question:
+                  "How do you ensure the performance and scalability of web applications?",
+                answer:
+                  "We ensure each application is scalable, intuitive, and optimized for performance across all devices and browsers.",
+              },
+              {
+                question:
+                  "How do you handle user experience and data security?",
+                answer:
+                  "We emphasize seamless user experience, data security, and integration with existing systems.",
+              },
+              {
+                question: "What is your development approach?",
+                answer:
+                  "We use an agile development approach to deliver working prototypes quickly and refine them through collaborative feedback.",
+              },
+              {
+                question:
+                  "How do you ensure the long-term performance and reliability of web applications?",
+                answer:
+                  "From front-end aesthetics to back-end architecture, our web applications are built for reliability, speed, and long-term performance.",
+              },
+            ].map((faq, i) => (
+              <div key={i} className="relative flex items-start gap-5 group">
+                <div className="w-10 h-10 flex items-center justify-center bg-[#055D59] text-white font-bold rounded-full mt-1 shrink-0">
+                  <Image
+                    src="/assets/images/consulting/target.svg"
+                    alt={`FAQ ${i + 1}`}
+                    width={40}
+                    height={40}
+                  />
+                </div>
+                {i !== 3 && (
+                  <div className="absolute left-[19px] top-12 h-[50px] w-[2px] bg-gray-300" />
+                )}
+                <div>
+                  <h3 className="font-semibold text-lg text-gray-800 mb-1">
+                    {faq.question}
+                  </h3>
+                  <p className="text-sm text-gray-600 leading-relaxed">
+                    {faq.answer}
+                  </p>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
-      ))}
-    </div>
-
-    {/* Column 2 */}
-    <div className="w-full lg:w-1/2 flex flex-col gap-8">
-      {[
-        {
-          question: "How do you ensure the performance and scalability of web applications?",
-          answer:
-            "We ensure each application is scalable, intuitive, and optimized for performance across all devices and browsers.",
-        },
-        {
-          question: "How do you handle user experience and data security?",
-          answer:
-            "We emphasize seamless user experience, data security, and integration with existing systems.",
-        },
-        {
-          question: "What is your development approach?",
-          answer:
-            "We use an agile development approach to deliver working prototypes quickly and refine them through collaborative feedback.",
-        },
-        {
-          question: "How do you ensure the long-term performance and reliability of web applications?",
-          answer:
-            "From front-end aesthetics to back-end architecture, our web applications are built for reliability, speed, and long-term performance.",
-        },
-      ].map((faq, i) => (
-        <div key={i} className="relative flex items-start gap-5 group">
-          <div className="w-10 h-10 flex items-center justify-center bg-[#055D59] text-white font-bold rounded-full mt-1 shrink-0">
-            <Image src="/assets/images/consulting/target.svg" alt={`FAQ ${i + 1}`} width={40} height={40} />
-          </div>
-          {i !== 3 && (
-            <div className="absolute left-[19px] top-12 h-[50px] w-[2px] bg-gray-300" />
-          )}
-          <div>
-            <h3 className="font-semibold text-lg text-gray-800 mb-1">
-              {faq.question}
-            </h3>
-            <p className="text-sm text-gray-600 leading-relaxed">
-              {faq.answer}
-            </p>
-          </div>
-        </div>
-      ))}
-    </div>
-  </div>
-</section>
-
-
-
-
-
+      </section>
 
       {/*Pricing */}
 
@@ -395,41 +405,44 @@ Our team ensures that each application is scalable, intuitive, and optimized for
       </section> */}
 
       {/* Related Blog Section */}
-   <section className="max-w-[1180px] mx-auto mb-[45px] px-6 lg:px-0">
-  <h1 className="text-center text-xl font-[800]">Related Consulting</h1>
+      <section className="max-w-[1180px] mx-auto mb-[45px] px-6 lg:px-0">
+        <h1 className="text-center text-xl font-[800]">Related Consulting</h1>
 
-  <div className="flex flex-col sm:flex-row flex-wrap gap-4 justify-between items-center mt-8 mb-[80px]">
-    {consulting
-      .filter((item) => item.link !== "web-application-development") // Exclude current
-      .slice(0, 6) // Only show 6
-      .map((blog) => (
-        <div
-          key={blog.title}
-          className="w-full sm:max-w-[316px] h-auto flex flex-col gap-1 mb-6"
-        >
-          <Link
-            href={`/consulting/${blog.link}`}
-            className="hover:underline font-[800] text-sm"
-          >
-          <Image
-            src={blog.img}
-            width={316}
-            height={195}
-            alt={blog.title}
-            className="w-full h-auto rounded-[15px] mb-2 "
-          />
+        <div className="flex flex-col sm:flex-row flex-wrap gap-4 justify-between items-center mt-8 mb-[80px]">
+          {consulting
+            .filter((item) => item.link !== "web-application-development") // Exclude current
+            .slice(0, 6) // Only show 6
+            .map((blog) => (
+              <div
+                key={blog.title}
+                className="w-full sm:max-w-[316px] h-auto flex flex-col gap-1 mb-6"
+              >
+                <Link
+                  href={`/consulting/${blog.link}`}
+                  className="hover:underline font-[800] text-sm"
+                >
+                  <Image
+                    src={blog.img}
+                    width={316}
+                    height={195}
+                    alt={blog.title}
+                    className="w-full h-auto rounded-[15px] mb-2 "
+                  />
+                </Link>
 
-                    </Link>
+                <h1 className="font-[900] text-center">{blog.title}</h1>
+                <p className="text-sm">{blog.desc}</p>
 
-          <h1 className="font-[900] text-center">{blog.title}</h1>
-          <p className="text-sm">{blog.desc}</p>
-
-        <Link href={`/consulting/${blog.link}`} className=" mt-2 w-[35%] px-5 py-2 text-sm border border-[#055D59] text-[#055D59] hover:bg-[#055D59] hover:text-white rounded-[8px] transition"
-              >Read More</Link>
+                <Link
+                  href={`/consulting/${blog.link}`}
+                  className=" mt-2 w-[35%] px-5 py-2 text-sm border border-[#055D59] text-[#055D59] hover:bg-[#055D59] hover:text-white rounded-[8px] transition"
+                >
+                  Read More
+                </Link>
+              </div>
+            ))}
         </div>
-      ))}
-  </div>
-</section>
+      </section>
     </>
   );
 }
