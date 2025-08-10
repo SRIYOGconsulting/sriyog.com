@@ -452,7 +452,7 @@ export default function DataAnalysis() {
 
                 <Link
                   href={`/consulting/${blog.link}`}
-                  className=" mt-2 w-[35%] px-5 py-2 text-sm border border-[#055D59] text-[#055D59] hover:bg-[#055D59] hover:text-white rounded-[8px] transition"
+                  className="text-center mt-2 w-[35%] px-5 py-2 text-sm border border-[#055D59] text-[#055D59] hover:bg-[#055D59] hover:text-white rounded-[8px] transition"
                 >
                   Read More
                 </Link>

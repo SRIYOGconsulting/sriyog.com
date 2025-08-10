@@ -160,10 +160,7 @@ export default function DataAnalysis() {
   ];
   return (
     <>
-      <Ribbon
-        name="IT Consultancy Management"
-        des=""
-      />
+      <Ribbon name="IT Consultancy Management" des="" />
       <section className="max-w-[1180px] mx-auto mb-[45px]  px-6 lg:px-0 ">
         <Image
           src="/assets/images/consultingPage/it-consultancy-management.jpg"
@@ -264,91 +261,115 @@ export default function DataAnalysis() {
       </section> */}
 
       {/*FAQ */}
-<section className="max-w-[1180px] mx-auto mb-[45px] px-6 lg:px-0">
-  {/* Section Title */}
-  <h2 className="text-center text-3xl md:text-4xl mb-3 font-extrabold">FAQ</h2>
-  <p className="text-center text-sm text-gray-800 mb-8">
-    Here are some of the IT Consultancy Management frequently asked questions
-  </p>
+      <section className="max-w-[1180px] mx-auto mb-[45px] px-6 lg:px-0">
+        {/* Section Title */}
+        <h2 className="text-center text-3xl md:text-4xl mb-3 font-extrabold">
+          FAQ
+        </h2>
+        <p className="text-center text-sm text-gray-800 mb-8">
+          Here are some of the IT Consultancy Management frequently asked
+          questions
+        </p>
 
-  <div className="flex flex-col lg:flex-row gap-10">
-    {/* Column 1 */}
-    <div className="w-full lg:w-1/2 flex flex-col gap-8">
-      {[
-        {
-          question: "What services are included in your IT consultancy management?",
-          answer:
-            "We offer strategic guidance and hands-on support in areas such as infrastructure design, system implementation, cybersecurity, cloud migration, and digital transformation.",
-        },
-        {
-          question: "How do your IT consultants collaborate with businesses?",
-          answer:
-            "Our consultants work closely with your internal teams to understand your objectives, challenges, and workflows—allowing us to deliver customized and effective solutions.",
-        },
-        {
-          question: "What kind of expertise do your IT consultants provide?",
-          answer:
-            "We specialize in enterprise software selection and deployment, system integration, and IT operations optimization to help your business stay agile and competitive.",
-        },
-      ].map((faq, i) => (
-        <div key={i} className="relative flex items-start gap-5 group">
-          <div className="w-10 h-10 flex items-center justify-center bg-[#055D59] text-white font-bold rounded-full mt-1 shrink-0">
-            <Image src="/assets/images/consulting/target.svg" alt={`FAQ ${i + 1}`} width={40} height={40} />
+        <div className="flex flex-col lg:flex-row gap-10">
+          {/* Column 1 */}
+          <div className="w-full lg:w-1/2 flex flex-col gap-8">
+            {[
+              {
+                question:
+                  "What services are included in your IT consultancy management?",
+                answer:
+                  "We offer strategic guidance and hands-on support in areas such as infrastructure design, system implementation, cybersecurity, cloud migration, and digital transformation.",
+              },
+              {
+                question:
+                  "How do your IT consultants collaborate with businesses?",
+                answer:
+                  "Our consultants work closely with your internal teams to understand your objectives, challenges, and workflows—allowing us to deliver customized and effective solutions.",
+              },
+              {
+                question:
+                  "What kind of expertise do your IT consultants provide?",
+                answer:
+                  "We specialize in enterprise software selection and deployment, system integration, and IT operations optimization to help your business stay agile and competitive.",
+              },
+            ].map((faq, i) => (
+              <div key={i} className="relative flex items-start gap-5 group">
+                <div className="w-10 h-10 flex items-center justify-center bg-[#055D59] text-white font-bold rounded-full mt-1 shrink-0">
+                  <Image
+                    src="/assets/images/consulting/target.svg"
+                    alt={`FAQ ${i + 1}`}
+                    width={40}
+                    height={40}
+                  />
+                </div>
+                {i !== 2 && (
+                  <div className="absolute left-[19px] top-12 h-[50px] w-[2px] bg-gray-300" />
+                )}
+                <div>
+                  <h3 className="font-semibold text-lg text-gray-800 mb-1">
+                    {faq.question}
+                  </h3>
+                  <p className="text-sm text-gray-600 leading-relaxed">
+                    {faq.answer}
+                  </p>
+                </div>
+              </div>
+            ))}
           </div>
-          {i !== 2 && (
-            <div className="absolute left-[19px] top-12 h-[50px] w-[2px] bg-gray-300" />
-          )}
-          <div>
-            <h3 className="font-semibold text-lg text-gray-800 mb-1">{faq.question}</h3>
-            <p className="text-sm text-gray-600 leading-relaxed">{faq.answer}</p>
+
+          {/* Column 2 */}
+          <div className="w-full lg:w-1/2 flex flex-col gap-8">
+            {[
+              {
+                question: "Do you offer support after system implementation?",
+                answer:
+                  "Absolutely. We provide post-implementation support, training, and optimization services to ensure a seamless transition and sustained performance improvements.",
+              },
+              {
+                question:
+                  "How do your consultancy services benefit businesses?",
+                answer:
+                  "Our services drive operational efficiency, lower costs, improve scalability, and empower you to leverage technology as a strategic advantage.",
+              },
+              {
+                question:
+                  "Do you support both short-term projects and long-term engagements?",
+                answer:
+                  "Yes, we are equipped to manage both short-term initiatives and long-term strategic partnerships—always aligning our work with your business goals and technical needs.",
+              },
+              {
+                question:
+                  "Can you assist with modernizing existing IT environments?",
+                answer:
+                  "Definitely. Whether you’re upgrading legacy systems or planning a complete IT transformation, we provide expert guidance and implementation support tailored to your vision.",
+              },
+            ].map((faq, i) => (
+              <div key={i} className="relative flex items-start gap-5 group">
+                <div className="w-10 h-10 flex items-center justify-center bg-[#055D59] text-white font-bold rounded-full mt-1 shrink-0">
+                  <Image
+                    src="/assets/images/consulting/target.svg"
+                    alt={`FAQ ${i + 4}`}
+                    width={40}
+                    height={40}
+                  />
+                </div>
+                {i !== 3 && (
+                  <div className="absolute left-[19px] top-12 h-[50px] w-[2px] bg-gray-300" />
+                )}
+                <div>
+                  <h3 className="font-semibold text-lg text-gray-800 mb-1">
+                    {faq.question}
+                  </h3>
+                  <p className="text-sm text-gray-600 leading-relaxed">
+                    {faq.answer}
+                  </p>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
-      ))}
-    </div>
-
-    {/* Column 2 */}
-    <div className="w-full lg:w-1/2 flex flex-col gap-8">
-      {[
-        {
-          question: "Do you offer support after system implementation?",
-          answer:
-            "Absolutely. We provide post-implementation support, training, and optimization services to ensure a seamless transition and sustained performance improvements.",
-        },
-        {
-          question: "How do your consultancy services benefit businesses?",
-          answer:
-            "Our services drive operational efficiency, lower costs, improve scalability, and empower you to leverage technology as a strategic advantage.",
-        },
-        {
-          question: "Do you support both short-term projects and long-term engagements?",
-          answer:
-            "Yes, we are equipped to manage both short-term initiatives and long-term strategic partnerships—always aligning our work with your business goals and technical needs.",
-        },
-        {
-          question: "Can you assist with modernizing existing IT environments?",
-          answer:
-            "Definitely. Whether you’re upgrading legacy systems or planning a complete IT transformation, we provide expert guidance and implementation support tailored to your vision.",
-        },
-      ].map((faq, i) => (
-        <div key={i} className="relative flex items-start gap-5 group">
-          <div className="w-10 h-10 flex items-center justify-center bg-[#055D59] text-white font-bold rounded-full mt-1 shrink-0">
-            <Image src="/assets/images/consulting/target.svg" alt={`FAQ ${i + 4}`} width={40} height={40} />
-          </div>
-          {i !== 3 && (
-            <div className="absolute left-[19px] top-12 h-[50px] w-[2px] bg-gray-300" />
-          )}
-          <div>
-            <h3 className="font-semibold text-lg text-gray-800 mb-1">{faq.question}</h3>
-            <p className="text-sm text-gray-600 leading-relaxed">{faq.answer}</p>
-          </div>
-        </div>
-      ))}
-    </div>
-  </div>
-</section>
-
-
-
+      </section>
 
       {/*Pricing */}
 
@@ -403,41 +424,44 @@ export default function DataAnalysis() {
       </section> */}
 
       {/* Related Blog Section */}
-   <section className="max-w-[1180px] mx-auto mb-[45px] px-6 lg:px-0">
-  <h1 className="text-center text-xl font-[800]">Related Consulting</h1>
+      <section className="max-w-[1180px] mx-auto mb-[45px] px-6 lg:px-0">
+        <h1 className="text-center text-xl font-[800]">Related Consulting</h1>
 
-  <div className="flex flex-col sm:flex-row flex-wrap gap-4 justify-between items-center mt-8 mb-[80px]">
-    {consulting
-      .filter((item) => item.link !== "It-consultancy-management") // Exclude current
-      .slice(0, 6) // Only show 6
-      .map((blog) => (
-        <div
-          key={blog.title}
-          className="w-full sm:max-w-[316px] h-auto flex flex-col gap-1 mb-6"
-        >
-          <Link
-            href={`/consulting/${blog.link}`}
-            className="hover:underline font-[800] text-sm"
-          >
-          <Image
-            src={blog.img}
-            width={316}
-            height={195}
-            alt={blog.title}
-            className="w-full h-auto rounded-[15px] mb-2 "
-          />
+        <div className="flex flex-col sm:flex-row flex-wrap gap-4 justify-between items-center mt-8 mb-[80px]">
+          {consulting
+            .filter((item) => item.link !== "It-consultancy-management") // Exclude current
+            .slice(0, 6) // Only show 6
+            .map((blog) => (
+              <div
+                key={blog.title}
+                className="w-full sm:max-w-[316px] h-auto flex flex-col gap-1 mb-6"
+              >
+                <Link
+                  href={`/consulting/${blog.link}`}
+                  className="hover:underline font-[800] text-sm"
+                >
+                  <Image
+                    src={blog.img}
+                    width={316}
+                    height={195}
+                    alt={blog.title}
+                    className="w-full h-auto rounded-[15px] mb-2 "
+                  />
+                </Link>
 
-                    </Link>
+                <h1 className="font-[900] text-center">{blog.title}</h1>
+                <p className="text-sm">{blog.desc}</p>
 
-          <h1 className="font-[900] text-center">{blog.title}</h1>
-          <p className="text-sm">{blog.desc}</p>
-
-        <Link href={`/consulting/${blog.link}`} className=" mt-2 w-[35%] px-5 py-2 text-sm border border-[#055D59] text-[#055D59] hover:bg-[#055D59] hover:text-white rounded-[8px] transition"
-              >Read More</Link>
+                <Link
+                  href={`/consulting/${blog.link}`}
+                  className="text-center mt-2 w-[35%] px-5 py-2 text-sm border border-[#055D59] text-[#055D59] hover:bg-[#055D59] hover:text-white rounded-[8px] transition"
+                >
+                  Read More
+                </Link>
+              </div>
+            ))}
         </div>
-      ))}
-  </div>
-</section>
+      </section>
     </>
   );
 }

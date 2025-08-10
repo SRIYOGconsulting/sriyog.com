@@ -98,7 +98,7 @@ export default function Testimonials() {
       desc: "We worked with SRIYOG Consulting to create a fully customized corporate website for our business. Their team understood our vision, offered creative solutions, and delivered a sleek, user-friendly platform on time. Their commitment to quality and technical excellence is great.",
       name: "Kishor Baskota",
       stack: "Founder & CEO",
-      image: "/assets/images/testimonials/baskota-consulting-kishorBastoka.png",
+      image: "/assets/images/testimonials/baskotaConsulting-kishorBastoka.jpg",
        addr:"Kathmandu"
     },
          {

@@ -123,7 +123,7 @@ export default function Consulting() {
                 <div className="mt-auto">
                   <Link
                     href={`/consulting/${data.link}`}
-                    className="px-3 py-1 text-sm border border-[#055D59] text-[#055D59] hover:bg-[#055D59] hover:text-white rounded-[8px] transition"
+                    className="px-4 py-2 text-sm border border-[#055D59] text-[#055D59] hover:bg-[#055D59] hover:text-white rounded-[8px] transition"
                   >
                     Read More
                   </Link>

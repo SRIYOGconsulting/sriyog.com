@@ -419,7 +419,7 @@ export default function DataProcessing() {
           <h1 className="font-[900] text-center">{blog.title}</h1>
           <p className="text-sm">{blog.desc}</p>
 
-        <Link href={`/consulting/${blog.link}`} className=" mt-2 w-[35%] px-5 py-2 text-sm border border-[#055D59] text-[#055D59] hover:bg-[#055D59] hover:text-white rounded-[8px] transition"
+        <Link href={`/consulting/${blog.link}`} className="text-center mt-2 w-[35%] px-5 py-2 text-sm border border-[#055D59] text-[#055D59] hover:bg-[#055D59] hover:text-white rounded-[8px] transition"
               >Read More</Link>
         </div>
       ))}
