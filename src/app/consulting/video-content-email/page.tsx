@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Video-Content-Email Marketing | SRIYOG Consulting",
+  title: "Video Content Marketing | SRIYOG Consulting",
 };
 export default function DataAnalysis() {
   //   const services = [
@@ -128,8 +128,8 @@ export default function DataAnalysis() {
     },
     {
       img: "/assets/images/consultingPage/business-email.jpg",
-      title: "Business Email",
-      desc: "Our team of experienced marketers can help you build high-quality business eMail campaigns that drive traffic and engagement.",
+      title: "Business eMail",
+      desc: "Our team of experienced marketers can help you build high-quality Business eMail campaigns that drive traffic and engagement.",
       link: "business-email",
     },
     {

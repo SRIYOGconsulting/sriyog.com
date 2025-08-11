@@ -2,7 +2,7 @@ import Ribbon from "@/components/Ribbon";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Survey | SRIYOG Consulting",
+  title: "Free IT Survey | SRIYOG Consulting",
 };
 export default function Page(){
     return(<>

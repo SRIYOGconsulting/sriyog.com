@@ -5,7 +5,7 @@ import Link from "next/link";
 
 
 export const metadata: Metadata = {
-  title: "Data Management | SRIYOG Consulting",
+  title: "Database Management | SRIYOG Consulting",
 };
 
 export default function DataManagement() {
@@ -130,8 +130,8 @@ const consulting = [
   },
   {
     img: "/assets/images/consultingPage/business-email.jpg",
-    title: "Business Email",
-    desc: "Our team of experienced marketers can help you build high-quality business eMail campaigns that drive traffic and engagement.",
+    title: "Business eMail",
+    desc: "Our team of experienced marketers can help you build high-quality Business eMail campaigns that drive traffic and engagement.",
     link: "business-email",
   },
   {
@@ -162,7 +162,7 @@ const consulting = [
   return (
     <>
       <Ribbon
-        name="Data Management"
+        name="Database Management"
         des=""
       />
       <section className="max-w-[1180px] mx-auto mb-[45px]  px-6 lg:px-0 ">
@@ -273,7 +273,7 @@ const consulting = [
           FAQ
         </h2>
         <p className="text-center text-sm text-gray-800 mb-8">
-          Here are some of the Data Management frequently asked questions
+          Here are some of the Database Management frequently asked questions
         </p>
 
         <div className="flex flex-col lg:flex-row gap-10">

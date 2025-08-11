@@ -516,7 +516,7 @@ const mediaItems = [
   },
 ];
 export const metadata: Metadata = {
-  title: "Media | SRIYOG Consulting",
+  title: "Media Coverages | SRIYOG Consulting",
 };
 export default function Media() {
   return (

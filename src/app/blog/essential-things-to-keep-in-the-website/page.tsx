@@ -307,7 +307,7 @@ export default function Ettkitw() {
             forms for application or option of collecting large information.
           </li>
           <li>
-            Business Email : When a businessman, an employee or any person from
+            Business eMail : When a businessman, an employee or any person from
             any organisation emails to anyone then using Gmail, Hotmail or any
             other emails creates less impacts. A bank can never have emails like
             support.abcbank.ktm@gmail.com. Having corporate email not only

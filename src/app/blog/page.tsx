@@ -212,7 +212,7 @@ export default function BlogPage() {
                   <p>27<sup>nd</sup> December , 2025</p>
                 </section>
                 <p className="text-2xl translate-y-2 group-hover:translate-y-0 transition-all duration-500 ease-in-out">
-                  What is a Corporate/Business Email?
+                  What is a Corporate/Business eMail?
                 </p>
                 <section className="text-sm max-h-0 translate-y-3 group-hover:translate-y-0 group-hover:max-h-36 transition-all duration-500 ease-in-out">
                   <p className="my-2">
@@ -305,7 +305,7 @@ export default function BlogPage() {
               alt="corporate-email"
               className="w-full rounded-lg"
             />
-            <h1 className="text-lg font-bold mt-4">What is Corporate/Business Email?</h1>
+            <h1 className="text-lg font-bold mt-4">What is Corporate/Business eMail?</h1>
             <p className="text-sm mt-2 mb-3">
               In today&apos;s competitive business environment, professional email branding is key to credibility.
             </p>

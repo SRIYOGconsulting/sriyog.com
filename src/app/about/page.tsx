@@ -38,13 +38,11 @@ export default function Aboutpage() {
             className="w-full h-auto object-cover rounded-xl"
           />
           <p className="text-md w-full">
-            Established on June 14, 2018, SRIYOG Consulting Pvt. Ltd., based in
-            Kamalpokhari, Kathmandu, Nepal, is a leading provider of digital
-            solutions focused on driving digital transformation in the sectors
-            of healthcare, employment, and tourism. Our mission is to empower
-            organizations in these vital industries with innovative, scalable,
-            and technology-driven services that enhance operational efficiency
-            and enable long-term growth.
+            Established on June 14, 2018, SRIYOG Consulting Pvt. Ltd., based in 
+            Kamalpokhari, Kathmandu, Nepal, is a leading provider of digital 
+            solutions dedicated to driving digital transformation in the healthcare, employment, and tourism sectors. Our mission is to empower organizations in these vital industries with innovative, scalable, technology-driven services that enhance operational efficiency and support long-term growth.
+
+            
           </p>
         </div>
 
@@ -74,25 +72,13 @@ export default function Aboutpage() {
         {/*texts below cards */}
 
         <p className="text-md ">
-          At SRIYOG Consulting, we believe that smart technology is key to
-          solving sector-specific challenges. Our diverse IT services include
-          data processing, software and web application development, digital
-          marketing, database management, business process automation, and
-          expert IT consultancy—each tailored to the unique needs of
-          agriculture, employment platforms, and tourism operations.
+          At SRIYOG Consulting, we believe that smart technology is key to addressing sector-specific challenges. Our diverse IT services include data processing, software and web application development, digital marketing, database management, business process automation, and expert IT consultancy—each tailored to the unique needs of agriculture, employment platforms, and tourism operations.
           <br />
           <br />
-          By optimizing digital infrastructure, we help our clients streamline
-          their services, engage users effectively, and scale sustainably. We
-          specialize in crafting robust and user-friendly web solutions with a
-          focus on modern UI/UX design, full-stack development, and
-          industry-specific platforms—be it for agritech, job-matching portals,
-          or tourism management systems.
+          By optimizing digital infrastructure, we help our clients streamline services, engage users effectively, and scale sustainably. We specialize in crafting robust, user-friendly web solutions with a focus on modern UI/UX design, full-stack development, and industry-specific platforms—whether for agritech, job-matching portals, or tourism management systems.
           <br />
           <br />
-          Our offerings include e-commerce platforms, CMS, SaaS-based solutions,
-          and Progressive Web Applications (PWA) for mobile-first experiences
-          with offline functionality.
+          Our offerings include e-commerce platforms, CMS, SaaS-based solutions, and Progressive Web Applications (PWAs) designed for mobile-first experiences with offline functionality.
         </p>
 
         {/*banner */}
@@ -150,35 +136,18 @@ export default function Aboutpage() {
                 Message from The CTO
               </h2>
               <p className="text-[15px]">
-                At SRIYOG Consulting, our mission is to harness the power of
-                technology to drive impactful change across sectors that are
-                fundamental to the growth of our society—healthcare, employment,
-                and tourism. <br />
+                Technology has been connecting everyone from one corner of the globe to another corner in the very fastest way. Businesses and almost all organisations need to have their proper digital presence/ technology adapted in a very effective way and their main motive should be to perform great in  competition and stay ahead. <br />
                 <br />
-                As someone who has spent over a decade navigating the
-                intersection of innovation and social responsibility, I firmly
-                believe in technology’s ability to unlock new opportunities and
-                create a more sustainable, efficient, and connected world. My
-                journey began in Biratnagar, Nepal, with a vision to use digital
-                solutions to address local challenges, improve lives, and
-                accelerate economic growth. From those early days with PRACAS
-                Infosys to the establishment of SRIYOG Consulting, I’ve been
-                driven by the idea that technology can be a force for good.
+                My journey into the realm of technology began over a decade ago when I founded my first IT startup in 2007 A.D. as PRACAS Infosys in Biratnagar. Recognizing the potential of technology to bridge the gap of digital division and catalyze progress, I always tried to embark on a mission to leverage digital solutions to address local challenges and foster economic development. 
                 <br />
                 <br />
-                Today, we are empowering industries to transform digitally,
-                whether it’s streamlining agricultural processes, creating
-                innovative platforms for employment, or enhancing tourism
-                experiences. Our tailored solutions help organizations in these
-                sectors optimize their operations, expand their reach, and adapt
-                to the rapidly changing digital landscape.
+                My vision was not merely to create successful businesses but to effect meaningful change in my community where I have contributed in more than 500 clients in my entire career spreading 15 countries in the world, developing their website, optimizing search results, developing mobile applications, managing social media, growing their digital presence, providing them a very reliable corporate business email solutions and also providing dedicated Information Technology Consulting Solution. 
+
+
                 <br />
                 <br />
-                We’re committed to building smarter, more resilient systems that
-                not only meet the needs of today but also prepare our clients
-                for the challenges of tomorrow. Together, we’re shaping the
-                future of agriculture, employment, and tourism through the power
-                of technology.
+                Having good practices of Information Technology can grow the business faster, gives a great digital presence, saves expensive man hours, optimize workforce, manages data, its privacy and also saves reputation of any organisation for any forthcoming digital disasters like data loss, hacking, identity theft, ransomware attacks and other various issues which we may face anytime, anywhere. 
+
               </p>
 
               <div className="pt-12 flex flex-col gap-1">
@@ -209,7 +178,7 @@ export default function Aboutpage() {
               </div>
             </div>
 
-            <div className="w-full lg:w-[50%] flex justify-center items-center px-4">
+            <div className="w-full lg:w-[70%] flex justify-center items-center px-4">
               <Image
                 src="/assets/images/about/pracas_large.png"
                 alt="about_photo"

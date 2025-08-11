@@ -42,7 +42,7 @@ export default function Services() {
                 Enhancing Business Performance
               </h2>
               <p className="text-white">
-                Enable organizations to harness the power of technology for
+                Enable organizations to adapt the power of technology for
                 improved decision-making and business performance.
               </p>
             </div>

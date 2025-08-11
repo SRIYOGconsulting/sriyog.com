@@ -128,8 +128,8 @@ export default function DataProcessing() {
     },
     {
       img: "/assets/images/consultingPage/business-email.jpg",
-      title: "Business Email",
-      desc: "Our team of experienced marketers can help you build high-quality business eMail campaigns that drive traffic and engagement.",
+      title: "Business eMail",
+      desc: "Our team of experienced marketers can help you build high-quality Business eMail campaigns that drive traffic and engagement.",
       link: "business-email",
     },
     {

@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Business Email| SRIYOG Consulting",
+  title: "Business eMail| SRIYOG Consulting",
 };
 export default function DataAnalysis() {
   //   const services = [
@@ -127,8 +127,8 @@ export default function DataAnalysis() {
     },
     {
       img: "/assets/images/consultingPage/business-email.jpg",
-      title: "Business Email",
-      desc: "Our team of experienced marketers can help you build high-quality business eMail campaigns that drive traffic and engagement.",
+      title: "Business eMail",
+      desc: "Our team of experienced marketers can help you build high-quality Business eMail campaigns that drive traffic and engagement.",
       link: "business-email",
     },
     {
@@ -197,7 +197,7 @@ export default function DataAnalysis() {
   // ];
   return (
     <>
-      <Ribbon name="Business Email" des="" />
+      <Ribbon name="Business eMail" des="" />
       <section className="max-w-[1180px] mx-auto mb-[45px]  px-6 lg:px-0 ">
         <Image
           src="/assets/images/consultingPage/business-email.jpg"
@@ -207,7 +207,7 @@ export default function DataAnalysis() {
           className=" border-1 border-blue-50 mb-[45px] rounded-[15px]"
         />
         <h1 className="font-extrabold text-[34px] text-center">
-          Business Email
+          Business eMail
         </h1>
         <p className="text-center text-[16px] mb-[45px]">
           Our services include everything from list segmentation and campaign
@@ -233,7 +233,7 @@ export default function DataAnalysis() {
 
         <div className="max-w-[1180px] mx-auto text-[15px] text-justify leading-[23px] flex flex-col gap-4">
           <p>
-            Our business email marketing services are designed to help you
+            Our Business eMail marketing services are designed to help you
             connect with your audience in a personal, professional, and
             impactful way. Whether you&apos;re reaching out to existing customers or
             nurturing leads, we craft tailored email campaigns that drive

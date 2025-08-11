@@ -4,6 +4,8 @@ import Ribbon from "@/components/Ribbon";
 import Image from "next/image";
 import Link from "next/link";
 
+
+
 export default function MeetPage() {
   const defaultLink = "https://meet.google.com/jnm-yrjn-fei";
   const interviewLink = "https://meet.google.com/jnm-yrjn-fei";
