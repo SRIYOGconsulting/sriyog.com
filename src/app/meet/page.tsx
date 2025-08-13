@@ -7,8 +7,8 @@ import Link from "next/link";
 
 
 export default function MeetPage() {
-  const defaultLink = "https://meet.google.com/jnm-yrjn-fei";
-  const interviewLink = "https://meet.google.com/jnm-yrjn-fei";
+  const defaultLink = "http://meet.google.com/tat-vvcq-pzu";
+  const interviewLink = "http://meet.google.com/tat-vvcq-pzu";
   const specialLink = "https://meet.google.com/tat-vvcq-pzu";
 
   const fullSchedule: { [day: string]: { time: string; title: string }[] } = { 
