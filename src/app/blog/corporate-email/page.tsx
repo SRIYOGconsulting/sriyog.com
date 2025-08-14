@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import Image from "next/image";
 
 export const metadata:Metadata= {
-  title: "Corporate/Business Email"
+  title: "Corporate/Business eMail"
 }
 export default function CorporateEmail() {
   return (
@@ -18,7 +18,7 @@ export default function CorporateEmail() {
         </div>
         <div>
           <h1 className="font-extrabold text-4xl text-[#055d59] text-center">
-            What is a Corporate/Business Email?
+            What is a Corporate/Business eMail?
           </h1>
           <p className="text-center italic">
             By: Pracas Upreti, Information Technology Consultant
@@ -29,7 +29,7 @@ export default function CorporateEmail() {
           n today&apos;s competitive business environment, establishing a
           professional online presence is essential for building trust and
           enhancing communication.<b>Corporate emails</b> or{" "}
-          <b>business emails</b> tied to a custom domain play a pivotal role in
+          <b>Business eMails</b> tied to a custom domain play a pivotal role in
           shaping an organization&apos;s identity and credibility.
         </p>
         <p>
@@ -46,10 +46,10 @@ export default function CorporateEmail() {
           </li>
         </ul>
         <p className="font-extrabold text-3xl">
-          Why Choose a Custom Domain or Business Email?
+          Why Choose a Custom Domain or Business eMail?
         </p>
         <p>
-          Investing in a custom domain or business email goes beyond
+          Investing in a custom domain or Business eMail goes beyond
           aesthetics—it creates a foundation for professionalism, trust, and
           operational efficiency in your communications. Here’s a detailed
           exploration of why this choice is essential for businesses of any
@@ -101,7 +101,7 @@ export default function CorporateEmail() {
         </ul>
         <p className="font-extrabold text-3xl">Trust and Credibility</p>
         <p>
-          A business email fosters trust among clients, partners, and vendors.
+          A Business eMail fosters trust among clients, partners, and vendors.
           It distinguishes you as a legitimate, established entity, unlike
           generic email domains often used for personal communications or scams.
         </p>
@@ -158,7 +158,7 @@ export default function CorporateEmail() {
             collaboration.
           </li>
           <li>
-            <b>Scalability:</b> Business email solutions can scale as your team
+            <b>Scalability:</b> Business eMail solutions can scale as your team
             grows, making them suitable for startups and large enterprises
             alike.
           </li>
@@ -168,7 +168,7 @@ export default function CorporateEmail() {
           Enhanced Security and Compliance
         </p>
         <p>
-          Custom business email services provide advanced security protocols
+          Custom Business eMail services provide advanced security protocols
           that protect sensitive corporate information.
         </p>
         <ul className="list-disc px-3 space-y-6">
@@ -183,12 +183,12 @@ export default function CorporateEmail() {
           </li>
           <li>
             <b>Regulatory Compliance:</b> For industries with strict regulations
-            (e.g., healthcare, finance), custom business emails often include
+            (e.g., healthcare, finance), custom Business eMails often include
             compliance features like data loss prevention and archiving.
           </li>
         </ul>
         <p>
-          Choosing a custom domain or business email is more than just a
+          Choosing a custom domain or Business eMail is more than just a
           technical upgrade—it’s a strategic investment in your brand’s
           reputation, security, and efficiency. It showcases your commitment to
           professionalism, enhances trust, and empowers your team with robust

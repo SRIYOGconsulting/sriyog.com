@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Partner | SRIYOG Consulting",
+  title: "Our Partners | SRIYOG Consulting",
 };
 export default function Page() {
   const partner = [

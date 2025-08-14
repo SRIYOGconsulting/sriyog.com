@@ -17,19 +17,20 @@ type FileMeta = {
   rawTitle: string;
 };
 
+// Move fileList outside the component so its reference doesn't change
+const fileList = [
+  "/assets/downloadFiles/SRIYOG-Consulting-Meeting-Minutes.pdf",
+  "/assets/downloadFiles/SRIYOG-Consulting-Order.docx",
+  "/assets/downloadFiles/SRIYOG-Consulting-Guestbook-Feedback-Form.pdf",
+  "/assets/downloadFiles/SRIYOG-Consulting-Customer-Feedback-Form.pdf",
+  "/assets/downloadFiles/Internship-Sample-Letter-From-College.pdf",
+  "/assets/downloadFiles/SRIYOG-Consulting-Internship-Recommondation-Letter-from-College.docx",
+  "/assets/downloadFiles/SRIYOG-Consulting-Internship-Recommendation-Letter.docx",
+  "/assets/downloadFiles/SRIYOG-Consulting-Logos.zip",
+];
+
 export default function DownloadPage() {
   const [files, setFiles] = useState<FileMeta[]>([]);
-
-  const fileList = [
-    "/assets/downloadFiles/SRIYOG-Consulting-Meeting-Minutes.pdf",
-    "/assets/downloadFiles/SRIYOG-Consulting-Order.docx",
-    "/assets/downloadFiles/SRIYOG-Consulting-Guestbook-Feedback-Form.pdf",
-    "/assets/downloadFiles/SRIYOG-Consulting-Customer-Feedback-Form.pdf",
-    "/assets/downloadFiles/Internship-Sample-Letter-From-College.pdf",
-    "/assets/downloadFiles/SRIYOG-Consulting-Internship-Recommondation-Letter-from-College.docx",
-    "/assets/downloadFiles/SRIYOG-Consulting-Internship-Recommendation-Letter.docx",
-    "/assets/downloadFiles/SRIYOG-Consulting-Logos.zip",
-  ];
 
   const getFileType = (fileName: string): string => {
     const ext = fileName.split(".").pop()?.toLowerCase();
@@ -75,8 +76,6 @@ export default function DownloadPage() {
           const size = `${(blob.size / 1024).toFixed(2)} KB`;
           const type = getFileType(rawTitle);
           const lastUpdate = new Date().toLocaleDateString();
-          console.log(rawTitle);
-          console.log(title);
 
           return { title, url: fileUrl, size, type, lastUpdate, rawTitle };
         })
@@ -85,7 +84,7 @@ export default function DownloadPage() {
     };
 
     fetchMetadata();
-  }, []);
+  }, []); // fileList is now stable, so you can use an empty dependency array
 
   return (
     <>

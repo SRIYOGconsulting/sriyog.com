@@ -287,7 +287,7 @@ export default function TechFridayPage() {
                 alt="title_image"
               />
               <p className="text-gray-800 font-semibold">
-                Introducing our ideas
+                Must Read Book
               </p>
             </div>
             <h1 className="text-4xl text-gray-800 font-[900]">
@@ -323,7 +323,7 @@ export default function TechFridayPage() {
               Showcase Your IT Product
             </h1>
             <h4 className="text-[17px] text-[rgb(250,225,215)] max-md:text-[14px] text-justify">
-              /quote
+              
             </h4>
           </div>
 
@@ -489,14 +489,7 @@ export default function TechFridayPage() {
           <div className="flex flex-col gap-2">
             <h3 className="font-semibold text-lg">Follow us</h3>
             <div className="flex gap-4 items-center">
-              <Link href="https://t.me/pracasupreti" target="_blank">
-                <Image
-                  src="/assets/icons/telegram1.svg"
-                  width={30}
-                  height={30}
-                  alt="Telegram"
-                />
-              </Link>
+              
               <Link href="https://x.com/pracas" target="_blank">
                 <Image
                   src="/assets/icons/tweeter.svg"
@@ -520,7 +513,7 @@ export default function TechFridayPage() {
             <p className="font-semibold text-lg">Download the SRIYOG app</p>
             <div className="flex flex-wrap justify-start md:justify-center gap-3">
               <Link href="https://bit.ly/sriyog" target="_blank">
-                <div className="relative h-[50px] w-[130px] md:w-[100px]">
+                <div className="relative h-[60px] w-[130px] md:w-[100px]">
                   <Image
                     src="/assets/images/footer/google-play.svg"
                     fill
@@ -530,7 +523,7 @@ export default function TechFridayPage() {
                 </div>
               </Link>
               <Link href="https://bit.ly/sriyogios" target="_blank">
-                <div className="relative h-[50px] w-[130px] md:w-[100px]">
+                <div className="relative h-[60px] w-[130px] md:w-[100px]">
                   <Image
                     src="/assets/images/footer/app-store.svg"
                     fill

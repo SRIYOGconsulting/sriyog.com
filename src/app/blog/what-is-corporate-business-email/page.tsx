@@ -1,7 +1,7 @@
 import { Metadata } from "next"
 
 export const metadata:Metadata={
-  title:"What IS Coporate/Business Email | SRIYOG Consulting"
+  title:"What IS Coporate/Business eMail | SRIYOG Consulting"
 }
 export default function Wicbe(){
   return(

@@ -6,6 +6,12 @@ export const metadata: Metadata = {
 };
 export default function Tutorials() {
   const videoData = [
+   
+    {
+      id: 14,
+      name: "BIRATINFO - Signup, CMS, New Posting system in BroadPress",
+      url: "https://www.youtube.com/embed/RGNFbtIG4Zk?si=RGNFbtIG4Zk-9A",
+    },
     {
       id: 1,
       name: "Share Google Docs File for cloud collaboration",

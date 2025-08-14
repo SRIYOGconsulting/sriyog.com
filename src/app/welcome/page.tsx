@@ -1,5 +1,5 @@
 import React from "react";
-import { FaLinkedin, FaTelegram } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
 import { FaSquareXTwitter } from "react-icons/fa6";
 import Image from "next/image";
 import Link from "next/link";
@@ -69,7 +69,7 @@ const Welcome = () => {
                   spreading 15 countries in the world, developing their website,
                   optimizing search results, developing mobile applications,
                   managing social media, growing their digital presence,
-                  providing them a very reliable corporate business email
+                  providing them a very reliable corporate Business eMail
                   solutions and also providing dedicated Information Technology
                   Consulting Solution.
                   <br />
@@ -110,9 +110,7 @@ const Welcome = () => {
               <br />
               <Link href="https://t.me/sriyog" target="_blank">p@sriyog.com</Link>
               <div className="flex gap-2 mt-1 mb-4">
-                <Link href=" https://t.me/pracasupreti" target="_blank">
-                  <FaTelegram className="text-[20px]  text-black hover:text-black inline-block" />
-                </Link>
+                
                 <Link href="https://x.com/pracas" target="_blank">
                   <FaSquareXTwitter className="text-[20px]  text-black hover:text-black inline-block" />
                 </Link>

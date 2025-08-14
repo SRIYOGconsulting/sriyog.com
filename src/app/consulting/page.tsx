@@ -54,7 +54,7 @@ export default function Consulting() {
     },
     {
       img: "/assets/images/consulting/seo.svg",
-      title: "SEO/SEMServices",
+      title: "SEO/SEM Services",
       desc: `Our team of experienced SEO experts can help you improve your website's visibility and drive more traffic to your site.`,
       link: "seo-sem-services",
     },
@@ -66,8 +66,8 @@ export default function Consulting() {
     },
     {
       img: "/assets/images/consulting/business-email.svg",
-      title: "Business Email",
-      desc: "Our team of experienced marketers can help you build high-quality business eMail campaigns that drive traffic and engagement.",
+      title: "Business eMail",
+      desc: "Our team of experienced marketers can help you build high-quality Business eMail campaigns that drive traffic and engagement.",
       link: "business-email",
     },
     {
@@ -90,7 +90,7 @@ export default function Consulting() {
     },
     {
       img: "/assets/images/consulting/video-content.svg",
-      title: "Video/Content/Email Marketing",
+      title: "Content/ Email Marketing",
       desc: "We offer a range of video / email / content marketing services, including video creation, email marketing, and content creation.",
       link: "video-content-email",
     },

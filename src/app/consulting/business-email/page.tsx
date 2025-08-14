@@ -2,7 +2,7 @@ import Business from "@/components/BusinessEmail";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Business Email| SRIYOG Consulting",
+  title: "Business eMail| SRIYOG Consulting",
 };
 export default function BusinessEmail() {
   return <Business />;

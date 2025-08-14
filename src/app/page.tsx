@@ -500,11 +500,11 @@ export default function Home() {
                       </p>
                     </section>
                     <p className=" text-2xl translate-y-2 group-hover:translate-y-0 transition-all duration-500 ease-in-out">
-                      What is a Corporate/Business Email?
+                      What is a Corporate/Business eMail?
                     </p>
                     <section className=" text-sm max-h-0 translate-y-3 group-hover:max-h-36 group-hover:translate-y-0 transition-all duration-500 ease-in-out">
                       <p className="my-2">
-                        Corporate emails or business emails tied to a custom
+                        Corporate emails or Business eMails tied to a custom
                         domain play a pivotal role in shaping an
                         organization&apos;s identity and credibility.
                       </p>

@@ -2,9 +2,11 @@ import Ribbon from "@/components/Ribbon";
 import { Metadata } from "next";
 import React from "react";
 
-export const metadata:Metadata={
-  title:"Meeting | SRIYOG Consulting"
-}
+export const metadata: Metadata = {
+  title: "Book an Appointment | SRIYOG Consulting",
+  
+};
+
 const page = () => {
   return (<>
   <Ribbon name="Meeting" des=""/>

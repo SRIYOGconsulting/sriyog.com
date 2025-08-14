@@ -9,137 +9,337 @@
 
 <url>
   <loc>https://sriyog.com/</loc>
-  <lastmod>2025-06-04T10:55:26+00:00</lastmod>
+  <lastmod>2025-08-11T08:19:33+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>https://sriyog.com/about</loc>
-  <lastmod>2025-06-04T10:55:26+00:00</lastmod>
+  <lastmod>2025-08-11T08:19:33+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://sriyog.com/team</loc>
-  <lastmod>2025-06-04T10:55:26+00:00</lastmod>
+  <lastmod>2025-08-11T08:19:33+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://sriyog.com/consulting</loc>
-  <lastmod>2025-06-04T10:55:26+00:00</lastmod>
+  <lastmod>2025-08-11T08:19:33+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://sriyog.com/clients</loc>
-  <lastmod>2025-06-04T10:55:26+00:00</lastmod>
+  <lastmod>2025-08-11T08:19:33+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://sriyog.com/contact</loc>
-  <lastmod>2025-06-04T10:55:26+00:00</lastmod>
+  <lastmod>2025-08-11T08:19:33+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://sriyog.com/quote</loc>
-  <lastmod>2025-06-04T10:55:26+00:00</lastmod>
+  <lastmod>2025-08-11T08:19:33+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://sriyog.com/welcome</loc>
-  <lastmod>2025-06-04T10:55:26+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://sriyog.com/faq</loc>
-  <lastmod>2025-06-04T10:55:26+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://sriyog.com/vmgo</loc>
-  <lastmod>2025-06-04T10:55:26+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://sriyog.com/media</loc>
-  <lastmod>2025-06-04T10:55:26+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://sriyog.com/career</loc>
-  <lastmod>2025-06-04T10:55:26+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://sriyog.com/timeline</loc>
-  <lastmod>2025-06-04T10:55:26+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://sriyog.com/feedback</loc>
-  <lastmod>2025-06-04T10:55:26+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://sriyog.com/pitch</loc>
-  <lastmod>2025-06-04T10:55:26+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://sriyog.com/internship</loc>
-  <lastmod>2025-06-04T10:55:26+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://sriyog.com/testimonials</loc>
-  <lastmod>2025-06-04T10:55:26+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://sriyog.com/fonts</loc>
-  <lastmod>2025-06-04T10:55:26+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://sriyog.com/certificates</loc>
-  <lastmod>2025-06-04T10:55:26+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://sriyog.com/payment</loc>
-  <lastmod>2025-06-04T10:55:26+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://sriyog.com/partners</loc>
-  <lastmod>2025-06-04T10:55:26+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://sriyog.com/privacy</loc>
-  <lastmod>2025-06-04T10:55:26+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://sriyog.com/tos</loc>
-  <lastmod>2025-06-04T10:55:26+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://sriyog.com/disclaimer</loc>
-  <lastmod>2025-06-04T10:55:26+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://sriyog.com/tutorials</loc>
-  <lastmod>2025-06-04T10:55:26+00:00</lastmod>
+  <lastmod>2025-08-11T08:19:33+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://sriyog.com/meeting</loc>
-  <lastmod>2025-06-04T10:55:26+00:00</lastmod>
+  <lastmod>2025-08-11T08:19:33+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://sriyog.com/faq</loc>
+  <lastmod>2025-08-11T08:19:33+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://sriyog.com/vmgo</loc>
+  <lastmod>2025-08-11T08:19:33+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://sriyog.com/media</loc>
+  <lastmod>2025-08-11T08:19:33+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://sriyog.com/career</loc>
+  <lastmod>2025-08-11T08:19:33+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://sriyog.com/meet</loc>
+  <lastmod>2025-08-11T08:19:33+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://sriyog.com/survey</loc>
+  <lastmod>2025-08-11T08:19:33+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://sriyog.com/timeline</loc>
+  <lastmod>2025-08-11T08:19:33+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://sriyog.com/feedback</loc>
+  <lastmod>2025-08-11T08:19:33+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://sriyog.com/pitch</loc>
+  <lastmod>2025-08-11T08:19:33+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://sriyog.com/internship</loc>
+  <lastmod>2025-08-11T08:19:33+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://sriyog.com/testimonials</loc>
+  <lastmod>2025-08-11T08:19:33+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://sriyog.com/portfolio</loc>
+  <lastmod>2025-08-11T08:19:33+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://sriyog.com/fonts</loc>
+  <lastmod>2025-08-11T08:19:33+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://sriyog.com/certificates</loc>
+  <lastmod>2025-08-11T08:19:33+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://sriyog.com/payment</loc>
+  <lastmod>2025-08-11T08:19:33+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://sriyog.com/partners</loc>
+  <lastmod>2025-08-11T08:19:33+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://sriyog.com/download</loc>
+  <lastmod>2025-08-11T08:19:33+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://sriyog.com/videos</loc>
+  <lastmod>2025-08-11T08:19:33+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://sriyog.com/tutorials</loc>
+  <lastmod>2025-08-11T08:19:33+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://sriyog.com/blog</loc>
+  <lastmod>2025-08-11T08:19:33+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://sriyog.com/disclaimer</loc>
+  <lastmod>2025-08-11T08:19:33+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://sriyog.com/tos</loc>
+  <lastmod>2025-08-11T08:19:33+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://sriyog.com/privacy</loc>
+  <lastmod>2025-08-11T08:19:33+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://sriyog.com/consulting/data-processing</loc>
+  <lastmod>2025-08-11T08:19:33+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://sriyog.com/consulting/data-management</loc>
+  <lastmod>2025-08-11T08:19:33+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://sriyog.com/consulting/data-analysis</loc>
+  <lastmod>2025-08-11T08:19:33+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://sriyog.com/consulting/software-development</loc>
+  <lastmod>2025-08-11T08:19:33+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://sriyog.com/consulting/web-application-development</loc>
+  <lastmod>2025-08-11T08:19:33+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://sriyog.com/consulting/payment-processing</loc>
+  <lastmod>2025-08-11T08:19:33+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://sriyog.com/consulting/survey-form-development</loc>
+  <lastmod>2025-08-11T08:19:33+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://sriyog.com/consulting/digital-marketing</loc>
+  <lastmod>2025-08-11T08:19:33+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://sriyog.com/consulting/seo-sem-services</loc>
+  <lastmod>2025-08-11T08:19:33+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://sriyog.com/consulting/social-media-management</loc>
+  <lastmod>2025-08-11T08:19:33+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://sriyog.com/consulting/business-email</loc>
+  <lastmod>2025-08-11T08:19:33+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://sriyog.com/consulting/human-resource-management</loc>
+  <lastmod>2025-08-11T08:19:33+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://sriyog.com/consulting/IT-consultancy-management</loc>
+  <lastmod>2025-08-11T08:19:33+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://sriyog.com/consulting/ui-ux-designing</loc>
+  <lastmod>2025-08-11T08:19:33+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://sriyog.com/consulting/video-content-email</loc>
+  <lastmod>2025-08-11T08:19:33+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://sriyog.com/location</loc>
-  <lastmod>2025-06-04T10:55:26+00:00</lastmod>
+  <lastmod>2025-08-11T08:19:33+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://sriyog.com/blog/21-stages-of-web-development</loc>
+  <lastmod>2025-08-11T08:19:33+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://sriyog.com/blog/corporate-email</loc>
+  <lastmod>2025-08-11T08:19:33+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://sriyog.com/blog/things-to-keep-in-business-website</loc>
+  <lastmod>2025-08-11T08:19:33+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://sriyog.com/blog/essential-things-to-keep-in-the-website</loc>
+  <lastmod>2025-08-11T08:19:33+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://sriyog.com/blog/digital-dashain</loc>
+  <lastmod>2025-08-11T08:19:33+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://sriyog.com/blog/pegasus-sypyware</loc>
+  <lastmod>2025-08-11T08:19:33+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://sriyog.com/blog/design-your-life</loc>
+  <lastmod>2025-08-11T08:19:33+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://sriyog.com/blog/story-behind-the-airbnb-story</loc>
+  <lastmod>2025-08-11T08:19:33+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://sriyog.com/blog/pitch-deck-magic</loc>
+  <lastmod>2025-08-11T08:19:33+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://sriyog.com/blog/the-great-hack-how-social-media-impacts-politics</loc>
+  <lastmod>2025-08-11T08:19:33+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://sriyog.com/blog/20-books-that-can-change-you</loc>
+  <lastmod>2025-08-11T08:19:33+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://sriyog.com/blog/top-five-ui-ux-tips</loc>
+  <lastmod>2025-08-11T08:19:33+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://sriyog.com/blog/why-good-ui-ux-matters</loc>
+  <lastmod>2025-08-11T08:19:33+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://sriyog.com/blog/what-is-seo-and-its-important</loc>
+  <lastmod>2025-08-11T08:19:33+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://sriyog.com/blog/seo-techniques-that-really-work</loc>
+  <lastmod>2025-08-11T08:19:33+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://sriyog.com/blog/how-to-do-keyword-research-for-seo</loc>
+  <lastmod>2025-08-11T08:19:33+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://sriyog.com/blog/what-is-digital-marketing</loc>
+  <lastmod>2025-08-11T08:19:33+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://sriyog.com/blog/how-seo-helps-your-digital-marketing-strategy</loc>
+  <lastmod>2025-08-11T08:19:33+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://sriyog.com/blog/the-importance-of-social-media</loc>
+  <lastmod>2025-08-11T08:19:33+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 

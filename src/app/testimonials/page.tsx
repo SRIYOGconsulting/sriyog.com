@@ -63,7 +63,7 @@ export default function Testimonials() {
     // },
      {
       title: "Jayshree Polymers ",
-      desc: "I would like to express sincere gratitude to SRIYOG COnsulting Pvt. Ltd. for providing outstanding business email services to our organisation. We have been using Zoho Email service, expertly managed, set up, and operated by your team since june 2024. ",
+      desc: "I would like to express sincere gratitude to SRIYOG COnsulting Pvt. Ltd. for providing outstanding Business eMail services to our organisation. We have been using Zoho Email service, expertly managed, set up, and operated by your team since june 2024. ",
       name: "Naveen Poddar",
       stack: "CEO",
       image: "/assets/images/testimonials/naveen-poddar-jayshree-polymers.png",
@@ -71,7 +71,7 @@ export default function Testimonials() {
     },
     {
       title: "Trans Nepal ",
-      desc: "We have an excellent experience working with SRIYOG. They designed a professional, user friendly, website for our business and set up and supporting our business email seamlessly. Their attention to details and timely execution made the entire process smooth and stress free. ",
+      desc: "We have an excellent experience working with SRIYOG. They designed a professional, user friendly, website for our business and set up and supporting our Business eMail seamlessly. Their attention to details and timely execution made the entire process smooth and stress free. ",
       name: "Anand Singh",
       stack: "General Manager",
       image: "/assets/images/testimonials/anand-singh-transnepal.png",

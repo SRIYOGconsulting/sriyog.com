@@ -4,7 +4,7 @@ import Image from "next/image";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Payment | SRIYOG Consulting",
+  title: "Payment Details | SRIYOG Consulting",
 };
 const Payment = () => {
   return (

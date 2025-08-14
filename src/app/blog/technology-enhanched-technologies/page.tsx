@@ -309,11 +309,11 @@ export default function page() {
             fill
           />
         </div>
-        <h1 className="text-lg font-[900]">Business email</h1>
+        <h1 className="text-lg font-[900]">Business eMail</h1>
         <p>
           It is about setting up an email address to different organizations for
           intercommunications which is safe and secure for the organization as
-          they will have their own personal business email .Through this way
+          they will have their own personal Business eMail .Through this way
           they can inter communicate easily with each and every departments of
           an organization from marketing department to the finances and many
           more. It is about creating each and every individuals email based on

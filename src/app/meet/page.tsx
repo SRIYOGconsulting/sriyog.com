@@ -7,9 +7,9 @@ export const metadata: Metadata = {
   title: "Join Virtual Meeting | SRIYOG Consulting",
 };
 export default function MeetPage() {
-  const defaultLink = "https://meet.google.com/jnm-yrjn-fei";
-  const interviewLink = "https://meet.google.com/jnm-yrjn-fei";
-  const specialLink = "https://meet.google.com/tat-vvcq-pzu";
+  const defaultLink = "https://d.sriyog.com/meet";
+  const interviewLink = "https://d.sriyog.com/meet";
+  const specialLink = "https://d.sriyog.com/meet";
 
   const fullSchedule: { [day: string]: { time: string; title: string }[] } = {
     Sunday: [

@@ -128,8 +128,8 @@ export default function DataAnalysis() {
     },
     {
       img: "/assets/images/consultingPage/business-email.jpg",
-      title: "Business Email",
-      desc: "Our team of experienced marketers can help you build high-quality business eMail campaigns that drive traffic and engagement.",
+      title: "Business eMail",
+      desc: "Our team of experienced marketers can help you build high-quality Business eMail campaigns that drive traffic and engagement.",
       link: "business-email",
     },
     {
@@ -266,7 +266,7 @@ export default function DataAnalysis() {
           FAQ
         </h2>
         <p className="text-center text-sm text-gray-800 mb-8">
-          Here are some of the Business Email Marketing frequently asked
+          Here are some of the UI/UX Designing frequently asked
           questions
         </p>
 
@@ -276,7 +276,7 @@ export default function DataAnalysis() {
             {[
               {
                 question:
-                  "What services are included in your business email marketing?",
+                  "What services are included in your Business eMail marketing?",
                 answer:
                   "Our services include list segmentation, campaign strategy, email design, content creation, and performance tracking.",
               },
