@@ -1,5 +1,6 @@
 "use client";
 import Ribbon from "@/components/Ribbon";
+import { Metadata } from "next";
 import { useEffect, useState } from "react";
 import { FaMinus, FaPlus } from "react-icons/fa6";
 
@@ -9,7 +10,9 @@ type FaqItemProps = {
   isOpen: boolean;
   onClick: () => void;
 };
-
+ export  const metadata:Metadata={
+  title:"FAQ's | SRIYOG Consulting"
+ }
 const faq1 = [
   {
     id: 0,

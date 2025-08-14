@@ -1,9 +1,14 @@
 "use client";
 
+import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 
+
+export const metadata: Metadata = {
+  title: "TechFriday | SRIYOG Consulting",
+};
 export default function TechFridayPage() {
   // const sponsors = [
   //   "/assets/images/tech friday/1.png",
@@ -115,7 +120,8 @@ export default function TechFridayPage() {
           </div>
           <div>
             <Link
-              href='https://whatsapp.com/channel/0029VbAXQvwAzNbywuYqrZ0U' target="_blank"
+              href="https://whatsapp.com/channel/0029VbAXQvwAzNbywuYqrZ0U"
+              target="_blank"
               className="bg-[#055d59] text-white font-[700] mr-16 lg:mr-44 px-4 py-2"
             >
               Subscribe Now
@@ -261,7 +267,7 @@ export default function TechFridayPage() {
           <div className="sm:max-w-[50%] h-full w-full items-stretch ">
             <Link href="blog/story-behind-the-airbnb-story">
               <Image
-               src="/assets/images/blog/airbnb-1.jpg"
+                src="/assets/images/blog/airbnb-1.jpg"
                 width={500}
                 height={600}
                 alt="banner_Image"
@@ -285,14 +291,25 @@ export default function TechFridayPage() {
               </p>
             </div>
             <h1 className="text-4xl text-gray-800 font-[900]">
-Story behind &quot;the airbnb story&quot;​ book </h1>
+              Story behind &quot;the airbnb story&quot;​ book{" "}
+            </h1>
             <p className="font-semibold text-gray-800 text-xl">
-People worked for vision not to change the society but to make a Digital Empire to print money, create opportunities and inject few things which disrupted an industry but not the thoughts and even feelings.
-
-
+              People worked for vision not to change the society but to make a
+              Digital Empire to print money, create opportunities and inject few
+              things which disrupted an industry but not the thoughts and even
+              feelings.
             </p>
             <p className="text-sm text-gray-800 ">
-             A business must be bounded by feelings, emotions and thoughts to change a society. We created thousands to billion dollars of empire, business, startups and a system where people can simply earn from few clicks in his/her smartphones. The use of technology has been in rapid growth stage that there are thousands of ways to earn, learn and lead the life easily. Technology has helped in many ways to get connected, either it is to become personal, professional or social. Thousands of Mobile Applications, different platforms, Gigabytes of storages and many megapixels of front and back camera.
+              A business must be bounded by feelings, emotions and thoughts to
+              change a society. We created thousands to billion dollars of
+              empire, business, startups and a system where people can simply
+              earn from few clicks in his/her smartphones. The use of technology
+              has been in rapid growth stage that there are thousands of ways to
+              earn, learn and lead the life easily. Technology has helped in
+              many ways to get connected, either it is to become personal,
+              professional or social. Thousands of Mobile Applications,
+              different platforms, Gigabytes of storages and many megapixels of
+              front and back camera.
             </p>
           </div>
         </div>
@@ -335,8 +352,8 @@ People worked for vision not to change the society but to make a Digital Empire 
             }}
           ></div>
           <h1 className="text-3xl font-extrabold ">
-           Looking to become a 
-<br /> #TechFriday Presenter ?
+            Looking to become a
+            <br /> #TechFriday Presenter ?
           </h1>
           <ul>
             <li className="flex items-center gap-3 text-sm">
@@ -372,7 +389,7 @@ People worked for vision not to change the society but to make a Digital Empire 
           </ul>
           <div className="mt-4 flex flex-col sm:flex-row gap-4 ">
             <Link
-              href={"https://whatsapp.com/channel/0029VbAXQvwAzNbywuYqrZ0U"} 
+              href={"https://whatsapp.com/channel/0029VbAXQvwAzNbywuYqrZ0U"}
               target="_blank"
               className="px-4 py-2 bg-[#055d59] rounded-md text-white border-none text-center"
             >
@@ -559,9 +576,12 @@ People worked for vision not to change the society but to make a Digital Empire 
           </div>
 
           <p>
-            SRIYOG Consulting Pvt. Ltd. is a premier Managed IT Services provider based in Kamalpokhari, Kathmandu, Nepal. We specialize in delivering innovative, reliable, and scalable IT solutions to businesses of all sizes, helping them achieve digital transformation, operational efficiency and sustainable growth.
+            SRIYOG Consulting Pvt. Ltd. is a premier Managed IT Services
+            provider based in Kamalpokhari, Kathmandu, Nepal. We specialize in
+            delivering innovative, reliable, and scalable IT solutions to
+            businesses of all sizes, helping them achieve digital
+            transformation, operational efficiency and sustainable growth.
           </p>
-
         </div>
       </footer>
     </>

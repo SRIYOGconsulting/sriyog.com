@@ -1,8 +1,13 @@
 "use client";
 
 import Ribbon from "@/components/Ribbon";
+import { Metadata } from "next";
 import { useState } from "react";
 
+
+export const metadata:Metadata={
+  title: "Career | SRIYOG Consulting"
+}
 interface CareerFormData {
   firstName: string;
   lastName: string;

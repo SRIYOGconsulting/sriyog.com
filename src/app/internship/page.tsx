@@ -1,9 +1,9 @@
 import Ribbon from "@/components/Ribbon";
-// import { Metadata } from "next";
+import { Metadata } from "next";
 
-// export const metadata: Metadata = {
-//   title: "Internship | SRIYOG Consulting",
-// };
+export const metadata: Metadata = {
+  title: "Internship | SRIYOG Consulting",
+};
 const Internship = () => {
   return (
     <>

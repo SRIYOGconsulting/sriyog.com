@@ -6,6 +6,7 @@ import "react-phone-input-2/lib/style.css";
 import Ribbon from "@/components/Ribbon";
 import toast from "react-hot-toast";
 import type { PartnershipFormValues } from "@/src/lib/defination";
+import { Metadata } from "next";
 
 type PartnershipResponse =
   | { success: boolean; message: string }
@@ -23,7 +24,9 @@ const initialFormValues: Omit<PartnershipFormValues, "phoneOrganization" | "pers
   message: "",
   reason: "",
 };
-
+export const metadata: Metadata = {
+  title: "Partnership | SRIYOG Consulting",
+};
 const PartnershipPage: React.FC = () => {
   const [formValues, setFormValues] = useState(initialFormValues);
   const [phoneOrganization, setPhoneOrganization] = useState("");

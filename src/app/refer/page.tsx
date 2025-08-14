@@ -3,7 +3,12 @@ import Ribbon from "@/components/Ribbon";
 import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/style.css";
 import { useState } from "react";
+import { Metadata } from "next";
 
+
+export const metadata:Metadata = {
+  title: "Refer a Client | SRIYOG Consulting",
+};
 export default function ReferPage() {
   const [phoneOrganization, setPhoneOrganization] = useState<string>("");
   const [personalPhone, setPersonPhone] = useState<string>("");

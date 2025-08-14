@@ -1,7 +1,13 @@
 "use client";
 import Ribbon from "@/components/Ribbon";
+import { Metadata } from "next";
 import { useEffect, useState } from "react";
 
+
+
+export const metadata:Metadata={
+  title:"Download | SRIYOG Consulting"
+}
 type FileMeta = {
   title: string;
   url: string;

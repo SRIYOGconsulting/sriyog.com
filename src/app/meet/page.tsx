@@ -1,16 +1,18 @@
-"use client";
-
 import Ribbon from "@/components/Ribbon";
+import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 
+export const metadata: Metadata = {
+  title: "Join Virtual Meeting | SRIYOG Consulting",
+};
 export default function MeetPage() {
   const defaultLink = "https://meet.google.com/jnm-yrjn-fei";
   const interviewLink = "https://meet.google.com/jnm-yrjn-fei";
   const specialLink = "https://meet.google.com/tat-vvcq-pzu";
 
-  const fullSchedule: { [day: string]: { time: string; title: string }[] } = { 
-      Sunday: [
+  const fullSchedule: { [day: string]: { time: string; title: string }[] } = {
+    Sunday: [
       { time: "11:00 AM – 11:45 AM", title: "UI/UX" },
       { time: "12:15 PM – 1:00 PM", title: "App Development" },
       { time: "1:15 PM – 2:00 PM", title: "Web Development" },
@@ -74,7 +76,8 @@ export default function MeetPage() {
 
   const getLink = (title: string, time: string): string => {
     const isInterview = title.toLowerCase().includes("interview");
-    const isSpecial = title.toLowerCase().includes("techfriday") || time.startsWith("8:00 PM");
+    const isSpecial =
+      title.toLowerCase().includes("techfriday") || time.startsWith("8:00 PM");
     if (isInterview) return interviewLink;
     if (isSpecial) return specialLink;
     return defaultLink;
