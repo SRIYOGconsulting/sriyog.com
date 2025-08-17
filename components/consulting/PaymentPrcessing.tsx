@@ -5,8 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 
-
-export default function Processing() {
+export default function PaymentProcessing() {
   // const services = [
   //   {
   //     id: 1,
@@ -64,14 +63,14 @@ export default function Processing() {
   //     bestValue: false,
   //   },
   // ];
-const [data, setData] = useState<ConsultingItem[]>([]);
+  const [data, setData] = useState<ConsultingItem[]>([]);
   useEffect(() => {
     const filtered = relatedConsulting.filter(
-      (item) => item.main === "Data Processing"
+      (item) => item.main === "Payment Processing"
     );
     setData(filtered);
   }, []);
-  const consulting = [
+   const consulting = [
     {
       img: "/assets/images/consultingPage/data-processing.jpg",
       title: "Data Processing",
@@ -134,8 +133,8 @@ const [data, setData] = useState<ConsultingItem[]>([]);
     },
     {
       img: "/assets/images/consultingPage/business-email.jpg",
-      title: "Business Email",
-      desc: "Our team of experienced marketers can help you build high-quality business eMail campaigns that drive traffic and engagement.",
+      title: "Business eMail",
+      desc: "Our team of experienced marketers can help you build high-quality Business eMail campaigns that drive traffic and engagement.",
       link: "business-email",
     },
     {
@@ -165,62 +164,49 @@ const [data, setData] = useState<ConsultingItem[]>([]);
   ];
   return (
     <>
-      <Ribbon name="Data Processing" des="" />
+      <Ribbon
+        name="Payment Processing"
+        des=""
+      />
       <section className="max-w-[1180px] mx-auto mb-[45px]  px-6 lg:px-0 ">
         <Image
-          src="/assets/images/consultingPage/data-processing.jpg"
+          src="/assets/images/consultingPage/payment-processing.jpg"
           width={1140}
           height={597}
           alt="top_image"
           className=" border-1 border-blue-50 mb-[45px] rounded-[15px]"
         />
         <h1 className="font-extrabold text-[34px] text-center">
-          Data Processing
+          Payment Processing
         </h1>
         <p className="text-center text-[16px] mb-[45px]">
-          Full spectrum of data handling, from initial collection and cleaning
-          to transformation, enrichment, and final reporting.
+          Team of experienced developers specializes in building secure,
+          reliable, and scalable payment processing solutions tailored to meet
+          your specific business needs.
         </p>
-        {/* <div className="flex flex-col sm:flex-row gap-4 justify-between items-center mt-8 mb-[45px]">
-          {services.map((service) => (
-            <div
-              className=" w-full sm:max-w-[316px] h-auto flex flex-col items-center gap-2 border-1 "
-              key={service.id}
-            >
-              <Image
-                src={service.image}
-                width={316}
-                height={195}
-                alt={service.title}
-                className="w-full  rounded-[15px] border-2 border-gray-600"
-              />
-              <h1>{service.title}</h1>
-            </div>
-          ))}
-        </div> */}
 
-        <div className="max-w-[1180px] mx-auto text-[16px] text-justify leading-[23px] flex flex-col gap-4">
+        <div className="max-w-[1180px] mx-auto text-[15px] text-justify leading-[23px] flex flex-col gap-4">
           <p>
-            We have a proven track record of delivering high-quality data
-            analysis and reporting solutions that are tailored to meet the
-            specific needs of our clients. Our data processing services cover
-            the full spectrum of data handling, from initial collection and
-            cleaning to transformation, enrichment, and final reporting. With
-            deep expertise in structured and unstructured data, we ensure that
-            the data you rely on is accurate, consistent, and relevant.{" "}
+            Our team of experienced developers specializes in building secure,
+            reliable, and scalable payment processing solutions tailored to meet
+            your specific business needs. We understand that in todays
+            fast-paced digital economy, seamless and secure transactions are
+            critical. That&apos;s why we offer customized payment gateway
+            integration, support for multiple currencies, real-time transaction
+            monitoring, and robust fraud prevention measures. Whether
+            you&apos;re setting up a new eCommerce platform or upgrading an
+            existing one, we ensure your payment system is compliant with
+            PCI-DSS standards and optimized for performance.{" "}
           </p>
 
           <p>
-            Whether you&apos;re dealing with large-scale data from various
-            sources or need streamlined reporting for business intelligence, our
-            team leverages industry best practices and advanced tools to turn
-            raw data into actionable insights. We understand that in
-            today&apos;s data-driven environment, speed, accuracy, and
-            reliability are key — and we&apos;re committed to delivering results
-            that help businesses make informed decisions quickly and
-            efficiently. Our process includes meticulous attention to data
-            validation and integrity, ensuring compliance with industry
-            standards and data protection regulations.{" "}
+            Our solutions support a variety of payment methods — including
+            credit/debit cards, e-wallets, UPI, and mobile banking — ensuring
+            maximum flexibility for your customers. We also provide recurring
+            billing, subscription management, and detailed transaction
+            reporting. With a focus on user experience and security, our payment
+            processing services empower your business to handle transactions
+            with confidence, efficiency, and scalability.{" "}
           </p>
         </div>
       </section>
@@ -264,111 +250,97 @@ const [data, setData] = useState<ConsultingItem[]>([]);
         </div>
       </section> */}
       {/*. FAQ */}
-      <section className="max-w-[1180px] mx-auto mb-[45px] px-6 lg:px-0">
-        {/* Section Title */}
-        <h2 className="text-center text-3xl md:text-4xl mb-3 font-extrabold">
-          FAQ
-        </h2>
-        <p className="text-center text-sm text-gray-800 mb-8">
-          Here are some of the Data Processing frequently asked questions
-        </p>
+<section className="max-w-[1180px] mx-auto mb-[45px] px-6 lg:px-0">
+  {/* Section Title */}
+  <h2 className="text-center text-3xl md:text-4xl mb-3 font-extrabold">FAQ</h2>
+  <p className="text-center text-sm text-gray-800 mb-8">
+    Here are some of the Payment Processing frequently asked questions
+  </p>
 
-        <div className="flex flex-col lg:flex-row gap-10">
-          {/* Column 1 */}
-          <div className="w-full lg:w-1/2 flex flex-col gap-8">
-            {[
-              {
-                question: "What is included in your data processing service?",
-                answer:
-                  "We handle data collection, cleaning, transformation, enrichment, and reporting.",
-              },
-              {
-                question:
-                  "Can you work with both structured and unstructured data?",
-                answer:
-                  "Yes, we specialize in efficiently processing all types of data.",
-              },
-              {
-                question: "How do you ensure the accuracy of the data?",
-                answer:
-                  "We apply strict validation methods and industry best practices to maintain data integrity.",
-              },
-            ].map((faq, i) => (
-              <div key={i} className="relative flex items-start gap-5 group">
-                <div className="w-10 h-10 flex items-center justify-center bg-[#055D59] text-white font-bold rounded-full mt-1 shrink-0">
-                  <Image
-                    src="/assets/images/consulting/target.svg"
-                    alt={`FAQ ${i + 1}`}
-                    width={40}
-                    height={40}
-                  />
-                </div>
-                {i !== 2 && (
-                  <div className="absolute left-[19px] top-12 h-[50px] w-[2px] bg-gray-300" />
-                )}
-                <div>
-                  <h3 className="font-semibold text-lg text-gray-800 mb-1">
-                    {faq.question}
-                  </h3>
-                  <p className="text-sm text-gray-600 leading-relaxed">
-                    {faq.answer}
-                  </p>
-                </div>
-              </div>
-            ))}
+  <div className="flex flex-col lg:flex-row gap-10">
+    {/* Column 1 */}
+    <div className="w-full lg:w-1/2 flex flex-col gap-8">
+      {[
+        {
+          question: "What types of payment processing solutions do you build?",
+          answer:
+            "We build secure, reliable, and scalable payment processing solutions tailored to specific business needs.",
+        },
+        {
+          question: "What features do your payment processing solutions include?",
+          answer:
+            "Our solutions include customized payment gateway integration, support for multiple currencies, real-time transaction monitoring, and robust fraud prevention measures.",
+        },
+        {
+          question: "Do your payment systems comply with industry standards?",
+          answer:
+            "Yes, we ensure our payment systems are compliant with PCI-DSS standards.",
+        },
+      ].map((faq, i) => (
+        <div key={i} className="relative flex items-start gap-5 group">
+          <div className="w-10 h-10 flex items-center justify-center bg-[#055D59] text-white font-bold rounded-full mt-1 shrink-0">
+            <Image src="/assets/images/consulting/target.svg" alt={`FAQ ${i + 1}`} width={40} height={40} />
           </div>
-
-          {/* Column 2 */}
-          <div className="w-full lg:w-1/2 flex flex-col gap-8">
-            {[
-              {
-                question:
-                  "Do you support large-scale data from multiple sources?",
-                answer:
-                  "Yes, we seamlessly process and manage high-volume data from various sources.",
-              },
-              {
-                question: "How does your service help in decision-making?",
-                answer:
-                  "We convert raw data into clear, actionable insights to support informed business decisions.",
-              },
-              {
-                question:
-                  "Are your services compliant with data protection standards?",
-                answer:
-                  "Absolutely, we follow industry regulations to ensure data security and compliance.",
-              },
-              {
-                question: "What industries do you serve with data processing?",
-                answer:
-                  "Our versatile solutions serve industries including finance, healthcare, retail, and more.",
-              },
-            ].map((faq, i) => (
-              <div key={i} className="relative flex items-start gap-5 group">
-                <div className="w-10 h-10 flex items-center justify-center bg-[#055D59] text-white font-bold rounded-full mt-1 shrink-0">
-                  <Image
-                    src="/assets/images/consulting/target.svg"
-                    alt={`FAQ ${i + 4}`}
-                    width={40}
-                    height={40}
-                  />
-                </div>
-                {i !== 3 && (
-                  <div className="absolute left-[19px] top-12 h-[50px] w-[2px] bg-gray-300" />
-                )}
-                <div>
-                  <h3 className="font-semibold text-lg text-gray-800 mb-1">
-                    {faq.question}
-                  </h3>
-                  <p className="text-sm text-gray-600 leading-relaxed">
-                    {faq.answer}
-                  </p>
-                </div>
-              </div>
-            ))}
+          {i !== 2 && (
+            <div className="absolute left-[19px] top-12 h-[50px] w-[2px] bg-gray-300" />
+          )}
+          <div>
+            <h3 className="font-semibold text-lg text-gray-800 mb-1">
+              {faq.question}
+            </h3>
+            <p className="text-sm text-gray-600 leading-relaxed">
+              {faq.answer}
+            </p>
           </div>
         </div>
-      </section>
+      ))}
+    </div>
+
+    {/* Column 2 */}
+    <div className="w-full lg:w-1/2 flex flex-col gap-8">
+      {[
+        {
+          question: "What payment methods do you support?",
+          answer:
+            "We support a variety of payment methods including credit/debit cards, e-wallets, UPI, and mobile banking.",
+        },
+        {
+          question: "Do you offer recurring billing or subscription management?",
+          answer:
+            "Yes, we provide recurring billing, subscription management, and detailed transaction reporting.",
+        },
+        {
+          question: "How do you ensure the security of transactions?",
+          answer:
+            "We focus on user experience and security, empowering businesses to handle transactions with confidence and efficiency.",
+        },
+        {
+          question: "Can you help upgrade an existing eCommerce payment system?",
+          answer:
+            "Yes, whether you're setting up a new eCommerce platform or upgrading an existing one, we optimize your payment system for performance.",
+        },
+      ].map((faq, i) => (
+        <div key={i} className="relative flex items-start gap-5 group">
+          <div className="w-10 h-10 flex items-center justify-center bg-[#055D59] text-white font-bold rounded-full mt-1 shrink-0">
+            <Image src="/assets/images/consulting/target.svg" alt={`FAQ ${i + 1}`} width={40} height={40} />
+          </div>
+          {i !== 3 && (
+            <div className="absolute left-[19px] top-12 h-[50px] w-[2px] bg-gray-300" />
+          )}
+          <div>
+            <h3 className="font-semibold text-lg text-gray-800 mb-1">
+              {faq.question}
+            </h3>
+            <p className="text-sm text-gray-600 leading-relaxed">
+              {faq.answer}
+            </p>
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
 
       {/*Pricing */}
 
@@ -423,7 +395,7 @@ const [data, setData] = useState<ConsultingItem[]>([]);
       </section> */}
 
       {/* Related Blog Section */}
-      <section className="max-w-[1180px] mx-auto mb-[45px] px-6 lg:px-0">
+    <section className="max-w-[1180px] mx-auto mb-[45px] px-6 lg:px-0">
         <h1 className="text-center text-xl font-[800]">Related Consulting</h1>
 
         <div className="flex flex-col sm:flex-row flex-wrap gap-4 justify-between items-center mt-8 mb-[80px]">
@@ -451,9 +423,9 @@ const [data, setData] = useState<ConsultingItem[]>([]);
                 <h1 className="font-[900] text-center">{blog.title}</h1>
                 <p className="text-sm">{blog.desc}</p>
 
-               <Link
+                <Link
                   href={`/consulting/${blog.link}`}
-                  className=" text-center mt-2 w-[35%] px-5 py-2 text-sm border border-[#055D59] text-[#055D59] hover:bg-[#055D59] hover:text-white rounded-[8px] transition"
+                  className="text-center mt-2 w-[35%] px-5 py-2 text-sm border border-[#055D59] text-[#055D59] hover:bg-[#055D59] hover:text-white rounded-[8px] transition"
                 >
                   Read More
                 </Link>

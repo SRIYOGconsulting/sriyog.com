@@ -1,29 +1,33 @@
 "use client"
 import Ribbon from "@/components/Ribbon";
 import relatedConsulting, { ConsultingItem } from "@/src/data/relatedconsulting";
+import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 
-
-export default function Processing() {
-  // const services = [
-  //   {
-  //     id: 1,
-  //     title: "Website & App Development",
-  //     image: "/assets/images/about/noimage.png",
-  //   },
-  //   {
-  //     id: 2,
-  //     title: "IT Consulting",
-  //     image: "/assets/images/about/noimage.png",
-  //   },
-  //   {
-  //     id: 3,
-  //     title: "Cloud Services",
-  //     image: "/assets/images/about/noimage.png",
-  //   },
-  // ];
+export const metadata: Metadata = {
+  title: "Social Media Management | SRIYOG Consulting",
+};
+export default function SocialMediaManagement() {
+    
+  //   const services = [
+  //     {
+  //       id: 1,
+  //       title: "Website & App Development",
+  //       image: "/assets/images/about/noimage.png",
+  //     },
+  //     {
+  //       id: 2,
+  //       title: "IT Consulting",
+  //       image: "/assets/images/about/noimage.png",
+  //     },
+  //     {
+  //       id: 3,
+  //       title: "Cloud Services",
+  //       image: "/assets/images/about/noimage.png",
+  //     },
+  //   ];
 
   // const pricingPlans = [
   //   {
@@ -64,14 +68,14 @@ export default function Processing() {
   //     bestValue: false,
   //   },
   // ];
-const [data, setData] = useState<ConsultingItem[]>([]);
+    const [data, setData] = useState<ConsultingItem[]>([]);
   useEffect(() => {
     const filtered = relatedConsulting.filter(
-      (item) => item.main === "Data Processing"
+      (item) => item.main === "Social Media Management"
     );
     setData(filtered);
   }, []);
-  const consulting = [
+   const consulting = [
     {
       img: "/assets/images/consultingPage/data-processing.jpg",
       title: "Data Processing",
@@ -134,8 +138,8 @@ const [data, setData] = useState<ConsultingItem[]>([]);
     },
     {
       img: "/assets/images/consultingPage/business-email.jpg",
-      title: "Business Email",
-      desc: "Our team of experienced marketers can help you build high-quality business eMail campaigns that drive traffic and engagement.",
+      title: "Business eMail",
+      desc: "Our team of experienced marketers can help you build high-quality Business eMail campaigns that drive traffic and engagement.",
       link: "business-email",
     },
     {
@@ -165,21 +169,25 @@ const [data, setData] = useState<ConsultingItem[]>([]);
   ];
   return (
     <>
-      <Ribbon name="Data Processing" des="" />
+      <Ribbon
+        name="Social Media Management"
+        des=""
+      />
       <section className="max-w-[1180px] mx-auto mb-[45px]  px-6 lg:px-0 ">
         <Image
-          src="/assets/images/consultingPage/data-processing.jpg"
+          src="/assets/images/consultingPage/social-media-management.jpg"
           width={1140}
           height={597}
           alt="top_image"
           className=" border-1 border-blue-50 mb-[45px] rounded-[15px]"
         />
         <h1 className="font-extrabold text-[34px] text-center">
-          Data Processing
+          Social Media Management
         </h1>
         <p className="text-center text-[16px] mb-[45px]">
-          Full spectrum of data handling, from initial collection and cleaning
-          to transformation, enrichment, and final reporting.
+          Boost sales through platforms like Facebook, Instagram, LinkedIn, X
+          (formerly Twitter), or TikTok, we tailor our approach to suit your
+          goals.
         </p>
         {/* <div className="flex flex-col sm:flex-row gap-4 justify-between items-center mt-8 mb-[45px]">
           {services.map((service) => (
@@ -199,28 +207,27 @@ const [data, setData] = useState<ConsultingItem[]>([]);
           ))}
         </div> */}
 
-        <div className="max-w-[1180px] mx-auto text-[16px] text-justify leading-[23px] flex flex-col gap-4">
+        <div className="max-w-[1180px] mx-auto text-[15px] text-justify leading-[23px] flex flex-col gap-4">
           <p>
-            We have a proven track record of delivering high-quality data
-            analysis and reporting solutions that are tailored to meet the
-            specific needs of our clients. Our data processing services cover
-            the full spectrum of data handling, from initial collection and
-            cleaning to transformation, enrichment, and final reporting. With
-            deep expertise in structured and unstructured data, we ensure that
-            the data you rely on is accurate, consistent, and relevant.{" "}
+            We offer professional social media management services that help
+            businesses build strong, engaging, and consistent online presences.
+            Our team handles everything from content creation and scheduling to
+            audience engagement and analytics. Whether you want to increase
+            brand awareness, drive website traffic, or boost sales through
+            platforms like Facebook, Instagram, LinkedIn, X (formerly Twitter),
+            or TikTok, we tailor our approach to suit your goals. We create
+            visually appealing, on-brand posts supported by strategic planning
+            and data-driven insights.{" "}
           </p>
 
           <p>
-            Whether you&apos;re dealing with large-scale data from various
-            sources or need streamlined reporting for business intelligence, our
-            team leverages industry best practices and advanced tools to turn
-            raw data into actionable insights. We understand that in
-            today&apos;s data-driven environment, speed, accuracy, and
-            reliability are key — and we&apos;re committed to delivering results
-            that help businesses make informed decisions quickly and
-            efficiently. Our process includes meticulous attention to data
-            validation and integrity, ensuring compliance with industry
-            standards and data protection regulations.{" "}
+            Our team actively monitors interactions, responds to comments and
+            messages, and uses analytics to fine-tune content and campaign
+            strategies. We also provide performance reports so you can see
+            exactly how your channels are growing. With a deep understanding of
+            social media trends, platform algorithms, and user behavior, we help
+            you create meaningful relationships with your audience while
+            achieving measurable business outcomes.{" "}
           </p>
         </div>
       </section>
@@ -264,111 +271,97 @@ const [data, setData] = useState<ConsultingItem[]>([]);
         </div>
       </section> */}
       {/*. FAQ */}
-      <section className="max-w-[1180px] mx-auto mb-[45px] px-6 lg:px-0">
-        {/* Section Title */}
-        <h2 className="text-center text-3xl md:text-4xl mb-3 font-extrabold">
-          FAQ
-        </h2>
-        <p className="text-center text-sm text-gray-800 mb-8">
-          Here are some of the Data Processing frequently asked questions
-        </p>
+  <section className="max-w-[1180px] mx-auto mb-[45px] px-6 lg:px-0">
+  {/* Section Title */}
+  <h2 className="text-center text-3xl md:text-4xl mb-3 font-extrabold">FAQ</h2>
+  <p className="text-center text-sm text-gray-800 mb-8">
+    Here are some of the Social Media Management frequently asked questions
+  </p>
 
-        <div className="flex flex-col lg:flex-row gap-10">
-          {/* Column 1 */}
-          <div className="w-full lg:w-1/2 flex flex-col gap-8">
-            {[
-              {
-                question: "What is included in your data processing service?",
-                answer:
-                  "We handle data collection, cleaning, transformation, enrichment, and reporting.",
-              },
-              {
-                question:
-                  "Can you work with both structured and unstructured data?",
-                answer:
-                  "Yes, we specialize in efficiently processing all types of data.",
-              },
-              {
-                question: "How do you ensure the accuracy of the data?",
-                answer:
-                  "We apply strict validation methods and industry best practices to maintain data integrity.",
-              },
-            ].map((faq, i) => (
-              <div key={i} className="relative flex items-start gap-5 group">
-                <div className="w-10 h-10 flex items-center justify-center bg-[#055D59] text-white font-bold rounded-full mt-1 shrink-0">
-                  <Image
-                    src="/assets/images/consulting/target.svg"
-                    alt={`FAQ ${i + 1}`}
-                    width={40}
-                    height={40}
-                  />
-                </div>
-                {i !== 2 && (
-                  <div className="absolute left-[19px] top-12 h-[50px] w-[2px] bg-gray-300" />
-                )}
-                <div>
-                  <h3 className="font-semibold text-lg text-gray-800 mb-1">
-                    {faq.question}
-                  </h3>
-                  <p className="text-sm text-gray-600 leading-relaxed">
-                    {faq.answer}
-                  </p>
-                </div>
-              </div>
-            ))}
+  <div className="flex flex-col lg:flex-row gap-10">
+    {/* Column 1 */}
+    <div className="w-full lg:w-1/2 flex flex-col gap-8">
+      {[
+        {
+          question: "What services are included in your social media management?",
+          answer:
+            "We provide end-to-end management including content creation, scheduling, community engagement, and performance analytics across major platforms.",
+        },
+        {
+          question: "Which social media platforms do you manage?",
+          answer:
+            "We manage Facebook, Instagram, LinkedIn, X (formerly Twitter), and TikTok, tailoring strategies to each platform’s unique audience.",
+        },
+        {
+          question: "How do you tailor your social media approach for each business?",
+          answer:
+            "We customize our strategy based on your business goals—whether that's building brand awareness, increasing engagement, driving traffic, or generating leads.",
+        },
+      ].map((faq, i) => (
+        <div key={i} className="relative flex items-start gap-5 group">
+          <div className="w-10 h-10 flex items-center justify-center bg-[#055D59] text-white font-bold rounded-full mt-1 shrink-0">
+            <Image src="/assets/images/consulting/target.svg" alt={`FAQ ${i + 1}`} width={40} height={40} />
           </div>
-
-          {/* Column 2 */}
-          <div className="w-full lg:w-1/2 flex flex-col gap-8">
-            {[
-              {
-                question:
-                  "Do you support large-scale data from multiple sources?",
-                answer:
-                  "Yes, we seamlessly process and manage high-volume data from various sources.",
-              },
-              {
-                question: "How does your service help in decision-making?",
-                answer:
-                  "We convert raw data into clear, actionable insights to support informed business decisions.",
-              },
-              {
-                question:
-                  "Are your services compliant with data protection standards?",
-                answer:
-                  "Absolutely, we follow industry regulations to ensure data security and compliance.",
-              },
-              {
-                question: "What industries do you serve with data processing?",
-                answer:
-                  "Our versatile solutions serve industries including finance, healthcare, retail, and more.",
-              },
-            ].map((faq, i) => (
-              <div key={i} className="relative flex items-start gap-5 group">
-                <div className="w-10 h-10 flex items-center justify-center bg-[#055D59] text-white font-bold rounded-full mt-1 shrink-0">
-                  <Image
-                    src="/assets/images/consulting/target.svg"
-                    alt={`FAQ ${i + 4}`}
-                    width={40}
-                    height={40}
-                  />
-                </div>
-                {i !== 3 && (
-                  <div className="absolute left-[19px] top-12 h-[50px] w-[2px] bg-gray-300" />
-                )}
-                <div>
-                  <h3 className="font-semibold text-lg text-gray-800 mb-1">
-                    {faq.question}
-                  </h3>
-                  <p className="text-sm text-gray-600 leading-relaxed">
-                    {faq.answer}
-                  </p>
-                </div>
-              </div>
-            ))}
+          {i !== 2 && (
+            <div className="absolute left-[19px] top-12 h-[50px] w-[2px] bg-gray-300" />
+          )}
+          <div>
+            <h3 className="font-semibold text-lg text-gray-800 mb-1">
+              {faq.question}
+            </h3>
+            <p className="text-sm text-gray-600 leading-relaxed">
+              {faq.answer}
+            </p>
           </div>
         </div>
-      </section>
+      ))}
+    </div>
+
+    {/* Column 2 */}
+    <div className="w-full lg:w-1/2 flex flex-col gap-8">
+      {[
+        {
+          question: "How do you ensure the content is visually appealing and on-brand?",
+          answer:
+            "Our creative team designs compelling visuals and messaging aligned with your brand identity, supported by a clear content strategy and data insights.",
+        },
+        {
+          question: "How do you handle audience engagement on social media?",
+          answer:
+            "We actively monitor your channels, respond to messages and comments, and adjust content based on engagement data and feedback.",
+        },
+        {
+          question: "Do you offer performance reporting?",
+          answer:
+            "Yes, we provide detailed reports that track key metrics such as reach, engagement, follower growth, and conversions to help you understand results.",
+        },
+        {
+          question: "How do your services drive real business results?",
+          answer:
+            "By leveraging platform algorithms, current trends, and audience behavior, we help you build stronger online presence and achieve measurable business growth.",
+        },
+      ].map((faq, i) => (
+        <div key={i} className="relative flex items-start gap-5 group">
+          <div className="w-10 h-10 flex items-center justify-center bg-[#055D59] text-white font-bold rounded-full mt-1 shrink-0">
+            <Image src="/assets/images/consulting/target.svg" alt={`FAQ ${i + 4}`} width={40} height={40} />
+          </div>
+          {i !== 3 && (
+            <div className="absolute left-[19px] top-12 h-[50px] w-[2px] bg-gray-300" />
+          )}
+          <div>
+            <h3 className="font-semibold text-lg text-gray-800 mb-1">
+              {faq.question}
+            </h3>
+            <p className="text-sm text-gray-600 leading-relaxed">
+              {faq.answer}
+            </p>
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
 
       {/*Pricing */}
 
@@ -423,7 +416,7 @@ const [data, setData] = useState<ConsultingItem[]>([]);
       </section> */}
 
       {/* Related Blog Section */}
-      <section className="max-w-[1180px] mx-auto mb-[45px] px-6 lg:px-0">
+    <section className="max-w-[1180px] mx-auto mb-[45px] px-6 lg:px-0">
         <h1 className="text-center text-xl font-[800]">Related Consulting</h1>
 
         <div className="flex flex-col sm:flex-row flex-wrap gap-4 justify-between items-center mt-8 mb-[80px]">
@@ -451,9 +444,9 @@ const [data, setData] = useState<ConsultingItem[]>([]);
                 <h1 className="font-[900] text-center">{blog.title}</h1>
                 <p className="text-sm">{blog.desc}</p>
 
-               <Link
+                <Link
                   href={`/consulting/${blog.link}`}
-                  className=" text-center mt-2 w-[35%] px-5 py-2 text-sm border border-[#055D59] text-[#055D59] hover:bg-[#055D59] hover:text-white rounded-[8px] transition"
+                  className="text-center mt-2 w-[35%] px-5 py-2 text-sm border border-[#055D59] text-[#055D59] hover:bg-[#055D59] hover:text-white rounded-[8px] transition"
                 >
                   Read More
                 </Link>

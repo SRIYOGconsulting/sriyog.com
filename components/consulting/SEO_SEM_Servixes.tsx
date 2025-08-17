@@ -1,12 +1,20 @@
-"use client"
+"use client";
 import Ribbon from "@/components/Ribbon";
-import relatedConsulting, { ConsultingItem } from "@/src/data/relatedconsulting";
+import relatedConsulting, {
+  ConsultingItem,
+} from "@/src/data/relatedconsulting";
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 
-
-export default function Processing() {
+export default function SEOSEM() {
+  const [data, setData] = useState<ConsultingItem[]>([]);
+  useEffect(() => {
+    const filtered = relatedConsulting.filter(
+      (item) => item.main === "SEO/SEM Services"
+    );
+    setData(filtered);
+  }, []);
   // const services = [
   //   {
   //     id: 1,
@@ -64,13 +72,7 @@ export default function Processing() {
   //     bestValue: false,
   //   },
   // ];
-const [data, setData] = useState<ConsultingItem[]>([]);
-  useEffect(() => {
-    const filtered = relatedConsulting.filter(
-      (item) => item.main === "Data Processing"
-    );
-    setData(filtered);
-  }, []);
+
   const consulting = [
     {
       img: "/assets/images/consultingPage/data-processing.jpg",
@@ -124,7 +126,7 @@ const [data, setData] = useState<ConsultingItem[]>([]);
       img: "/assets/images/consultingPage/seo-sem-services.jpg",
       title: "SEO/SEM Services",
       desc: `Our team of experienced SEO experts can help you improve your website's visibility and drive more traffic to your site.`,
-      link: "seo-sem-services",
+      link: "seo-sem",
     },
     {
       img: "/assets/images/consultingPage/social-media-management.jpg",
@@ -134,8 +136,8 @@ const [data, setData] = useState<ConsultingItem[]>([]);
     },
     {
       img: "/assets/images/consultingPage/business-email.jpg",
-      title: "Business Email",
-      desc: "Our team of experienced marketers can help you build high-quality business eMail campaigns that drive traffic and engagement.",
+      title: "Business eMail",
+      desc: "Our team of experienced marketers can help you build high-quality Business eMail campaigns that drive traffic and engagement.",
       link: "business-email",
     },
     {
@@ -154,7 +156,7 @@ const [data, setData] = useState<ConsultingItem[]>([]);
       img: "/assets/images/consultingPage/UI-UX.jpg",
       title: "UI/UX Designing",
       desc: "We offer a range of UI/ UX designing services, including wireframing, prototyping, and user testing.",
-      link: "ui-ux-designing",
+      link: "uiux",
     },
     {
       img: "/assets/images/consultingPage/video-content-email-marketing.jpg",
@@ -165,21 +167,21 @@ const [data, setData] = useState<ConsultingItem[]>([]);
   ];
   return (
     <>
-      <Ribbon name="Data Processing" des="" />
+      <Ribbon name="SEO/SEM Services" des="" />
       <section className="max-w-[1180px] mx-auto mb-[45px]  px-6 lg:px-0 ">
         <Image
-          src="/assets/images/consultingPage/data-processing.jpg"
+          src="/assets/images/consultingPage/seo-sem-services.jpg"
           width={1140}
           height={597}
           alt="top_image"
           className=" border-1 border-blue-50 mb-[45px] rounded-[15px]"
         />
         <h1 className="font-extrabold text-[34px] text-center">
-          Data Processing
+          SEO/SEM Services
         </h1>
         <p className="text-center text-[16px] mb-[45px]">
-          Full spectrum of data handling, from initial collection and cleaning
-          to transformation, enrichment, and final reporting.
+          Employ a combination of organic search engine optimization (SEO)
+          techniques and paid search engine marketing (SEM).
         </p>
         {/* <div className="flex flex-col sm:flex-row gap-4 justify-between items-center mt-8 mb-[45px]">
           {services.map((service) => (
@@ -199,28 +201,27 @@ const [data, setData] = useState<ConsultingItem[]>([]);
           ))}
         </div> */}
 
-        <div className="max-w-[1180px] mx-auto text-[16px] text-justify leading-[23px] flex flex-col gap-4">
+        <div className="max-w-[1180px] mx-auto text-[15px] text-justify leading-[23px] flex flex-col gap-4">
           <p>
-            We have a proven track record of delivering high-quality data
-            analysis and reporting solutions that are tailored to meet the
-            specific needs of our clients. Our data processing services cover
-            the full spectrum of data handling, from initial collection and
-            cleaning to transformation, enrichment, and final reporting. With
-            deep expertise in structured and unstructured data, we ensure that
-            the data you rely on is accurate, consistent, and relevant.{" "}
+            Our SEO/SEM services are focused on improving your online visibility
+            and driving high-quality traffic to your website. We employ a
+            combination of organic search engine optimization (SEO) techniques
+            and paid search engine marketing (SEM) strategies to ensure your
+            business stands out in search results. Our SEO services include
+            in-depth keyword research, on-page and off-page optimization,
+            technical audits, and content strategy to help your site rank higher
+            organically. For SEM, we manage PPC campaigns across platforms like
+            Google Ads and Bing, creating targeted ads that maximize your ROI.{" "}
           </p>
 
           <p>
-            Whether you&apos;re dealing with large-scale data from various
-            sources or need streamlined reporting for business intelligence, our
-            team leverages industry best practices and advanced tools to turn
-            raw data into actionable insights. We understand that in
-            today&apos;s data-driven environment, speed, accuracy, and
-            reliability are key — and we&apos;re committed to delivering results
-            that help businesses make informed decisions quickly and
-            efficiently. Our process includes meticulous attention to data
-            validation and integrity, ensuring compliance with industry
-            standards and data protection regulations.{" "}
+            We monitor and optimize campaigns in real-time, adjusting bids,
+            targeting, and creatives based on performance metrics. Whether
+            you&apos;re looking to build long-term organic traffic or generate
+            immediate leads through paid ads, our experienced team has the
+            knowledge and tools to deliver results. With a focus on performance
+            and transparency, we help you grow your online presence effectively
+            and sustainably.{" "}
           </p>
         </div>
       </section>
@@ -270,7 +271,7 @@ const [data, setData] = useState<ConsultingItem[]>([]);
           FAQ
         </h2>
         <p className="text-center text-sm text-gray-800 mb-8">
-          Here are some of the Data Processing frequently asked questions
+          Here are some of the SEO/SEM Services frequently asked questions
         </p>
 
         <div className="flex flex-col lg:flex-row gap-10">
@@ -278,20 +279,20 @@ const [data, setData] = useState<ConsultingItem[]>([]);
           <div className="w-full lg:w-1/2 flex flex-col gap-8">
             {[
               {
-                question: "What is included in your data processing service?",
+                question: "What is included in your SEO/SEM services?",
                 answer:
-                  "We handle data collection, cleaning, transformation, enrichment, and reporting.",
+                  "We offer a combination of organic search engine optimization (SEO) techniques and paid search engine marketing (SEM) strategies.",
               },
               {
                 question:
-                  "Can you work with both structured and unstructured data?",
+                  "How do your SEO services help improve online visibility?",
                 answer:
-                  "Yes, we specialize in efficiently processing all types of data.",
+                  "Our SEO services include in-depth keyword research, on-page and off-page optimization, technical audits, and content strategy to help your site rank higher organically.",
               },
               {
-                question: "How do you ensure the accuracy of the data?",
+                question: "What platforms do you use for SEM/PPC campaigns?",
                 answer:
-                  "We apply strict validation methods and industry best practices to maintain data integrity.",
+                  "For SEM, we manage PPC campaigns across platforms like Google Ads and Bing.",
               },
             ].map((faq, i) => (
               <div key={i} className="relative flex items-start gap-5 group">
@@ -322,33 +323,33 @@ const [data, setData] = useState<ConsultingItem[]>([]);
           <div className="w-full lg:w-1/2 flex flex-col gap-8">
             {[
               {
+                question: "How do you optimize PPC campaigns for maximum ROI?",
+                answer:
+                  "We monitor and optimize campaigns in real-time, adjusting bids, targeting, and creatives based on performance metrics.",
+              },
+              {
+                question: "Can your services help generate immediate leads?",
+                answer:
+                  "Yes, we can generate immediate leads through targeted paid ads.",
+              },
+              {
                 question:
-                  "Do you support large-scale data from multiple sources?",
+                  "How do you ensure the long-term growth of online presence?",
                 answer:
-                  "Yes, we seamlessly process and manage high-volume data from various sources.",
-              },
-              {
-                question: "How does your service help in decision-making?",
-                answer:
-                  "We convert raw data into clear, actionable insights to support informed business decisions.",
+                  "We focus on building long-term organic traffic and provide transparent performance reporting for sustainable growth.",
               },
               {
                 question:
-                  "Are your services compliant with data protection standards?",
+                  "Do you provide ongoing support and adjustments for campaigns?",
                 answer:
-                  "Absolutely, we follow industry regulations to ensure data security and compliance.",
-              },
-              {
-                question: "What industries do you serve with data processing?",
-                answer:
-                  "Our versatile solutions serve industries including finance, healthcare, retail, and more.",
+                  "Yes, we continuously monitor and optimize campaigns, making real-time adjustments based on performance metrics.",
               },
             ].map((faq, i) => (
               <div key={i} className="relative flex items-start gap-5 group">
                 <div className="w-10 h-10 flex items-center justify-center bg-[#055D59] text-white font-bold rounded-full mt-1 shrink-0">
                   <Image
                     src="/assets/images/consulting/target.svg"
-                    alt={`FAQ ${i + 4}`}
+                    alt={`FAQ ${i + 1}`}
                     width={40}
                     height={40}
                   />
@@ -451,9 +452,9 @@ const [data, setData] = useState<ConsultingItem[]>([]);
                 <h1 className="font-[900] text-center">{blog.title}</h1>
                 <p className="text-sm">{blog.desc}</p>
 
-               <Link
+                <Link
                   href={`/consulting/${blog.link}`}
-                  className=" text-center mt-2 w-[35%] px-5 py-2 text-sm border border-[#055D59] text-[#055D59] hover:bg-[#055D59] hover:text-white rounded-[8px] transition"
+                  className="text-center mt-2 w-[35%] px-5 py-2 text-sm border border-[#055D59] text-[#055D59] hover:bg-[#055D59] hover:text-white rounded-[8px] transition"
                 >
                   Read More
                 </Link>

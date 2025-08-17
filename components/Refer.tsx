@@ -7,7 +7,7 @@ import { useState } from "react";
 
 
 
-export default function ReferPage() {
+export default function Refer() {
   const [phoneOrganization, setPhoneOrganization] = useState<string>("");
   const [personalPhone, setPersonPhone] = useState<string>("");
   const [focusStates, setFocusStates] = useState({

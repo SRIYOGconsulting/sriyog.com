@@ -6,8 +6,16 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 
 
-export default function Processing() {
-  // const services = [
+
+export default function SurveyFormDevelopment() {
+      const [data, setData] = useState<ConsultingItem[]>([]);
+  useEffect(() => {
+    const filtered = relatedConsulting.filter(
+      (item) => item.main === "Survey Form Development"
+    );
+    setData(filtered);
+  }, []);
+
   //   {
   //     id: 1,
   //     title: "Website & App Development",
@@ -64,14 +72,8 @@ export default function Processing() {
   //     bestValue: false,
   //   },
   // ];
-const [data, setData] = useState<ConsultingItem[]>([]);
-  useEffect(() => {
-    const filtered = relatedConsulting.filter(
-      (item) => item.main === "Data Processing"
-    );
-    setData(filtered);
-  }, []);
-  const consulting = [
+
+   const consulting = [
     {
       img: "/assets/images/consultingPage/data-processing.jpg",
       title: "Data Processing",
@@ -134,8 +136,8 @@ const [data, setData] = useState<ConsultingItem[]>([]);
     },
     {
       img: "/assets/images/consultingPage/business-email.jpg",
-      title: "Business Email",
-      desc: "Our team of experienced marketers can help you build high-quality business eMail campaigns that drive traffic and engagement.",
+      title: "Business eMail",
+      desc: "Our team of experienced marketers can help you build high-quality Business eMail campaigns that drive traffic and engagement.",
       link: "business-email",
     },
     {
@@ -165,21 +167,23 @@ const [data, setData] = useState<ConsultingItem[]>([]);
   ];
   return (
     <>
-      <Ribbon name="Data Processing" des="" />
+      <Ribbon
+        name="Survey Form Development"
+        des=""
+      />
       <section className="max-w-[1180px] mx-auto mb-[45px]  px-6 lg:px-0 ">
         <Image
-          src="/assets/images/consultingPage/data-processing.jpg"
+          src="/assets/images/consultingPage/survey-form-development.jpg"
           width={1140}
           height={597}
           alt="top_image"
           className=" border-1 border-blue-50 mb-[45px] rounded-[15px]"
         />
         <h1 className="font-extrabold text-[34px] text-center">
-          Data Processing
+          Survey Form Development
         </h1>
         <p className="text-center text-[16px] mb-[45px]">
-          Full spectrum of data handling, from initial collection and cleaning
-          to transformation, enrichment, and final reporting.
+         Whether you&apos;re running employee engagement studies, market research, or customer experience evaluations, we ensure your survey is engaging.
         </p>
         {/* <div className="flex flex-col sm:flex-row gap-4 justify-between items-center mt-8 mb-[45px]">
           {services.map((service) => (
@@ -199,28 +203,28 @@ const [data, setData] = useState<ConsultingItem[]>([]);
           ))}
         </div> */}
 
-        <div className="max-w-[1180px] mx-auto text-[16px] text-justify leading-[23px] flex flex-col gap-4">
+        <div className="max-w-[1180px] mx-auto text-[15px] text-justify leading-[23px] flex flex-col gap-4">
           <p>
-            We have a proven track record of delivering high-quality data
-            analysis and reporting solutions that are tailored to meet the
-            specific needs of our clients. Our data processing services cover
-            the full spectrum of data handling, from initial collection and
-            cleaning to transformation, enrichment, and final reporting. With
-            deep expertise in structured and unstructured data, we ensure that
-            the data you rely on is accurate, consistent, and relevant.{" "}
+            We provide comprehensive survey form development services designed
+            to help you gather valuable feedback and insights from your
+            audience. From simple customer satisfaction forms to complex
+            multi-step surveys, we tailor each form to match your objectives and
+            brand identity. Our team handles every stage of the process — from
+            question design and form layout to backend data collection and
+            integration. Whether you&apos;re running employee engagement
+            studies, market research, or customer experience evaluations, we
+            ensure your survey is engaging, easy to navigate, and accessible
+            across all devices.{" "}
           </p>
 
           <p>
-            Whether you&apos;re dealing with large-scale data from various
-            sources or need streamlined reporting for business intelligence, our
-            team leverages industry best practices and advanced tools to turn
-            raw data into actionable insights. We understand that in
-            today&apos;s data-driven environment, speed, accuracy, and
-            reliability are key — and we&apos;re committed to delivering results
-            that help businesses make informed decisions quickly and
-            efficiently. Our process includes meticulous attention to data
-            validation and integrity, ensuring compliance with industry
-            standards and data protection regulations.{" "}
+            We implement smart logic and branching to deliver personalized
+            survey flows, improving response rates and data quality. Once
+            responses are collected, we offer detailed analysis and
+            visualization services to turn raw data into actionable
+            intelligence. With secure data storage and GDPR-compliant processes,
+            our survey solutions give you the confidence to make data-driven
+            decisions based on reliable feedback.{" "}
           </p>
         </div>
       </section>
@@ -264,111 +268,97 @@ const [data, setData] = useState<ConsultingItem[]>([]);
         </div>
       </section> */}
       {/*. FAQ */}
-      <section className="max-w-[1180px] mx-auto mb-[45px] px-6 lg:px-0">
-        {/* Section Title */}
-        <h2 className="text-center text-3xl md:text-4xl mb-3 font-extrabold">
-          FAQ
-        </h2>
-        <p className="text-center text-sm text-gray-800 mb-8">
-          Here are some of the Data Processing frequently asked questions
-        </p>
+<section className="max-w-[1180px] mx-auto mb-[45px] px-6 lg:px-0">
+  {/* Section Title */}
+  <h2 className="text-center text-3xl md:text-4xl mb-3 font-extrabold">FAQ</h2>
+  <p className="text-center text-sm text-gray-800 mb-8">
+    Here are some of the Survey Form Development frequently asked questions
+  </p>
 
-        <div className="flex flex-col lg:flex-row gap-10">
-          {/* Column 1 */}
-          <div className="w-full lg:w-1/2 flex flex-col gap-8">
-            {[
-              {
-                question: "What is included in your data processing service?",
-                answer:
-                  "We handle data collection, cleaning, transformation, enrichment, and reporting.",
-              },
-              {
-                question:
-                  "Can you work with both structured and unstructured data?",
-                answer:
-                  "Yes, we specialize in efficiently processing all types of data.",
-              },
-              {
-                question: "How do you ensure the accuracy of the data?",
-                answer:
-                  "We apply strict validation methods and industry best practices to maintain data integrity.",
-              },
-            ].map((faq, i) => (
-              <div key={i} className="relative flex items-start gap-5 group">
-                <div className="w-10 h-10 flex items-center justify-center bg-[#055D59] text-white font-bold rounded-full mt-1 shrink-0">
-                  <Image
-                    src="/assets/images/consulting/target.svg"
-                    alt={`FAQ ${i + 1}`}
-                    width={40}
-                    height={40}
-                  />
-                </div>
-                {i !== 2 && (
-                  <div className="absolute left-[19px] top-12 h-[50px] w-[2px] bg-gray-300" />
-                )}
-                <div>
-                  <h3 className="font-semibold text-lg text-gray-800 mb-1">
-                    {faq.question}
-                  </h3>
-                  <p className="text-sm text-gray-600 leading-relaxed">
-                    {faq.answer}
-                  </p>
-                </div>
-              </div>
-            ))}
+  <div className="flex flex-col lg:flex-row gap-10">
+    {/* Column 1 */}
+    <div className="w-full lg:w-1/2 flex flex-col gap-8">
+      {[
+        {
+          question: "What services are included in your survey form development?",
+          answer:
+            "We offer comprehensive services from question design and form layout to backend data collection and integration.",
+        },
+        {
+          question: "Can you create different types of survey forms?",
+          answer:
+            "Yes, we tailor each form to match your objectives, from simple customer satisfaction forms to complex multi-step surveys.",
+        },
+        {
+          question: "How do you ensure the survey is engaging and easy to use?",
+          answer:
+            "We ensure your survey is engaging, easy to navigate, and accessible across all devices, implementing smart logic and branching for personalized flows.",
+        },
+      ].map((faq, i) => (
+        <div key={i} className="relative flex items-start gap-5 group">
+          <div className="w-10 h-10 flex items-center justify-center bg-[#055D59] text-white font-bold rounded-full mt-1 shrink-0">
+            <Image src="/assets/images/consulting/target.svg" alt={`FAQ ${i + 1}`} width={40} height={40} />
           </div>
-
-          {/* Column 2 */}
-          <div className="w-full lg:w-1/2 flex flex-col gap-8">
-            {[
-              {
-                question:
-                  "Do you support large-scale data from multiple sources?",
-                answer:
-                  "Yes, we seamlessly process and manage high-volume data from various sources.",
-              },
-              {
-                question: "How does your service help in decision-making?",
-                answer:
-                  "We convert raw data into clear, actionable insights to support informed business decisions.",
-              },
-              {
-                question:
-                  "Are your services compliant with data protection standards?",
-                answer:
-                  "Absolutely, we follow industry regulations to ensure data security and compliance.",
-              },
-              {
-                question: "What industries do you serve with data processing?",
-                answer:
-                  "Our versatile solutions serve industries including finance, healthcare, retail, and more.",
-              },
-            ].map((faq, i) => (
-              <div key={i} className="relative flex items-start gap-5 group">
-                <div className="w-10 h-10 flex items-center justify-center bg-[#055D59] text-white font-bold rounded-full mt-1 shrink-0">
-                  <Image
-                    src="/assets/images/consulting/target.svg"
-                    alt={`FAQ ${i + 4}`}
-                    width={40}
-                    height={40}
-                  />
-                </div>
-                {i !== 3 && (
-                  <div className="absolute left-[19px] top-12 h-[50px] w-[2px] bg-gray-300" />
-                )}
-                <div>
-                  <h3 className="font-semibold text-lg text-gray-800 mb-1">
-                    {faq.question}
-                  </h3>
-                  <p className="text-sm text-gray-600 leading-relaxed">
-                    {faq.answer}
-                  </p>
-                </div>
-              </div>
-            ))}
+          {i !== 2 && (
+            <div className="absolute left-[19px] top-12 h-[50px] w-[2px] bg-gray-300" />
+          )}
+          <div>
+            <h3 className="font-semibold text-lg text-gray-800 mb-1">
+              {faq.question}
+            </h3>
+            <p className="text-sm text-gray-600 leading-relaxed">
+              {faq.answer}
+            </p>
           </div>
         </div>
-      </section>
+      ))}
+    </div>
+
+    {/* Column 2 */}
+    <div className="w-full lg:w-1/2 flex flex-col gap-8">
+      {[
+        {
+          question: "What kind of insights can I gather using your survey solutions?",
+          answer:
+            "You can gather valuable feedback and insights for employee engagement studies, market research, or customer experience evaluations.",
+        },
+        {
+          question: "How do you handle the data collected from surveys?",
+          answer:
+            "We offer detailed analysis and visualization services to turn raw data into actionable intelligence, with secure data storage.",
+        },
+        {
+          question: "Are your survey solutions compliant with data protection regulations?",
+          answer:
+            "Yes, our survey solutions are GDPR-compliant, giving you confidence in making data-driven decisions based on reliable feedback.",
+        },
+        {
+          question: "How do your survey forms improve response rates?",
+          answer:
+            "By implementing smart logic and branching to deliver personalized survey flows, we aim to improve response rates and data quality.",
+        },
+      ].map((faq, i) => (
+        <div key={i} className="relative flex items-start gap-5 group">
+          <div className="w-10 h-10 flex items-center justify-center bg-[#055D59] text-white font-bold rounded-full mt-1 shrink-0">
+            <Image src="/assets/images/consulting/target.svg" alt={`FAQ ${i + 1}`} width={40} height={40} />
+          </div>
+          {i !== 3 && (
+            <div className="absolute left-[19px] top-12 h-[50px] w-[2px] bg-gray-300" />
+          )}
+          <div>
+            <h3 className="font-semibold text-lg text-gray-800 mb-1">
+              {faq.question}
+            </h3>
+            <p className="text-sm text-gray-600 leading-relaxed">
+              {faq.answer}
+            </p>
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
 
       {/*Pricing */}
 
@@ -451,9 +441,9 @@ const [data, setData] = useState<ConsultingItem[]>([]);
                 <h1 className="font-[900] text-center">{blog.title}</h1>
                 <p className="text-sm">{blog.desc}</p>
 
-               <Link
+                <Link
                   href={`/consulting/${blog.link}`}
-                  className=" text-center mt-2 w-[35%] px-5 py-2 text-sm border border-[#055D59] text-[#055D59] hover:bg-[#055D59] hover:text-white rounded-[8px] transition"
+                  className="text-center mt-2 w-[35%] px-5 py-2 text-sm border border-[#055D59] text-[#055D59] hover:bg-[#055D59] hover:text-white rounded-[8px] transition"
                 >
                   Read More
                 </Link>

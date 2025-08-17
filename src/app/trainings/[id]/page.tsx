@@ -1,15 +1,17 @@
-// app/trainings/[id]/page.tsx
 import { trainings } from "@/src/data/trainings";
 import TrainingSinglepageComponent from "@/components/Training/Training";
 import type { Metadata } from "next";
 
-type PageProps = {
-  params: { id: string };
+type Props = {
+  params: Promise<{ id: string }>; 
 };
 
-// Dynamic metadata
-export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
-  const training = trainings.find((t) => t.path === params.id);
+export async function generateMetadata(
+  { params }: Props
+): Promise<Metadata> {
+  const { id } = await params; 
+
+  const training = trainings.find((t) => t.path === id);
 
   if (!training) {
     return {
@@ -24,6 +26,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   };
 }
 
-export default function TrainingSinglepage({ params }: PageProps) {
-  return <TrainingSinglepageComponent id={params.id} />;
+export default async function TrainingSinglepage({ params }: Props) {
+  const { id } = await params; 
+  return <TrainingSinglepageComponent id={id} />;
 }

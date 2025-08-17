@@ -157,10 +157,7 @@ export default function Footer() {
                       href="https://sriyog.app/"
                       target="_blank"
                     >
-                      SRIYOG App&nbsp;
-                      <span className="bg-[#0D5D59] px-[5px] py-[2px] text-[11px] text-white rounded-[3px]">
-                        New
-                      </span>
+                      SRIYOG App
                     </Link>
                   ),
                 },
@@ -341,10 +338,13 @@ export default function Footer() {
             </div>
             <Link
               prefetch={true}
-              href="/quote"
+              href="/trainings"
               className="block mb-4 bg-[#0D5D59] hover:bg-[#2e5250] text-white text-center font-semibold py-2 rounded-lg transition"
             >
-              Request a Quote
+              IT Training&nbsp;
+                      <span className="bg-[#0D5D59] px-[5px] py-[2px] text-[11px] text-white rounded-[3px]">
+                        New
+                      </span>
             </Link>
           </div>
         </section>

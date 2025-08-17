@@ -1,4 +1,3 @@
-
 import type { Metadata } from "next";
 import { Bellota_Text } from "next/font/google";
 import "./globals.css";
@@ -57,7 +56,6 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-
   return (
     <html lang="en">
       <head>
@@ -77,6 +75,8 @@ export default function RootLayout({
             `,
           }}
         />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Sriyog Consulting</title>
       </head>
       <body className={`${bellota_text.variable} antialiased`}>
         <FloatingIconsProvider>
@@ -85,7 +85,7 @@ export default function RootLayout({
 
           <Navbar />
           {children}
-         <Floating/>
+          <Floating />
           <FooterWrapper />
         </FloatingIconsProvider>
       </body>

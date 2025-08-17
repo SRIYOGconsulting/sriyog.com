@@ -1,73 +1,17 @@
-"use client"
+"use client";
 import Ribbon from "@/components/Ribbon";
-import relatedConsulting, { ConsultingItem } from "@/src/data/relatedconsulting";
+import relatedConsulting, {
+  ConsultingItem,
+} from "@/src/data/relatedconsulting";
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 
-
-export default function Processing() {
-  // const services = [
-  //   {
-  //     id: 1,
-  //     title: "Website & App Development",
-  //     image: "/assets/images/about/noimage.png",
-  //   },
-  //   {
-  //     id: 2,
-  //     title: "IT Consulting",
-  //     image: "/assets/images/about/noimage.png",
-  //   },
-  //   {
-  //     id: 3,
-  //     title: "Cloud Services",
-  //     image: "/assets/images/about/noimage.png",
-  //   },
-  // ];
-
-  // const pricingPlans = [
-  //   {
-  //     id: 1,
-  //     title: "Silver Plan",
-  //     user: "Perfect for begineers",
-  //     price: 75,
-  //     desc: ["24/7 Gym Access", "Access to 4 Classes/Week"],
-  //     bestValue: false,
-  //   },
-  //   {
-  //     id: 2,
-  //     title: "Golden Plan",
-  //     user: "For Serious Enthusiasts",
-  //     price: 75,
-  //     desc: [
-  //       "24/7 Gym Access",
-  //       "Unlimited Access to Classes",
-  //       "Access to Exclusive Blog Content",
-  //       "Access to Challenges",
-  //     ],
-  //     bestValue: true,
-  //   },
-
-  //   {
-  //     id: 3,
-  //     title: "Platinium Plan",
-  //     user: "When Only The Best Will Do",
-  //     price: 150,
-  //     desc: [
-  //       "24/7 Gym Access",
-  //       "Unlimited Access to Classes",
-  //       "Access to Exclusive Blog Content",
-  //       "Access to Challenges",
-  //       "Access to Our Gym Forum",
-  //       "1 Personal Training Session/Week",
-  //     ],
-  //     bestValue: false,
-  //   },
-  // ];
-const [data, setData] = useState<ConsultingItem[]>([]);
+export default function UIUXDesigning() {
+  const [data, setData] = useState<ConsultingItem[]>([]);
   useEffect(() => {
     const filtered = relatedConsulting.filter(
-      (item) => item.main === "Data Processing"
+      (item) => item.main === "UI/UX Designing"
     );
     setData(filtered);
   }, []);
@@ -134,8 +78,8 @@ const [data, setData] = useState<ConsultingItem[]>([]);
     },
     {
       img: "/assets/images/consultingPage/business-email.jpg",
-      title: "Business Email",
-      desc: "Our team of experienced marketers can help you build high-quality business eMail campaigns that drive traffic and engagement.",
+      title: "Business eMail",
+      desc: "Our team of experienced marketers can help you build high-quality Business eMail campaigns that drive traffic and engagement.",
       link: "business-email",
     },
     {
@@ -165,21 +109,21 @@ const [data, setData] = useState<ConsultingItem[]>([]);
   ];
   return (
     <>
-      <Ribbon name="Data Processing" des="" />
+      <Ribbon name="UI/UX Designing" des="" />
       <section className="max-w-[1180px] mx-auto mb-[45px]  px-6 lg:px-0 ">
         <Image
-          src="/assets/images/consultingPage/data-processing.jpg"
+          src="/assets/images/consultingPage/ui-ux-designing.jpg"
           width={1140}
           height={597}
           alt="top_image"
           className=" border-1 border-blue-50 mb-[45px] rounded-[15px]"
         />
-        <h1 className="font-extrabold text-[34px] text-center">
-          Data Processing
+        <h1 className="font-extrabold text-[34px] text-center mb-4">
+          UI/UX Designing
         </h1>
         <p className="text-center text-[16px] mb-[45px]">
-          Full spectrum of data handling, from initial collection and cleaning
-          to transformation, enrichment, and final reporting.
+          Our designers combine aesthetics with purpose - every color, icon, and
+          animation is carefully chosen to enhance usability and engagement.
         </p>
         {/* <div className="flex flex-col sm:flex-row gap-4 justify-between items-center mt-8 mb-[45px]">
           {services.map((service) => (
@@ -199,28 +143,26 @@ const [data, setData] = useState<ConsultingItem[]>([]);
           ))}
         </div> */}
 
-        <div className="max-w-[1180px] mx-auto text-[16px] text-justify leading-[23px] flex flex-col gap-4">
+        <div className="max-w-[1180px] mx-auto text-[15px] text-justify leading-[23px] flex flex-col gap-4">
           <p>
-            We have a proven track record of delivering high-quality data
-            analysis and reporting solutions that are tailored to meet the
-            specific needs of our clients. Our data processing services cover
-            the full spectrum of data handling, from initial collection and
-            cleaning to transformation, enrichment, and final reporting. With
-            deep expertise in structured and unstructured data, we ensure that
-            the data you rely on is accurate, consistent, and relevant.{" "}
+            Our UI/UX design services are focused on creating digital
+            experiences that are not only visually appealing but also highly
+            functional and user-centric. We start with in-depth research and
+            wireframing to understand user behavior, pain points, and
+            interaction flows. From there, we create high-fidelity prototypes
+            and conduct user testing to ensure the final product meets usability
+            standards and business goals. Our designers combine aesthetics with
+            purpose — every color, icon, and animation is carefully chosen to
+            enhance usability and engagement.{" "}
           </p>
-
           <p>
-            Whether you&apos;re dealing with large-scale data from various
-            sources or need streamlined reporting for business intelligence, our
-            team leverages industry best practices and advanced tools to turn
-            raw data into actionable insights. We understand that in
-            today&apos;s data-driven environment, speed, accuracy, and
-            reliability are key — and we&apos;re committed to delivering results
-            that help businesses make informed decisions quickly and
-            efficiently. Our process includes meticulous attention to data
-            validation and integrity, ensuring compliance with industry
-            standards and data protection regulations.{" "}
+            Whether you’re building a web app, mobile app, or software
+            interface, we ensure the design is responsive, accessible, and
+            aligned with your brand identity. We also collaborate closely with
+            developers to ensure that our designs are seamlessly implemented in
+            the final product. With a strong focus on both function and form,
+            our UI/UX services help you deliver intuitive experiences that keep
+            users coming back.{" "}
           </p>
         </div>
       </section>
@@ -263,14 +205,15 @@ const [data, setData] = useState<ConsultingItem[]>([]);
           />
         </div>
       </section> */}
-      {/*. FAQ */}
+
+      {/*FAQ */}
       <section className="max-w-[1180px] mx-auto mb-[45px] px-6 lg:px-0">
         {/* Section Title */}
         <h2 className="text-center text-3xl md:text-4xl mb-3 font-extrabold">
           FAQ
         </h2>
         <p className="text-center text-sm text-gray-800 mb-8">
-          Here are some of the Data Processing frequently asked questions
+          Here are some of the UI/UX Designing frequently asked questions
         </p>
 
         <div className="flex flex-col lg:flex-row gap-10">
@@ -278,20 +221,21 @@ const [data, setData] = useState<ConsultingItem[]>([]);
           <div className="w-full lg:w-1/2 flex flex-col gap-8">
             {[
               {
-                question: "What is included in your data processing service?",
+                question:
+                  "What services are included in your Business eMail marketing?",
                 answer:
-                  "We handle data collection, cleaning, transformation, enrichment, and reporting.",
+                  "Our services include list segmentation, campaign strategy, email design, content creation, and performance tracking.",
               },
               {
                 question:
-                  "Can you work with both structured and unstructured data?",
+                  "How do your email campaigns help businesses connect with their audience?",
                 answer:
-                  "Yes, we specialize in efficiently processing all types of data.",
+                  "We craft tailored email campaigns that drive engagement, build trust, and encourage action, helping you connect with existing customers or nurture leads.",
               },
               {
-                question: "How do you ensure the accuracy of the data?",
+                question: "What platforms do you use to send emails?",
                 answer:
-                  "We apply strict validation methods and industry best practices to maintain data integrity.",
+                  "We utilize industry-leading platforms to ensure successful email delivery.",
               },
             ].map((faq, i) => (
               <div key={i} className="relative flex items-start gap-5 group">
@@ -323,25 +267,25 @@ const [data, setData] = useState<ConsultingItem[]>([]);
             {[
               {
                 question:
-                  "Do you support large-scale data from multiple sources?",
+                  "Do your email marketing services comply with privacy regulations?",
                 answer:
-                  "Yes, we seamlessly process and manage high-volume data from various sources.",
+                  "Yes, our services comply with privacy regulations such as GDPR and CAN-SPAM.",
               },
               {
-                question: "How does your service help in decision-making?",
+                question: "What types of email campaigns do you offer?",
                 answer:
-                  "We convert raw data into clear, actionable insights to support informed business decisions.",
+                  "We offer promotional blasts, newsletters, and automated drip campaigns.",
               },
               {
                 question:
-                  "Are your services compliant with data protection standards?",
+                  "How do you ensure emails are effective and visually appealing?",
                 answer:
-                  "Absolutely, we follow industry regulations to ensure data security and compliance.",
+                  "Every email is designed to be mobile-friendly, visually appealing, and optimized for high open and click-through rates.",
               },
               {
-                question: "What industries do you serve with data processing?",
+                question: "How do you maximize the results of email campaigns?",
                 answer:
-                  "Our versatile solutions serve industries including finance, healthcare, retail, and more.",
+                  "We continuously refine our approach with ongoing A/B testing and analytics to maximize your results.",
               },
             ].map((faq, i) => (
               <div key={i} className="relative flex items-start gap-5 group">
@@ -423,6 +367,7 @@ const [data, setData] = useState<ConsultingItem[]>([]);
       </section> */}
 
       {/* Related Blog Section */}
+      {/* Related Consulting Section */}
       <section className="max-w-[1180px] mx-auto mb-[45px] px-6 lg:px-0">
         <h1 className="text-center text-xl font-[800]">Related Consulting</h1>
 
@@ -451,9 +396,9 @@ const [data, setData] = useState<ConsultingItem[]>([]);
                 <h1 className="font-[900] text-center">{blog.title}</h1>
                 <p className="text-sm">{blog.desc}</p>
 
-               <Link
+                <Link
                   href={`/consulting/${blog.link}`}
-                  className=" text-center mt-2 w-[35%] px-5 py-2 text-sm border border-[#055D59] text-[#055D59] hover:bg-[#055D59] hover:text-white rounded-[8px] transition"
+                  className="text-center mt-2 w-[35%] px-5 py-2 text-sm border border-[#055D59] text-[#055D59] hover:bg-[#055D59] hover:text-white rounded-[8px] transition"
                 >
                   Read More
                 </Link>

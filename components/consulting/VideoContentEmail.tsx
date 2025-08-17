@@ -1,76 +1,80 @@
-"use client"
+"use client";
 import Ribbon from "@/components/Ribbon";
-import relatedConsulting, { ConsultingItem } from "@/src/data/relatedconsulting";
+import relatedConsulting, {
+  ConsultingItem,
+} from "@/src/data/relatedconsulting";
+import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 
-
-export default function Processing() {
-  // const services = [
-  //   {
-  //     id: 1,
-  //     title: "Website & App Development",
-  //     image: "/assets/images/about/noimage.png",
-  //   },
-  //   {
-  //     id: 2,
-  //     title: "IT Consulting",
-  //     image: "/assets/images/about/noimage.png",
-  //   },
-  //   {
-  //     id: 3,
-  //     title: "Cloud Services",
-  //     image: "/assets/images/about/noimage.png",
-  //   },
-  // ];
-
-  // const pricingPlans = [
-  //   {
-  //     id: 1,
-  //     title: "Silver Plan",
-  //     user: "Perfect for begineers",
-  //     price: 75,
-  //     desc: ["24/7 Gym Access", "Access to 4 Classes/Week"],
-  //     bestValue: false,
-  //   },
-  //   {
-  //     id: 2,
-  //     title: "Golden Plan",
-  //     user: "For Serious Enthusiasts",
-  //     price: 75,
-  //     desc: [
-  //       "24/7 Gym Access",
-  //       "Unlimited Access to Classes",
-  //       "Access to Exclusive Blog Content",
-  //       "Access to Challenges",
-  //     ],
-  //     bestValue: true,
-  //   },
-
-  //   {
-  //     id: 3,
-  //     title: "Platinium Plan",
-  //     user: "When Only The Best Will Do",
-  //     price: 150,
-  //     desc: [
-  //       "24/7 Gym Access",
-  //       "Unlimited Access to Classes",
-  //       "Access to Exclusive Blog Content",
-  //       "Access to Challenges",
-  //       "Access to Our Gym Forum",
-  //       "1 Personal Training Session/Week",
-  //     ],
-  //     bestValue: false,
-  //   },
-  // ];
-const [data, setData] = useState<ConsultingItem[]>([]);
+export const metadata: Metadata = {
+  title: "Video Content Marketing | SRIYOG Consulting",
+};
+export default function VideoContentEmail() {
+  const [data, setData] = useState<ConsultingItem[]>([]);
   useEffect(() => {
     const filtered = relatedConsulting.filter(
-      (item) => item.main === "Data Processing"
+      (item) => item.main === "Video/Content/Email Marketing"
     );
     setData(filtered);
   }, []);
+  //       id: 1,
+  //       title: "Website & App Development",
+  //       image: "/assets/images/about/noimage.png",
+  //     },
+  //     {
+  //       id: 2,
+  //       title: "IT Consulting",
+  //       image: "/assets/images/about/noimage.png",
+  //     },
+  //     {
+  //       id: 3,
+  //       title: "Cloud Services",
+  //       image: "/assets/images/about/noimage.png",
+  //     },
+  //   ];
+
+  //   const pricingPlans = [
+  //     {
+  //       id: 1,
+  //       title: "Silver Plan",
+  //       user: "Perfect for begineers",
+  //       price: 75,
+  //       desc: ["24/7 Gym Access", "Access to 4 Classes/Week"],
+  //       bestValue: false,
+  //     },
+  //     {
+  //       id: 2,
+  //       title: "Golden Plan",
+  //       user: "For Serious Enthusiasts",
+  //       price: 75,
+  //       desc: [
+  //         "24/7 Gym Access",
+  //         "Unlimited Access to Classes",
+  //         "Access to Exclusive Blog Content",
+  //         "Access to Challenges",
+  //       ],
+  //       bestValue: true,
+  //     },
+
+  //     {
+  //       id: 3,
+  //       title: "Platinium Plan",
+  //       user: "When Only The Best Will Do",
+  //       price: 150,
+  //       desc: [
+  //         "24/7 Gym Access",
+  //         "Unlimited Access to Classes",
+  //         "Access to Exclusive Blog Content",
+  //         "Access to Challenges",
+  //         "Access to Our Gym Forum",
+  //         "1 Personal Training Session/Week",
+  //       ],
+  //       bestValue: false,
+  //     },
+  //   ];
+
   const consulting = [
     {
       img: "/assets/images/consultingPage/data-processing.jpg",
@@ -134,8 +138,8 @@ const [data, setData] = useState<ConsultingItem[]>([]);
     },
     {
       img: "/assets/images/consultingPage/business-email.jpg",
-      title: "Business Email",
-      desc: "Our team of experienced marketers can help you build high-quality business eMail campaigns that drive traffic and engagement.",
+      title: "Business eMail",
+      desc: "Our team of experienced marketers can help you build high-quality Business eMail campaigns that drive traffic and engagement.",
       link: "business-email",
     },
     {
@@ -165,21 +169,22 @@ const [data, setData] = useState<ConsultingItem[]>([]);
   ];
   return (
     <>
-      <Ribbon name="Data Processing" des="" />
+      <Ribbon name="Video/Content/Email Marketing" des="" />
       <section className="max-w-[1180px] mx-auto mb-[45px]  px-6 lg:px-0 ">
         <Image
-          src="/assets/images/consultingPage/data-processing.jpg"
+          src="/assets/images/consultingPage/video-content-email-marketing.jpg"
           width={1140}
           height={597}
           alt="top_image"
           className=" border-1 border-blue-50 mb-[45px] rounded-[15px]"
         />
         <h1 className="font-extrabold text-[34px] text-center">
-          Data Processing
+          Video/Content/Email Marketing
         </h1>
         <p className="text-center text-[16px] mb-[45px]">
-          Full spectrum of data handling, from initial collection and cleaning
-          to transformation, enrichment, and final reporting.
+          We create content that resonates with your target audience and drives
+          results. Our video marketing services include scripting, shooting,
+          editing, and animation.
         </p>
         {/* <div className="flex flex-col sm:flex-row gap-4 justify-between items-center mt-8 mb-[45px]">
           {services.map((service) => (
@@ -199,28 +204,28 @@ const [data, setData] = useState<ConsultingItem[]>([]);
           ))}
         </div> */}
 
-        <div className="max-w-[1180px] mx-auto text-[16px] text-justify leading-[23px] flex flex-col gap-4">
+        <div className="max-w-[1180px] mx-auto text-[15px] text-justify leading-[23px] flex flex-col gap-4">
           <p>
-            We have a proven track record of delivering high-quality data
-            analysis and reporting solutions that are tailored to meet the
-            specific needs of our clients. Our data processing services cover
-            the full spectrum of data handling, from initial collection and
-            cleaning to transformation, enrichment, and final reporting. With
-            deep expertise in structured and unstructured data, we ensure that
-            the data you rely on is accurate, consistent, and relevant.{" "}
+            We offer a powerful combination of video, content, and email
+            marketing services designed to elevate your brand&apos;s
+            communication strategy. From engaging videos and insightful blog
+            posts to high-converting email campaigns, we create content that
+            resonates with your target audience and drives results. Our video
+            marketing services include scripting, shooting, editing, and
+            animation, perfect for explainer videos, testimonials, or social
+            media campaigns. In content marketing, we focus on SEO-optimized
+            articles, product descriptions, and thought leadership pieces that
+            enhance visibility and authority.{" "}
           </p>
 
           <p>
-            Whether you&apos;re dealing with large-scale data from various
-            sources or need streamlined reporting for business intelligence, our
-            team leverages industry best practices and advanced tools to turn
-            raw data into actionable insights. We understand that in
-            today&apos;s data-driven environment, speed, accuracy, and
-            reliability are key — and we&apos;re committed to delivering results
-            that help businesses make informed decisions quickly and
-            efficiently. Our process includes meticulous attention to data
-            validation and integrity, ensuring compliance with industry
-            standards and data protection regulations.{" "}
+            For email marketing, we handle campaign planning, list management,
+            and performance analysis to ensure consistent, effective outreach.
+            Each element of our marketing strategy is driven by data and crafted
+            to support lead generation, customer retention, and brand awareness.
+            Whether used individually or together, our marketing services
+            provide a cohesive approach that boosts engagement and aligns with
+            your broader digital goals.{" "}
           </p>
         </div>
       </section>
@@ -263,14 +268,16 @@ const [data, setData] = useState<ConsultingItem[]>([]);
           />
         </div>
       </section> */}
-      {/*. FAQ */}
+
+      {/*FAQ */}
       <section className="max-w-[1180px] mx-auto mb-[45px] px-6 lg:px-0">
         {/* Section Title */}
         <h2 className="text-center text-3xl md:text-4xl mb-3 font-extrabold">
           FAQ
         </h2>
         <p className="text-center text-sm text-gray-800 mb-8">
-          Here are some of the Data Processing frequently asked questions
+          Here are some of the Video-Content-Email Marketing frequently asked
+          questions
         </p>
 
         <div className="flex flex-col lg:flex-row gap-10">
@@ -278,20 +285,22 @@ const [data, setData] = useState<ConsultingItem[]>([]);
           <div className="w-full lg:w-1/2 flex flex-col gap-8">
             {[
               {
-                question: "What is included in your data processing service?",
+                question:
+                  "What services are included in your Video/Content/Email Marketing?",
                 answer:
-                  "We handle data collection, cleaning, transformation, enrichment, and reporting.",
+                  "We offer video production (scripting, shooting, editing, animation), SEO-optimized content creation (articles, product descriptions, thought leadership), and email marketing (campaign planning, list management, performance analysis).",
               },
               {
                 question:
-                  "Can you work with both structured and unstructured data?",
+                  "How do your video marketing services help businesses?",
                 answer:
-                  "Yes, we specialize in efficiently processing all types of data.",
+                  "Our video marketing services create engaging videos such as explainer videos, testimonials, and social media campaigns to enhance your brand's communication.",
               },
               {
-                question: "How do you ensure the accuracy of the data?",
+                question:
+                  "What kind of content do you create for content marketing?",
                 answer:
-                  "We apply strict validation methods and industry best practices to maintain data integrity.",
+                  "We focus on SEO-optimized articles, product descriptions, and thought leadership pieces to boost your visibility and authority.",
               },
             ].map((faq, i) => (
               <div key={i} className="relative flex items-start gap-5 group">
@@ -323,25 +332,26 @@ const [data, setData] = useState<ConsultingItem[]>([]);
             {[
               {
                 question:
-                  "Do you support large-scale data from multiple sources?",
+                  "How do you ensure effective email marketing campaigns?",
                 answer:
-                  "Yes, we seamlessly process and manage high-volume data from various sources.",
+                  "We manage campaign planning, list segmentation, and performance analysis to deliver consistent, impactful email outreach.",
               },
               {
-                question: "How does your service help in decision-making?",
+                question: "How do you tailor your marketing strategies?",
                 answer:
-                  "We convert raw data into clear, actionable insights to support informed business decisions.",
+                  "Each strategy is data-driven and designed to support lead generation, customer retention, and brand awareness.",
               },
               {
                 question:
-                  "Are your services compliant with data protection standards?",
+                  "Can these marketing services be used individually or together?",
                 answer:
-                  "Absolutely, we follow industry regulations to ensure data security and compliance.",
+                  "Yes, our services can be combined or used independently to provide a cohesive and effective marketing approach.",
               },
               {
-                question: "What industries do you serve with data processing?",
+                question:
+                  "What is the ultimate goal of your marketing services?",
                 answer:
-                  "Our versatile solutions serve industries including finance, healthcare, retail, and more.",
+                  "To elevate your brand’s communication and create content that resonates with your audience, driving measurable results.",
               },
             ].map((faq, i) => (
               <div key={i} className="relative flex items-start gap-5 group">
@@ -451,9 +461,9 @@ const [data, setData] = useState<ConsultingItem[]>([]);
                 <h1 className="font-[900] text-center">{blog.title}</h1>
                 <p className="text-sm">{blog.desc}</p>
 
-               <Link
+                <Link
                   href={`/consulting/${blog.link}`}
-                  className=" text-center mt-2 w-[35%] px-5 py-2 text-sm border border-[#055D59] text-[#055D59] hover:bg-[#055D59] hover:text-white rounded-[8px] transition"
+                  className="text-center mt-2 w-[35%] px-5 py-2 text-sm border border-[#055D59] text-[#055D59] hover:bg-[#055D59] hover:text-white rounded-[8px] transition"
                 >
                   Read More
                 </Link>
