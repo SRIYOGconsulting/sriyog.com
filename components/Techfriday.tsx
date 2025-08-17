@@ -4,9 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 
-
-
-export default function TechFridayPage() {
+export default function TechFriday() {
   const sponsors = [
     "/assets/images/techfriday/1.png",
     "/assets/images/techfriday/2.png",
@@ -18,28 +16,28 @@ export default function TechFridayPage() {
     "/assets/images/techfriday/8.png",
   ];
 
-  const howItWorks =[
+  const howItWorks = [
     {
-        id:1,
-        title:"Virtual Learning ",
-        desc:"TechFriday is an impactful virtual learning initiative proudly organized by SRIYOG Consulting Pvt. Ltd., aimed at empowering beginners and aspiring professionals in the IT and digital technology space."
+      id: 1,
+      title: "Virtual Learning ",
+      desc: "TechFriday is an impactful virtual learning initiative proudly organized by SRIYOG Consulting Pvt. Ltd., aimed at empowering beginners and aspiring professionals in the IT and digital technology space.",
     },
     {
-        id:2,
-        title:"Hosted By Niranjan",
-        desc:"TechFriday sessions are hosted and facilitated by Niranjan Sharma, Project Manager at SRIYOG, who brings strategic insights and real-time project management expertise to each session."
+      id: 2,
+      title: "Hosted By Niranjan",
+      desc: "TechFriday sessions are hosted and facilitated by Niranjan Sharma, Project Manager at SRIYOG, who brings strategic insights and real-time project management expertise to each session.",
     },
     {
-        id:3,
-        title:"Weekly Initiative ",
-        desc:"TechFriday is our weekly initiative focused on uplifting beginners in the IT field through expert talks, live demonstrations, and exposure to real-world projects. "
+      id: 3,
+      title: "Weekly Initiative ",
+      desc: "TechFriday is our weekly initiative focused on uplifting beginners in the IT field through expert talks, live demonstrations, and exposure to real-world projects. ",
     },
     {
-        id:4,
-        title:"Every Friday",
-        desc:"Lorem ipsum dolor sit amet consectetur adipisicing elit Molestiae pariatur iste necessitatibus delectus dolorem aitaque quaerat recusandae modi quia numquam impedit,asperiores facere voluptates."
+      id: 4,
+      title: "Every Friday",
+      desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit Molestiae pariatur iste necessitatibus delectus dolorem aitaque quaerat recusandae modi quia numquam impedit,asperiores facere voluptates.",
     },
-  ]
+  ];
 
   const underHowItWorks = [
     {
@@ -88,7 +86,8 @@ export default function TechFridayPage() {
     },
     {
       id: 6,
-      title: "How can I prepare for a session or contribute as a guest speaker?",
+      title:
+        "How can I prepare for a session or contribute as a guest speaker?",
       desc: "To prepare, attendees can review the SRIYOG Consulting presentation (Google Slides) and check the program agenda. If you're interested in contributing as a guest speaker, you can reach out to the organizers with your profile and topic of interest.",
     },
   ];
@@ -107,8 +106,12 @@ export default function TechFridayPage() {
         ></div>
         <div className="relative z-10 h-screen flex justify-between  max-lg:container  mx-auto items-end lg:pt-64 lg:pb-28 max-md:items-end max-lg:h-full max-lg:pb-4">
           <div className=" bg-[#055d59]/50 px-5 py-6 text-white flex flex-col items-center gap-2   w-[50%]">
-            <h1 className="italic font-bold text-3xl md:text-4xl lg:text-6xl ">#TechFriday</h1>
-            <p className="text-sm md:text-lg">Learn,Lead & Leverage - Every Friday @ 9 PM (NPT)</p>
+            <h1 className="italic font-bold text-3xl md:text-4xl lg:text-6xl ">
+              #TechFriday
+            </h1>
+            <p className="text-sm md:text-lg">
+              Learn,Lead & Leverage - Every Friday @ 9 PM (NPT)
+            </p>
           </div>
           <div>
             <Link
@@ -237,7 +240,9 @@ export default function TechFridayPage() {
                   width={15}
                   height={15}
                   alt="dropdown"
-                  className={`${activeAccordion === item.id?'' : 'rotate-180'}  `}
+                  className={`${
+                    activeAccordion === item.id ? "" : "rotate-180"
+                  }  `}
                 />
               </h3>
               {activeAccordion === item.id && (
@@ -253,50 +258,48 @@ export default function TechFridayPage() {
       <section className="max-w-full  mb-16 bg-gray-100 py-8 px-6 lg:px-0">
         {/*Image Container */}
         <div className="max-w-[1180px] mx-auto   flex flex-col sm:flex-row items-stretch gap-8 bg-gray-100 ">
-          
-
-           <div className="sm:max-w-[40%] h-full w-full ">
-          <Link href="blog/corporate-email">
-          <Image
-            src="/assets/images/homepage/blog/corporate-email.png"
-            width={500}
-            height={600}
-            alt="banner_Image"
-            className="h-full w-full object-cover"
-          />
-          </Link>
-        </div>
-
-        {/* Description*/}
-
-        <div className="flex flex-col gap-3 px-2 lg:pr-[150px] w-full sm:max-w-[60%] mb-0 md:mb-16  ">
-          <div className="flex items-center justify-start gap-2 text-gray-800">
-            <Image
-              src="/assets/images/techfriday/book.svg"
-              width={50}
-              height={50}
-              alt="title_image"
-            />
-            <p className="text-gray-800 font-semibold">Introducing our ideas</p>
+          <div className="sm:max-w-[40%] h-full w-full ">
+            <Link href="blog/corporate-email">
+              <Image
+                src="/assets/images/homepage/blog/corporate-email.png"
+                width={500}
+                height={600}
+                alt="banner_Image"
+                className="h-full w-full object-cover"
+              />
+            </Link>
           </div>
-          <h1 className="text-4xl text-gray-800 font-[900]">
-            Illuminate Your Evening Exquisite Night
-          </h1>
-          <p className="font-semibold text-gray-800 text-xl">
-            Embrace Peaceful Nights And Add A Touch Or Elegence To Your Home
-            With Our Night Lamp
-          </p>
-          <p className="text-sm text-gray-800 ">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae
-            pariatur iste necessitatibus delectus dolorem a itaque quaerat
-            recusandae modi quia numquam impedit, asperiores facere voluptates.
-            Fugit at sapiente odit consequatur blanditiis quam sint.
-          </p>
-        </div>
 
+          {/* Description*/}
 
+          <div className="flex flex-col gap-3 px-2 lg:pr-[150px] w-full sm:max-w-[60%] mb-0 md:mb-16  ">
+            <div className="flex items-center justify-start gap-2 text-gray-800">
+              <Image
+                src="/assets/images/techfriday/book.svg"
+                width={50}
+                height={50}
+                alt="title_image"
+              />
+              <p className="text-gray-800 font-semibold">
+                Introducing our ideas
+              </p>
+            </div>
+            <h1 className="text-4xl text-gray-800 font-[900]">
+              Illuminate Your Evening Exquisite Night
+            </h1>
+            <p className="font-semibold text-gray-800 text-xl">
+              Embrace Peaceful Nights And Add A Touch Or Elegence To Your Home
+              With Our Night Lamp
+            </p>
+            <p className="text-sm text-gray-800 ">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Molestiae pariatur iste necessitatibus delectus dolorem a itaque
+              quaerat recusandae modi quia numquam impedit, asperiores facere
+              voluptates. Fugit at sapiente odit consequatur blanditiis quam
+              sint.
+            </p>
+          </div>
         </div>
-       
       </section>
 
       {/*Custom ribbon*/}
@@ -306,9 +309,7 @@ export default function TechFridayPage() {
             <h1 className="text-[2.1rem] font-semibold !text-white">
               Showcase Your IT Product
             </h1>
-            <h4 className="text-[17px] text-[rgb(250,225,215)] max-md:text-[14px] text-justify">
-            
-            </h4>
+            <h4 className="text-[17px] text-[rgb(250,225,215)] max-md:text-[14px] text-justify"></h4>
           </div>
 
           <div className="mt-4 md:mt-0 md:self-center">
@@ -355,7 +356,7 @@ export default function TechFridayPage() {
                 height={15}
                 alt="Correct"
               />
-              Share your Tech Experience 
+              Share your Tech Experience
             </li>
             <li className="flex items-center gap-3 text-sm">
               {" "}
@@ -365,7 +366,7 @@ export default function TechFridayPage() {
                 height={15}
                 alt="Correct"
               />
-              Contribute in Social Projects 
+              Contribute in Social Projects
             </li>
           </ul>
           <div className="mt-4 flex flex-col sm:flex-row gap-4 ">
@@ -373,13 +374,13 @@ export default function TechFridayPage() {
               href={""}
               className="px-4 py-2 bg-[#055d59] rounded-full text-white border-none text-center"
             >
-              Join The Channel 
+              Join The Channel
             </Link>
             <Link
               href={""}
               className="px-4 py-2 bg-transparent rounded-full text-[#055d59] border-1 hover:bg-[#055d59] hover:text-white   border-[#055d59] text-center"
             >
-              Become a Presenter 
+              Become a Presenter
             </Link>
           </div>
         </div>
@@ -391,14 +392,14 @@ export default function TechFridayPage() {
               backgroundImage: "url('/assets/images/techfriday/')",
             }}
           ></div>
-          <p>Volunteering Opportunity  </p>
+          <p>Volunteering Opportunity </p>
           <h1 className="text-3xl font-extrabold ">Become a Volunteer</h1>
           <p className="text-sm text-gray-700">
-             Lead a Community 
+            Lead a Community
             <br />
             Guide the members
             <br />
-            Build Projects 
+            Build Projects
             <br />
             Uplift Society
           </p>
@@ -407,17 +408,15 @@ export default function TechFridayPage() {
             href={""}
             className="px-4 py-2 bg-transparent rounded-full text-[#055d59] border-1 hover:bg-[#055d59] hover:text-white   border-[#055d59] mt-4  w-full sm:max-w-[50%] text-center"
           >
-            Apply Now 
+            Apply Now
           </Link>
         </div>
       </section>
 
       {/*Subsrcibe and Follow Section */}
       <section className="max-w-full mx-auto bg-blue-100/50 border-b border-gray-300 md:px-6  ">
-
         {/*Subsrcibe Section */}
         <div className="px-4 py-4 flex flex-col sm:flex-row justify-between gap-4 w-full max-w-[90%] mx-auto">
-          
           <div className="flex-1">
             <h1 className="text-[#055d59] text-2xl sm:text-3xl font-extrabold italic mb-1">
               Subscribe #TechFriday
@@ -466,81 +465,96 @@ export default function TechFridayPage() {
       </section>
 
       <footer className="max-w-full mx-auto bg-blue-100/50 px-6 py-6 pb-14 md:px-28">
-  <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
-    {/* Follow Us Section */}
-    <div className="flex flex-col gap-2">
-      <h3 className="font-semibold text-lg">Follow us</h3>
-      <div className="flex gap-4 items-center">
-        
-        <Link href="https://x.com/pracas" target="_blank">
-          <Image
-            src="/assets/icons/tweeter.svg"
-            width={30}
-            height={30}
-            alt="Twitter"
-          />
-        </Link>
-        <Link href="https://linkedin.com/in/pracasupreti" target="_blank">
-          <Image
-            src="/assets/icons/linkedin.svg"
-            width={30}
-            height={30}
-            alt="LinkedIn"
-          />
-        </Link>
-      </div>
-    </div>
-    {/* App Download Section */}
-    <div className="flex flex-col gap-2">
-      <p className="font-semibold text-lg">Download the SRIYOG app</p>
-      <div className="flex flex-wrap justify-start md:justify-center gap-3">
-        <Link href="https://bit.ly/sriyog" target="_blank">
-          <div className="relative h-[70px] w-[130px] md:w-[100px]">
-            <Image
-              src="/assets/images/footer/google-play.svg"
-              fill
-              className="object-contain"
-              alt="Google Play"
-            />
+        <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+          {/* Follow Us Section */}
+          <div className="flex flex-col gap-2">
+            <h3 className="font-semibold text-lg">Follow us</h3>
+            <div className="flex gap-4 items-center">
+              <Link href="https://x.com/pracas" target="_blank">
+                <Image
+                  src="/assets/icons/tweeter.svg"
+                  width={30}
+                  height={30}
+                  alt="Twitter"
+                />
+              </Link>
+              <Link href="https://linkedin.com/in/pracasupreti" target="_blank">
+                <Image
+                  src="/assets/icons/linkedin.svg"
+                  width={30}
+                  height={30}
+                  alt="LinkedIn"
+                />
+              </Link>
+            </div>
           </div>
-        </Link>
-        <Link href="https://bit.ly/sriyogios" target="_blank">
-          <div className="relative h-[50px] w-[130px] md:w-[100px]">
-            <Image
-              src="/assets/images/footer/app-store.svg"
-              fill
-              className="object-contain"
-              alt="App Store"
-            />
+          {/* App Download Section */}
+          <div className="flex flex-col gap-2">
+            <p className="font-semibold text-lg">Download the SRIYOG app</p>
+            <div className="flex flex-wrap justify-start md:justify-center gap-3">
+              <Link href="https://bit.ly/sriyog" target="_blank">
+                <div className="relative h-[70px] w-[130px] md:w-[100px]">
+                  <Image
+                    src="/assets/images/footer/google-play.svg"
+                    fill
+                    className="object-contain"
+                    alt="Google Play"
+                  />
+                </div>
+              </Link>
+              <Link href="https://bit.ly/sriyogios" target="_blank">
+                <div className="relative h-[50px] w-[130px] md:w-[100px]">
+                  <Image
+                    src="/assets/images/footer/app-store.svg"
+                    fill
+                    className="object-contain"
+                    alt="App Store"
+                  />
+                </div>
+              </Link>
+            </div>
           </div>
-        </Link>
-      </div>
-    </div>
-  </div>
+        </div>
 
-  {/* Footer Links & Description */}
-  <div className="mt-6 flex flex-col gap-3 text-sm text-gray-800">
-    
-    <div className="flex flex-wrap gap-8">
-      <Link href="/contact" className="hover:underline">Contact</Link>
-      <Link href="/about" className="hover:underline">About us</Link>
-      <Link href="/team" className="hover:underline">Team</Link>
-      <Link href="/clients" className="hover:underline">Clients</Link>
-      <Link href="/career" className="hover:underline">Careers</Link>
-      <Link href="/internship" className="hover:underline">Internship</Link>
-      <Link href="/vmgo" className="hover:underline">Vision and Mission</Link>
-      <Link href="/testimonials" className="hover:underline">Testimonials</Link>
-      <Link href="/privacy" className="hover:underline">Privacy Policy</Link>
-    </div>
+        {/* Footer Links & Description */}
+        <div className="mt-6 flex flex-col gap-3 text-sm text-gray-800">
+          <div className="flex flex-wrap gap-8">
+            <Link href="/contact" className="hover:underline">
+              Contact
+            </Link>
+            <Link href="/about" className="hover:underline">
+              About us
+            </Link>
+            <Link href="/team" className="hover:underline">
+              Team
+            </Link>
+            <Link href="/clients" className="hover:underline">
+              Clients
+            </Link>
+            <Link href="/career" className="hover:underline">
+              Careers
+            </Link>
+            <Link href="/internship" className="hover:underline">
+              Internship
+            </Link>
+            <Link href="/vmgo" className="hover:underline">
+              Vision and Mission
+            </Link>
+            <Link href="/testimonials" className="hover:underline">
+              Testimonials
+            </Link>
+            <Link href="/privacy" className="hover:underline">
+              Privacy Policy
+            </Link>
+          </div>
 
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
-      voluptates tempore vel? Vero recusandae nemo eaque facilis ullam odio quo
-      hic cum laboriosam consectetur!
-    </p>
-  </div>
-</footer>
-
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+            voluptates tempore vel? Vero recusandae nemo eaque facilis ullam
+            odio quo hic cum laboriosam consectetur!
+          </p>
+        </div>
+      </footer>
     </>
   );
 }

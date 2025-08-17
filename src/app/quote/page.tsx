@@ -1,4 +1,10 @@
+import { Metadata } from "next";
 import React from "react";
+
+
+export const metadata: Metadata = {
+  title: "Quote | SRIYOG Consulting",
+};
 
 const page = () => {
   return (

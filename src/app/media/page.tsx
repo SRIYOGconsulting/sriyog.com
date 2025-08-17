@@ -4,7 +4,6 @@ import Image from "next/image";
 import Link from "next/link";
 import { Metadata } from "next";
 const name = " Media Coverages";
-
 const mediaItems = [
   {
     img: "/assets/images/media/kantipur.png",

@@ -80,7 +80,7 @@ export default function Consulting() {
       img: "/assets/images/consulting/it-consulting.svg",
       title: "IT Consultancy Management",
       desc: "We offer a range of IT consultancy services, including system design, implementation, and support.",
-      link: "IT-consultancy-management",
+      link: "it-consulting",
     },
     {
       img: "/assets/images/consulting/ui-ux.svg",
