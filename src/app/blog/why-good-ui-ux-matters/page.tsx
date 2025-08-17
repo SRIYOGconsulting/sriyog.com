@@ -1,4 +1,11 @@
+import { Metadata } from "next";
 import Image from "next/image";
+
+
+export const metadata: Metadata = {
+  title: "Why Good UI/UX Design Matters for Any Website or App",
+  description: "Discover the importance of UI/UX design and how it impacts user satisfaction and business success."
+}
 export default function WGUIUXM() {
   return (
     <>

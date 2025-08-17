@@ -3,6 +3,7 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Pegasus Spyware &ndash; You Are Hacked",
+  description: "Uncover the truth about Pegasus spyware and its implications for privacy and security." 
 };
 
 export default function psrh() {

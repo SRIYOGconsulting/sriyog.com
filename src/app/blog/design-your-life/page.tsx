@@ -4,6 +4,7 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "16-60 Theory : Design your best life",
+  description: "Explore the 16-60 theory and learn how to design a fulfilling life."
 };
 
 export default function Tdul() {

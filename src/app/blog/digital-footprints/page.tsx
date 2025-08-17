@@ -1,5 +1,10 @@
+import { Metadata } from "next";
 import Image from "next/image";
 
+export const metadata:Metadata={
+  title:"Digital Footprints",
+  description:"Understanding the concept of digital footprints and their implications.",
+}
 export default function page() {
   return (
     <>

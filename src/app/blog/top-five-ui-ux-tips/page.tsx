@@ -1,4 +1,10 @@
+import { Metadata } from "next"
 import Image from "next/image"
+
+export const metadata:Metadata ={
+  title: "Top 5 UI/UX Tips",
+  description: "Improve your website's design and user experience with these essential tips."
+}
 export default function Tfuiuxt(){
   return (
     <>

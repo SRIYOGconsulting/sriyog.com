@@ -1,4 +1,11 @@
+import { Metadata } from "next";
 import Image from "next/image";
+
+
+export const metadata: Metadata = {
+  title: "20 Books that can change you",
+  description: "A curated list of 20 transformative books for personal and professional growth.",
+}
 
 export default function TwentyBooks() {
   return (
@@ -14,7 +21,7 @@ export default function TwentyBooks() {
         </div>
         <div>
           <h1 className="font-extrabold text-4xl text-[#055d59] text-center">
-            20 Books that can change YOU
+            20 Books that can change you
           </h1>
           <p className="text-center italic">
             By: Pracas Upreti, Information Technology Consultant

@@ -1,4 +1,11 @@
+import { Metadata } from "next";
 import Image from "next/image";
+
+
+export const metadata: Metadata = {
+  title: "What is Digital Marketing? A Beginner’s Guide to Growing Your Business Online",
+  description: "Learn the basics of digital marketing and how it can help your business thrive in the online world."
+}
 export default function WhatisDigitalMArketing() {
   return (
     <>
