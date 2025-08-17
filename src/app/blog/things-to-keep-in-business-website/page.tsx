@@ -3,6 +3,7 @@ import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "Things to Keep in Business Website",
+  description: "Essential elements and best practices for creating a successful business website."
 };
 export default function Ttkibw() {
   return (

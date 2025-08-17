@@ -4,7 +4,6 @@ import Link from "next/link";
 export default function FloatingIcons() {
   return (
     <div className="fixed z-[9999] bottom-36 right-10 text-center">
-        
       <div className="items-center justify-center flex-col b-2 border-[#4b4b4b] flex gap-6">
         <Link
           href="https://wa.me/9779852024365?text=Hi%2C%20I%27m%20contacting%20you%20through%20www.sriyog.com.%20"
@@ -47,7 +46,6 @@ export default function FloatingIcons() {
           </div>
         </Link>
       </div>
-
     </div>
   );
 }

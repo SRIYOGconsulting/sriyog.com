@@ -1,6 +1,11 @@
+import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 
+export const metadata:Metadata ={
+  title:"Pitch Deck Magic : How to create the best pitch deck?",
+  description:"Learn the secrets to crafting an effective pitch deck that captivates investors."
+}
 export default function PitchDeck() {
   return (
     <>

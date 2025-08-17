@@ -2,7 +2,8 @@ import { Metadata } from "next";
 import Image from "next/image";
 
 export const metadata:Metadata= {
-  title: "Corporate/Business eMail"
+  title: "Corporate/Business eMail",
+  description: "Learn about the importance of corporate email and how it enhances professional communication."  
 }
 export default function CorporateEmail() {
   return (

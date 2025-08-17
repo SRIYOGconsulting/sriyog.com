@@ -3,7 +3,8 @@ import Image from "next/image";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "The Great Hack: How Social Media impacts politics?"
+  title: "The Great Hack: How Social Media impacts politics?",
+  description: "Explore the influence of social media on politics and elections through the lens of the Cambridge Analytica scandal."
 };
 
 export default function TheGreatHack() {

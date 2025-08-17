@@ -1,7 +1,8 @@
 import { Metadata } from "next";
 import Image from "next/image";
 export const metadata:Metadata= {
-  title: "21 Stages of Web Development"
+  title: "21 Stages of Web Development",
+  description: "A comprehensive guide to the 21 stages involved in the web development process."
 }
 export default function WebDevelopmentStages() {
   return (

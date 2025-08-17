@@ -1,5 +1,10 @@
+import { Metadata } from "next";
 import Image from "next/image";
 
+export const metadata: Metadata = {
+  title: "Digital Dashain : Practicing FinTech in family.",
+  description: "Exploring the intersection of traditional festivals and modern financial technology.",
+}
 export default function page() {
   return (
     <>

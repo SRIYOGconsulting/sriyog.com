@@ -1,7 +1,8 @@
 import { Metadata } from "next"
 
 export const metadata:Metadata={
-  title:"What IS Coporate/Business eMail | SRIYOG Consulting"
+  title:"What IS Coporate/Business eMail | SRIYOG Consulting",
+  description:"Understanding the importance of corporate/business email for professional communication."
 }
 export default function Wicbe(){
   return(

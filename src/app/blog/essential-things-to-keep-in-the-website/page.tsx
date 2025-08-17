@@ -3,7 +3,8 @@ import Link from "next/link";
 import { Metadata } from "next";
 
 export const metadata:Metadata ={
-  title:"Essential Things To Keep In The Website | SRIYOG Consulting"
+  title:"Essential Things To Keep In The Website | SRIYOG Consulting",
+  description:"Key elements and best practices for creating a successful website."
 }
 export default function Ettkitw() {
   return (

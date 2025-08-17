@@ -145,8 +145,10 @@ export default function Footer() {
                 {
                   label: (
                     <>
-                      <Link prefetch={true} href="/quote">
-                        Request Quote
+                      <Link prefetch={true} href="/trainings">
+                         IT Training&nbsp;<span className="bg-[#0D5D59] px-[5px] py-[2px] text-[11px] text-white rounded-[3px]">
+                        New
+                      </span>
                       </Link>
                     </>
                   ),},
@@ -338,13 +340,10 @@ export default function Footer() {
             </div>
             <Link
               prefetch={true}
-              href="/trainings"
+              href="/quote"
               className="block mb-4 bg-[#0D5D59] hover:bg-[#2e5250] text-white text-center font-semibold py-2 rounded-lg transition"
             >
-              IT Training&nbsp;
-                      <span className="bg-[#0D5D59] px-[5px] py-[2px] text-[11px] text-white rounded-[3px]">
-                        New
-                      </span>
+              Request a Quote
             </Link>
           </div>
         </section>

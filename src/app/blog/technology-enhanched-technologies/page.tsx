@@ -1,6 +1,12 @@
+import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 
+
+export const metadata: Metadata = {
+ title: "Digital Footprints",
+ description: "Understanding the impact of our online presence."
+}
 export default function page() {
   return (
     <>
