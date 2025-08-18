@@ -5,22 +5,6 @@ import Thumbnails from "yet-another-react-lightbox/plugins/thumbnails";
 import "yet-another-react-lightbox/plugins/thumbnails.css";
 import Image from "next/image";
 import Ribbon from "@/components/Ribbon";
-import { Metadata } from "next";
-
-export const metadata: Metadata = {
-  title: "Certificates | SRIYOG Consulting",
-  openGraph: {
-    title: "Certificates | SRIYOG Consulting",
-    description: "Explore the various certificates and recognitions earned by SRIYOG Consulting.",
-    url: "https://www.sriyog.com/certificates",
-    images: [
-      {
-        url: "/assets/images/certificate/hero-banner.jpg",
-        alt: "Certificates"
-      }
-    ]
-  }
-} 
 
 export default function Certificate() {
   const name = "Certificates";
