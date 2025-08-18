@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     url: "https://www.sriyog.com/certificates",
     images: [
       {
-        url: "/assets/images/certificate/hero-banner.jpg",
+        url: "/assets/images/og/default.jpg",
         alt: "Certificates",
       },
     ],

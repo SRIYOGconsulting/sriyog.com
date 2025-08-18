@@ -10,7 +10,7 @@ export const metadata:Metadata ={
     url: "https://www.sriyog.com/blog/top-five-ui-ux-tips",
     images: [
       {
-        url: "/assets/images/homepage/hero-banner.jpg",
+        url: "/assets/images/og/default.jpg",
         alt: "Top 5 UI/UX Tips"
       }
     ]

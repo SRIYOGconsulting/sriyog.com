@@ -13,7 +13,7 @@ export const metadata:Metadata = {
     url: "https://www.sriyog.com/consulting",
     images: [
       {
-        url: "/assets/images/consulting/consulting-services.jpg",
+        url: "/assets/images/og/default.jpg",
         alt: "Consulting Services"
       }
     ]

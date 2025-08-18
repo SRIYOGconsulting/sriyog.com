@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     url: "https://www.sriyog.com/consulting/it-consulting",
     images: [
       {
-        url: "/assets/images/consulting/it-consulting.jpg",
+        url: "/assets/images/og/default.jpg",
         alt: "IT Consulting"
       }
     ]

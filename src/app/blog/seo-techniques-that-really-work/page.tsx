@@ -10,7 +10,7 @@ export const metadata:Metadata = {
     url: "https://www.sriyog.com/blog/seo-techniques-that-really-work",
     images: [
       {
-        url: "/assets/images/homepage/hero-banner.jpg",
+        url: "/assets/images/og/default.jpg",
         alt: "SEO Techniques That Really Work in 2025"
       }
     ]

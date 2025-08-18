@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     url: "https://www.sriyog.com/career",
     images: [
       {
-        url: "/assets/images/career/hero-banner.jpg",
+        url: "/assets/images/og/default.jpg",
         alt: "Career Opportunities"
       }
     ]

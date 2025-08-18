@@ -13,7 +13,7 @@ export const metadata:Metadata={
     url: "https://www.sriyog.com/portfolio",
     images: [
       {
-        url: "/assets/images/homepage/hero-banner.jpg",
+        url: "/assets/images/og/default.jpg",
         alt: "Portfolio"
       }
     ]

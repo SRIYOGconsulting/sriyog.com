@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     url: "https://www.sriyog.com/consulting/human-resource-management",
     images: [
       {
-        url: "/assets/images/consulting/human-resource-management.jpg",
+        url: "/assets/images/og/default.jpg",
         alt: "Human Resource Management"
       }
     ]

@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     url: "https://www.sriyog.com/trainings/form",
     images: [
       {
-        url: "/assets/images/homepage/hero-banner.jpg",
+        url: "/assets/images/og/default.jpg",
         alt: "Book a Training"
       }
     ]

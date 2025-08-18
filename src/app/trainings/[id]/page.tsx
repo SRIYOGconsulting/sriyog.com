@@ -23,7 +23,7 @@ export async function generateMetadata(
         url: `https://www.sriyog.com/trainings/${id}`,
         images: [
           {
-            url: "/assets/images/homepage/hero-banner.jpg",
+            url: "/assets/images/og/default.jpg",
             alt: "Training Not Found"
           }
         ]
