@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     siteName: "SRIYOG Consulting",
     images: [
       {
-        url: "https://www.sriyog.com/assets/images/og/home.jpg",
+        url: "https://www.sriyog.com/assets/images/og/default.jpg",
         width: 1200,
         height: 630,
         alt: "SRIYOG Consulting OG Image",
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
     title: "SRIYOG Consulting | IT Consulting Company in Nepal",
     description:
       "Discover digital innovation with SRIYOG Consulting – your trusted IT partner in Nepal.",
-    images: ["https://www.sriyog.com/assets/images/home.jpg"],
+    images: ["https://www.sriyog.com/assets/images/og/default.jpg"],
     creator: "@sriyog",
   },
 };
