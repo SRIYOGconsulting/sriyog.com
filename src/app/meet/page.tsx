@@ -19,8 +19,8 @@ export const metadata: Metadata = {
   }
 };
 export default function MeetPage() {
-  const defaultLink = "https://d.sriyog.com/meet";
-  const interviewLink = "https://d.sriyog.com/meet";
+  const defaultLink = "https://d.sriyog.com/pm9pm";
+  const interviewLink = "https://d.sriyog.com/pm9pm";
   const specialLink = "https://d.sriyog.com/meet";
 
   const fullSchedule: { [day: string]: { time: string; title: string }[] } = {
