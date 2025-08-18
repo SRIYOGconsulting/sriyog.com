@@ -282,7 +282,7 @@ export const metadata: Metadata = {
     url: "https://www.sriyog.com/clients",
     images: [
       {
-        url: "/assets/images/clients/hero-banner.jpg",
+        url: "/assets/images/og/default.jpg",
         alt: "Our Clients",
       },
     ],

@@ -10,7 +10,7 @@ export const metadata:Metadata = {
     url: "https://www.sriyog.com/blog/how-to-do-keyword-research-for-seo",
     images: [
       {
-        url: "/assets/images/homepage/hero-banner.jpg",
+        url: "/assets/images/og/default.jpg",
         alt: "How to Do Keyword Research for SEO: A Step-by-Step Guide"
       }
     ]

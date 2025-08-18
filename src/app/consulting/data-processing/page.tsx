@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     url: "https://www.sriyog.com/consulting/data-processing",
     images: [
       {
-        url: "/assets/images/consulting/data-processing.jpg",
+        url: "/assets/images/og/default.jpg",
         alt: "Data Processing"
       }
     ]
