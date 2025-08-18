@@ -6,6 +6,18 @@ import { LuMessageCircleMore } from "react-icons/lu";
 
 export const metadata: Metadata = {
   title: "Feedback | SRIYOG Consulting",
+  description: "Provide your feedback and suggestions for SRIYOG Consulting.",
+  openGraph: {
+    title: "Feedback | SRIYOG Consulting",
+    description: "Provide your feedback and suggestions for SRIYOG Consulting.",
+    url: "https://www.sriyog.com/feedback",
+    images: [
+      {
+        url: "/assets/images/homepage/hero-banner.jpg",
+        alt: "Feedback"
+      }
+    ]
+  }
 };
 const Feedback = () => {
   const name = "Feedback Form";

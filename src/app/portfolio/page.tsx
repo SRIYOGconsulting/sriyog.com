@@ -5,7 +5,19 @@ import Link from "next/link";
 import { Metadata } from "next";
 
 export const metadata:Metadata={
-  title:"Portfolio | SRIYOG Consulting"
+  title:"Portfolio | SRIYOG Consulting",
+  description: "Explore the portfolio of SRIYOG Consulting.",
+  openGraph: {
+    title: "Portfolio | SRIYOG Consulting",
+    description: "Explore the portfolio of SRIYOG Consulting.",
+    url: "https://www.sriyog.com/portfolio",
+    images: [
+      {
+        url: "/assets/images/homepage/hero-banner.jpg",
+        alt: "Portfolio"
+      }
+    ]
+  }
 }
 export default function PortfolioPage() {
   const portfolio = [

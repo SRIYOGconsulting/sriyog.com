@@ -2,7 +2,18 @@ import { Metadata } from "next";
 import Image from "next/image";
 export const metadata:Metadata= {
   title: "21 Stages of Web Development",
-  description: "A comprehensive guide to the 21 stages involved in the web development process."
+  description: "A comprehensive guide to the 21 stages involved in the web development process.",
+  openGraph: {
+    title: "21 Stages of Web Development",
+    description: "A comprehensive guide to the 21 stages involved in the web development process.",
+    url: "https://www.sriyog.com/blog/21-stages-of-web-development",
+    images: [
+      {
+        url: "/assets/images/homepage/hero-banner.jpg",
+        alt: "21 Stages of Web Development"
+      }
+    ]
+  }
 }
 export default function WebDevelopmentStages() {
   return (

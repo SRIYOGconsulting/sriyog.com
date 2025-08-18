@@ -10,6 +10,14 @@ export const metadata: Metadata = {
   openGraph: {
     title:
       "IT Training in Kathmandu, Nepal | SRIYOG Consulting",
+      description: "Explore our IT training programs in Kathmandu, Nepal.",
+      url: "https://www.sriyog.com/trainings",
+      images: [
+        {
+          url: "/assets/images/homepage/hero-banner.jpg",
+          alt: "IT Training in Kathmandu, Nepal"
+        }
+      ]
   },
 };
 

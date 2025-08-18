@@ -7,6 +7,17 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "About Us | SRIYOG Consulting",
+  openGraph:{
+    title: "About Us | SRIYOG Consulting",
+    description: "Learn more about SRIYOG Consulting, a leader in digital solutions for healthcare, employment, and tourism.",
+    url: "https://www.sriyog.com/about",
+    images: [
+      {
+        url: "/assets/images/homepage/hero-banner.jpg",
+        alt: "About Us"
+      }
+    ]
+  }
 };
 export default function Aboutpage() {
   const cardData = [

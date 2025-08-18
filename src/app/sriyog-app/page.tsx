@@ -4,6 +4,18 @@ import Link from "next/link";
 
 export const metadata:Metadata={
   title: "SRIYOG App | Sriyog Consulting",
+  description: "Explore the SRIYOG App by Sriyog Consulting.",
+  openGraph: {
+    title: "SRIYOG App | Sriyog Consulting",
+    description: "Explore the SRIYOG App by Sriyog Consulting.",
+    url: "https://www.sriyog.com/sriyog-app",
+    images: [
+      {
+        url: "/assets/images/homepage/hero-banner.jpg",
+        alt: "SRIYOG App"
+      }
+    ]
+  }
 }
 export default function App() {
   return (

@@ -3,6 +3,18 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Free IT Survey | SRIYOG Consulting",
+  description: "Participate in the free IT survey by SRIYOG Consulting.",
+  openGraph: {
+    title: "Free IT Survey | SRIYOG Consulting",
+    description: "Participate in the free IT survey by SRIYOG Consulting.",
+    url: "https://www.sriyog.com/survey",
+    images: [
+      {
+        url: "/assets/images/homepage/hero-banner.jpg",
+        alt: "Free IT Survey"
+      }
+    ]
+  }
 };
 export default function Page(){
     return(<>

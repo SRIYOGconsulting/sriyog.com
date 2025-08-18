@@ -2,6 +2,18 @@ import { Metadata } from "next";
 import Vmgo from "./vmgo";
 export const metadata: Metadata = {
   title: "VMGO | IT Consulting Company in Nepal",
+  description: "VMGO is a leading IT consulting company in Nepal.",
+  openGraph: {
+    title: "VMGO | IT Consulting Company in Nepal",
+    description: "VMGO is a leading IT consulting company in Nepal.",
+    url: "https://www.sriyog.com/vmgo",
+    images: [
+      {
+        url: "/assets/images/homepage/hero-banner.jpg",
+        alt: "VMGO"
+      }
+    ]
+  }
 }
 export default async function VMGOPage() {
   return (

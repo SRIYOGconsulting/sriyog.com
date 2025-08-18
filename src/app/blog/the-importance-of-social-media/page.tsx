@@ -3,7 +3,18 @@ import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "The Importance of Social Media in Digital Marketing",
-  description: "Explore the role of social media in shaping digital marketing strategies."
+  description: "Explore the role of social media in shaping digital marketing strategies.",
+  openGraph: {
+    title: "The Importance of Social Media in Digital Marketing",
+    description: "Explore the role of social media in shaping digital marketing strategies.",
+    url: "https://www.sriyog.com/blog/the-importance-of-social-media",
+    images: [
+      {
+        url: "/assets/images/homepage/hero-banner.jpg",
+        alt: "The Importance of Social Media in Digital Marketing"
+      }
+    ]
+  }
 }
 export default function TISMIDM() {
   return (

@@ -4,7 +4,18 @@ import Image from "next/image";
 
 export const metadata:Metadata ={
   title:"What is SEO and Why Is It Important for Your Website?",
-  description:"Learn about the basics of SEO and how it can help your website rank higher in search engine results."
+  description:"Learn about the basics of SEO and how it can help your website rank higher in search engine results.",
+  openGraph: {
+    title: "What is SEO and Why Is It Important for Your Website?",
+    description: "Learn about the basics of SEO and how it can help your website rank higher in search engine results.",
+    url: "https://www.sriyog.com/blog/what-is-seo-and-its-important",
+    images: [
+      {
+        url: "/assets/images/homepage/hero-banner.jpg",
+        alt: "What is SEO and Why Is It Important for Your Website?"
+      }
+    ]
+  }
 }
 export default function WhatisSEOAndItsImportance() {
   return (

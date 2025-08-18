@@ -5,6 +5,17 @@ import Link from "next/link";
 export const metadata:Metadata={
   title:"Business Model Canvas",
   description:"A comprehensive guide to the Business Model Canvas framework.",
+  openGraph: {
+    title: "Business Model Canvas",
+    description: "A comprehensive guide to the Business Model Canvas framework.",
+    url: "https://www.sriyog.com/blog/business-model-canvas",
+    images: [
+      {
+        url: "/assets/images/homepage/hero-banner.jpg",
+        alt: "Business Model Canvas"
+      }
+    ]
+  }
 }
 export default function BusinessModelPage() {
   return (

@@ -3,6 +3,18 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Terms of Services | SRIYOG Consulting",
+  description: "Read the terms of services for SRIYOG Consulting.",
+  openGraph: {
+    title: "Terms of Services | SRIYOG Consulting",
+    description: "Read the terms of services for SRIYOG Consulting.",
+    url: "https://www.sriyog.com/tos",
+    images: [
+      {
+        url: "/assets/images/homepage/hero-banner.jpg",
+        alt: "Terms of Services"
+      }
+    ]
+  }
 };
 const Tos = () => {
   return (

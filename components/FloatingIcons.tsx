@@ -28,7 +28,7 @@ export default function FloatingIcons() {
           target="_blank"
           className="group flex flex-col items-center "
         >
-          <div className="relative h-[30px] w-[40px] animate-pulse-scale">
+          <div className="relative h-[30px] w-[40px] animate-pulse-scale hover:mb-3 transition-all duration-200 ease-in-out">
             <Image
               src="/assets/icons/phone.svg"
               fill

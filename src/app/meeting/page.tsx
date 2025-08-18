@@ -4,7 +4,18 @@ import React from "react";
 
 export const metadata: Metadata = {
   title: "Book an Appointment | SRIYOG Consulting",
-  
+  description: "Book an appointment with SRIYOG Consulting for personalized consultations.",
+  openGraph: {
+    title: "Book an Appointment | SRIYOG Consulting",
+    description: "Book an appointment with SRIYOG Consulting for personalized consultations.",
+    url: "https://www.sriyog.com/meeting",
+    images: [
+      {
+        url: "/assets/images/homepage/hero-banner.jpg",
+        alt: "Book an Appointment"
+      }
+    ]
+  }
 };
 
 const page = () => {

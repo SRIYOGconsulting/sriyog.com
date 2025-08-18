@@ -4,6 +4,18 @@ import Ribbon from "@/components/Ribbon";
 
 export const metadata: Metadata = {
   title: "Videos | SRIYOG Consulting",
+  description: "Watch our videos to enhance your skills.",
+  openGraph: {
+    title: "Videos | SRIYOG Consulting",
+    description: "Watch our videos to enhance your skills.",
+    url: "https://www.sriyog.com/videos",
+    images: [
+      {
+        url: "/assets/images/homepage/hero-banner.jpg",
+        alt: "Videos"
+      }
+    ]
+  }
 };
 
 const _1 = "https://www.youtube.com/embed/eS0Fm8zbk0c?autoplay=1";

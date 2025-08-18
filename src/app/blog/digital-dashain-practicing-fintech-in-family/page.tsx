@@ -4,6 +4,17 @@ import Image from "next/image";
 export const metadata: Metadata = {
   title: "Digital Dashain : Practicing FinTech in family.",
   description: "Exploring the intersection of traditional festivals and modern financial technology.",
+  openGraph: {
+    title: "Digital Dashain : Practicing FinTech in family.",
+    description: "Exploring the intersection of traditional festivals and modern financial technology.",
+    url: "https://www.sriyog.com/blog/digital-dashain",
+    images: [
+      {
+        url: "/assets/images/homepage/hero-banner.jpg",
+        alt: "Digital Dashain : Practicing FinTech in family."
+      }
+    ]
+  }
 }
 export default function page() {
   return (

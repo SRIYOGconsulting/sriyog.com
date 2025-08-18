@@ -3,7 +3,18 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Pegasus Spyware &ndash; You Are Hacked",
-  description: "Uncover the truth about Pegasus spyware and its implications for privacy and security." 
+  description: "Uncover the truth about Pegasus spyware and its implications for privacy and security.",
+  openGraph: {
+    title: "Pegasus Spyware &ndash; You Are Hacked",
+    description: "Uncover the truth about Pegasus spyware and its implications for privacy and security.",
+    url: "https://www.sriyog.com/blog/pegasus-sypyware",
+    images: [
+      {
+        url: "/assets/images/homepage/hero-banner.jpg",
+        alt: "Pegasus Spyware &ndash; You Are Hacked"
+      }
+    ]
+  }
 };
 
 export default function psrh() {

@@ -4,6 +4,17 @@ import Image from "next/image";
 export const metadata:Metadata={
   title:"Digital Footprints",
   description:"Understanding the concept of digital footprints and their implications.",
+  openGraph: {
+    title: "Digital Footprints",
+    description: "Understanding the concept of digital footprints and their implications.",
+    url: "https://www.sriyog.com/blog/digital-footprints",
+    images: [
+      {
+        url: "/assets/images/homepage/hero-banner.jpg",
+        alt: "Digital Footprints"
+      }
+    ]
+  }
 }
 export default function page() {
   return (

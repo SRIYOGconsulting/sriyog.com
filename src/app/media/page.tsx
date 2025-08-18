@@ -516,6 +516,18 @@ const mediaItems = [
 ];
 export const metadata: Metadata = {
   title: "Media Coverages | SRIYOG Consulting",
+  description: "Media coverages and news articles about SRIYOG Consulting.",
+  openGraph: {
+    title: "Media Coverages | SRIYOG Consulting",
+    description: "Media coverages and news articles about SRIYOG Consulting.",
+    url: "https://www.sriyog.com/media",
+    images: [
+      {
+        url: "/assets/images/homepage/hero-banner.jpg",
+        alt: "Media Coverages"
+      }
+    ]
+  }
 };
 export default function Media() {
   return (

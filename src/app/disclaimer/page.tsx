@@ -3,6 +3,18 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Disclaimer | SRIYOG Consulting",
+  description: "Read the disclaimer for SRIYOG Consulting's services and policies.",
+  openGraph: {
+    title: "Disclaimer | SRIYOG Consulting",
+    description: "Read the disclaimer for SRIYOG Consulting's services and policies.",
+    url: "https://www.sriyog.com/disclaimer",
+    images: [
+      {
+        url: "/assets/images/homepage/hero-banner.jpg",
+        alt: "Disclaimer"
+      }
+    ]
+  }
 };
 const Disclaimer = () => {
   return (

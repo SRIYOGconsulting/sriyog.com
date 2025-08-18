@@ -1,7 +1,24 @@
 import Ribbon from "@/components/Ribbon";
+import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 
+
+export const metadata:Metadata = {
+  title: "Consulting Services | SRIYOG Consulting",
+  description: "Explore our range of consulting services designed to help your business thrive.",
+  openGraph: {
+    title: "Consulting Services | SRIYOG Consulting",
+    description: "Explore our range of consulting services designed to help your business thrive.",
+    url: "https://www.sriyog.com/consulting",
+    images: [
+      {
+        url: "/assets/images/consulting/consulting-services.jpg",
+        alt: "Consulting Services"
+      }
+    ]
+  }
+}
 export default function Consulting() {
   const consulting = [
     {

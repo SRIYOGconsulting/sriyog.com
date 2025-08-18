@@ -3,6 +3,17 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Career| SRIYOG Consulting",
+  openGraph:{
+    title: "Career | SRIYOG Consulting",
+    description: "Join our team at SRIYOG Consulting and be a part of our mission to drive digital transformation.",
+    url: "https://www.sriyog.com/career",
+    images: [
+      {
+        url: "/assets/images/career/hero-banner.jpg",
+        alt: "Career Opportunities"
+      }
+    ]
+  }
 };
 const Career = () => {
 

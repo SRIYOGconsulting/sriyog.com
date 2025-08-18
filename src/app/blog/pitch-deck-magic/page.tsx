@@ -4,7 +4,18 @@ import Link from "next/link";
 
 export const metadata:Metadata ={
   title:"Pitch Deck Magic : How to create the best pitch deck?",
-  description:"Learn the secrets to crafting an effective pitch deck that captivates investors."
+  description:"Learn the secrets to crafting an effective pitch deck that captivates investors.",
+  openGraph: {
+    title: "Pitch Deck Magic : How to create the best pitch deck?",
+    description: "Learn the secrets to crafting an effective pitch deck that captivates investors.",
+    url: "https://www.sriyog.com/blog/pitch-deck-magic",
+    images: [
+      {
+        url: "/assets/images/homepage/hero-banner.jpg",
+        alt: "Pitch Deck Magic : How to create the best pitch deck?"
+      }
+    ]
+  }
 }
 export default function PitchDeck() {
   return (

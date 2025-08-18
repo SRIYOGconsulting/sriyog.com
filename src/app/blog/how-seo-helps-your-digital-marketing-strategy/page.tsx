@@ -3,7 +3,18 @@ import Image from "next/image";
 
 export const metadata:Metadata ={
   title:"How SEO Helps Your Digital Marketing Strategy",
-  description:"Learn how SEO can enhance your digital marketing efforts."
+  description:"Learn how SEO can enhance your digital marketing efforts.",
+  openGraph: {
+    title: "How SEO Helps Your Digital Marketing Strategy",
+    description: "Learn how SEO can enhance your digital marketing efforts.",
+    url: "https://www.sriyog.com/blog/how-seo-helps-your-digital-marketing-strategy",
+    images: [
+      {
+        url: "/assets/images/homepage/hero-banner.jpg",
+        alt: "How SEO Helps Your Digital Marketing Strategy"
+      }
+    ]
+  }
 }
 export default function HSHUDM() {
   return (

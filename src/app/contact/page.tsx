@@ -5,6 +5,18 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Contact Us | SRIYOG Consulting",
+  description: "Get in touch with SRIYOG Consulting for expert guidance and support.",
+  openGraph: {
+    title: "Contact Us | SRIYOG Consulting",
+    description: "Get in touch with SRIYOG Consulting for expert guidance and support.",
+    url: "https://www.sriyog.com/contact",
+    images: [
+      {
+        url: "/assets/images/homepage/hero-banner.jpg",
+        alt: "Contact Us"
+      }
+    ]
+  }
 };
 export default function Page() {
   const card = [

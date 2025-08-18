@@ -4,7 +4,18 @@ import { Metadata } from "next";
 
 export const metadata:Metadata ={
   title:"Essential Things To Keep In The Website | SRIYOG Consulting",
-  description:"Key elements and best practices for creating a successful website."
+  description:"Key elements and best practices for creating a successful website.",
+  openGraph: {
+    title: "Essential Things To Keep In The Website | SRIYOG Consulting",
+    description: "Key elements and best practices for creating a successful website.",
+    url: "https://www.sriyog.com/blog/essential-things-to-keep-in-the-website",
+    images: [
+      {
+        url: "/assets/images/homepage/hero-banner.jpg",
+        alt: "Essential Things To Keep In The Website | SRIYOG Consulting"
+      }
+    ]
+  }
 }
 export default function Ettkitw() {
   return (

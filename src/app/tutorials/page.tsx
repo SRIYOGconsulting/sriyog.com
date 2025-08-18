@@ -3,6 +3,18 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Tutorials | SRIYOG Consulting",
+  description: "Watch our tutorial videos to enhance your skills.",
+  openGraph: {
+    title: "Tutorials | SRIYOG Consulting",
+    description: "Watch our tutorial videos to enhance your skills.",
+    url: "https://www.sriyog.com/tutorials",
+    images: [
+      {
+        url: "/assets/images/homepage/hero-banner.jpg",
+        alt: "Tutorials"
+      }
+    ]
+  }
 };
 export default function Tutorials() {
   const videoData = [

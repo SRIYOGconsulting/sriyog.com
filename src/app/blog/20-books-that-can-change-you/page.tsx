@@ -5,6 +5,17 @@ import Image from "next/image";
 export const metadata: Metadata = {
   title: "20 Books that can change you",
   description: "A curated list of 20 transformative books for personal and professional growth.",
+  openGraph: {
+    title: "20 Books that can change you",
+    description: "A curated list of 20 transformative books for personal and professional growth.",
+    url: "https://www.sriyog.com/blog/20-books-that-can-change-you",
+    images: [
+      {
+        url: "/assets/images/homepage/hero-banner.jpg",
+        alt: "20 Books that can change you"
+      }
+    ]
+  }
 }
 
 export default function TwentyBooks() {

@@ -49,6 +49,18 @@ const roles = [
 
 export const metadata: Metadata = {
   title: "Team | SRIYOG Consulting",
+  description: "Meet the team behind SRIYOG Consulting.",
+  openGraph: {
+    title: "Team | SRIYOG Consulting",
+    description: "Meet the team behind SRIYOG Consulting.",
+    url: "https://www.sriyog.com/team",
+    images: [
+      {
+        url: "/assets/images/homepage/hero-banner.jpg",
+        alt: "Team"
+      }
+    ]
+  }
 };
 const pracasImage = "/assets/images/team/pracas.png";
 export default function Example() {

@@ -5,6 +5,18 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Google slides | SRIYOG Consulting",
+  description: "Explore Google Slides presentations by SRIYOG Consulting.",
+  openGraph: {
+    title: "Google Slides | SRIYOG Consulting",
+    description: "Explore Google Slides presentations by SRIYOG Consulting.",
+    url: "https://www.sriyog.com/slides",
+    images: [
+      {
+        url: "/assets/images/homepage/hero-banner.jpg",
+        alt: "Google Slides"
+      }
+    ]
+  }
 };
 
 export default function Slides() {

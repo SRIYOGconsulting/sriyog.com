@@ -4,7 +4,18 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "The Great Hack: How Social Media impacts politics?",
-  description: "Explore the influence of social media on politics and elections through the lens of the Cambridge Analytica scandal."
+  description: "Explore the influence of social media on politics and elections through the lens of the Cambridge Analytica scandal.",
+  openGraph: {
+    title: "The Great Hack: How Social Media impacts politics?",
+    description: "Explore the influence of social media on politics and elections through the lens of the Cambridge Analytica scandal.",
+    url: "https://www.sriyog.com/blog/the-great-hack-how-social-media-impacts-politics",
+    images: [
+      {
+        url: "/assets/images/homepage/hero-banner.jpg",
+        alt: "The Great Hack: How Social Media impacts politics?"
+      }
+    ]
+  } 
 };
 
 export default function TheGreatHack() {

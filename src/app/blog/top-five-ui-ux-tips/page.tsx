@@ -3,7 +3,18 @@ import Image from "next/image"
 
 export const metadata:Metadata ={
   title: "Top 5 UI/UX Tips",
-  description: "Improve your website's design and user experience with these essential tips."
+  description: "Improve your website's design and user experience with these essential tips.",
+  openGraph: {
+    title: "Top 5 UI/UX Tips",
+    description: "Improve your website's design and user experience with these essential tips.",
+    url: "https://www.sriyog.com/blog/top-five-ui-ux-tips",
+    images: [
+      {
+        url: "/assets/images/homepage/hero-banner.jpg",
+        alt: "Top 5 UI/UX Tips"
+      }
+    ]
+  }
 }
 export default function Tfuiuxt(){
   return (

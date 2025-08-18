@@ -3,7 +3,18 @@ import Image from "next/image";
 
 export const metadata:Metadata= {
   title: "Corporate/Business eMail",
-  description: "Learn about the importance of corporate email and how it enhances professional communication."  
+  description: "Learn about the importance of corporate email and how it enhances professional communication.",
+  openGraph: {
+    title: "Corporate/Business eMail",
+    description: "Learn about the importance of corporate email and how it enhances professional communication.",
+    url: "https://www.sriyog.com/blog/corporate-email",
+    images: [
+      {
+        url: "/assets/images/homepage/hero-banner.jpg",
+        alt: "Corporate/Business eMail"
+      }
+    ]
+  }
 }
 export default function CorporateEmail() {
   return (

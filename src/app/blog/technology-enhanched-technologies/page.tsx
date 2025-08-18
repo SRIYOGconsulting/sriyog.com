@@ -5,7 +5,18 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
  title: "Digital Footprints",
- description: "Understanding the impact of our online presence."
+ description: "Understanding the impact of our online presence.",
+ openGraph: {
+   title: "Digital Footprints",
+   description: "Understanding the impact of our online presence.",
+   url: "https://www.sriyog.com/blog/digital-footprints",
+   images: [
+     {
+       url: "/assets/images/homepage/hero-banner.jpg",
+       alt: "Digital Footprints"
+     }
+   ]
+ }
 }
 export default function page() {
   return (

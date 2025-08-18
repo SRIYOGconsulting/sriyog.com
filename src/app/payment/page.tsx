@@ -5,6 +5,18 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Payment Details | SRIYOG Consulting",
+  description: "Payment details for SRIYOG Consulting.",
+  openGraph: {
+    title: "Payment Details | SRIYOG Consulting",
+    description: "Payment details for SRIYOG Consulting.",
+    url: "https://www.sriyog.com/payment",
+    images: [
+      {
+        url: "/assets/images/homepage/hero-banner.jpg",
+        alt: "Payment Details"
+      }
+    ]
+  }
 };
 const Payment = () => {
   return (

@@ -4,7 +4,18 @@ import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "What is UI/UX Design? A Beginner’s Guide",
-  description: "Learn the basics of UI/UX design and how it impacts user experience."
+  description: "Learn the basics of UI/UX design and how it impacts user experience.",
+  openGraph: {
+    title: "What is UI/UX Design? A Beginner’s Guide",
+    description: "Learn the basics of UI/UX design and how it impacts user experience.",
+    url: "https://www.sriyog.com/blog/what-is-UI-UX-design",
+    images: [
+      {
+        url: "/assets/images/homepage/hero-banner.jpg",
+        alt: "What is UI/UX Design? A Beginner’s Guide"
+      }
+    ]
+  }
 }
 export default function WIUIUXD() {
   return (

@@ -8,7 +8,18 @@ import Ribbon from "@/components/Ribbon";
 
 export const metadata: Metadata = {
   title: "Welcome | SRIYOG Consulting",
-  
+  description: "Welcome to SRIYOG Consulting, your partner in IT solutions.",
+  openGraph: {
+    title: "Welcome | SRIYOG Consulting",
+    description: "Welcome to SRIYOG Consulting, your partner in IT solutions.",
+    url: "https://www.sriyog.com/welcome",
+    images: [
+      {
+        url: "/assets/images/homepage/hero-banner.jpg",
+        alt: "Welcome to SRIYOG Consulting"
+      }
+    ]
+  }
 };
 
 const Welcome = () => {

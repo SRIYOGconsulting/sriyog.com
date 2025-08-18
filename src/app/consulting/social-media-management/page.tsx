@@ -3,6 +3,18 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Social Media Management | SRIYOG Consulting",
+  description: "Elevate your brand's presence with SRIYOG Consulting's social media management services.",
+  openGraph: {
+    title: "Social Media Management | SRIYOG Consulting",
+    description: "Elevate your brand's presence with SRIYOG Consulting's social media management services.",
+    url: "https://www.sriyog.com/consulting/social-media-management",
+    images: [
+      {
+        url: "/assets/images/consulting/social-media-management.jpg",
+        alt: "Social Media Management"
+      }
+    ]
+  }
 };
 export default function page() {
   return (

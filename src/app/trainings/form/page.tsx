@@ -4,7 +4,18 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Book a Training | Online & Onsite Courses Nepal",
-  
+  description: "Book your training sessions with SRIYOG Consulting.",
+  openGraph: {
+    title: "Book a Training | SRIYOG Consulting",
+    description: "Book your training sessions with SRIYOG Consulting.",
+    url: "https://www.sriyog.com/trainings/form",
+    images: [
+      {
+        url: "/assets/images/homepage/hero-banner.jpg",
+        alt: "Book a Training"
+      }
+    ]
+  }
 };
 export default function TrainingForm() {
   return (

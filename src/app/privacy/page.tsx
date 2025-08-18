@@ -3,6 +3,18 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Privacy Policy | SRIYOG Consulting",
+  description: "Privacy Policy for SRIYOG Consulting.",
+  openGraph: {
+    title: "Privacy Policy | SRIYOG Consulting",
+    description: "Privacy Policy for SRIYOG Consulting.",
+    url: "https://www.sriyog.com/privacy",
+    images: [
+      {
+        url: "/assets/images/homepage/hero-banner.jpg",
+        alt: "Privacy Policy"
+      }
+    ]
+  }
 };
 export default function Privacy() {
     const name="Privacy Policy";

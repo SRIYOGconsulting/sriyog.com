@@ -14,6 +14,18 @@ import { FaFlask, FaLocationDot, FaRocket, FaTruckMoving } from "react-icons/fa6
 
 export const metadata: Metadata = {
   title: "Timeline | SRIYOG Consulting",
+  description: "Explore the timeline of SRIYOG Consulting.",
+  openGraph: {
+    title: "Timeline | SRIYOG Consulting",
+    description: "Explore the timeline of SRIYOG Consulting.",
+    url: "https://www.sriyog.com/timeline",
+    images: [
+      {
+        url: "/assets/images/homepage/hero-banner.jpg",
+        alt: "Timeline"
+      }
+    ]
+  }
 };
 const Timeline = () => {
   const name = "Timeline";

@@ -5,6 +5,18 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Our Partners | SRIYOG Consulting",
+  description: "Explore our esteemed partners at SRIYOG Consulting.",
+  openGraph: {
+    title: "Our Partners | SRIYOG Consulting",
+    description: "Explore our esteemed partners at SRIYOG Consulting.",
+    url: "https://www.sriyog.com/partners",
+    images: [
+      {
+        url: "/assets/images/homepage/hero-banner.jpg",
+        alt: "Our Partners"
+      }
+    ]
+  }
 };
 export default function Page() {
   const partner = [

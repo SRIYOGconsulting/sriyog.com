@@ -5,7 +5,18 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "The Unmanaged Website",
-  description: "A personal journey through the evolution of my website."
+  description: "A personal journey through the evolution of my website.",
+  openGraph: {
+    title: "The Unmanaged Website",
+    description: "A personal journey through the evolution of my website.",
+    url: "https://www.sriyog.com/blog/the-unmanaged-website",
+    images: [
+      {
+        url: "/assets/images/homepage/hero-banner.jpg",
+        alt: "The Unmanaged Website"
+      }
+    ]
+  }
 }
 export default function Page() {
   return (

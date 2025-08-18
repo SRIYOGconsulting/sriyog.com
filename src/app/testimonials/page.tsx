@@ -4,6 +4,18 @@ import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "Testimonials | SRIYOG Consulting",
+  description: "Read testimonials from our satisfied clients.",
+  openGraph: {
+    title: "Testimonials | SRIYOG Consulting",
+    description: "Read testimonials from our satisfied clients.",
+    url: "https://www.sriyog.com/testimonials",
+    images: [
+      {
+        url: "/assets/images/homepage/hero-banner.jpg",
+        alt: "Testimonials"
+      }
+    ]
+  }
 };
 export default function Testimonials() {
   const testimonialsData = [

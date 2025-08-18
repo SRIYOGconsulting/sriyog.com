@@ -3,7 +3,18 @@ import Image from "next/image";
 
 export const metadata:Metadata = {
   title: "How to Do Keyword Research for SEO: A Step-by-Step Guide",
-  description: "A comprehensive guide to conducting keyword research for SEO."
+  description: "A comprehensive guide to conducting keyword research for SEO.",
+  openGraph: {
+    title: "How to Do Keyword Research for SEO: A Step-by-Step Guide",
+    description: "A comprehensive guide to conducting keyword research for SEO.",
+    url: "https://www.sriyog.com/blog/how-to-do-keyword-research-for-seo",
+    images: [
+      {
+        url: "/assets/images/homepage/hero-banner.jpg",
+        alt: "How to Do Keyword Research for SEO: A Step-by-Step Guide"
+      }
+    ]
+  }
 }
 export default function keywordReserchForSEO() {
   return (

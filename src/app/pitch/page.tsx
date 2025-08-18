@@ -3,6 +3,18 @@ import Ribbon from "@/components/Ribbon";
 import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Pitch Deck | SRIYOG Consulting",
+  description: "Explore the pitch deck for SRIYOG Consulting.",
+  openGraph: {
+    title: "Pitch Deck | SRIYOG Consulting",
+    description: "Explore the pitch deck for SRIYOG Consulting.",
+    url: "https://www.sriyog.com/pitch",
+    images: [
+      {
+        url: "/assets/images/homepage/hero-banner.jpg",
+        alt: "Pitch Deck"
+      }
+    ]
+  }
 };
 const Pitch = () => {
 

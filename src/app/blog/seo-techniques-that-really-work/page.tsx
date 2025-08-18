@@ -3,7 +3,18 @@ import Image from "next/image";
 
 export const metadata:Metadata = {
   title: "SEO Techniques That Really Work in 2025",
-  description: "Discover the most effective SEO techniques for 2025."
+  description: "Discover the most effective SEO techniques for 2025.",
+  openGraph:{
+    title: "SEO Techniques That Really Work in 2025",
+    description: "Discover the most effective SEO techniques for 2025.",
+    url: "https://www.sriyog.com/blog/seo-techniques-that-really-work",
+    images: [
+      {
+        url: "/assets/images/homepage/hero-banner.jpg",
+        alt: "SEO Techniques That Really Work in 2025"
+      }
+    ]
+  }
 }
 export default function SEOtechniques() {
   return (

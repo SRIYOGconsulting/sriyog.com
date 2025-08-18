@@ -5,6 +5,18 @@ import {Metadata} from "next";
 
 export const metadata:Metadata = {
   title: "Join | SRIYOG Consulting",
+  description: "Join SRIYOG Consulting and be a part of our team.",
+  openGraph: {
+    title: "Join | SRIYOG Consulting",
+    description: "Join SRIYOG Consulting and be a part of our team.",
+    url: "https://www.sriyog.com/join",
+    images: [
+      {
+        url: "/assets/images/homepage/hero-banner.jpg",
+        alt: "Join"
+      }
+    ]
+  }
 }
 
 export default function Join() {

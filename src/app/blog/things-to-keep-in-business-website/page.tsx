@@ -3,7 +3,18 @@ import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "Things to Keep in Business Website",
-  description: "Essential elements and best practices for creating a successful business website."
+  description: "Essential elements and best practices for creating a successful business website.",
+  openGraph: {
+    title: "Things to Keep in Business Website",
+    description: "Essential elements and best practices for creating a successful business website.",
+    url: "https://www.sriyog.com/blog/things-to-keep-in-business-website",
+    images: [
+      {
+        url: "/assets/images/homepage/hero-banner.jpg",
+        alt: "Things to Keep in Business Website"
+      }
+    ]
+  }
 };
 export default function Ttkibw() {
   return (

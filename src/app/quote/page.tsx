@@ -4,6 +4,18 @@ import React from "react";
 
 export const metadata: Metadata = {
   title: "Quote | SRIYOG Consulting",
+  description: "Get a quote for SRIYOG Consulting services.",
+  openGraph: {
+    title: "Quote | SRIYOG Consulting",
+    description: "Get a quote for SRIYOG Consulting services.",
+    url: "https://www.sriyog.com/quote",
+    images: [
+      {
+        url: "/assets/images/homepage/hero-banner.jpg",
+        alt: "Quote"
+      }
+    ]
+  }
 };
 
 const page = () => {

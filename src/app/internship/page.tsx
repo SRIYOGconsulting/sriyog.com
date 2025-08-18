@@ -3,6 +3,18 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Internship | SRIYOG Consulting",
+  description: "Explore internship opportunities at SRIYOG Consulting.",
+  openGraph: {
+    title: "Internship | SRIYOG Consulting",
+    description: "Explore internship opportunities at SRIYOG Consulting.",
+    url: "https://www.sriyog.com/internship",
+    images: [
+      {
+        url: "/assets/images/homepage/hero-banner.jpg",
+        alt: "Internship"
+      }
+    ]
+  }
 };
 const Internship = () => {
   return (

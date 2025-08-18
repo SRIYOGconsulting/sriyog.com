@@ -5,6 +5,18 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Download JDR Fonts | SRIYOG Consulting",
+  description: "Download JDR Fonts for your projects from SRIYOG Consulting.",
+  openGraph: {
+    title: "Download JDR Fonts | SRIYOG Consulting",
+    description: "Download JDR Fonts for your projects from SRIYOG Consulting.",
+    url: "https://www.sriyog.com/fonts",
+    images: [
+      {
+        url: "/assets/images/homepage/hero-banner.jpg",
+        alt: "Download JDR Fonts"
+      }
+    ]
+  }
 };
 
 const Fonts = () => {

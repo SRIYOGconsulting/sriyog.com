@@ -6,6 +6,25 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { useFloatingIcons } from "../context/FloatingIconContext";
+import { Metadata } from "next";
+
+
+export const metadata:Metadata = {
+  title: "Home | SRIYOG Consulting",
+  description: "Welcome to SRIYOG Consulting, your partner in IT solutions.",
+  openGraph: {
+    title: "Home | SRIYOG Consulting",
+    description: "Welcome to SRIYOG Consulting, your partner in IT solutions.",
+    url: "https://www.sriyog.com",
+    images: [
+      {
+        url: "/assets/images/homepage/hero-banner.jpg",
+        alt: "Home"
+      }
+    ]
+  }
+};
+
 export default function Home() {
   const [overlay, setOverlay] = useState(true);
   const [categoriesOpen, setCategoriesOpen] = useState(false);
@@ -226,9 +245,10 @@ export default function Home() {
             </div>
             <button
               className="absolute top-[-10px] z-10 right-[-15px] px-3 py-1 text-xl hover:cursor-pointer rounded-sm bg-[#055d59] font-semibold  hover:bg-[#315856] text-white transition-all duration-300 ease-in-out"
-              onClick={() => {setOverlay(false)
-                        setShowFloatingIcons(true);}
-              }
+              onClick={() => {
+                setOverlay(false);
+                setShowFloatingIcons(true);
+              }}
             >
               X
             </button>
@@ -514,7 +534,10 @@ export default function Home() {
                   </div>
                 </div>
               </Link>
-              <Link href="blog/things-to-keep-in-business-website" className=" h-[270px]  rounded-lg overflow-hidden">
+              <Link
+                href="blog/things-to-keep-in-business-website"
+                className=" h-[270px]  rounded-lg overflow-hidden"
+              >
                 <div className="relative group h-full w-full">
                   <Image
                     src="/assets/images/homepage/blog/things-to-keep-in-website.png"
@@ -546,7 +569,10 @@ export default function Home() {
                   </div>
                 </div>
               </Link>
-              <Link href="blog/essential-things-to-keep-in-the-website" className=" h-[270px]  rounded-lg overflow-hidden">
+              <Link
+                href="blog/essential-things-to-keep-in-the-website"
+                className=" h-[270px]  rounded-lg overflow-hidden"
+              >
                 <div className="relative group  h-full w-full">
                   <Image
                     src="/assets/images/homepage/blog/essesntial-things-to-keep-on-website.png"

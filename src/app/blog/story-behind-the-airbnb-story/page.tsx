@@ -3,7 +3,18 @@ import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "The Story Behind Airbnb",
-  description: "Explore the journey of Airbnb from a simple idea to a billion-dollar business."
+  description: "Explore the journey of Airbnb from a simple idea to a billion-dollar business.",
+  openGraph: {
+    title: "The Story Behind Airbnb",
+    description: "Explore the journey of Airbnb from a simple idea to a billion-dollar business.",
+    url: "https://www.sriyog.com/blog/story-behind-the-airbnb-story",
+    images: [
+      {
+        url: "/assets/images/homepage/hero-banner.jpg",
+        alt: "The Story Behind Airbnb"
+      }
+    ]
+  }
 }
 export default function Airbnb() {
   return (

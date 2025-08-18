@@ -17,12 +17,34 @@ export async function generateMetadata(
     return {
       title: "Training Not Found",
       description: "",
+      openGraph: {
+        title: "Training Not Found",
+        description: "",
+        url: `https://www.sriyog.com/trainings/${id}`,
+        images: [
+          {
+            url: "/assets/images/homepage/hero-banner.jpg",
+            alt: "Training Not Found"
+          }
+        ]
+      }
     };
   }
 
   return {
     title: training.metaTitle || training.title,
     description: training.metaDescription || training.desc,
+    openGraph: {
+      title: training.metaTitle || training.title,
+      description: training.metaDescription || training.desc,
+      url: `https://www.sriyog.com/trainings/${id}`,
+      images: [
+        {
+          url: "/assets/images/homepage/hero-banner.jpg",
+          alt: training.title
+        }
+      ]
+    }
   };
 }
 

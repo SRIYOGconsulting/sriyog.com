@@ -4,7 +4,18 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "16-60 Theory : Design your best life",
-  description: "Explore the 16-60 theory and learn how to design a fulfilling life."
+  description: "Explore the 16-60 theory and learn how to design a fulfilling life.",
+  openGraph:{
+    title: "16-60 Theory : Design your best life",
+    description: "Explore the 16-60 theory and learn how to design a fulfilling life.",
+    url: "https://www.sriyog.com/blog/design-your-life",
+    images: [
+      {
+        url: "/assets/images/homepage/hero-banner.jpg",
+        alt: "16-60 Theory : Design your best life"
+      }
+    ]
+  }
 };
 
 export default function Tdul() {

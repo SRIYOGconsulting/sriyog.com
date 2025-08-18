@@ -5,6 +5,18 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Join Virtual Meeting | SRIYOG Consulting",
+  description: "Join our virtual meetings and discussions at SRIYOG Consulting.",
+  openGraph: {
+    title: "Join Virtual Meeting | SRIYOG Consulting",
+    description: "Join our virtual meetings and discussions at SRIYOG Consulting.",
+    url: "https://www.sriyog.com/meet",
+    images: [
+      {
+        url: "/assets/images/homepage/hero-banner.jpg",
+        alt: "Join Virtual Meeting"
+      }
+    ]
+  }
 };
 export default function MeetPage() {
   const defaultLink = "https://d.sriyog.com/meet";

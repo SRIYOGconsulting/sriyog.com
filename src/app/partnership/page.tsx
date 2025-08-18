@@ -3,6 +3,18 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Partnership | SRIYOG Consulting",
+  description: "Explore partnership opportunities with SRIYOG Consulting.",
+  openGraph: {
+    title: "Partnership | SRIYOG Consulting",
+    description: "Explore partnership opportunities with SRIYOG Consulting.",
+    url: "https://www.sriyog.com/partnership",
+    images: [
+      {
+        url: "/assets/images/homepage/hero-banner.jpg",
+        alt: "Partnership"
+      }
+    ]
+  }
 };
 const PartnershipPage: React.FC = () => {
   return (

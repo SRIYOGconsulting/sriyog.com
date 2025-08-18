@@ -4,6 +4,18 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "SRIYOG Blog | SRIYOG Consulting",
+  description: "Stay updated with the latest insights and trends in UI/UX, SEO, and Digital Marketing.",
+  openGraph: {
+    title: "SRIYOG Blog | SRIYOG Consulting",
+    description: "Stay updated with the latest insights and trends in UI/UX, SEO, and Digital Marketing.",
+    url: "https://www.sriyog.com/blog",
+    images: [
+      {
+        url: "/assets/images/homepage/hero-banner.jpg",
+        alt: "SRIYOG Blog"
+      }
+    ]
+  }
 };
 export default function BlogPage() {
   const footerCards = [

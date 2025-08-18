@@ -275,6 +275,18 @@ const clientsData = [
 
 export const metadata: Metadata = {
   title: "Our Clients | SRIYOG Consulting",
+  openGraph: {
+    title: "Our Clients | SRIYOG Consulting",
+    description:
+      "Explore the diverse range of organizations that trust SRIYOG Consulting for their digital transformation needs.",
+    url: "https://www.sriyog.com/clients",
+    images: [
+      {
+        url: "/assets/images/clients/hero-banner.jpg",
+        alt: "Our Clients",
+      },
+    ],
+  },
 };
 export default function Page() {
   return (

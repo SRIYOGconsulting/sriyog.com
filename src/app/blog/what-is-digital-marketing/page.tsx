@@ -4,7 +4,18 @@ import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "What is Digital Marketing? A Beginner’s Guide to Growing Your Business Online",
-  description: "Learn the basics of digital marketing and how it can help your business thrive in the online world."
+  description: "Learn the basics of digital marketing and how it can help your business thrive in the online world.",
+  openGraph: {
+    title: "What is Digital Marketing?",
+    description: "Learn the basics of digital marketing and how it can help your business thrive in the online world.",
+    url: "https://www.sriyog.com/blog/what-is-digital-marketing",
+    images: [
+      {
+        url: "/assets/images/homepage/hero-banner.jpg",
+        alt: "What is Digital Marketing?"
+      }
+    ]
+  }
 }
 export default function WhatisDigitalMArketing() {
   return (

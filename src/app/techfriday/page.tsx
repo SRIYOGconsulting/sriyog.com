@@ -3,6 +3,18 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "TechFriday | SRIYOG Consulting",
+  description: "Explore the latest technology trends and insights every Friday.",
+  openGraph: {
+    title: "TechFriday | SRIYOG Consulting",
+    description: "Explore the latest technology trends and insights every Friday.",
+    url: "https://www.sriyog.com/techfriday",
+    images: [
+      {
+        url: "/assets/images/homepage/hero-banner.jpg",
+        alt: "TechFriday"
+      }
+    ]
+  }
 };
 export default function TechFridayPage() {
   //   "/assets/images/tech friday/1.png",
