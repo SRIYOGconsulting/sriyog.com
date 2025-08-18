@@ -6,24 +6,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { useFloatingIcons } from "../context/FloatingIconContext";
-import { Metadata } from "next";
 
-
-export const metadata:Metadata = {
-  title: "Home | SRIYOG Consulting",
-  description: "Welcome to SRIYOG Consulting, your partner in IT solutions.",
-  openGraph: {
-    title: "Home | SRIYOG Consulting",
-    description: "Welcome to SRIYOG Consulting, your partner in IT solutions.",
-    url: "https://www.sriyog.com",
-    images: [
-      {
-        url: "/assets/images/homepage/hero-banner.jpg",
-        alt: "Home"
-      }
-    ]
-  }
-};
 
 export default function Home() {
   const [overlay, setOverlay] = useState(true);
