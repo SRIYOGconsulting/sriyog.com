@@ -7,7 +7,6 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { useFloatingIcons } from "../context/FloatingIconContext";
 
-
 export default function Home() {
   const [overlay, setOverlay] = useState(true);
   const [categoriesOpen, setCategoriesOpen] = useState(false);
