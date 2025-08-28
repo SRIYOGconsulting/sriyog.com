@@ -11,7 +11,7 @@ export const metadata:Metadata ={
     url: "https://www.sriyog.com/blog/pitch-deck-magic",
     images: [
       {
-        url: "/assets/images/og/default.jpg",
+        url: "/https://sriyog.com/assets/images/og/default.jpg",
         alt: "Pitch Deck Magic : How to create the best pitch deck?"
       }
     ]

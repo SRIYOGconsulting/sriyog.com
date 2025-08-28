@@ -10,7 +10,7 @@ export const metadata:Metadata ={
     url: "https://www.sriyog.com/blog/how-seo-helps-your-digital-marketing-strategy",
     images: [
       {
-        url: "/assets/images/og/default.jpg",
+        url: "/https://sriyog.com/assets/images/og/default.jpg",
         alt: "How SEO Helps Your Digital Marketing Strategy"
       }
     ]

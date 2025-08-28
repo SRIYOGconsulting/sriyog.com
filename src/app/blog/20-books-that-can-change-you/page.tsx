@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     url: "https://www.sriyog.com/blog/20-books-that-can-change-you",
     images: [
       {
-        url: "/assets/images/og/default.jpg",
+        url: "/https://sriyog.com/assets/images/og/default.jpg",
         alt: "20 Books that can change you"
       }
     ]

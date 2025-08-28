@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     url: "https://www.sriyog.com/blog/the-great-hack-how-social-media-impacts-politics",
     images: [
       {
-        url: "/assets/images/og/default.jpg",
+        url: "/https://sriyog.com/assets/images/og/default.jpg",
         alt: "The Great Hack: How Social Media impacts politics?"
       }
     ]

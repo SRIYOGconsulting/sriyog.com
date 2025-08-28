@@ -12,7 +12,7 @@ export const metadata:Metadata = {
     url: "https://www.sriyog.com/join",
     images: [
       {
-        url: "/assets/images/og/default.jpg",
+        url: "/https://sriyog.com/assets/images/og/default.jpg",
         alt: "Join"
       }
     ]
