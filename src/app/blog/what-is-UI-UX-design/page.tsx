@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     url: "https://www.sriyog.com/blog/what-is-UI-UX-design",
     images: [
       {
-        url: "/https://sriyog.com/assets/images/og/default.jpg",
+        url: "https://sriyog.com/assets/images/og/default.jpg",
         alt: "What is UI/UX Design? A Beginner’s Guide"
       }
     ]

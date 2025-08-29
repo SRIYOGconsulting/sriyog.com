@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     url: "https://www.sriyog.com/blog/pegasus-sypyware",
     images: [
       {
-        url: "/https://sriyog.com/assets/images/og/default.jpg",
+        url: "https://sriyog.com/assets/images/og/default.jpg",
         alt: "Pegasus Spyware &ndash; You Are Hacked"
       }
     ]

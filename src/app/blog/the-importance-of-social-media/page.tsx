@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     url: "https://www.sriyog.com/blog/the-importance-of-social-media",
     images: [
       {
-        url: "/https://sriyog.com/assets/images/og/default.jpg",
+        url: "https://sriyog.com/assets/images/og/default.jpg",
         alt: "The Importance of Social Media in Digital Marketing"
       }
     ]

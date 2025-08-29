@@ -9,7 +9,7 @@ export const metadata:Metadata= {
     url: "https://www.sriyog.com/blog/21-stages-of-web-development",
     images: [
       {
-        url: "/https://sriyog.com/assets/images/og/default.jpg",
+        url: "https://sriyog.com/assets/images/og/default.jpg",
         alt: "21 Stages of Web Development"
       }
     ]

@@ -11,7 +11,7 @@ export const metadata:Metadata ={
     url: "https://www.sriyog.com/blog/what-is-seo-and-its-important",
     images: [
       {
-        url: "/https://sriyog.com/assets/images/og/default.jpg",
+        url: "https://sriyog.com/assets/images/og/default.jpg",
         alt: "What is SEO and Why Is It Important for Your Website?"
       }
     ]

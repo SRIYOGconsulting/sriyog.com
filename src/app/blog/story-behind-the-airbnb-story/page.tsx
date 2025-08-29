@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     url: "https://www.sriyog.com/blog/story-behind-the-airbnb-story",
     images: [
       {
-        url: "/https://sriyog.com/assets/images/og/default.jpg",
+        url: "https://sriyog.com/assets/images/og/default.jpg",
         alt: "The Story Behind Airbnb"
       }
     ]

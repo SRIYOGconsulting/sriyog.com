@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     url: "https://www.sriyog.com/blog/why-good-ui-ux-matters",
     images: [
       {
-        url: "/https://sriyog.com/assets/images/og/default.jpg",
+        url: "https://sriyog.com/assets/images/og/default.jpg",
         alt: "Why Good UI/UX Design Matters for Any Website or App"
       }
     ]
