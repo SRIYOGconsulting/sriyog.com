@@ -22,7 +22,11 @@ export const metadata: Metadata = {
   keywords:
     "IT consulting, software development, cloud solutions, Nepal IT company",
   authors: [{ name: "SRIYOG Consulting" }],
-  icons: "/assets/images/title/logo.svg",
+  icons: {
+    icon: "/favicon/favicon.ico",
+    shortcut: "/favicon/favicon.ico",
+    apple: "/favicon/apple-touch-icon.png",
+  },
   robots: "index, follow",
   openGraph: {
     title: "SRIYOG Consulting | IT Consulting Company in Nepal",
@@ -32,7 +36,7 @@ export const metadata: Metadata = {
     siteName: "SRIYOG Consulting",
     images: [
       {
-        url: "https://www.sriyog.com/https://sriyog.com/assets/images/og/default.jpg",
+        url: "https://sriyog.com/assets/images/og/default.jpg",
         width: 1200,
         height: 630,
         alt: "SRIYOG Consulting OG Image",
@@ -46,7 +50,7 @@ export const metadata: Metadata = {
     title: "SRIYOG Consulting | IT Consulting Company in Nepal",
     description:
       "Discover digital innovation with SRIYOG Consulting – your trusted IT partner in Nepal.",
-    images: ["https://www.sriyog.com/https://sriyog.com/assets/images/og/default.jpg"],
+    images: ["https://sriyog.com/assets/images/og/default.jpg"],
     creator: "@sriyog",
   },
 };

@@ -172,11 +172,14 @@ export default function PortfolioPage() {
       />
       <h1 className="text-center my-2">{item.title}</h1>
       <Link
-        href={`trainings/${item.path}`}
-        className="px-2 py-1 border border-[#055D59] text-md text-[#055D59] hover:bg-[#055D59] hover:text-white w-[50%] sm:w-[50%] mx-auto text-center rounded-lg transition-all ease-in duration-[100]"
-      >
-        Browse More
-      </Link>
+      href={item.path}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="px-2 py-1 border border-[#055D59] text-md text-[#055D59] hover:bg-[#055D59] hover:text-white w-[50%] sm:w-[50%] mx-auto text-center rounded-lg transition-all ease-in duration-[100]"
+    >
+      Browse More
+    </Link>
+
     </div>
   ))}
 </section>

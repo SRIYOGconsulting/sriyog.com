@@ -77,12 +77,12 @@ export default function MeetPage() {
     Friday: [
       { time: "11:00 AM – 11:45 AM", title: "UI/UX" },
       { time: "12:15 PM – 1:00 PM", title: "App Development" },
-      { time: "1:15 PM – 2:00 PM", title: "Web Development" },
+      { time: "1:15 PM – 2:00 PM", title: "#TechFriday" },
       { time: "3:00 PM – 3:45 PM", title: "Social Media Management" },
       { time: "4:15 PM – 5:00 PM", title: "Data Science" },
       { time: "5:00 PM – 5:45 PM", title: "Training / Product Showcase" },
       { time: "8:00 PM – 8:45 PM", title: "Digital Journalism" },
-      { time: "9:00 PM – 9:45 PM", title: "#TechFriday" },
+      { time: "9:00 PM – 9:45 PM", title: "Project Discussion" },
     ],
   };
 
