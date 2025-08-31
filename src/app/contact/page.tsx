@@ -22,11 +22,11 @@ export default function Page() {
   const card = [
    
     {
-      img: "/assets/images/contact/isha.png",
-      name: "Isha ",
+      img: "/assets/images/contact/1.png",
+      name: "Hiring ",
       field: "Project Manager",
       app: "eMail",
-      link: "mailto:isha@sriyog.com",
+      link: "mailto:jobs@sriyog.com",
     },
     {
       img: "/assets/images/contact/madan.png",
