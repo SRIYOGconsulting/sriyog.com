@@ -22,25 +22,25 @@ export default function Page() {
   const card = [
    
     {
-      img: "/assets/images/contact/niranjan.png",
-      name: "Niranjan ",
+      img: "/assets/images/contact/isha.png",
+      name: "Isha ",
       field: "Project Manager",
-      app: "WhatsApp",
-      link: "https://wa.me/9779852024365 ",
+      app: "eMail",
+      link: "mailto:isha@sriyog.com",
     },
     {
       img: "/assets/images/contact/madan.png",
       name: "Madan",
       field: "Information Officer",
-      app: "WhatsApp",
-      link: "https://wa.me/9779818869166",
+      app: "eMail",
+      link: "mailto:info@sriyg.com",
     },
      {
       img: "/assets/images/contact/pracas.png",
       name: "PRACAS",
       field: "CTO",
-      app: "WhatsApp",
-      link: "https://wa.me/9779852025735",
+      app: "eMail",
+      link: "p@sriyog.com",
     },
   ];
   return (

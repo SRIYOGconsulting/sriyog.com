@@ -19,8 +19,8 @@ export const metadata: Metadata = {
   }
 };
 export default function MeetPage() {
-  const defaultLink = "https://d.sriyog.com/pm9pm";
-  const interviewLink = "https://d.sriyog.com/pm9pm";
+  const defaultLink = "https://d.sriyog.com/meetdefault";
+  const interviewLink = "https://d.sriyog.com/interview";
   const specialLink = "https://d.sriyog.com/meet";
 
   const fullSchedule: { [day: string]: { time: string; title: string }[] } = {
@@ -31,7 +31,7 @@ export default function MeetPage() {
       { time: "3:00 PM – 3:45 PM", title: "Social Media Management" },
       { time: "4:15 PM – 5:00 PM", title: "Interview" },
       { time: "5:00 PM – 5:45 PM", title: "Training / Product Showcase" },
-      { time: "8:00 PM – 8:45 PM", title: "Digital Journalism" },
+      { time: "7:00 PM – 8:45 PM", title: "Digital Journalism" },
       { time: "9:00 PM – 9:45 PM", title: "Project Discussion" },
     ],
     Monday: [
@@ -41,7 +41,7 @@ export default function MeetPage() {
       { time: "3:00 PM – 3:45 PM", title: "Web Development" },
       { time: "4:15 PM – 5:00 PM", title: "UI/UX" },
       { time: "5:00 PM – 5:45 PM", title: "Training / Product Showcase" },
-      { time: "8:00 PM – 8:45 PM", title: "Digital Journalism" },
+      { time: "7:00 PM – 8:45 PM", title: "Digital Journalism" },
       { time: "9:00 PM – 9:45 PM", title: "Project Discussion" },
     ],
     Tuesday: [
@@ -51,7 +51,7 @@ export default function MeetPage() {
       { time: "3:00 PM – 3:45 PM", title: "Social Media Management" },
       { time: "4:15 PM – 5:00 PM", title: "App Development" },
       { time: "5:00 PM – 5:45 PM", title: "Training / Product Showcase" },
-      { time: "8:00 PM – 8:45 PM", title: "Digital Journalism" },
+      { time: "7:00 PM – 8:45 PM", title: "Digital Journalism" },
       { time: "9:00 PM – 9:45 PM", title: "Project Discussion" },
     ],
     Wednesday: [
@@ -61,7 +61,7 @@ export default function MeetPage() {
       { time: "3:00 PM – 3:45 PM", title: "Interview" },
       { time: "4:15 PM – 5:00 PM", title: "Data Science" },
       { time: "5:00 PM – 5:45 PM", title: "Training / Product Showcase" },
-      { time: "8:00 PM – 8:45 PM", title: "Digital Journalism" },
+      { time: "7:00 PM – 8:45 PM", title: "Digital Journalism" },
       { time: "9:00 PM – 9:45 PM", title: "Project Discussion" },
     ],
     Thursday: [
@@ -71,7 +71,7 @@ export default function MeetPage() {
       { time: "3:00 PM – 3:45 PM", title: "Web Development" },
       { time: "4:15 PM – 5:00 PM", title: "App Development" },
       { time: "5:00 PM – 5:45 PM", title: "Training / Product Showcase" },
-      { time: "8:00 PM – 8:45 PM", title: "Digital Journalism" },
+      { time: "7:00 PM – 8:45 PM", title: "Digital Journalism" },
       { time: "9:00 PM – 9:45 PM", title: "Project Discussion" },
     ],
     Friday: [
@@ -81,7 +81,7 @@ export default function MeetPage() {
       { time: "3:00 PM – 3:45 PM", title: "Social Media Management" },
       { time: "4:15 PM – 5:00 PM", title: "Data Science" },
       { time: "5:00 PM – 5:45 PM", title: "Training / Product Showcase" },
-      { time: "8:00 PM – 8:45 PM", title: "Digital Journalism" },
+      { time: "7:00 PM – 8:45 PM", title: "Digital Journalism" },
       { time: "9:00 PM – 9:45 PM", title: "Project Discussion" },
     ],
   };
