@@ -19,8 +19,8 @@ const images = [
 ];
 
 const names = [
+  "Prakash",
   "Hiring",
-  "Madan",
   "Sakchyam",
   "Aashma",
   "Bitisha",
