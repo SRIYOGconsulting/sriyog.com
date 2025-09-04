@@ -23,20 +23,20 @@ export default function Page() {
    
     {
       img: "/assets/images/contact/1.png",
-      name: "Hiring ",
+      name: "Prakash ",
       field: "Project Manager",
       app: "eMail",
-      link: "mailto:jobs@sriyog.com",
+      link: "mailto:pm@sriyog.com",
     },
     {
-      img: "/assets/images/contact/madan.png",
-      name: "Madan",
+      img: "/assets/images/contact/2.png",
+      name: "Hiring",
       field: "Information Officer",
       app: "eMail",
       link: "mailto:info@sriyg.com",
     },
      {
-      img: "/assets/images/contact/pracas.png",
+      img: "/assets/images/contact/3.png",
       name: "PRACAS",
       field: "CTO",
       app: "eMail",
