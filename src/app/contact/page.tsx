@@ -40,7 +40,7 @@ export default function Page() {
       name: "PRACAS",
       field: "CTO",
       app: "eMail",
-      link: "p@sriyog.com",
+      link: "mailto:p@sriyog.com",
     },
   ];
   return (
