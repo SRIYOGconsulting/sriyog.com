@@ -4,10 +4,10 @@ import { Metadata } from "next";
 
 
 export const metadata:Metadata = {
-  title: "Home | SRIYOG Consulting",
+  title: "SRIYOG Consulting | IT Consulting in Kathmandu, Nepal",
   description: "Welcome to SRIYOG Consulting, your partner in IT solutions.",
   openGraph: {
-    title: "Home | SRIYOG Consulting",
+    title: "SRIYOG Consulting | IT Consulting in Kathmandu, Nepal",
     description: "Welcome to SRIYOG Consulting, your partner in IT solutions.",
     url: "https://www.sriyog.com",
     images: [
