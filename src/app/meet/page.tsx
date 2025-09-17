@@ -29,24 +29,24 @@ export default function MeetPage() {
       { time: "12:15 PM – 1:00 PM", title: "App Development" },
       { time: "1:15 PM – 2:00 PM", title: "Web Development" },
       { time: "3:00 PM – 6:00 PM", title: "Afternoon Session" },
-      { time: "4:15 PM – 5:00 PM", title: "Interview" },
+      { time: "3:30 PM – 5:00 PM", title: "Interview" },
       { time: "5:00 PM – 5:45 PM", title: "Training / Product Showcase" },
       { time: "7:00 PM – 10:00 PM", title: "Evening Session" },
       { time: "9:00 PM – 9:45 PM", title: "Project Discussion" },
     ],
     Monday: [
-      { time: "11:00 AM – 11:45 AM", title: "Interview" },
       { time: "11:00 AM – 2:00 PM", title: "Morning Session" },
-      { time: "1:15 PM – 2:00 PM", title: "Social Media Management" },
-      { time: "3:00 PM – 6:00 PM", title: "Afternoon Session" },
-      { time: "4:15 PM – 5:00 PM", title: "UI/UX" },
-      { time: "5:00 PM – 5:45 PM", title: "Training / Product Showcase" },
-      { time: "7:00 PM – 10:00 PM", title: "Evening Session" },
-      { time: "9:00 PM – 9:45 PM", title: "Project Discussion" },
+      { time: "12:00 PM – 1:30 PM", title: "Interview" },
+      { time: "1:15 PM –  2:00 PM", title: "Social Media Management" },
+      { time: "3:00 PM –  6:00 PM", title: "Afternoon Session" },
+      { time: "4:15 PM –  5:00 PM", title: "UI/UX" },
+      { time: "5:00 PM –  5:45 PM", title: "Training / Product Showcase" },
+      { time: "7:00 PM –  10:00 PM", title: "Evening Session" },
+      { time: "9:00 PM –  9:45 PM", title: "Project Discussion" },
     ],
     Tuesday: [
       { time: "11:00 AM – 2:00 PM", title: "Morning Session" },
-      { time: "12:15 PM – 1:00 PM", title: "Interview" },
+      { time: "12:00 PM – 1:30 PM", title: "Interview" },
       { time: "1:15 PM – 2:00 PM", title: "Digital Journalism Demo" },
       { time: "3:00 PM – 6:00 PM", title: "Afternoon Session" },
       { time: "4:15 PM – 5:00 PM", title: "App Development" },
@@ -58,7 +58,7 @@ export default function MeetPage() {
       { time: "11:00 AM – 2:00 PM", title: "Morning Session" },
       { time: "12:15 PM – 1:00 PM", title: "App Development" },
       { time: "3:00 PM – 6:00 PM", title: "Afternoon Session" },
-      { time: "3:00 PM – 3:45 PM", title: "Interview" },
+      { time: "3:00 PM – 4:30 PM", title: "Interview" },
       { time: "4:15 PM – 5:00 PM", title: "Data Science" },
       { time: "5:00 PM – 5:45 PM", title: "Training / Product Showcase" },
       { time: "7:00 PM – 10:00 PM", title: "Evening Session" },
@@ -66,8 +66,8 @@ export default function MeetPage() {
     ],
     Thursday: [
       { time: "11:00 AM – 2:00 PM", title: "Morning Session" },
+      { time: "12:00 AM – 1:30 PM", title: "Interview" },
       { time: "12:15 PM – 1:00 PM", title: "Social Media Management" },
-      { time: "1:15 PM – 2:00 PM", title: "Interview" },
       { time: "3:00 PM – 6:00 PM", title: "Afternoon Session" },
       { time: "4:15 PM – 5:00 PM", title: "App Development" },
       { time: "5:00 PM – 5:45 PM", title: "Training / Product Showcase" },
@@ -85,6 +85,7 @@ export default function MeetPage() {
       { time: "9:00 PM – 9:45 PM", title: "Project Discussion" },
     ],
   };
+  
 
   const getLink = (title: string, time: string): string => {
     const isInterview = title.toLowerCase().includes("interview");
