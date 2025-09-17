@@ -323,7 +323,7 @@ export default function Footer() {
               </div>
               <p>+977-9852025735</p>
             </div>
-            <p className="text-sm">Calling Time: 11 AM to 6 PM NPT</p>
+            <p className="text-sm">Calling Time: 11 AM to 3 PM NPT</p>
             <div className="flex items-center gap-2">
               <div className="relative w-5 h-5">
                 <Image
@@ -413,17 +413,17 @@ export default function Footer() {
                   />
                 </div>
               </Link>
-              {/* <Link prefetch={true} href="https://t.me/sriyog" target="_blank">
+              <Link prefetch={true} href="https://d.sriyog.com/signal" target="_blank">
                 <div className="relative h-[20px] w-[20px]">
                   <Image
-                    src="/assets/images/footer/telegram.svg"
+                    src="/assets/images/footer/signal.svg"
                     fill
                     priority
                     className="object-contain"
-                    alt="telegram"
+                    alt="signal"
                   />
                 </div>
-              </Link> */}
+              </Link>
               <Link
                 prefetch={true}
                 href="https://www.linkedin.com/company/sriyog-consulting/"

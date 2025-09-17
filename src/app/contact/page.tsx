@@ -30,10 +30,10 @@ export default function Page() {
     },
     {
       img: "/assets/images/contact/2.png",
-      name: "Hiring",
-      field: "Information Officer",
+      name: "Bijay",
+      field: "Internship Coordinator",
       app: "eMail",
-      link: "mailto:info@sriyg.com",
+      link: "mailto:internship@sriyg.com",
     },
      {
       img: "/assets/images/contact/3.png",

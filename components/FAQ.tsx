@@ -32,15 +32,15 @@ const faq1 = [
   },
   {
     id: 3,
-    question: "What industries does SRIYOG serve?",
+    question: "What industries does SRIYOG Consulting serve?",
     answer:
-      "SRIYOG serves a broad range of industries, including healthcare, employment and tourism.",
+      "SRIYOG Consulting serves a broad range of industries, including healthcare, employment and tourism.",
   },
   {
     id: 4,
     question: "Who is the CTO of SRIYOG Consulting?",
     answer:
-      "Prakash Upreti, also known as PRACAS, is the Chief Technology Officer.",
+      "Prakash Upreti, also known as PRACAS, is the Chief Technology Officer of SRIYOG Consulting.",
   },
   {
     id: 5,
@@ -80,17 +80,17 @@ const faq1 = [
   },
   {
     id: 11,
-    question: "What technologies does SRIYOG use?",
+    question: "What technologies does SRIYOG Consulting use?",
     answer:
-      "We offer full-stack development, UI/UX design, database optimization, and secure cloud solutions.",
+      "SRIYOG Consulting uses a mix of modern web and data technologies, including web and software development tools, UI/UX design with Figma, databases with SQL, data analytics tools etc.",
   },
 ];
 
 const faq2 = [
   {
     id: 12,
-    question: "Does SRIYOG provide cloud hosting services?",
-    answer: "Yes, we provide cloud hosting and domain management too.",
+    question: "Does SRIYOG Consulting provides cloud hosting services?",
+    answer: "Yes, we provide secured cloud hosting services.",
   },
   {
     id: 13,
@@ -142,18 +142,18 @@ const faq2 = [
   {
     id: 21,
     question: "How can I apply for an Internship?",
-    answer: "Please check the link <a href='https://sriyogconsulting.com/internship' target='_blank'>Apply Internship</a>.",
+    answer: "Please check the link <a href='https://sriyog.com/internship' target='_blank'>Apply Internship</a>.",
   },
   {
     id: 22,
     question: "Do I need to pay for an Internship Opportunity?",
     answer:
-      "NPR 5,000 is charged per month for getting enrolled in an internship opportunity & NPR 15,000 as a refundable security deposit.",
+      "NPR 15,000 is charged per month for getting enrolled in an internship opportunity & NPR 50,000 as a refundable security deposit.",
   },
   {
     id: 23,
     question: "Can I join a Training?",
-    answer: "Yes, we offer various IT training coursesß.",
+    answer: "Yes, we offer various IT training courses.",
   },
 ];
 
