@@ -492,7 +492,7 @@ export default function TechFriday() {
           <div className="flex flex-col gap-2">
             <p className="font-semibold text-lg">Download the SRIYOG app</p>
             <div className="flex flex-wrap justify-start md:justify-center gap-3">
-              <Link href="https://bit.ly/sriyog" target="_blank">
+              <Link href="https://p.sriyog.app/playcom" target="_blank">
                 <div className="relative h-[70px] w-[130px] md:w-[100px]">
                   <Image
                     src="/assets/images/footer/google-play.svg"
@@ -502,7 +502,7 @@ export default function TechFriday() {
                   />
                 </div>
               </Link>
-              <Link href="https://bit.ly/sriyogios" target="_blank">
+              <Link href="https://p.sriyog.app/ioscom" target="_blank">
                 <div className="relative h-[50px] w-[130px] md:w-[100px]">
                   <Image
                     src="/assets/images/footer/app-store.svg"
