@@ -13,13 +13,13 @@ type FileMeta = {
 
 // Move fileList outside the component so its reference doesn't change
 const fileList = [
-  "/assets/downloadFiles/SRIYOG-Consulting-Meeting-Minutes.pdf",
-  "/assets/downloadFiles/SRIYOG-Consulting-Work-Order.docx",
-  "/assets/downloadFiles/SRIYOG-Consulting-Guestbook-Feedback-Form.pdf",
-  "/assets/downloadFiles/SRIYOG-Consulting-Customer-Feedback-Form.pdf",
-  "/assets/downloadFiles/Internship-Sample-Letter-From-College.pdf",
-  "/assets/downloadFiles/SRIYOG-Consulting-Internship-Recommondation-Letter-from-College.docx",
-  "/assets/downloadFiles/SRIYOG-Consulting-Internship-Recommendation-Letter.docx",
+  "/assets/downloadFiles/Meeting-Minutes.pdf",
+  "/assets/downloadFiles/Work-Order.docx",
+  "/assets/downloadFiles/Guestbook-Feedback-Form.pdf",
+  "/assets/downloadFiles/Customer-Feedback-Form.pdf",
+  "/assets/downloadFiles/Internship-Recommondation-Letter-Sample.pdf",
+  "/assets/downloadFiles/Internship-Recommondation-Letter-Draft.docx",
+  "/assets/downloadFiles/Internship-Request-Letter-Personal.docx",
   "/assets/downloadFiles/SRIYOG-Consulting-Logos.zip",
 ];
 
