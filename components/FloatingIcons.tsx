@@ -7,13 +7,13 @@ export default function FloatingIcons() {
       <div className="items-center justify-center flex-col flex gap-6">
         {/* WhatsApp */}
         <Link
-          href="https://wa.me/9779852024365?text=Hi%2C%20I%27m%20contacting%20you%20through%20www.sriyog.com.%20"
+          href="https://d.sriyog.com/whatsapp"
           target="_blank"
           className="group flex flex-col items-center "
         >
           <div className="relative h-[30px] w-[40px] transition-all duration-700 ease-in-out hover:rotate-[120deg]">
             <Image
-              src="/assets/icons/whatsapp-new.svg"
+              src="/assets/icons/whatsapp.svg"
               fill
               priority
               className="object-contain"

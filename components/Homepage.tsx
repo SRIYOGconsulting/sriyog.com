@@ -645,7 +645,7 @@ export default function HomepageComponent() {
                       "Company Updates",
                       "Product Release",
                       "Timeline",
-                      "Miscellanous",
+                      "Miscellaneous",
                     ].map((option) => (
                       <li
                         key={option}
@@ -724,7 +724,7 @@ export default function HomepageComponent() {
               <p className="text-gray-700">
                 SRIYOG Consulting offers internship opportunities for candidates
                 eager to enhance their skills, talent and contrubute in live
-                projects. The internship period in one month ( 96 Hours).
+                projects. The internship period is 1/2/3 Months ( Weekly 18 Hours ).
               </p>
             </div>
             <Link

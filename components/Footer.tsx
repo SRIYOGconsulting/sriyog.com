@@ -321,7 +321,7 @@ export default function Footer() {
                   alt="phone"
                 />
               </div>
-              <p>+977-9852025735</p>
+              <p><Link href="tel:+977-01-4548068">+977-01-4548068</Link></p>
             </div>
             <p className="text-sm">Calling Time: 11 AM to 3 PM NPT</p>
             <div className="flex items-center gap-2">
@@ -334,8 +334,8 @@ export default function Footer() {
                   alt="email"
                 />
               </div>
-              <Link prefetch={true} href="mailto:consulting@sriyog.com">
-                consulting@sriyog.com
+              <Link prefetch={true} href="mailto:info@sriyog.com">
+                info@sriyog.com
               </Link>
             </div>
             <Link
@@ -398,6 +398,30 @@ export default function Footer() {
               </Link>
             </div>
             <div className="flex max-md:w-full max-md:justify-center max-md:items-center gap-3">
+              <Link prefetch={true} href="https://d.sriyog.com/signal" target="_blank">
+                <div className="relative h-[20px] w-[20px]">
+                  <Image
+                    src="/assets/icons/signal.svg"
+                    fill
+                    priority
+                    className="object-contain"
+                    alt="signal"
+                  />
+                </div>
+              </Link>
+              
+              <Link prefetch={true} href="https://d.sriyog.com/whatsapp" target="_blank">
+                <div className="relative h-[20px] w-[20px]">
+                  <Image
+                    src="/assets/images/footer/whatsapp.svg"
+                    fill
+                    priority
+                    className="object-contain"
+                    alt="WhatsApp"
+                  />
+                </div>
+              </Link>
+              
               <Link
                 prefetch={true}
                 href="https://www.facebook.com/sriyogdotcom"
@@ -413,17 +437,7 @@ export default function Footer() {
                   />
                 </div>
               </Link>
-              <Link prefetch={true} href="https://d.sriyog.com/signal" target="_blank">
-                <div className="relative h-[20px] w-[20px]">
-                  <Image
-                    src="/assets/images/footer/signal.svg"
-                    fill
-                    priority
-                    className="object-contain"
-                    alt="signal"
-                  />
-                </div>
-              </Link>
+              
               <Link
                 prefetch={true}
                 href="https://www.linkedin.com/company/sriyog-consulting/"

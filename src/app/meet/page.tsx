@@ -66,7 +66,7 @@ export default function MeetPage() {
     ],
     Thursday: [
       { time: "11:00 AM – 2:00 PM", title: "Morning Session" },
-      { time: "12:00 AM – 1:30 PM", title: "Interview" },
+      { time: "12:00 PM – 1:30 PM", title: "Interview" },
       { time: "12:15 PM – 1:00 PM", title: "Social Media Management" },
       { time: "3:00 PM – 6:00 PM", title: "Afternoon Session" },
       { time: "4:15 PM – 5:00 PM", title: "App Development" },
