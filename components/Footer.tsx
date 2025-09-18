@@ -33,7 +33,10 @@ export default function Footer() {
                   label: (
                     <>
                       <Link prefetch={true} href="/faq">
-                        FAQs
+                        FAQs&nbsp;
+                        <span className="bg-[#0D5D59] px-[5px] py-[2px] text-[11px] text-white rounded-[3px]">
+                        Updated
+                      </span> 
                       </Link>
                     </>
                   ),
@@ -60,9 +63,9 @@ export default function Footer() {
                   label: (
                     <Link prefetch={true} href="/career">
                       Career&nbsp;
-                      <span className="bg-[#0D5D59] px-[5px] py-[2px] text-[11px] text-white rounded-[3px]">
+                      {/* <span className="bg-[#0D5D59] px-[5px] py-[2px] text-[11px] text-white rounded-[3px]">
                         We&apos;re Hiring
-                      </span>
+                      </span> */}
                     </Link>
                   ),
                 },
@@ -70,7 +73,10 @@ export default function Footer() {
                   label: (
                     <>
                       <Link prefetch={true} href="/meet">
-                        Virtual Meeting 
+                        Virtual Meeting&nbsp;
+                      <span className="bg-[#0D5D59] px-[5px] py-[2px] text-[11px] text-white rounded-[3px]">
+                        Updated
+                      </span> 
                       </Link>
                     </>
                   ),
@@ -117,7 +123,10 @@ export default function Footer() {
                   label: (
                     <>
                       <Link prefetch={true} href="/internship">
-                        Internship
+                        Internship&nbsp;
+                      <span className="bg-[#0D5D59] px-[5px] py-[2px] text-[11px] text-white rounded-[3px]">
+                        React Native
+                      </span>
                       </Link>
                     </>
                   ),
