@@ -21,6 +21,16 @@ const fileList = [
   "/assets/downloadFiles/Internship-Recommondation-Letter-Draft.docx",
   "/assets/downloadFiles/Internship-Request-Letter-Personal.docx",
   "/assets/downloadFiles/SRIYOG-Consulting-Logos.zip",
+  "/assets/downloadFiles/Android-Mobile-WireFrame.pdf",
+  "/assets/downloadFiles/Apple-Mobile-WireFrame.pdf",
+  "/assets/downloadFiles/Check-List.pdf",
+  "/assets/downloadFiles/Daily-Task.pdf",
+  "/assets/downloadFiles/Daily-Tasks-Two-in-A4.pdf",
+  "/assets/downloadFiles/Safari-Dashboard-Wireframe-landscape.pdf",
+  "/assets/downloadFiles/Safari-Wireframe-landscape.pdf",
+  "/assets/downloadFiles/Safari-Wireframe.pdf",
+  "/assets/downloadFiles/Download-JDR-Fonts.pdf",
+
 ];
 
 export default function Download() {
