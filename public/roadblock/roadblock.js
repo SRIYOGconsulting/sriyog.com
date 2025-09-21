@@ -10,10 +10,10 @@
                 skipAd(event);
             }
         
-            // Skip the ad after 6 seconds
+            // Skip the ad after 9 seconds
             setTimeout(function() {
                 skipAd();
-            }, 6000); // Adjust the delay as needed (6000ms = 6 seconds)
+            }, 9000); // Adjust the delay as needed (9000ms = 9 seconds)
         }
         
         function skipAd(event) {
