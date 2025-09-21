@@ -27,6 +27,10 @@ export default function HomepageComponent() {
       date: "03-08",
       img: "/assets/images/roadblock/03-08.jpg",
     },
+    {
+      date: "09-22",
+      img: "roadblock/09-22.jpg",
+    },
   ];
 
   const findImage = () => {
@@ -34,7 +38,7 @@ export default function HomepageComponent() {
     if (event) {
       setGetImage(event.img);
     } else {
-      setGetImage("/assets/images/roadblock/default.jpg");
+      setGetImage("/roadblock/default.jpg");
     }
   };
 
