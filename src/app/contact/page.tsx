@@ -33,7 +33,7 @@ export default function Page() {
       name: "Bijay",
       field: "Internship Coordinator",
       app: "eMail",
-      link: "mailto:internship@sriyg.com",
+      link: "mailto:internship@sriyog.com",
     },
      {
       img: "/assets/images/contact/3.png",
