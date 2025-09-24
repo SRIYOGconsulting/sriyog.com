@@ -30,6 +30,8 @@ const fileList = [
   "/assets/downloadFiles/Safari-Wireframe-landscape.pdf",
   "/assets/downloadFiles/Safari-Wireframe.pdf",
   "/assets/downloadFiles/Download-JDR-Fonts.pdf",
+  "/assets/downloadFiles/Google-Input-Tools-Nepali.zip",
+  "/assets/downloadFiles/Blumind-Mind-Mapping.zip",
 
 ];
 
