@@ -85,7 +85,7 @@ export default function MeetPage() {
         ))}
 
         <p className="max-w-[95%] mx-auto text-center mb-[45px]"><br></br>
-          Meeting Rules : All participants must use a professional headshot and display their real name as per their government ID. Keep your microphone muted unless invited to speak, and use the “Raise Hand” feature before contributing. Please familiarize yourself with Google Meet if you're new to the platform. English is the only language allowed during the session. Sharing unauthorized links is strictly prohibited and may result in removal or a permanent ban.
+          Meeting Rules : All participants must use a professional headshot and display their real name as per their government ID. Keep your microphone muted unless invited to speak, and use the “Raise Hand” feature before contributing. Please familiarize yourself with Google Meet if you are new to the platform. English is the only language allowed during the session. Sharing unauthorized links is strictly prohibited and may result in removal or a permanent ban.
         </p>
       
           <p className="max-w-[95%] mx-auto text-center mb-[45px]">
