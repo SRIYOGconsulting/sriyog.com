@@ -27,7 +27,7 @@ export default function MeetPage() {
     "Virtual Meetings - TimeZone GMT+3 (Buffer Time : 15 Minutes)": 
     
     [
-    { time: "10:30 AM – 11:30 AM - Host : PRACAS", title: "Community Meeting - (Sun)", link: "https://meet.google.com/fuu-fsjz-yhj" },
+    { time: "10:30 AM – 11:15 AM - Host : PRACAS", title: "Community Meeting - (Sun)", link: "https://meet.google.com/fuu-fsjz-yhj" },
     { time: "8:15 AM – 11:15 AM - Host : BroadPress", title: "Morning Internship - (Mon-Thurs)", link: "https://meet.google.com/stw-suqx-nbw" },
     { time: "12:15 PM – 3:15 PM - Host : BroadPress", title: "Afternoon Internship - (Mon-Thurs)", link: "https://meet.google.com/gue-iohz-pdq" },
     { time: "4:15 PM – 7:15 PM - Host : BroadPress", title: "Evening Internship - (Mon-Thurs)", link: "https://meet.google.com/ndu-ffpw-oiv" },
