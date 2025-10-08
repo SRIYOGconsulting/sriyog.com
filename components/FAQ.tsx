@@ -142,13 +142,13 @@ const faq2 = [
   {
     id: 21,
     question: "How can I apply for an Internship?",
-    answer: "Please check the link <a href='https://sriyog.com/internship' target='_blank'>Apply Internship</a>.",
+    answer: "You need to fill our online form in Internship section.",
   },
   {
     id: 22,
     question: "Do I need to pay for an Internship Opportunity?",
     answer:
-      "NPR 15,000 is charged per month for getting enrolled in an internship opportunity & NPR 50,000 as a refundable security deposit.",
+      "A fee of USD 100 per month is applicable for enrollment in the internship program, along with a refundable security deposit of USD 500. However, this fee may be offered as a scholarship to selected talented and expert candidates.",
   },
   {
     id: 23,
