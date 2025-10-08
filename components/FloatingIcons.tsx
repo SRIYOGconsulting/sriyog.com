@@ -24,7 +24,7 @@ export default function FloatingIcons() {
 
         {/* Phone with continuous pulse animation */}
         <Link
-          href="tel:+9779852025735"
+          href="tel:+9779852024365"
           target="_blank"
           className="group flex flex-col items-center "
         >

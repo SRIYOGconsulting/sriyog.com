@@ -13,88 +13,34 @@ export const metadata: Metadata = {
     images: [
       {
         url: "https://sriyog.com/assets/images/og/default.jpg",
-        alt: "Join Virtual Meeting"
-      }
-    ]
-  }
+        alt: "Join Virtual Meeting",
+      },
+    ],
+  },
 };
-export default function MeetPage() {
-  const defaultLink = "https://d.sriyog.com/meetdefault";
-  const interviewLink = "https://d.sriyog.com/interview";
-  const specialLink = "https://d.sriyog.com/meet";
 
-  const fullSchedule: { [day: string]: { time: string; title: string }[] } = {
-    Sunday: [
-      { time: "11:00 AM – 2:00 PM", title: "Morning Session" },
-      { time: "12:15 PM – 1:00 PM", title: "App Development" },
-      { time: "1:15 PM – 2:00 PM", title: "Web Development" },
-      { time: "3:00 PM – 6:00 PM", title: "Afternoon Session" },
-      { time: "3:30 PM – 5:00 PM", title: "Interview" },
-      { time: "5:00 PM – 5:45 PM", title: "Training / Product Showcase" },
-      { time: "7:00 PM – 10:00 PM", title: "Evening Session" },
-      { time: "9:00 PM – 9:45 PM", title: "Project Discussion" },
+export default function MeetPage() {
+  // Each link can be customized as needed
+  const fullSchedule: {
+    [day: string]: { time: string; title: string; link: string }[];
+  } = {
+    "Virtual Meetings - TimeZone GMT+3 (Buffer Time : 15 Minutes)": 
+    
+    [
+    { time: "10:30 AM – 11:30 AM - Host : PRACAS", title: "Community Meeting - (Sun)", link: "https://meet.google.com/fuu-fsjz-yhj" },
+    { time: "8:15 AM – 11:15 AM - Host : BroadPress", title: "Morning Internship - (Mon-Thurs)", link: "https://meet.google.com/stw-suqx-nbw" },
+    { time: "12:15 PM – 3:15 PM - Host : BroadPress", title: "Afternoon Internship - (Mon-Thurs)", link: "https://meet.google.com/gue-iohz-pdq" },
+    { time: "4:15 PM – 7:15 PM - Host : BroadPress", title: "Evening Internship - (Mon-Thurs)", link: "https://meet.google.com/ndu-ffpw-oiv" },
+    { time: "12:15 PM – 2:15 PM - Host : Bikram", title: "Interview - (Sat/ Sun)", link: "https://meet.google.com/vsb-buwu-pub" },
+    { time: "4:15 PM – 5:00 PM - Host : BroadPress", title: "BroadMeet - (Sun)", link: "https://meet.google.com/arm-rudj-mpt" },
+    { time: "10:30 AM – 11:15 AM - Host : PRACAS", title: "#TechFriday - (Fri)", link: "https://meet.google.com/tat-vvcq-pzu" },
+    { time: "12:15 PM – 1:00 PM - Host : BroadPress", title: "BroadPress Showcase - (Fri)", link: "https://meet.google.com/xyk-cbam-nzn" },
     ],
-    Monday: [
-      { time: "11:00 AM – 2:00 PM", title: "Morning Session" },
-      { time: "12:00 PM – 1:30 PM", title: "Interview" },
-      { time: "1:15 PM –  2:00 PM", title: "Social Media Management" },
-      { time: "3:00 PM –  6:00 PM", title: "Afternoon Session" },
-      { time: "4:15 PM –  5:00 PM", title: "UI/UX" },
-      { time: "5:00 PM –  5:45 PM", title: "Training / Product Showcase" },
-      { time: "7:00 PM –  10:00 PM", title: "Evening Session" },
-      { time: "9:00 PM –  9:45 PM", title: "Project Discussion" },
-    ],
-    Tuesday: [
-      { time: "11:00 AM – 2:00 PM", title: "Morning Session" },
-      { time: "12:00 PM – 1:30 PM", title: "Interview" },
-      { time: "1:15 PM – 2:00 PM", title: "Digital Journalism Demo" },
-      { time: "3:00 PM – 6:00 PM", title: "Afternoon Session" },
-      { time: "4:15 PM – 5:00 PM", title: "App Development" },
-      { time: "5:00 PM – 5:45 PM", title: "Training / Product Showcase" },
-      { time: "7:00 PM – 10:00 PM", title: "Evening Session" },
-      { time: "9:00 PM – 9:45 PM", title: "Project Discussion" },
-    ],
-    Wednesday: [
-      { time: "11:00 AM – 2:00 PM", title: "Morning Session" },
-      { time: "12:15 PM – 1:00 PM", title: "App Development" },
-      { time: "3:00 PM – 6:00 PM", title: "Afternoon Session" },
-      { time: "3:00 PM – 4:30 PM", title: "Interview" },
-      { time: "4:15 PM – 5:00 PM", title: "Data Science" },
-      { time: "5:00 PM – 5:45 PM", title: "Training / Product Showcase" },
-      { time: "7:00 PM – 10:00 PM", title: "Evening Session" },
-      { time: "9:00 PM – 9:45 PM", title: "Project Discussion" },
-    ],
-    Thursday: [
-      { time: "11:00 AM – 2:00 PM", title: "Morning Session" },
-      { time: "12:00 PM – 1:30 PM", title: "Interview" },
-      { time: "12:15 PM – 1:00 PM", title: "Social Media Management" },
-      { time: "3:00 PM – 6:00 PM", title: "Afternoon Session" },
-      { time: "4:15 PM – 5:00 PM", title: "App Development" },
-      { time: "5:00 PM – 5:45 PM", title: "Training / Product Showcase" },
-      { time: "7:00 PM – 10:00 PM", title: "Evening Session" },
-      { time: "9:00 PM – 9:45 PM", title: "Project Discussion" },
-    ],
-    Friday: [
-      { time: "11:00 AM – 2:00 PM", title: "Morning Session" },
-      { time: "12:15 PM – 1:00 PM", title: "App Development" },
-      { time: "1:15 PM – 2:00 PM", title: "#TechFriday" },
-      { time: "3:00 PM – 6:00 PM", title: "Afternoon Session" },
-      { time: "4:15 PM – 5:00 PM", title: "Data Science" },
-      { time: "5:00 PM – 5:45 PM", title: "Training / Product Showcase" },
-      { time: "7:00 PM – 10:00 PM", title: "Evening Session" },
-      { time: "9:00 PM – 9:45 PM", title: "Project Discussion" },
-    ],
+    
   };
+
   
 
-  const getLink = (title: string, time: string): string => {
-    const isInterview = title.toLowerCase().includes("interview");
-    const isSpecial =
-      title.toLowerCase().includes("techfriday") || time.startsWith("8:00 PM");
-    if (isInterview) return interviewLink;
-    if (isSpecial) return specialLink;
-    return defaultLink;
-  };
   return (
     <>
       <Ribbon name="Meet" des="" />
@@ -126,7 +72,7 @@ export default function MeetPage() {
                     <p className="text-sm text-gray-500">{session.time}</p>
                   </div>
                   <Link
-                    href={getLink(session.title, session.time)}
+                    href={session.link}
                     target="_blank"
                     className="px-3 py-1 text-sm border border-[#055D59] text-[#055D59] hover:bg-[#055D59] hover:text-white rounded-[8px] transition"
                   >
@@ -137,7 +83,18 @@ export default function MeetPage() {
             </div>
           </div>
         ))}
+
+        <p className="max-w-[95%] mx-auto text-center mb-[45px]"><br></br>
+          Meeting Rules : All participants must use a professional headshot and display their real name as per their government ID. Keep your microphone muted unless invited to speak, and use the “Raise Hand” feature before contributing. Please familiarize yourself with Google Meet if you're new to the platform. English is the only language allowed during the session. Sharing unauthorized links is strictly prohibited and may result in removal or a permanent ban.
+        </p>
+      
+          <p className="max-w-[95%] mx-auto text-center mb-[45px]">
+          Note : Countries that observe GMT+3 year-round include Bahrain, Belarus, Comoros, Djibouti, Eritrea, Ethiopia, Iraq, Kenya, Kuwait, Madagascar, Mayotte, Qatar, western Russia (Moscow and St. Petersburg), Saudi Arabia, Somalia, South Sudan, Sudan, Syria (since stopping DST), Tanzania, Turkey (permanently since 2016), Uganda, and Yemen. Meanwhile, several countries such as Cyprus, Estonia, Finland, Greece, Israel, Jordan, Latvia, Lebanon, Lithuania, Moldova, Romania, Syria (when DST is observed), and Ukraine (excluding occupied regions) use GMT+3 only during daylight saving time, typically advancing from GMT+2 in summer. This time zone is known as Arabian Standard Time (AST) in the Middle East and East Africa Time (EAT) in Africa.
+        </p>
+        <p className="max-w-[95%] mx-auto text-center mb-[45px]">With Effective From : 9 October 2025, Thursday</p>
       </section>
+
+      
     </>
   );
 }

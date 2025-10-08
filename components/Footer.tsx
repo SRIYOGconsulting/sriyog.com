@@ -34,9 +34,7 @@ export default function Footer() {
                     <>
                       <Link prefetch={true} href="/faq">
                         FAQs&nbsp;
-                        <span className="bg-[#0D5D59] px-[5px] py-[2px] text-[11px] text-white rounded-[3px]">
-                        Updated
-                      </span> 
+                        
                       </Link>
                     </>
                   ),
@@ -124,9 +122,7 @@ export default function Footer() {
                     <>
                       <Link prefetch={true} href="/internship">
                         Internship&nbsp;
-                      <span className="bg-[#0D5D59] px-[5px] py-[2px] text-[11px] text-white rounded-[3px]">
-                        React Native
-                      </span>
+                      
                       </Link>
                     </>
                   ),
@@ -155,9 +151,8 @@ export default function Footer() {
                   label: (
                     <>
                       <Link prefetch={true} href="/trainings">
-                         IT Training&nbsp;<span className="bg-[#0D5D59] px-[5px] py-[2px] text-[11px] text-white rounded-[3px]">
-                        New
-                      </span>
+                         IT Training
+                      
                       </Link>
                     </>
                   ),},

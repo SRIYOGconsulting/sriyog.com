@@ -192,11 +192,11 @@ export default function Ettkitw() {
             number, he may needs to copy the number to dial from dial pad. The
             phone calling link is similar like hyperlink, email link e.g.{" "}
             <Link
-              href="tel:98520-25735"
+              href="tel:+9779852024365"
               className="text-blue-600"
               target="_blank"
             >
-              (977) 98520-25735
+              (977) 98520-24365
             </Link>{" "}
             which can automatically dial phone numbers directly from any html
             page opening dial pad.
