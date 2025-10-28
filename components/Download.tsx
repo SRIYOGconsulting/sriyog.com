@@ -18,7 +18,7 @@ const fileList = [
   "/assets/downloadFiles/SRIYOG-Consulting-Guestbook-Feedback-Form.pdf",
   "/assets/downloadFiles/SRIYOG-Consulting-Customer-Feedback-Form.pdf",
   "/assets/downloadFiles/Internship-Sample-Letter-From-College.pdf",
-  "/assets/downloadFiles/SRIYOG-Consulting-Internship-Recommondation-Letter-from-College.docx",
+  "/assets/downloadFiles/SRIYOG-Consulting-Internship-Recommendation-Letter-from-College.docx",
   "/assets/downloadFiles/SRIYOG-Consulting-Internship-Recommendation-Letter.docx",
   "/assets/downloadFiles/SRIYOG-Consulting-Logos.zip",
 ];
