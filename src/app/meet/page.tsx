@@ -92,7 +92,7 @@ export default function MeetPage() {
           <p className="max-w-[95%] mx-auto text-center mb-[45px]">
           Note : Countries that observe GMT+3 year-round include Bahrain, Belarus, Comoros, Djibouti, Eritrea, Ethiopia, Iraq, Kenya, Kuwait, Madagascar, Mayotte, Qatar, western Russia (Moscow and St. Petersburg), Saudi Arabia, Somalia, South Sudan, Sudan, Syria (since stopping DST), Tanzania, Turkey (permanently since 2016), Uganda, and Yemen. Meanwhile, several countries such as Cyprus, Estonia, Finland, Greece, Israel, Jordan, Latvia, Lebanon, Lithuania, Moldova, Romania, Syria (when DST is observed), and Ukraine (excluding occupied regions) use GMT+3 only during daylight saving time, typically advancing from GMT+2 in summer. This time zone is known as Arabian Standard Time (AST) in the Middle East and East Africa Time (EAT) in Africa.
         </p>
-        <p className="max-w-[95%] mx-auto text-center mb-[45px]">With Effective From : 9 October 2025, Thursday</p>
+        <p className="max-w-[95%] mx-auto text-center mb-[45px]">With Effective From : 9 November 2025, Sunday</p>
       </section>
 
       
