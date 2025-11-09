@@ -86,7 +86,7 @@ export default function MeetPage() {
         ))}
 
         <p className="max-w-[95%] mx-auto text-center mb-[45px]"><br></br>
-          Meeting Rules : All participants must use a professional headshot and display their real name as per their government ID. Keep your microphone muted unless invited to speak, and use the “Raise Hand” feature before contributing. Please familiarize yourself with Google Meet if you are new to the platform. English is the only language allowed during the session. Sharing unauthorized links is strictly prohibited and may result in removal or a permanent ban.
+          Meeting Rules : All participants must use a professional headshot and display their real name as per their government ID. Keep your microphone muted unless invited to speak, and use the “Raise Hand” feature before contributing. Please familiarize yourself with Google Meet if you are new to the platform. English is the only language allowed during the session. Sharing unauthorized links is strictly prohibited and may result in removal or a permanent ban. Candidates are expected to maintain consistent participation throughout the internship. If a candidate is absent for three (3) consecutive sessions without providing prior official notice or valid reason, they will be permanently removed from the internship program. In such cases, the candidate will be required to submit an official termination letter issued by their university, campus, or college, addressed to our organization, confirming the discontinuation of their internship engagement.
         </p>
       
           <p className="max-w-[95%] mx-auto text-center mb-[45px]">
