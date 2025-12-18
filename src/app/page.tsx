@@ -1,51 +1,26 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { useFloatingIcons } from "../context/FloatingIconContext";
+import RoadBlock from "@/components/Roadblock";
+
 export default function Home() {
-  const [overlay, setOverlay] = useState(true);
+  const [showRoadBlock, setShowRoadBlock] = useState(true);
   const [categoriesOpen, setCategoriesOpen] = useState(false);
   const [selectedCategories, setSelectedcategories] = useState("");
   const [selectedEvents, setSelectedEvents] = useState("");
   const [eventsOpen, setEventsOpen] = useState(false);
-  const [getImage, setGetImage] = useState("");
-  const getdate = new Date().toISOString().slice(5, 10);
   const { setShowFloatingIcons } = useFloatingIcons();
 
-  const events = [
-    {
-      date: "05-29",
-      img: "/assets/images/roadblock/05-29.jpg",
-    },
-    {
-      date: "03-08",
-      img: "/assets/images/roadblock/03-08.jpg",
-    },
-  ];
-
-  const findImage = () => {
-    const event = events.find((e) => e.date === getdate);
-    if (event) {
-      setGetImage(event.img);
-    } else {
-      setGetImage("/assets/images/roadblock/default.jpg");
-    }
+  const handleCloseRoadBlock = () => {
+    setShowRoadBlock(false);
+    setShowFloatingIcons(true);
   };
 
-  useEffect(() => {
-    findImage();
-    if (overlay) {
-      const timer = setTimeout(() => {
-        setOverlay(false);
-      }, 5000);
-      return () => clearTimeout(timer);
-    }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
   const SampleNextArrow = ({ onClick }: { onClick?: () => void }) => (
     <div
       className="absolute bottom-[-30px] max-md:bottom-[-40px] right-6 max-lg:right-0 z-10 cursor-pointer"
@@ -165,6 +140,7 @@ export default function Home() {
       des: "We empower tourism industry with digital booking platforms, virtual experiences, and CRM tools that improve traveler engagement, operational efficiency, and overall customer satisfaction.",
     },
   ];
+
   const latest = [
     {
       img: "/assets/images/homepage/latest/1.jpg",
@@ -206,84 +182,58 @@ export default function Home() {
 
   return (
     <>
-      {/*overlay */}
-      {overlay ? (
-        <section
-          className={`w-full h-full bg-gray-200 fixed top-0 left-0 z-50 flex justify-center items-center
-      transition-opacity duration-500 ease-in-out 
-      }`}
-        >
-          <div className="relative bg-white w-[90%] md:w-[85%] lg:w-[50%] md:h-[90%] h-[60%] rounded-md p-8">
-            <div className="relative h-full w-full">
-              {getImage && (
-                <Image
-                  fill
-                  src={getImage}
-                  alt="roadblock-image"
-                  className="object-contain w-full h-full"
-                />
-              )}
-            </div>
-            <button
-              className="absolute top-[-10px] z-10 right-[-15px] px-3 py-1 text-xl hover:cursor-pointer rounded-sm bg-[#055d59] font-semibold  hover:bg-[#315856] text-white transition-all duration-300 ease-in-out"
-              onClick={() => {setOverlay(false)
-                        setShowFloatingIcons(true);}
-              }
+      {/* RoadBlock Popup Overlay */}
+      {showRoadBlock && <RoadBlock onClose={handleCloseRoadBlock} />}
+
+      {/* Main Content */}
+      {/*hero-banner*/}
+      <section className="w-full lg:h-auto h-[300px] sm:h-[400px] relative">
+        <div
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat brightness-50 z-0"
+          style={{
+            backgroundImage:
+              "url('/assets/images/homepage/hero-banner.jpg')",
+          }}
+        ></div>
+        <div className="relative z-10 flex justify-between lg:w-[1180px] max-lg:container max-lg:px-3 mx-auto items-end lg:pt-64 lg:pb-28 max-md:items-end max-lg:h-full max-lg:pb-4">
+          <div className="text-white sm:w-[45%] lg:w-[55%] space-y-4">
+            <h1 className="lg:text-5xl text-3xl font-semibold">
+              Dedicated IT Consulting
+            </h1>
+            <p className="hidden md:block">
+              An innovative consulting service driven by streamlined
+              strategies, cutting-edge technology solutions, and
+              industry-leading expertise across a wide range of sectors.
+            </p>
+            <Link
+              href="/survey"
+              className="border rounded-lg p-2 hover:bg-white font-semibold hover:border-white hover:text-[#4b4b4b] transition-all duration-300 ease-in-out"
             >
-              X
-            </button>
+              Free IT Survey
+            </Link>
           </div>
-        </section>
-      ) : (
-        <>
-          {/*hero-banner*/}
-          <section className="w-full lg:h-auto h-[300px] sm:h-[400px] relative">
-            <div
-              className="absolute inset-0 bg-cover bg-center bg-no-repeat brightness-50 z-0"
-              style={{
-                backgroundImage:
-                  "url('/assets/images/homepage/hero-banner.jpg')",
-              }}
-            ></div>
-            <div className="relative z-10 flex justify-between lg:w-[1180px] max-lg:container max-lg:px-3 mx-auto items-end lg:pt-64 lg:pb-28 max-md:items-end max-lg:h-full max-lg:pb-4">
-              <div className="text-white sm:w-[45%] lg:w-[55%] space-y-4">
-                <h1 className="lg:text-5xl text-3xl font-semibold">
-                  Dedicated IT Consulting
-                </h1>
-                <p className="hidden md:block">
-                  An innovative consulting service driven by streamlined
-                  strategies, cutting-edge technology solutions, and
-                  industry-leading expertise across a wide range of sectors.
-                </p>
-                <Link
-                  href="/survey"
-                  className="border rounded-lg p-2 hover:bg-white font-semibold hover:border-white hover:text-[#4b4b4b] transition-all duration-300 ease-in-out"
-                >
-                  Free IT Survey
-                </Link>
-              </div>
-              <div className="bg-white hidden sm:block rounded-lg p-6 sm:w-[50%] lg:w-[37%] space-y-5">
-                <p className="font-semibold py-2 border-b-2 border-[#055d59] text-[#4b4b4b]">
-                  Book a Meeting
-                </p>
-                <p>
-                  Engaging an IT consultant adds valuable insight and
-                  professional guidance to your technological initiatives.
-                </p>
-                <p className="">
-                  IT consultants turn complex tech issues into practical
-                  solutions. Their expertise helps businesses boost efficiency
-                  and stay competitive in a fast-changing digital world.
-                </p>
-                <Link
-                  href="/meeting"
-                  className="border-[1.5px] border-[#055d59] rounded-lg p-2 hover:bg-[#055D59] font-semibold text-[#4b4b4b] hover:text-white transition-all duration-300 ease-in-out"
-                >
-                  Book a Meeting
-                </Link>
-              </div>
-            </div>
-          </section>
+          <div className="bg-white hidden sm:block rounded-lg p-6 sm:w-[50%] lg:w-[37%] space-y-5">
+            <p className="font-semibold py-2 border-b-2 border-[#055d59] text-[#4b4b4b]">
+              Book a Meeting
+            </p>
+            <p>
+              Engaging an IT consultant adds valuable insight and
+              professional guidance to your technological initiatives.
+            </p>
+            <p className="">
+              IT consultants turn complex tech issues into practical
+              solutions. Their expertise helps businesses boost efficiency
+              and stay competitive in a fast-changing digital world.
+            </p>
+            <Link
+              href="/meeting"
+              className="border-[1.5px] border-[#055d59] rounded-lg p-2 hover:bg-[#055D59] font-semibold text-[#4b4b4b] hover:text-white transition-all duration-300 ease-in-out"
+            >
+              Book a Meeting
+            </Link>
+          </div>
+        </div>
+      </section>
 
           {/*book-an-appoinment*/}
           <section className="container hidden max-md:block px-3 my-3">
@@ -725,8 +675,6 @@ export default function Home() {
               Apply Now
             </Link>
           </section>
-        </>
-      )}
     </>
   );
 }

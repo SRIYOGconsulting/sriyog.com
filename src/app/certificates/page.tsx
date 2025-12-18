@@ -20,6 +20,7 @@ export default function Certificate() {
     { img: "/assets/images/certificate/2.jpg", name: "PAN Registration", id: 2 },
     { img: "/assets/images/certificate/3.jpg", name: "Letter from Company Registration", id: 3 },
     { img: "/assets/images/certificate/4.jpg", name: "SRIYOG Prabandhapatra", id: 4 },
+    { img :"/assets/images/certificate/16.jpg", name: "Address update",id: 16},
     { img: "/assets/images/certificate/5.jpg", name: "SRIYOG Niyamabali", id: 5 },
     { img: "/assets/images/certificate/6.jpg", name: "Letter from Ministry of Labour", id: 6 },
     { img: "/assets/images/certificate/7.jpg", name: "Letter from Ministry of Education", id: 7 },

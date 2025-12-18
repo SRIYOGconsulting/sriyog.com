@@ -9,23 +9,83 @@ export const metadata: Metadata = {
 export default function Page() {
   const partner = [
     {
-      name: "IME-PAY",
-      des: "IME Digital Solution Ltd. introduced “IME Pay,” Nepal’s first licensed digital payment platform, under its financial services initiative. Since its launch in 2017, IME Pay has provided a fast, secure, and easy-to-use solution for digital transactions.",
-      img: "/assets/images/partners/1.jpg",
-      path: "https://www.imepay.com.np/",
-    },
-    {
-      name: "MAW-Skills-Academy",
-      des: "MAW Skills Academy is an initiative by MAW Enterprises under its subsidiary MAW Earthmovers Pvt. Ltd. (MEPL), the authorized distributor of JCB and other premium brands in Nepal’s heavy equipment sector since 1964.",
-      img: "/assets/images/partners/2.jpeg",
-      path: "https://www.mawacademy.com/",
-    },
-    {
-      name: "Islington-College",
-      des: "Islington College is a leading modern college in Nepal dedicated to academic excellence and practical-based education. With a long-standing history, it has nurtured numerous leaders and entrepreneurs. ",
-      img: "/assets/images/partners/islington-college-logo.svg",
-      path: "https://islington.edu.np/",
-    },
+  name: "Khalti",
+  des: "Khalti is Nepal's leading digital wallet and payment gateway, providing seamless online payment solutions since 2017. It enables users to make quick, secure transactions for utilities, e-commerce, and various services across Nepal.",
+  img: "/assets/images/partners/1.jpg",
+  path: "https://www.imepay.com.np/",
+},
+{
+  name: "MAW-Skills-Academy",
+  des: "MAW Skills Academy is an initiative by MAW Enterprises under its subsidiary MAW Earthmovers Pvt. Ltd. (MEPL), the authorized distributor of JCB and other premium brands in Nepal's heavy equipment sector since 1964.",
+  img: "/assets/images/partners/2.jpeg",
+  path: "https://www.mawacademy.com/",
+},
+{
+  name: "Islington-College",
+  des: "Islington College is a leading modern college in Nepal dedicated to academic excellence and practical-based education. With a long-standing history, it has nurtured numerous leaders and entrepreneurs.",
+  img: "/assets/images/partners/3.svg",
+  path: "https://islington.edu.np/",
+},
+{
+  name: "Vercel",
+  des: "Vercel is a cloud platform for frontend developers, providing the best developer experience with instant deployment, automatic scaling, and seamless integration with modern frameworks.",
+  img: "/assets/images/partners/4.svg",
+  path: "https://vercel.com/",
+},
+{
+  name: "Digital-Ocean",
+  des: "DigitalOcean is a cloud infrastructure provider that offers simple, affordable, and scalable cloud computing solutions for developers and businesses worldwide.",
+  img: "/assets/images/partners/5.svg",
+  path: "https://www.digitalocean.com/",
+},
+{
+  name: "Google-Workspace",
+  des: "Google Workspace is a collection of cloud computing, productivity and collaboration tools developed and marketed by Google, helping businesses communicate and work together efficiently.",
+  img: "/assets/images/partners/6.svg",
+  path: "https://workspace.google.com/",
+},
+{
+  name: "Zoho",
+  des: "Zoho Corporation is a software development company that provides web-based business tools and information technology solutions for businesses of all sizes.",
+  img: "/assets/images/partners/7.svg",
+  path: "https://www.zoho.com/",
+},
+{
+  name: "Freshdesk",
+  des: "Freshdesk is a cloud-based customer support software that helps businesses manage customer conversations across multiple channels with ease and efficiency.",
+  img: "/assets/images/partners/8.svg",
+  path: "https://freshdesk.com/",
+},
+{
+  name: "GoDaddy",
+  des: "GoDaddy is the world's largest domain registrar and web hosting company, providing tools and services to help businesses establish and grow their online presence.",
+  img: "/assets/images/partners/9.svg",
+  path: "https://www.godaddy.com/",
+},
+{
+  name: "Tucows",
+  des: "Tucows is a leading internet services and telecommunications company, providing domain registration, email, and other essential online services to businesses worldwide.",
+  img: "/assets/images/partners/10.png",
+  path: "https://www.tucows.com/",
+},
+{
+  name: "BroadPress",
+  des: "BroadPress specializes in providing comprehensive web hosting and digital solutions, empowering businesses with reliable infrastructure and technical support.",
+  img: "/assets/images/partners/11.png",
+  path: "https://broadpress.org/",
+},
+{
+  name: "Kaspersky",
+  des: "Kaspersky is a global cybersecurity company providing advanced digital security solutions and antivirus protection to individuals and businesses worldwide.",
+  img: "/assets/images/partners/12.svg",
+  path: "https://www.kaspersky.com/",
+},
+{
+  name: "Linode",
+  des: "Linode offers high-performance cloud computing and hosting services, providing developers with powerful and flexible infrastructure solutions for their applications.",
+  img: "/assets/images/partners/13.svg",
+  path: "https://www.linode.com/",
+},
   ];
   return (
     <>
