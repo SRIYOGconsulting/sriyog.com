@@ -17,8 +17,6 @@ export const metadata: Metadata = {
   },
 };
 
-export default function Certificate() {
-  return <>
-  <CertificateComponent/>
-  </>;
+export default function CertificatePage() {
+  return <CertificateComponent />;
 }

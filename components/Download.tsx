@@ -11,28 +11,16 @@ type FileMeta = {
   rawTitle: string;
 };
 
-// Move fileList outside the component so its reference doesn't change
+// Updated file paths to /files/ instead of /assets/downloadFiles/
 const fileList = [
-  "/assets/downloadFiles/Meeting-Minutes.pdf",
-  "/assets/downloadFiles/Work-Order.docx",
-  "/assets/downloadFiles/Guestbook-Feedback-Form.pdf",
-  "/assets/downloadFiles/Customer-Feedback-Form.pdf",
-  "/assets/downloadFiles/Internship-Recommendation-Letter-Sample.pdf",
-  "/assets/downloadFiles/Internship-Recommendation-Letter-Draft.docx",
-  "/assets/downloadFiles/Internship-Request-Letter-Personal.docx",
-  "/assets/downloadFiles/SRIYOG-Consulting-Logos.zip",
-  "/assets/downloadFiles/Android-Mobile-WireFrame.pdf",
-  "/assets/downloadFiles/Apple-Mobile-WireFrame.pdf",
-  "/assets/downloadFiles/Check-List.pdf",
-  "/assets/downloadFiles/Daily-Task.pdf",
-  "/assets/downloadFiles/Daily-Tasks-Two-in-A4.pdf",
-  "/assets/downloadFiles/Safari-Dashboard-Wireframe-landscape.pdf",
-  "/assets/downloadFiles/Safari-Wireframe-landscape.pdf",
-  "/assets/downloadFiles/Safari-Wireframe.pdf",
-  "/assets/downloadFiles/Download-JDR-Fonts.pdf",
-  "/assets/downloadFiles/Google-Input-Tools-Nepali.zip",
-  "/assets/downloadFiles/Blumind-Mind-Mapping.zip",
-
+  "/files/SRIYOG-Consulting-Meeting-Minutes.pdf",
+  "/files/SRIYOG-Consulting-Order.docx",
+  "/files/SRIYOG-Consulting-Guestbook-Feedback-Form.pdf",
+  "/files/SRIYOG-Consulting-Customer-Feedback-Form.pdf",
+  "/files/Internship-Sample-Letter-From-College.pdf",
+  "/files/SRIYOG-Consulting-Internship-Recommendation-Letter-from-College.docx",
+  "/files/SRIYOG-Consulting-Internship-Recommendation-Letter.docx",
+  "/files/SRIYOG-Consulting-Logos.zip",
 ];
 
 export default function Download() {
@@ -90,7 +78,7 @@ export default function Download() {
     };
 
     fetchMetadata();
-  }, []); // fileList is now stable, so you can use an empty dependency array
+  }, []);
 
   return (
     <>
@@ -100,7 +88,7 @@ export default function Download() {
           <table className="min-w-full border-collapse text-sm md:text-base">
             <thead className="bg-gray-200 hidden md:table-header-group rounded-xl">
               <tr>
-                <th className="text-left py-3 px-4 whitespace-nowrap ">
+                <th className="text-left py-3 px-4 whitespace-nowrap">
                   Title
                 </th>
                 <th className="text-left py-3 px-4 whitespace-nowrap">Size</th>
@@ -126,25 +114,25 @@ export default function Download() {
                   <td className="py-3 px-4 mt-2 font-medium block md:table-cell">
                     {item.title}
                   </td>
-                  <td className="py-2 px-4  mt-2 block md:table-cell">
+                  <td className="py-2 px-4 mt-2 block md:table-cell">
                     <span className="md:hidden font-semibold mr-4">
                       File Size:
                     </span>
                     {item.size}
                   </td>
-                  <td className="py-2 px-4  mt-2 block md:table-cell">
+                  <td className="py-2 px-4 mt-2 block md:table-cell">
                     <span className="md:hidden font-semibold mr-4">
                       File Type:
                     </span>
                     {item.type}
                   </td>
-                  <td className="py-2 px-4 block  mt-2 md:table-cell md:align">
+                  <td className="py-2 px-4 block mt-2 md:table-cell md:align">
                     <span className="md:hidden font-semibold mr-4">
                       Published Date:
                     </span>
                     {item.lastUpdate}
                   </td>
-                  <td className="py-2 px-4 block  mt-2 md:table-cell md:align-middle">
+                  <td className="py-2 px-4 block mt-2 md:table-cell md:align-middle">
                     <span className="md:hidden font-semibold mr-4">
                       Download:
                     </span>

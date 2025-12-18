@@ -3,48 +3,169 @@ import Image from "next/image";
 import Ribbon from "@/components/Ribbon";
 import Link from "next/link";
 import { Metadata } from "next";
-const images = [
-  "/assets/images/team/1.png",
-  "/assets/images/team/2.png",
-  "/assets/images/team/3.png",
-  "/assets/images/team/4.png",
-  "/assets/images/team/5.png",
-  "/assets/images/team/6.png",
-  "/assets/images/team/7.png",
-  "/assets/images/team/9.png",
-  "/assets/images/team/10.png",
-  "/assets/images/team/11.png",
-  "/assets/images/team/12.png",
-   "/assets/images/team/8.png",
-];
-
-const names = [
-  "Prakash",
-  "Hiring",
-  "Sakchyam",
-  "Aashma",
-  "Bitisha",
-  "Lasta",
-  "Milan",
-  "Prakrit",
-  "Priyanka",
-  "Sagar",
-  "Rahul",
-  "Sarad"
-];
-const roles = [
-  "Project Manager",
-  "Information Manager",
-  "Flutter Developer",
-  "Backend Developer",
-  "React JS Developer",
-  "React JS Developer",
-  "UI/UX Designer",
-  "UI/UX Designer",
-  "React JS Developer",
-  "Web Developer",
-  "React JS Developer",
-  "React Native Developer",
+const teamMembers = [
+  {
+    id: 1,
+    name: "Prakash",
+    role: "Project Manager",
+    image: "/assets/images/team/1.png",
+  },
+  {
+    id: 2,
+    name: "Hiring Manager",
+    role: "Information Manager",
+    image: "/assets/images/team/2.png",
+  },
+  {
+    id: 3,
+    name: "Sakchyam",
+    role: "Flutter Developer",
+    image: "/assets/images/team/3.png",
+  },
+  {
+    id: 4,
+    name: "Aashma",
+    role: "Backend Developer",
+    image: "/assets/images/team/4.png",
+  },
+  {
+    id: 5,
+    name: "Bitisha",
+    role: "React JS Developer",
+    image: "/assets/images/team/5.png",
+  },
+  {
+    id: 6,
+    name: "Lasta",
+    role: "React JS Developer",
+    image: "/assets/images/team/6.png",
+  },
+  {
+    id: 7,
+    name: "Milan",
+    role: "UI/UX Designer",
+    image: "/assets/images/team/7.png",
+  },
+  {
+    id: 8,
+    name: "Prakrit",
+    role: "UI/UX Designer",
+    image: "/assets/images/team/9.png",
+  },
+  {
+    id: 9,
+    name: "Priyanka",
+    role: "React JS Developer",
+    image: "/assets/images/team/10.png",
+  },
+  {
+    id: 10,
+    name: "Sagar",
+    role: "Web Developer",
+    image: "/assets/images/team/11.png",
+  },
+  {
+    id: 11,
+    name: "Rahul",
+    role: "React JS Developer",
+    image: "/assets/images/team/12.png",
+  },
+  {
+    id: 12,
+    name: "Sarad",
+    role: "React Native Developer",
+    image: "/assets/images/team/8.png",
+  },
+  {
+    id: 13,
+    name: "Aaron",
+    role: "MERN Stack",
+    image: "/assets/images/team/15.png",
+  },
+  {
+    id: 14,
+    name: "Alisha",
+    role: "MERN Stack",
+    image: "/assets/images/team/16.png",
+  },
+  {
+    id: 15,
+    name: "Alwens",
+    role: "UI/UX Designer",
+    image: "/assets/images/team/17.png",
+  },
+  {
+    id: 16,
+    name: "Ayoola",
+    role: "MERN Stack",
+    image: "/assets/images/team/18.png",
+  },
+  {
+    id: 17,
+    name: "Binod",
+    role: "MERN Stack",
+    image: "/assets/images/team/19.png",
+  },
+  {
+    id: 18,
+    name: "Bitika",
+    role: "MERN Stack",
+    image: "/assets/images/team/20.png",
+  },
+  {
+    id: 19,
+    name: "Kateryna",
+    role: "UI/UX Designer",
+    image: "/assets/images/team/21.png",
+  },
+  {
+    id: 20,
+    name: "Hammoud",
+    role: "MERN Stack",
+    image: "/assets/images/team/22.png",
+  },
+  {
+    id: 21,
+    name: "Samyod",
+    role: "MERN Stack",
+    image: "/assets/images/team/23.png",
+  },
+  {
+    id: 22,
+    name: "Sanish",
+    role: "ReactJS Developer",
+    image: "/assets/images/team/24.png",
+  },
+  {
+    id: 23,
+    name: "Santosh",
+    role: "UI/UX Designer",
+    image: "/assets/images/team/25.png",
+  },
+  {
+    id: 24,
+    name: "Sarishma",
+    role: "MERN Stack",
+    image: "/assets/images/team/26.png",
+  },
+  {
+    id: 25,
+    name: "Shiva",
+    role: "MERN Stack",
+    image: "/assets/images/team/27.png",
+  },
+  {
+    id: 26,
+    name: "Smriti",
+    role: "ReactJS Developer",
+    image: "/assets/images/team/28.png",
+  },
+  {
+    id: 27,
+    name: "Sneha",
+    role: "MERN Stack",
+    image: "/assets/images/team/29.png",
+  },
 ];
 
 export const metadata: Metadata = {
@@ -121,7 +242,7 @@ export default function Example() {
                 <div className="flex  flex-col gap-3">
                   <p>Follow Pracas on social media</p>
                   <div className="flex gap-3 items-center">
-                  
+
 
                     <Link href="https://x.com/pracas" target="_blank">
                       <Image
@@ -149,24 +270,24 @@ export default function Example() {
 
         <div className="max-w-[1180px] max-lg:container max-lg:px-3 mx-auto my-[45px]">
           <div className="grid gap-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 ">
-            {images.map((img, index) => (
+            {teamMembers.map((member) => (
               <div
-                key={index}
-                className="!bg-gray-100 text-black border border-gray-300  flex flex-col items-center min-h-[320px] rounded-lg max-lg:py-6 md:pb-4"
+                key={member.id}
+                className="!bg-gray-100 text-black border border-gray-300 flex flex-col items-center min-h-[320px] rounded-lg max-lg:py-6 md:pb-4"
               >
                 <div className="relative h-76 w-full md:h-56 md:w-full lg:h-64 lg:w-[85%] ">
                   <Image
                     fill
-                    className="mx-auto object-contain "
-                    src={img}
-                    alt={`Team Member ${index + 1}`}
+                    className="mx-auto object-contain"
+                    src={member.image}
+                    alt={member.name}
                   />
                 </div>
-                <div className=" text-lg font-semibold text-center font-roboto">
-                  {names[index]}
+                <div className="text-lg font-semibold text-center font-roboto">
+                  {member.name}
                 </div>
                 <p className="text-sm text-center text-gray-600 font-roboto">
-                  {roles[index]}
+                  {member.role}
                 </p>
               </div>
             ))}

@@ -78,7 +78,7 @@ export default function Testimonials() {
       desc: "I would like to express sincere gratitude to SRIYOG COnsulting Pvt. Ltd. for providing outstanding Business eMail services to our organisation. We have been using Zoho Email service, expertly managed, set up, and operated by your team since june 2024. ",
       name: "Naveen Poddar",
       stack: "CEO",
-      image: "/assets/images/testimonials/naveen-poddar-jayshree-polymers.png",
+      image: "/assets/images/testimonials/1.png",
        addr:"Biratnagar"
     },
     {
@@ -86,7 +86,7 @@ export default function Testimonials() {
       desc: "We have an excellent experience working with SRIYOG. They designed a professional, user friendly, website for our business and set up and supporting our Business eMail seamlessly. Their attention to details and timely execution made the entire process smooth and stress free. ",
       name: "Anand Singh",
       stack: "General Manager",
-      image: "/assets/images/testimonials/anand-singh-transnepal.png",
+      image: "/assets/images/testimonials/2.png",
        addr:"Biratnagar"
     },
      {
@@ -94,7 +94,7 @@ export default function Testimonials() {
       desc: "SRIYOG Consulting did a great job designing our website. Prakash ji was responsive and professional and took time to understand our brand. The final website works amazing but  needs few revisions.",
       name: "Sita Rai",
       stack: "Doctor",
-      image: "/assets/images/testimonials/dr-sita-rai-kopila-clinic.png",
+      image: "/assets/images/testimonials/3.png",
        addr:"Damak"
     },
          {
@@ -102,7 +102,7 @@ export default function Testimonials() {
       desc: "Partnering with SRIYOG Consulting has been a transformative experience for our organization. Their team brought a level of technical expertise and professionalism that exceeded our expectations. From planning to deployment, the entire process was smooth, transparent, and incredibly efficient.",
       name: "Sudhir Nepal",
       stack: "Editor-in-Chief",
-      image: "/assets/images/testimonials/sudir-nepal-biratinfo.png",
+      image: "/assets/images/testimonials/4.png",
        addr:"Kathmandu"
     },
          {
@@ -110,7 +110,7 @@ export default function Testimonials() {
       desc: "We worked with SRIYOG Consulting to create a fully customized corporate website for our business. Their team understood our vision, offered creative solutions, and delivered a sleek, user-friendly platform on time. Their commitment to quality and technical excellence is great.",
       name: "Kishor Baskota",
       stack: "Founder & CEO",
-      image: "/assets/images/testimonials/baskotaConsulting-kishorBastoka.jpg",
+      image: "/assets/images/testimonials/5.jpg",
        addr:"Kathmandu"
     },
          {
@@ -118,8 +118,32 @@ export default function Testimonials() {
       desc: "We recently partnered with SRIYOG Consulting for the development of a custom car portal and ongoing social media management services. From the initial consultation to final deployment, their team demonstrated a high level of professionalism & technical expertise.",
       name: "Yogendra Dhamala",
       stack: "Director",
-      image: "/assets/images/testimonials/yogendra-dhamala-nepalMoter.png",
+      image: "/assets/images/testimonials/6.png",
        addr:"Kathmandu"
+    },
+    {
+      title: "BK Masala",
+      desc: "SRIYOG Consulting brought our vision to life with a sleek, user-friendly corporate website. Their team delivered creative solutions and technical excellence right on time. From initial concept to final launch, they demonstrated professionalism and attention to detail throughout the project.",
+      name: " Vivek Agrawal",
+      stack: "Director",
+      image: "/assets/images/testimonials/7.png",
+       addr:"Biratnagar"
+    },
+    {
+      title: "Singh Engineering Works",
+      desc: "We appreciated SRIYOG Consulting's dedication to crafting a tailored, high-quality website that truly reflects our brand and meets our business goals. Their team worked closely with us throughout the process, ensuring every detail aligned with our vision and expectations perfectly.",
+      name: "Arbin Singh",
+      stack: "Director",
+      image: "/assets/images/testimonials/8.png",
+       addr:"Biratnagar"
+    },
+    {
+      title: "Sudharsan Security",
+      desc: "Their team perfectly captured our needs, providing a customized website that is both professional and easy to navigate, all delivered with great commitment to quality. SRIYOG Consulting exceeded our expectations with their attention to detail and responsive communication.",
+      name: "Keshab Adhikari",
+      stack: "General Manager",
+      image: "/assets/images/testimonials/9.png",
+       addr:"Itahari"
     },
 
   ];

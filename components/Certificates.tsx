@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
 import Thumbnails from "yet-another-react-lightbox/plugins/thumbnails";
@@ -11,15 +11,12 @@ import Ribbon from "@/components/Ribbon";
 export default function CertificateComponent() {
   const name = "Certificates";
 
-  useEffect(() => {
-    document.title = "Certificates | SRIYOG Consulting";
-  }, []);
-
   const images = [
     { img: "/assets/images/certificate/1.jpg", name: "Company Registration", id: 1 },
     { img: "/assets/images/certificate/2.jpg", name: "PAN Registration", id: 2 },
     { img: "/assets/images/certificate/3.jpg", name: "Letter from Company Registration", id: 3 },
     { img: "/assets/images/certificate/4.jpg", name: "SRIYOG Prabandhapatra", id: 4 },
+    { img: "/assets/images/certificate/16.jpg", name: "Address update", id: 16 },
     { img: "/assets/images/certificate/5.jpg", name: "SRIYOG Niyamabali", id: 5 },
     { img: "/assets/images/certificate/6.jpg", name: "Letter from Ministry of Labour", id: 6 },
     { img: "/assets/images/certificate/7.jpg", name: "Letter from Ministry of Education", id: 7 },
