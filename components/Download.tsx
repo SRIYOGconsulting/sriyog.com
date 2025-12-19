@@ -13,15 +13,37 @@ type FileMeta = {
 
 // Updated file paths to /files/ instead of /assets/downloadFiles/
 const fileList = [
+  "/files/Android-Mobile-WireFrame.pdf",
+  "/files/Apple-Mobile-WireFrame.pdf",
+  "/files/Blumind-Mind-Mapping.zip",
+  "/files/Check-List.pdf",
+  "/files/Customer-Feedback-Form.pdf",
+  "/files/Daily-task.pdf",
+  "/files/Daily-Tasks-Two-in-A4.pdf",
+  "/files/Download-JDR-Fonts.zip",
+  "/files/Google-Input-Tools-Nepali.zip",
+  "/files/Guestbook-Feedback-Form.pdf",
+
+  "/files/Internship-Recommendation-Letter-Draft.docx",
+  "/files/Internship-Recommendation-Letter-Sample.pdf",
+  "/files/Internship-Request-Letter-Personal.docx",
+
+  "/files/Meeting-Minutes.pdf",
+  "/files/Safari-Dashboard-Wireframe-landscape.pdf",
+  "/files/Safari-Wireframe-landscape.pdf",
+  "/files/Safari-Wireframe.pdf",
+
+  "/files/SRIYOG-Consulting-Customer-Feedback-Form.pdf",
+  "/files/SRIYOG-Consulting-guestbook-feedback-form.pdf",
+  "/files/SRIYOG-Consulting-Internship-Application-Letter.docx",
+  "/files/SRIYOG-Consulting-Internship-Recommendation-Letter-From-College.docx",
+  "/files/sriyog-consulting-logos.zip",
+
   "/files/SRIYOG-Consulting-Meeting-Minutes.pdf",
   "/files/SRIYOG-Consulting-Order.docx",
-  "/files/SRIYOG-Consulting-Guestbook-Feedback-Form.pdf",
-  "/files/SRIYOG-Consulting-Customer-Feedback-Form.pdf",
-  "/files/Internship-Sample-Letter-From-College.pdf",
-  "/files/SRIYOG-Consulting-Internship-Recommendation-Letter-from-College.docx",
-  "/files/SRIYOG-Consulting-Internship-Recommendation-Letter.docx",
-  "/files/SRIYOG-Consulting-Logos.zip",
+  "/files/Work-Order.docx",
 ];
+
 
 export default function Download() {
   const [files, setFiles] = useState<FileMeta[]>([]);

@@ -103,7 +103,7 @@ const teamMembers = [
   {
     id: 17,
     name: "Binod",
-    role: "MERN Stack",
+    role: "ReactJS Developer",
     image: "/assets/images/team/19.png",
   },
   {
@@ -126,7 +126,7 @@ const teamMembers = [
   },
   {
     id: 21,
-    name: "Samyod",
+    name: "Samyog",
     role: "MERN Stack",
     image: "/assets/images/team/23.png",
   },
@@ -139,19 +139,19 @@ const teamMembers = [
   {
     id: 23,
     name: "Santosh",
-    role: "UI/UX Designer",
+    role: "React Js Developer",
     image: "/assets/images/team/25.png",
   },
   {
     id: 24,
     name: "Sarishma",
-    role: "MERN Stack",
+    role: "ReactJS Developer",
     image: "/assets/images/team/26.png",
   },
   {
     id: 25,
     name: "Shiva",
-    role: "MERN Stack",
+    role: "UI/UX Designer",
     image: "/assets/images/team/27.png",
   },
   {

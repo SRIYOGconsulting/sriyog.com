@@ -402,6 +402,17 @@ export default function Footer() {
               </Link>
             </div>
             <div className="flex max-md:w-full max-md:justify-center max-md:items-center gap-3">
+              <Link prefetch={true} href="https://github.com/SRIYOGconsulting/" target="_blank">
+                <div className="relative h-[20px] w-[20px]">
+                  <Image
+                    src="/assets/icons/github.svg"
+                    fill
+                    priority
+                    className="object-contain"
+                    alt="github"
+                  />
+                </div>
+              </Link>
               <Link prefetch={true} href="https://d.sriyog.com/signal" target="_blank">
                 <div className="relative h-[20px] w-[20px]">
                   <Image
