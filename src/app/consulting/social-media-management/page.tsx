@@ -1,12 +1,12 @@
-import SocialMediaManagement from "@/components/consulting/SocialMediaManagement";
+import SocialMediaManagement from "./SocialMediaManagement";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Social Media Management | SRIYOG Consulting",
-  description: "Elevate your brand's presence with SRIYOG Consulting's social media management services.",
+  description: "Expert Social Media Management services from SRIYOG Consulting.",
   openGraph: {
     title: "Social Media Management | SRIYOG Consulting",
-    description: "Elevate your brand's presence with SRIYOG Consulting's social media management services.",
+    description: "Expert Social Media Management services from SRIYOG Consulting.",
     url: "https://www.sriyog.com/consulting/social-media-management",
     images: [
       {
@@ -16,10 +16,7 @@ export const metadata: Metadata = {
     ]
   }
 };
-export default function page() {
-  return (
-    <>
-      <SocialMediaManagement />
-    </>
-  );
+
+export default function Page() {
+  return <SocialMediaManagement />;
 }

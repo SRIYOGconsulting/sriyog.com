@@ -1,11 +1,12 @@
-import PaymentProcessing from "@/components/consulting/PaymentPrcessing";
+import PaymentPrcessing from "./PaymentPrcessing";
 import { Metadata } from "next";
+
 export const metadata: Metadata = {
   title: "Payment Processing | SRIYOG Consulting",
-  description: "Streamline your payment processing with SRIYOG Consulting's expert solutions.",
+  description: "Expert payment processing services from SRIYOG Consulting.",
   openGraph: {
     title: "Payment Processing | SRIYOG Consulting",
-    description: "Streamline your payment processing with SRIYOG Consulting's expert solutions.",
+    description: "Expert payment processing services from SRIYOG Consulting.",
     url: "https://www.sriyog.com/consulting/payment-processing",
     images: [
       {
@@ -15,11 +16,7 @@ export const metadata: Metadata = {
     ]
   }
 };
-export default function PaymentProcessingPage() {
 
-  return (
-<>
-<PaymentProcessing/>
-</>
-  );
+export default function Page() {
+  return <PaymentPrcessing />;
 }

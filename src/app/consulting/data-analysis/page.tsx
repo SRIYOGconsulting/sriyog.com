@@ -1,13 +1,12 @@
-
-import Analysis from "@/components/consulting/DataAnalysis";
+import DataAnalysis from "./DataAnalysis";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Data Analysis | SRIYOG Consulting",
-  description: "Unlock the power of your data with SRIYOG Consulting's expert analysis services.",
+  description: "Expert Data Analysis services from SRIYOG Consulting.",
   openGraph: {
     title: "Data Analysis | SRIYOG Consulting",
-    description: "Unlock the power of your data with SRIYOG Consulting's expert analysis services.",
+    description: "Expert Data Analysis services from SRIYOG Consulting.",
     url: "https://www.sriyog.com/consulting/data-analysis",
     images: [
       {
@@ -17,7 +16,7 @@ export const metadata: Metadata = {
     ]
   }
 };
-export default function DataAnalysis() {
-  return <Analysis/>
 
+export default function Page() {
+  return <DataAnalysis />;
 }

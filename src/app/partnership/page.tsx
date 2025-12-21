@@ -1,4 +1,4 @@
-import Partnership from "@/components/Partnership";
+import Partnership from "./Partnership";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {

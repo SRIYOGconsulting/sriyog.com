@@ -1,12 +1,12 @@
-import WebApplicationDevelopment from "@/components/consulting/WebApplicationDevelopment";
+import WebApplicationDevelopment from "./WebApplicationDevelopment";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Web Application Development | SRIYOG Consulting",
-  description: "Elevate your business with SRIYOG Consulting's expert web application development services.",
+  description: "Expert Web Application Development services from SRIYOG Consulting.",
   openGraph: {
     title: "Web Application Development | SRIYOG Consulting",
-    description: "Elevate your business with SRIYOG Consulting's expert web application development services.",
+    description: "Expert Web Application Development services from SRIYOG Consulting.",
     url: "https://www.sriyog.com/consulting/web-application-development",
     images: [
       {
@@ -17,10 +17,6 @@ export const metadata: Metadata = {
   }
 };
 
-export default function WebApplicationDevelopmentPage() {
-  return (
-    <>
-      <WebApplicationDevelopment />
-    </>
-  );
+export default function Page() {
+  return <WebApplicationDevelopment />;
 }

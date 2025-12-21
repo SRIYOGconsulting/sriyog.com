@@ -1,4 +1,4 @@
-import Download from "@/components/Download";
+import Download from "./Download";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {

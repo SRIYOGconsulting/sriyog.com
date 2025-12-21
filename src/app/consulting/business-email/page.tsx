@@ -1,21 +1,22 @@
-import Business from "@/components/BusinessEmail";
+import BusinessEmail from "./BusinessEmail";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Business eMail | SRIYOG Consulting",
-  description: "Enhance your business communication with SRIYOG Consulting's professional email services.",
+  title: "Business Email | SRIYOG Consulting",
+  description: "Professional business email marketing services from SRIYOG Consulting.",
   openGraph: {
-    title: "Business eMail | SRIYOG Consulting",
-    description: "Enhance your business communication with SRIYOG Consulting's professional email services.",
+    title: "Business Email | SRIYOG Consulting",
+    description: "Professional business email marketing services from SRIYOG Consulting.",
     url: "https://www.sriyog.com/consulting/business-email",
     images: [
       {
         url: "https://sriyog.com/assets/images/og/default.jpg",
-        alt: "Business eMail"
+        alt: "Business Email"
       }
     ]
   }
 };
-export default function BusinessEmail() {
-  return <Business />;
+
+export default function Page() {
+  return <BusinessEmail />;
 }

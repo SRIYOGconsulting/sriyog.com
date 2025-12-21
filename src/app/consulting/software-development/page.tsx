@@ -1,11 +1,12 @@
-import SoftwareDevelopment from "@/components/consulting/SoftwareDevelopment";
+import SoftwareDevelopment from "./SoftwareDevelopment";
 import { Metadata } from "next";
+
 export const metadata: Metadata = {
   title: "Software Development | SRIYOG Consulting",
-  description: "Transform your software development processes with SRIYOG Consulting's expert solutions.",
+  description: "Expert Software Development services from SRIYOG Consulting.",
   openGraph: {
     title: "Software Development | SRIYOG Consulting",
-    description: "Transform your software development processes with SRIYOG Consulting's expert solutions.",
+    description: "Expert Software Development services from SRIYOG Consulting.",
     url: "https://www.sriyog.com/consulting/software-development",
     images: [
       {
@@ -15,10 +16,7 @@ export const metadata: Metadata = {
     ]
   }
 };
-export default function page() {
-  return (
-    <>
-      <SoftwareDevelopment />
-    </>
-  );
+
+export default function Page() {
+  return <SoftwareDevelopment />;
 }

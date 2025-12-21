@@ -1,13 +1,12 @@
-import Processing from "@/components/consulting/DataProcessing";
+import DataProcessing from "./DataProcessing";
 import { Metadata } from "next";
-
 
 export const metadata: Metadata = {
   title: "Data Processing | SRIYOG Consulting",
-  description: "Streamline your data processing workflows with SRIYOG Consulting's expert services.",
+  description: "Expert Data Processing services from SRIYOG Consulting.",
   openGraph: {
     title: "Data Processing | SRIYOG Consulting",
-    description: "Streamline your data processing workflows with SRIYOG Consulting's expert services.",
+    description: "Expert Data Processing services from SRIYOG Consulting.",
     url: "https://www.sriyog.com/consulting/data-processing",
     images: [
       {
@@ -17,7 +16,7 @@ export const metadata: Metadata = {
     ]
   }
 };
-export default function DataProcessing() {
-  
-  return <Processing/>
+
+export default function Page() {
+  return <DataProcessing />;
 }

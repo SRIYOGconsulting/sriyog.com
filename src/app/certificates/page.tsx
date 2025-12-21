@@ -1,4 +1,4 @@
-import CertificateComponent from "@/components/Certificates";
+import CertificateComponent from "./Certificates";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {

@@ -1,13 +1,12 @@
-import ResourceManagement from "@/components/consulting/HumanResourceManagement";
+import HumanResourceManagement from "./HumanResourceManagement";
 import { Metadata } from "next";
-
 
 export const metadata: Metadata = {
   title: "Human Resource Management | SRIYOG Consulting",
-  description: "Optimize your HR processes with SRIYOG Consulting's expert solutions.",
+  description: "Expert Human Resource Management services from SRIYOG Consulting.",
   openGraph: {
     title: "Human Resource Management | SRIYOG Consulting",
-    description: "Optimize your HR processes with SRIYOG Consulting's expert solutions.",
+    description: "Expert Human Resource Management services from SRIYOG Consulting.",
     url: "https://www.sriyog.com/consulting/human-resource-management",
     images: [
       {
@@ -17,11 +16,7 @@ export const metadata: Metadata = {
     ]
   }
 };
-export default function HumanResourceManagement() {
 
-  return (
-    <>
-      <ResourceManagement/>
-    </>
-  );
+export default function Page() {
+  return <HumanResourceManagement />;
 }

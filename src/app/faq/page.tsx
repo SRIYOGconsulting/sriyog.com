@@ -1,4 +1,4 @@
-import FAQ from "@/components/FAQ";
+import FAQ from "./FAQ";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {

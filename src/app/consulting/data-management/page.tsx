@@ -1,22 +1,22 @@
-import Management from "@/components/consulting/DataManagement";
+import DataManagement from "./DataManagement";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Database Management | SRIYOG Consulting",
-  description: "Optimize your data management processes with SRIYOG Consulting's expert solutions.",
+  title: "Data Management | SRIYOG Consulting",
+  description: "Expert Data Management services from SRIYOG Consulting.",
   openGraph: {
-    title: "Database Management | SRIYOG Consulting",
-    description: "Optimize your data management processes with SRIYOG Consulting's expert solutions.",
+    title: "Data Management | SRIYOG Consulting",
+    description: "Expert Data Management services from SRIYOG Consulting.",
     url: "https://www.sriyog.com/consulting/data-management",
     images: [
       {
         url: "https://sriyog.com/assets/images/og/default.jpg",
-        alt: "Database Management"
+        alt: "Data Management"
       }
     ]
   }
 };
 
-export default function DataManagement() {
-  return <Management />;
+export default function Page() {
+  return <DataManagement />;
 }

@@ -1,25 +1,22 @@
-import SEOSEM from "@/components/consulting/SEO_SEM_Servixes";
+import SEO_SEM_Servixes from "./SEO_SEM_Servixes";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "SEO/SEM Services | SRIYOG Consulting",
-  description: "Enhance your online visibility with SRIYOG Consulting's SEO/SEM services.",
+  title: "Seo Sem Services | SRIYOG Consulting",
+  description: "Expert seo sem services services from SRIYOG Consulting.",
   openGraph: {
-    title: "SEO/SEM Services | SRIYOG Consulting",
-    description: "Enhance your online visibility with SRIYOG Consulting's SEO/SEM services.",
+    title: "Seo Sem Services | SRIYOG Consulting",
+    description: "Expert seo sem services services from SRIYOG Consulting.",
     url: "https://www.sriyog.com/consulting/seo-sem-services",
     images: [
       {
         url: "https://sriyog.com/assets/images/og/default.jpg",
-        alt: "SEO/SEM Services"
+        alt: "Seo Sem Services"
       }
     ]
   }
 };
-export default function SEO_SEM_Page() {
-  return (
-    <>
-    <SEOSEM/>
-    </>
-  );
+
+export default function Page() {
+  return <SEO_SEM_Servixes />;
 }

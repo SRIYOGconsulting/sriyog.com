@@ -1,13 +1,12 @@
-import Marketing from "@/components/consulting/DigitalMarketing";
-
+import DigitalMarketing from "./DigitalMarketing";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Digital Marketing | SRIYOG Consulting",
-  description: "Elevate your online presence with SRIYOG Consulting's digital marketing services.",
+  description: "Expert Digital Marketing services from SRIYOG Consulting.",
   openGraph: {
     title: "Digital Marketing | SRIYOG Consulting",
-    description: "Elevate your online presence with SRIYOG Consulting's digital marketing services.",
+    description: "Expert Digital Marketing services from SRIYOG Consulting.",
     url: "https://www.sriyog.com/consulting/digital-marketing",
     images: [
       {
@@ -17,10 +16,7 @@ export const metadata: Metadata = {
     ]
   }
 };
-export default function page() {
-  return (
-    <>
-      <Marketing />
-    </>
-  );
+
+export default function Page() {
+  return <DigitalMarketing />;
 }

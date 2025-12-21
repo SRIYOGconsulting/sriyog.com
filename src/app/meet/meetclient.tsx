@@ -11,7 +11,9 @@ const TIMEZONES = [
   { label: "GMT+2", offset: 2 },
   { label: "GMT+3", offset: 3 },
   { label: "GMT+4", offset: 4 },
+  { label: "GMT+5", offset: 5 },
   { label: "GMT+5:45", offset: 5.75 },
+  { label: "GMT+6", offset: 6 }
 ];
 
 /* ================= TIME CONVERTER ================= */

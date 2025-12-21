@@ -1,25 +1,22 @@
-import VideoContentEmail from "@/components/consulting/VideoContentEmail";
+import VideoContentEmail from "./VideoContentEmail";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Video Content Marketing | SRIYOG Consulting",
-  description: "Engage your audience with compelling video content marketing strategies from SRIYOG Consulting.",
+  title: "Video Content Email | SRIYOG Consulting",
+  description: "Expert Video Content Email services from SRIYOG Consulting.",
   openGraph: {
-    title: "Video Content Marketing | SRIYOG Consulting",
-    description: "Engage your audience with compelling video content marketing strategies from SRIYOG Consulting.",
-    url: "https://www.sriyog.com/consulting/video-content-marketing",
+    title: "Video Content Email | SRIYOG Consulting",
+    description: "Expert Video Content Email services from SRIYOG Consulting.",
+    url: "https://www.sriyog.com/consulting/video-content-email",
     images: [
       {
         url: "https://sriyog.com/assets/images/og/default.jpg",
-        alt: "Video Content Marketing"
+        alt: "Video Content Email"
       }
     ]
   }
 };
-export default function DataAnalysis() {
-  return (
-    <>
-      <VideoContentEmail />
-    </>
-  );
+
+export default function Page() {
+  return <VideoContentEmail />;
 }

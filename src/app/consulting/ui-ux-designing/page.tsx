@@ -1,25 +1,22 @@
-import UIUXDesigning from "@/components/consulting/UIUIXDesigning";
+import UIUIXDesigning from "./UIUIXDesigning";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "UI/UX Designing | SRIYOG Consulting",
-  description: "Create user-centric designs with SRIYOG Consulting's UI/UX designing services.",
+  title: "Ui Ux Designing | SRIYOG Consulting",
+  description: "Expert ui ux designing services from SRIYOG Consulting.",
   openGraph: {
-    title: "UI/UX Designing | SRIYOG Consulting",
-    description: "Create user-centric designs with SRIYOG Consulting's UI/UX designing services.",
+    title: "Ui Ux Designing | SRIYOG Consulting",
+    description: "Expert ui ux designing services from SRIYOG Consulting.",
     url: "https://www.sriyog.com/consulting/ui-ux-designing",
     images: [
       {
         url: "https://sriyog.com/assets/images/og/default.jpg",
-        alt: "UI/UX Designing"
+        alt: "Ui Ux Designing"
       }
     ]
   }
 };
-export default function UIUXDesigningPage() {
-  return (
-    <>
-      <UIUXDesigning />
-    </>
-  );
+
+export default function Page() {
+  return <UIUIXDesigning />;
 }

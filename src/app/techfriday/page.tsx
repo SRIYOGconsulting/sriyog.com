@@ -1,4 +1,4 @@
-import TechFriday from "@/components/Techfriday";
+import TechFriday from "./TechFriday";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
