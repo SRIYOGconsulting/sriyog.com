@@ -25,7 +25,7 @@ const page = () => {
     description:"Perfect for corporates / brands",
     price:149,
     features:
-        ["Max 15 pages website" ,
+        ["Max 50 pages website" ,
          "Free SSL" ,
          "Custom analytics & performance reporting" ,
          "10 Business email" ,
@@ -62,7 +62,7 @@ const page = () => {
     description:"Perfect for corporates / brands",
     price:180,
     features:
-        ["Max 15 pages website" ,
+        ["Max 50 pages website" ,
          "Free SSL" ,
          "Custom analytics & performance reporting" ,
          "10 Business email" ,
