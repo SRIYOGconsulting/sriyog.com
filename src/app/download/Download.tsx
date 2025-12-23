@@ -10,38 +10,41 @@ type FileMeta = {
   lastUpdate: string;
   rawTitle: string;
 };
-
+type FileList = {
+  url: string;
+  size: string;
+}
 // Updated file paths to /files/ instead of /assets/downloadFiles/
-const fileList = [
-  "/files/Android-Mobile-WireFrame.pdf",
-  "/files/Apple-Mobile-WireFrame.pdf",
-  "/files/Blumind-Mind-Mapping.zip",
-  "/files/Check-List.pdf",
-  "/files/Customer-Feedback-Form.pdf",
-  "/files/Daily-task.pdf",
-  "/files/Daily-Tasks-Two-in-A4.pdf",
-  "/files/Download-JDR-Fonts.zip",
-  "/files/Google-Input-Tools-Nepali.zip",
-  "/files/Guestbook-Feedback-Form.pdf",
+const fileList: FileList[] = [
+  { url: "/files/Android-Mobile-WireFrame.pdf", size: "32.48 KB" },
+  { url: "/files/Apple-Mobile-WireFrame.pdf", size: "16.50 KB" },
+  { url: "/files/Blumind-Mind-Mapping.zip", size: "846.59 KB" },
+  { url: "/files/Check-List.pdf", size: "32.80 KB" },
+  { url: "/files/Customer-Feedback-Form.pdf", size: "98.85 KB" },
+  { url: "/files/Daily-task.pdf", size: "48.68 KB" },
+  { url: "/files/Daily-Tasks-Two-in-A4.pdf", size: "108.80 KB" },
+  { url: "/files/Download-JDR-Fonts.zip", size: "527.28 KB" },
+  { url: "/files/Google-Input-Tools-Nepali.zip", size: "6101.50 KB" },
+  { url: "/files/Guestbook-Feedback-Form.pdf", size: "124.43 KB" },
 
-  "/files/Internship-Recommendation-Letter-Draft.docx",
-  "/files/Internship-Recommendation-Letter-Sample.pdf",
-  "/files/Internship-Request-Letter-Personal.docx",
+  { url: "/files/Internship-Recommendation-Letter-Draft.docx", size: "8.37 KB" },
+  { url: "/files/Internship-Recommendation-Letter-Sample.pdf", size: "467.82 KB" },
+  { url: "/files/Internship-Request-Letter-Personal.docx", size: "8.15 KB" },
 
-  "/files/Meeting-Minutes.pdf",
-  "/files/Safari-Dashboard-Wireframe-landscape.pdf",
-  "/files/Safari-Wireframe-landscape.pdf",
-  "/files/Safari-Wireframe.pdf",
+  { url: "/files/Meeting-Minutes.pdf", size: "44.42 KB" },
+  { url: "/files/Safari-Dashboard-Wireframe-landscape.pdf", size: "17.34 KB" },
+  { url: "/files/Safari-Wireframe-landscape.pdf", size: "17.22 KB" },
+  { url: "/files/Safari-Wireframe.pdf", size: "17.09 KB" },
 
-  "/files/SRIYOG-Consulting-Customer-Feedback-Form.pdf",
-  "/files/SRIYOG-Consulting-guestbook-feedback-form.pdf",
-  "/files/SRIYOG-Consulting-Internship-Application-Letter.docx",
-  "/files/SRIYOG-Consulting-Internship-Recommendation-Letter-From-College.docx",
-  "/files/sriyog-consulting-logos.zip",
+  { url: "/files/SRIYOG-Consulting-Customer-Feedback-Form.pdf", size: "98.85 KB" },
+  { url: "/files/SRIYOG-Consulting-guestbook-feedback-form.pdf", size: "124.43 KB" },
+  { url: "/files/SRIYOG-Consulting-Internship-Application-Letter.docx", size: "8.15 KB" },
+  { url: "/files/SRIYOG-Consulting-Internship-Recommendation-Letter-From-College.docx", size: "7.21 KB" },
+  { url: "/files/sriyog-consulting-logos.zip", size: "268.70 KB" },
 
-  "/files/SRIYOG-Consulting-Meeting-Minutes.pdf",
-  "/files/SRIYOG-Consulting-Order.docx",
-  "/files/Work-Order.docx",
+  { url: "/files/SRIYOG-Consulting-Meeting-Minutes.pdf", size: "44.42 KB" },
+  { url: "/files/SRIYOG-Consulting-Order.docx", size: "9.07 KB" },
+  { url: "/files/Work-Order.docx", size: "9.07 KB" },
 ];
 
 
@@ -76,31 +79,31 @@ export default function Download() {
     window.URL.revokeObjectURL(objectUrl);
   };
 
-  useEffect(() => {
-    const fetchMetadata = async () => {
-      const metadata: FileMeta[] = await Promise.all(
-        fileList.map(async (fileUrl) => {
-          const res = await fetch(fileUrl);
-          const blob = await res.blob();
-          const rawTitle = decodeURIComponent(
-            fileUrl.split("/").pop() || "Unknown File"
-          );
-          const cleanedTitle = rawTitle
-            .replace(/\.[^/.]+$/, "")
-            .replace(/-/g, " ");
-          const title = cleanedTitle;
-          const size = `${(blob.size / 1024).toFixed(2)} KB`;
-          const type = getFileType(rawTitle);
-          const lastUpdate = new Date().toLocaleDateString();
+useEffect(() => {
+  const metadata: FileMeta[] = fileList.map((file) => {
+    const rawTitle = decodeURIComponent(
+      file.url.split("/").pop() || "Unknown File"
+    );
 
-          return { title, url: fileUrl, size, type, lastUpdate, rawTitle };
-        })
-      );
-      setFiles(metadata);
+    const title = rawTitle
+      .replace(/\.[^/.]+$/, "")
+      .replace(/-/g, " ");
+
+    const type = getFileType(rawTitle);
+
+    return {
+      title,
+      url: file.url,
+      size: file.size,
+      type,
+      lastUpdate: new Date().toLocaleDateString(),
+      rawTitle,
     };
+  });
 
-    fetchMetadata();
-  }, []);
+  setFiles(metadata);
+}, []);
+
 
   return (
     <>
@@ -160,7 +163,7 @@ export default function Download() {
                     </span>
                     <button
                       onClick={() => handleDownload(item.url, item.rawTitle)}
-                      className="text-[#055D59] border-[#055D59] border px-3 py-1 rounded hover:bg-[#044c4a] hover:text-white transition-all duration-200 text-xs md:text-sm"
+                      className="text-[#055D59] cursor-pointer border-[#055D59] border px-3 py-1 rounded hover:bg-[#044c4a] hover:text-white transition-all duration-200 text-xs md:text-sm"
                     >
                       Download
                     </button>
