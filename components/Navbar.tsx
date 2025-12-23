@@ -18,6 +18,7 @@ export default function Navbar() {
     { label: "About", path: "/about" },
     { label: "Team", path: "/team" },
     { label: "Consulting", path: "/consulting" },
+    { label: "Pricing", path: "/pricing" },
     { label: "Clients", path: "/clients" },
     { label: "Contact", path: "/contact" },
   ];
