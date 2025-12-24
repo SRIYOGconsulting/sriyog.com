@@ -34,6 +34,8 @@ const metadata: Metadata = {
   }
 };
 export default function Page() {
+  const [isSubmitting,setIsSubmitting] = useState<boolean>(false);
+  const [submitted,setSubmitted] = useState<boolean>(false);
   const [form,setform] = useState<Form>({
      firstname : "",
      lastname: "",
@@ -51,7 +53,7 @@ export default function Page() {
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-
+    setIsSubmitting(true);
     try {
       const res = await fetch("/api/contact-form", {
         method: "POST",
@@ -66,12 +68,15 @@ export default function Page() {
         alert("Failed to submit form: " + data.error);
       } else {
         console.log("Form submitted successfully!");
-        alert("Form submitted successfully!");
         setform({ firstname: "", lastname: "", email: "", countrycode: null, phoneNumber: "", extension: null, help: "", message: "" });
+        setSubmitted(true)
       }
     } catch (err) {
       console.error(err);
       alert("An error occurred. Try again.");
+    }finally{
+      setIsSubmitting(false);
+     
     }
   };
 
@@ -103,6 +108,24 @@ export default function Page() {
     <>
       <>
         <Ribbon name="Contact Us" des="" />
+        {submitted && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center">
+          <div className="text-white bg-[#055d59] rounded-lg p-5 w-[90%] max-w-md text-center shadow-xl">
+            <h2 className="text-xl font-semibold mb-3">
+              Submitted Successfully
+            </h2>
+            <p className=" mb-5">
+              Thank you! Your details have been sent successfully.
+            </p>
+            <button
+              onClick={() => setSubmitted(false)}
+              className="bg-[#055d59] text-white border cursor-pointer active:bg-gray-300 active:text-[#055d59] hover:bg-white hover:text-[#055d59] border-white px-5 py-0.5 rounded-md"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      )}
 
         <section className="lg:w-[1180px] mx-auto mb-[45px] grid grid-cols-1 lg:grid-cols-2 place-content-between gap-10 ">
           <div className=" text-[#333]  max-lg:container max-lg:px-3 h-[703px] max-md:h-auto mx-auto ">
@@ -524,7 +547,7 @@ export default function Page() {
                 type="submit"
                 name=""
                 id=""
-                value="Submit"
+                value={isSubmitting ? "Submitting..." : "Submit"}
                 className=" border-[1.5px]  text-white  py-2 px-6 font-medium bg-[#055d59] rounded-md transition duration-300 ease-in-out cursor-pointer "
               />
             </form>
