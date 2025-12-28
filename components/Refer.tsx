@@ -57,7 +57,7 @@ export default function Refer() {
     setForm({...form,[e.target.name]: e.target.value})
   }
 
-    const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
       e.preventDefault();
       setIsSending(true);
       try {
@@ -94,7 +94,7 @@ export default function Refer() {
         <div className="fixed inset-0 z-50 flex items-center justify-center">
           <div className="text-white bg-[#055d59] rounded-lg p-5 w-[90%] max-w-md text-center shadow-xl">
             <h2 className="text-xl font-semibold mb-3">
-              Sended Successfully
+              Sent Successfully
             </h2>
             <p className=" mb-5">
               Thank you! Your referral has been sent successfully.
@@ -242,7 +242,7 @@ export default function Refer() {
                   <option value="Office Employee">Office Employee</option>
                   <option value="Agent">Agent</option>
                   <option value="Business Developer">Business Developer</option>
-                  <option value="other">Other</option>
+                  <option value="Other">Other</option>
                 </select>
               </div>
             </div>
@@ -389,7 +389,7 @@ export default function Refer() {
                   <option value="Friend">Friend</option>
                   <option value="20% Startup Discount">20% Startup Discount</option>
                   <option value="Marketing Training">Marketing Training</option>
-                  <option value="other">Other</option>
+                  <option value="Other">Other</option>
                 </select>
               </div>
             </div>

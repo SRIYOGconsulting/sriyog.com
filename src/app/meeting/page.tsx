@@ -20,7 +20,7 @@ export const metadata: Metadata = {
 
 const page = () => {
   return (<>
-  <Ribbon name="Meeting" des=""/>
+  <Ribbon name="Book a Meeting" des=""/>
   <section className="lg:w-[1180px] mx-auto mb-[45px]">
       <div>
         <iframe
