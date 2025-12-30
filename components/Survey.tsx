@@ -806,7 +806,7 @@ export default function Survey() {
                 instanceId="organization-type"
                 options={orgOptions}
                 required
-                value={orgOptions.find(opt => opt.value === form.orgType) || null}
+                value={orgOptions.find(opt => opt.value === form.orgType)}
                 styles={customStyles}
                 onChange={(option) =>
                     setForm({ ...form, orgType: option?.value ?? "" })
