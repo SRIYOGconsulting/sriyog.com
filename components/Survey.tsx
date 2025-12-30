@@ -14,7 +14,7 @@ type Form = {
   formFiller: string;
   mobile: string;
   orgEmail: string;
-  establishedYear: string;
+  establishedYear: number | null;
   orgHead: string;
   qualification: string;
   headContact: string;
@@ -84,6 +84,7 @@ export default function Survey() {
   const [isSubmitting,setIsSubmitting] = useState<boolean>(false);
   const [page,setPage] = useState<number>(1);
   const [submitted,setSubmitted] = useState<boolean>(false);
+  const [submit,setSubmit] = useState<boolean>(false);
   const [isChecked1, setIsChecked1] = useState<boolean>(false);
   const [isChecked2, setIsChecked2] = useState<boolean>(false);
   const [ShowSubmit,setShowSubmit] = useState<boolean>(false);
@@ -119,7 +120,7 @@ export default function Survey() {
   ];
 
   const DashboardFeature : option[] = [
-    { label: "Cloud File Manager", value: "Cloud File manager" },
+    { label: "Cloud File Manager", value: "Cloud File Manager" },
     { label: "News Post", value: "News Post" },
     { label: "Blog Post", value: "Blog Post" },
     { label: "Event Post", value: "Event Post" },
@@ -132,63 +133,57 @@ export default function Survey() {
   ];
 
   const promotionChannels: option[] = [
-    { label: "Flex", value: "flex" },
-    { label: "In a National Daily", value: "national_daily" },
-    { label: "Mass Email", value: "mass_email" },
-    { label: "Local Newspaper", value: "local_newspaper" },
-    { label: "Social Media", value: "social_media" },
-    { label: "F.M Radio", value: "fm_radio" },
-    { label: "Google Ads", value: "google_ads" },
-    { label: "Poster", value: "poster" },
-    { label: "Pamphlet", value: "pamphlet" },
-    { label: "Wall Painting", value: "wall_painting" },
-    { label: "WhatsApp", value: "whatsapp" },
-    { label: "Facebook", value: "facebook" },
-    { label: "Other", value: "other" },
+    { label: "Flex", value: "Flex" },
+    { label: "In a National Daily", value: "National Daily" },
+    { label: "Mass Email", value: "Mass Email" },
+    { label: "Local Newspaper", value: "Local Newspaper" },
+    { label: "Social Media", value: "Social Media" },
+    { label: "F.M Radio", value: "F.M Radio" },
+    { label: "Google Ads", value: "Google Ads" },
+    { label: "Poster", value: "Poster" },
+    { label: "Pamphlet", value: "Pamphlet" },
+    { label: "Wall Painting", value: "Wall Painting" },
+    { label: "WhatsApp", value: "Whatsapp" },
+    { label: "Facebook", value: "Facebook" },
+    { label: "Other", value: "Other" },
   ];
 
   const marketingMaterials: option[] = [
-    { label: "Create a Brochure", value: "brochure" },
-    { label: "Make a Visiting Card", value: "visiting_card" },
-    { label: "Make a Booklet", value: "booklet" },
-    { label: "Make a Book", value: "book" },
-    { label: "Institutional Profile", value: "institutional_profile" },
-    { label: "Presentation", value: "presentation" },
-    { label: "Social Media", value: "social_media" },
-    { label: "Firewall", value: "firewall" },
-    { label: "Hoarding Board", value: "hoarding_board" },
-    { label: "Mobile Apps", value: "mobile_apps" },
-    { label: "E-commerce", value: "ecommerce" },
-    { label: "Airbnb", value: "airbnb" },
-    { label: "Shelf Branding", value: "shelf" },
-    { label: "Booking.com", value: "booking_com" },
-    { label: "Other", value: "other" },
+    { label: "Create a Brochure", value: "Create a Brochure" },
+    { label: "Visiting Card", value: "Visiting Card" },
+    { label: "Booklet", value: "Booklet" },
+    { label: "Book", value: "Book" },
+    { label: "Institutional Profile", value: "Institutional Profile" },
+    { label: "Presentation", value: "Presentation" },
+    { label: "Social Media", value: "Social Media" },
+    { label: "Firewall", value: "Firewall" },
+    { label: "Hoarding Board", value: "Hoarding Board" },
+    { label: "Mobile Apps", value: "Mobile Apps" },
+    { label: "E-commerce", value: "E-commerce" },
+    { label: "Airbnb", value: "AirBnB" },
+    { label: "Shelf Branding", value: "Shelf Branding" },
+    { label: "Booking.com", value: "Booking.com" },
+    { label: "Other", value: "Other" },
   ];
 
   const socialPlatformsOptions: option[] = [
-    { label: "WhatsApp", value: "whatsapp" },
-    { label: "Viber", value: "viber" },
-    { label: "Messenger", value: "messenger" },
-    { label: "Instagram", value: "instagram" },
-    { label: "Signal", value: "signal" },
-    { label: "LinkedIn", value: "linkedin" },
-    { label: "Facebook", value: "facebook" },
-    { label: "YouTube", value: "youtube" },
+    { label: "WhatsApp", value: "Whatsapp" },
+    { label: "Viber", value: "Viber" },
+    { label: "Messenger", value: "Messenger" },
+    { label: "Instagram", value: "Instagram" },
+    { label: "Signal", value: "Signal" },
+    { label: "LinkedIn", value: "Linkedin" },
+    { label: "Facebook", value: "Facebook" },
+    { label: "YouTube", value: "YouTube" },
   ];
 
   const servicesOptions: option[] = [
-    { label: "Airbnb", value: "airbnb" },
-    { label: "Upwork", value: "upwork" },
-    { label: "Daraz", value: "daraz" },
-    { label: "Freshdesk", value: "freshdesk" },
-    { label: "Zoho", value: "zoho" },
-    { label: "Google Workspace", value: "google_workspace" },
-    { label: "Yandex", value: "yandex" },
-    { label: "MEGA", value: "mega" },
-    { label: "Dropbox", value: "dropbox" },
-    { label: "Booking.com", value: "booking_com" },
-    { label: "TripAdvisor", value: "trip_advisor" },
-    { label: "MakeMyTrip", value: "makemytrip" },
+    { label: "Freshdesk", value: "Freshdesk" },
+    { label: "Zoho", value: "Zoho" },
+    { label: "Google Workspace", value: "Google Workspace" },
+    { label: "Yandex", value: "Yandex" },
+    { label: "MEGA", value: "Mega" },
+    { label: "Dropbox", value: "Dropbox" },
   ];
 
   const ItSkillsOptions:option[] = [
@@ -334,7 +329,7 @@ export default function Survey() {
     formFiller: "",
     mobile: "",
     orgEmail: "",
-    establishedYear: "",
+    establishedYear: null,
     orgHead: "",
     qualification: "",
     headContact: "",
@@ -413,6 +408,7 @@ export default function Survey() {
   e.preventDefault();
   console.log(form)
   if (!isChecked1 || !isChecked2) return;
+  if (!submit)return;
   for (const field of requiredPages[4]) {
       const value = form[field];
       if (!value || (Array.isArray(value) && value.length === 0)) {
@@ -704,7 +700,7 @@ export default function Survey() {
             <label>Year of Establishment</label>
             <input
                 type="number"
-                value={form.establishedYear}
+                value={form.establishedYear as number}
                 placeholder={focusStates.establishedYear ? "" : "e.g. 2015"}
                 name="establishedYear"
                 onChange={handleChange}
@@ -868,7 +864,7 @@ export default function Survey() {
                 <option value="">Select option...</option>
                 <option value="Yes">Yes</option>
                 <option value="No">No</option>
-                <option value="No necessary">No necessary</option>
+                <option value="Not necessary">Not necessary</option>
                 <option value="No budget">No budget</option>
                 <option value="Other">Other</option>
             </select>
@@ -901,10 +897,10 @@ export default function Survey() {
             <label>How necessary is a website for your organization?</label>
             <select value={form.websiteNecessity} name="websiteNecessity" className={inputField} style={{cursor: "pointer"}} onChange={handleChange}>
                 <option value="">Select option...</option>
-                <option value="Not much">Not much</option>
-                <option value="Mandatory">Mandatory</option>
+                <option value="Yes">Yes</option>
                 <option value="No">No</option>
-                <option value="The order comes from the website itself">The order comes from the website itself</option>
+                <option value="Mandatory">Mandatory</option>
+                <option value="Not much">Not much</option>
             </select>
             </div>
 
@@ -1121,11 +1117,10 @@ export default function Survey() {
             <label>Do you use Google My Business? *</label>
             <select value={form.googleMyBusiness} name="googleMyBusiness" ref={el => { inputRefs.current["googleMyBusiness"] = el }} required className={inputField} style={{cursor: "pointer"}} onChange={handleChange}>
                 <option value="">Select option...</option>
-                <option value="Very Important">Yes</option>
-                <option value="Important">No</option>
-                <option value="Somehow Important">Maybe</option>
-                <option value="Slightly / low importance">Don't know</option>
-                <option value="Not Important">We want to keep</option>
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+                <option value="Maybe">Maybe</option>
+                <option value="Don't know">Don't know</option>
             </select>
             </div>
 
@@ -1240,7 +1235,7 @@ export default function Survey() {
 
             {/* Services Used */}
             <div ref={el => { inputRefs.current["servicesUsed"] = el }} className="mb-4">
-            <label className="block mb-1">Which of the following services have you used? *</label>
+            <label className="block mb-1">Which of the following cloud-based services have you used? *</label>
             <Select
                 options={servicesOptions}
                 required
@@ -1382,7 +1377,7 @@ export default function Survey() {
                 <option value="">Select option...</option>
                 <option value="Yes">Yes</option>
                 <option value="No">No</option>
-                <option value="did not search">did not search</option>
+                <option value="Did not search">Did not search</option>
                 <option value="Don't know">Don't know</option>
                 <option value="Looking for detailed information">Looking for detailed information</option>
             </select>
@@ -1566,9 +1561,9 @@ export default function Survey() {
             {page != 4 &&
             <div className="flex justify-end w-full">
             <button
-                type="button"
+                type="submit"
                 className="py-1 cursor-pointer active:bg-[#7a7a7a] hover:bg-red-500 px-6  text-white font-[800] bg-red-500 border-[#055D59]-1 rounded-sm " 
-                onClick={goToNextPage}
+                onClick={()=>{goToNextPage(),setSubmit(false)}}
              >Next
             </button>
             </div>
@@ -1576,6 +1571,7 @@ export default function Survey() {
             {ShowSubmit &&
             <div className="flex justify-end w-full">
                 <button
+                onClick={()=>setSubmit(true)}
                 className="py-1 cursor-pointer  active:bg-[#7a7a7a] hover:bg-[#464646] px-6  text-white font-[800] bg-[#383838] border-[#055D59]-1 rounded-sm "
                 >
                 {isSubmitting ? "Submitting..." : "Submit Survey"}

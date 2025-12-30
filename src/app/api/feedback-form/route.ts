@@ -7,11 +7,10 @@ export async function POST(req: Request) {
     const url = `https://api.airtable.com/v0/${process.env.AIRTABLE_BASE_ID}/Feedback`;
 
     const fields = {
-      "Full Name": form.firstname,
-      "City": form.lastname,
-      Email: form.email,
-      "Phone Number": form.countrycode,
-      "What do you need help with?": form.help,
+      "Full Name": form.fullname,
+      "City": form.city,
+      eMail: form.email,
+      "Phone Number": form.phone,
       Message: form.message,
     };
 

@@ -11,6 +11,7 @@
   "dependencies": {
     "airtable": "^0.12.2",
     "antd": "^5.25.3",
+    "cloudinary": "^2.8.0",
     "date-fns": "^4.1.0",
     "dotenv": "^17.2.3",
     "framer-motion": "^12.14.0",
