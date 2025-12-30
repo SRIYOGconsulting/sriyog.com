@@ -11,6 +11,7 @@
   "dependencies": {
     "airtable": "^0.12.2",
     "antd": "^5.25.3",
+    "cloudinary": "^2.8.0",
     "date-fns": "^4.1.0",
     "dotenv": "^17.2.3",
     "framer-motion": "^12.14.0",
@@ -20,6 +21,7 @@
     "react-hot-toast": "^2.5.2",
     "react-icons": "^5.5.0",
     "react-phone-input-2": "^2.15.1",
+    "react-select": "^5.10.2",
     "react-slick": "^0.30.3",
     "react-toastify": "^11.0.5",
     "slick-carousel": "^1.8.1",

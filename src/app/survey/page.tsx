@@ -1,40 +1,9 @@
 import Ribbon from "@/components/Ribbon";
+import Survey from "@/components/Survey";
 import { Metadata } from "next";
 
-export const metadata: Metadata = {
-  title: "Free IT Survey | SRIYOG Consulting",
-  description: "Participate in the free IT survey by SRIYOG Consulting.",
-  openGraph: {
-    title: "Free IT Survey | SRIYOG Consulting",
-    description: "Participate in the free IT survey by SRIYOG Consulting.",
-    url: "https://www.sriyog.com/survey",
-    images: [
-      {
-        url: "https://sriyog.com/assets/images/og/default.jpg",
-        alt: "Free IT Survey"
-      }
-    ]
-  }
-};
 export default function Page(){
     return(<>
-    <Ribbon name="Survey" des=""/>
-     <section className="pt-[90px] lg:w-full lg:pt-[60px] md:pt-[52px]">
-
-        {/* form field of request quote */}
-        <div className=" py-12">
-          <div className="max-w-[1180px] mx-auto my-0 lg:max-w-[920px] md:max-w-[720px]  lg:px-12">
-            <div>
-              <iframe
-                className="airtable-embed"
-                src="https://airtable.com/embed/appn20cmYwi6JlwOi/shrVAOXgrjT2Nk37L"
-                width="100%"
-                height={9150}
-                // style="background: transparent; border: 1px solid #ccc;"
-              ></iframe>
-            </div>
-          </div>
-        </div>
-      </section>
+        <Survey/>
     </>)
 }

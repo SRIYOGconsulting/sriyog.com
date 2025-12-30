@@ -24,8 +24,6 @@ type Form = {
 export default function Refer() {
   const [isSending,setIsSending] = useState<boolean>(false);
   const [submitted,setSubmitted] = useState<boolean>(false);
-  const [isChecked1, setIsChecked1] = useState<boolean>(false);
-  const [isChecked2, setIsChecked2] = useState<boolean>(false);
   const [focusStates, setFocusStates] = useState({
     fullName: false,
     email: false,
@@ -57,7 +55,7 @@ export default function Refer() {
     setForm({...form,[e.target.name]: e.target.value})
   }
 
-    const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
       e.preventDefault();
       setIsSending(true);
       try {
@@ -85,7 +83,7 @@ export default function Refer() {
       }
     };
   const inputField =
-    "w-full  mt-1 outline-none bg:[#FFFFFF] shadow-[#CBD0DB2E] shadow-xl p-2  border-[#EAEAEA] border-1 rounded mb-4";
+    "w-full  mt-1 outline-none bg:[#FFFFFF] shadow-[#CBD0DB2E] shadow-xl p-2  border-[#EAEAEA] border-1 rounded mb-6";
 
   return (
     <>
@@ -110,10 +108,10 @@ export default function Refer() {
       )}
       <section className=" p-4 max-w-[1180px] mx-auto">
         <form onSubmit={handleSubmit}>
-          <div className="flex flex-col md:flex-row gap-4 items-start md:items-stretch align-center justify-center ">
+          <div className="flex flex-col md:flex-row gap-4 md:gap-6 items-start md:items-stretch align-center justify-center ">
             {/* Left Column */}
             <div className="flex-1">
-              <h1 className="font-[800] text-2xl mb-4">Your Information</h1>
+              <h1 className="font-[800] text-center mx-auto text-2xl mb-8 border-b border-gray-600 max-w-md pb-1">Your Information</h1>
 
               <div>
                 <label>Your Full Name</label>
@@ -161,8 +159,8 @@ export default function Refer() {
                 />
               </div>
 
-              <div>
-                <label htmlFor="phone" className="block mb-2 font-medium">
+              <div className="block mb-7">
+                <label htmlFor="phone" className="block mb-1 font-medium">
                   Phone Number
                 </label>
                 <PhoneInput
@@ -176,8 +174,10 @@ export default function Refer() {
                   }}
                   inputStyle={{
                     width: "100%",
+                    height:"40px",
                     paddingLeft: "48px",
                     fontSize: "16px",
+                    borderBlockColor:"#eeeeee",
                   }}
                   placeholder="+977 98XXXXXXXX"
                   enableSearch
@@ -237,19 +237,17 @@ export default function Refer() {
                 <label>Your Relationship to the Referred Client</label>
                 <select required className={inputField} name="relation" onChange={handleChange}>
                   <option value="">Please select an option</option>
-                  <option value="Vendor Company">Vendor Company</option>
-                  <option value="Client">Client</option>
-                  <option value="Office Employee">Office Employee</option>
+                  <option value="Vendor">Vendor</option>
+                  <option value="Friend">Friend</option>
                   <option value="Agent">Agent</option>
-                  <option value="Business Developer">Business Developer</option>
-                  <option value="Other">Other</option>
+                  <option value="Business Partner">Business Partner</option>
                 </select>
               </div>
             </div>
 
             {/* Right Column */}
             <div className="sm:flex-1 w-full">
-              <h1 className="font-[800] text-2xl mb-4">
+              <h1 className="font-[800] text-center mx-auto text-2xl mb-8 border-b border-gray-600 max-w-md pb-1">
                 Contact Person Information
               </h1>
 
@@ -328,8 +326,8 @@ export default function Refer() {
                 />
               </div>
 
-              <div>
-                <label htmlFor="phone" className="block mb-2 font-medium">
+              <div className="block mb-7">
+                <label htmlFor="phone" className="block mb-1.5 font-medium">
                   Phone Number
                 </label>
                 <PhoneInput
@@ -345,6 +343,8 @@ export default function Refer() {
                     width: "100%",
                     paddingLeft: "48px",
                     fontSize: "16px",
+                    borderBlockColor:"#eeeeee",
+                    height:"40px"
                   }}
                   placeholder="+977 98XXXXXXXX"
                   enableSearch
@@ -421,17 +421,17 @@ export default function Refer() {
             ></textarea>
           </div>
 
-          <div className="text-sm text-[#555555] mt-6 gap-1 flex flex-col">
-            <div className="flex items-center gap-2">
-              <input type="checkbox"  required checked={isChecked1} onChange={(e) => setIsChecked1(e.target.checked)}  className="bg-[#555555] cursor-pointer" />{" "}
+          <div className="text-sm text-[#555555] mt-6 gap-4 flex flex-col">
+            <div className="flex items-start sm:items-center gap-2">
+              <input type="checkbox"  required   className="bg-[#555555] cursor-pointer mt-1.5 sm:mt-0" />{" "}
               <label>
                 I confirm I have the referred client&apos;s permission to share
                 their contact information.
               </label>
             </div>
-            <div className="flex items-center gap-2">
-              <input type="checkbox" className="cursor-pointer" required  checked={isChecked2} onChange={(e) => setIsChecked2(e.target.checked)} />{" "}
-              <label>
+            <div className="flex items-start sm:items-center gap-2">
+              <input type="checkbox" className="cursor-pointer mt-1.5 sm:mt-0" required  />{" "}
+              <label className="">
                 I understand that submitting this referral does not guarantee
                 compensation unless specified in a formal agreement.
               </label>

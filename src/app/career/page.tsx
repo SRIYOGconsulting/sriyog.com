@@ -2,7 +2,7 @@ import Ribbon from "@/components/Ribbon";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Career| SRIYOG Consulting",
+  title: "Career | SRIYOG Consulting",
   openGraph:{
     title: "Career | SRIYOG Consulting",
     description: "Join our team at SRIYOG Consulting and be a part of our mission to drive digital transformation.",

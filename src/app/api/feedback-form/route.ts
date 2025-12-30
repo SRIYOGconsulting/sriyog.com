@@ -4,22 +4,14 @@ export async function POST(req: Request) {
   try {
     const form = await req.json();
 
-    const url = `https://api.airtable.com/v0/${process.env.AIRTABLE_BASE_ID}/Refer-a-Client`;
+    const url = `https://api.airtable.com/v0/${process.env.AIRTABLE_BASE_ID}/Feedback`;
 
     const fields = {
-      "Full Name": form.fullName,
-      "Client Name" : form.clientName,
-      Email: form.email,
-      "Client Contact Person (Optional)" : form.clientContact,
+      "Full Name": form.fullname,
+      "City": form.city,
+      eMail: form.email,
       "Phone Number": form.phone,
-      "Organization Name": form.organizationName,
-      "Designation" : form.designation,
-      "Your Relationship to the Referred Client" : form.relation,
-      "Client Email" : form.clientEmail,
-      "Client Phone Number" : form.clientPhone,
-      "Client Industry / Business Type" : form.clientBusinessType,
-      "Reason of Referral" : form.reason,
-      "Additional Notes (Optional)" : form.additionalNotes,
+      Message: form.message,
     };
 
     const airtableRes = await fetch(url, {
