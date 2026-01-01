@@ -424,7 +424,7 @@ export default function Survey() {
     e.preventDefault();
     console.log(form)
     if (!isChecked1 || !isChecked2) return;
-    if(!submitted) return;
+    if(!submit) return;
     // if (!submit)return;
     for (const field of requiredPages[4]) {
         const value = form[field];
@@ -940,11 +940,11 @@ export default function Survey() {
             <label>How beneficial has having a website been for your organization?</label>
             <select value={form.websiteBenefitLevel} name="websiteBenefitLevel" className={inputField} style={{cursor: "pointer"}} onChange={handleChange}>
                 <option value="">Select option...</option>
-                <option value="Very high benifit">Very high benifit</option>
-                <option value="High benifit">High benifit</option>
-                <option value="Moderate benifit">Moderate benifit</option>
+                <option value="Very high benefit">Very high benefit</option>
+                <option value="High benefit">High benefit</option>
+                <option value="Moderate benefit">Moderate benefit</option>
                 <option value="Low benefit">Low benefit</option>
-                <option value="No benifit">No benifit</option>
+                <option value="No benefit">No benefit</option>
             </select>
             </div>
 
@@ -1146,8 +1146,8 @@ export default function Survey() {
             <label>Does digital marketing help in business growth? *</label>
             <select value={form.digitalMarketingImpact} name="digitalMarketingImpact" ref={el => { inputRefs.current["digitalMarketingImpact"] = el }} required className={inputField} style={{cursor: "pointer"}} onChange={handleChange}>
                 <option value="">Select option...</option>
-                <option value="Does">Does</option>
-                <option value="Doesn't">Doesn't</option>
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
                 <option value="Can do">Can do</option>
                 <option value="I don't know">I don't know</option>
                 <option value="We are looking for detailed informations">We are looking for detailed informations</option>
@@ -1272,6 +1272,9 @@ export default function Survey() {
                 <option value="">Select option...</option>
                 <option value="Yes">Yes</option>
                 <option value="No">No</option>
+                <option value="It is broken">It is broken</option>
+                <option value="Please provide quotation">Please provide quotation</option>
+                <option value="Other">Other</option>
             </select>
             </div>
 
@@ -1332,15 +1335,15 @@ export default function Survey() {
             <div>
             <label>If your computer crashes after an update, what happens? *</label>
             <div className={`${form.computerCrashOutcome === "Other" ? "grid grid-cols-4 gap-2" : ""}`}>
-            <select name="computerCrashOutcome" onChange={handleChange} className={`${inputField} ${form.computerCrashOutcome === "Other" ? "col-span-1" : ""}`}>
+            <select required value={form.computerCrashOutcome} name="computerCrashOutcome" onChange={handleChange} className={`${inputField} ${form.computerCrashOutcome === "Other" ? "col-span-1" : ""}`}>
               <option value="">Select option...</option>
               <option value="We have IT Support Person">We have IT Support Person</option>
-              <option value="We call our Vendor ">We call our Vendor </option>
+              <option value="We call our Vendor ">We call our Vendor</option>
               <option value="We need to search a Pro">We need to search a Pro</option>
               <option value="Other">Other</option>
             </select>
             {form.computerCrashOutcome === "Other" && 
-            <input type="text" className={`${inputField} col-span-3`} name="computerCrashDescription" onChange={handleChange}/>
+            <input required value={form.computerCrashDescription} type="text" className={`${inputField} col-span-3`} name="computerCrashDescription" onChange={handleChange}/>
             }
             </div>
             </div>
