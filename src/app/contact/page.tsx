@@ -3,7 +3,7 @@ import Ribbon from "@/components/Ribbon";
 import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import React, { ChangeEvent, useState } from "react";
+import React, { ChangeEvent, useEffect, useState } from "react";
 
 type Form = {
      firstname : string,
@@ -35,6 +35,7 @@ const metadata: Metadata = {
 };
 export default function Page() {
   const [isSubmitting,setIsSubmitting] = useState<boolean>(false);
+  const [dots, setDots] = useState("");
   const [submitted,setSubmitted] = useState<boolean>(false);
   const [form,setform] = useState<Form>({
      firstname : "",
@@ -51,6 +52,18 @@ export default function Page() {
     setform({...form,[e.target.name]: e.target.value});
   }
 
+  useEffect(() => {
+  if (!isSubmitting) {
+    setDots("");
+    return;
+  }
+
+  const interval = setInterval(() => {
+    setDots(prev => (prev.length < 3 ? prev + "." : ""));
+  }, 500);
+
+  return () => clearInterval(interval);
+}, [isSubmitting]);
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setIsSubmitting(true);
@@ -547,7 +560,7 @@ export default function Page() {
                 type="submit"
                 name=""
                 id=""
-                value={isSubmitting ? "Submitting..." : "Submit"}
+                value={isSubmitting ? `Submitting${dots}` : "Submit"}
                 className=" border-[1.5px]  text-white  py-2 px-6 font-medium bg-[#055d59] rounded-md transition duration-300 ease-in-out cursor-pointer "
               />
             </form>

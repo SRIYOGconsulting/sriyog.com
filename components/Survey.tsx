@@ -14,7 +14,7 @@ type Form = {
   formFiller: string;
   mobile: string;
   orgEmail: string;
-  establishedYear: number | null;
+  establishedYear: string;
   orgHead: string;
   qualification: string;
   headContact: string;
@@ -60,6 +60,7 @@ type Form = {
   monitorsEmployeeActivities: string;
   //page 4
   computerCrashOutcome: string;
+  computerCrashDescription: string,
   maintainsCloudBackup: string;
   hasSocialMediaTeam: string;
   usesHardwareFirewall: string;
@@ -85,6 +86,7 @@ export default function Survey() {
   const [page,setPage] = useState<number>(1);
   const [submitted,setSubmitted] = useState<boolean>(false);
   const [submit,setSubmit] = useState<boolean>(false);
+  const [dots, setDots] = useState("");
   const [isChecked1, setIsChecked1] = useState<boolean>(false);
   const [isChecked2, setIsChecked2] = useState<boolean>(false);
   const [ShowSubmit,setShowSubmit] = useState<boolean>(false);
@@ -329,7 +331,7 @@ export default function Survey() {
     formFiller: "",
     mobile: "",
     orgEmail: "",
-    establishedYear: null,
+    establishedYear: "",
     orgHead: "",
     qualification: "",
     headContact: "",
@@ -377,6 +379,7 @@ export default function Survey() {
     monitorsEmployeeActivities: "",
     //page 4
     computerCrashOutcome: "",
+    computerCrashDescription: "",
     maintainsCloudBackup: "",
     hasSocialMediaTeam: "",
     usesHardwareFirewall: "",
@@ -404,51 +407,65 @@ export default function Survey() {
     setForm({...form,[e.target.name]: e.target.value})
   }
 
-  const handleSubmit = async(e: React.FormEvent<HTMLFormElement>) => {
-  e.preventDefault();
-  console.log(form)
-  if (!isChecked1 || !isChecked2) return;
-  if (!submit)return;
-  for (const field of requiredPages[4]) {
-      const value = form[field];
-      if (!value || (Array.isArray(value) && value.length === 0)) {
-        // switch to page
-        setPage(4);
-
-        // scroll after page renders
-        setTimeout(() => {
-          inputRefs.current[field]?.scrollIntoView({ behavior: "smooth", block: "center" });
-          inputRefs.current[field]?.focus();
-        }, 100);
-
-        return; // stop submit
-      }
+  useEffect(() => {
+    if (!isSubmitting) {
+      setDots("");
+      return;
     }
-      setIsSubmitting(true);
-      try {
-        const res = await fetch("/api/survey-form", {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify(form),
-        });
-  
-        const data = await res.json();
-  
-        if (!res.ok) {
-          console.error(data.error);
-          alert("Failed to submit form: " + data.error);
-        } else {
-          console.log("Form submitted successfully!");
-          setSubmitted(true)
+
+    const interval = setInterval(() => {
+      setDots(prev => (prev.length < 3 ? prev + "." : ""));
+    }, 500);
+
+    return () => clearInterval(interval);
+  }, [isSubmitting]);
+
+  const handleSubmit = async(e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    console.log(form)
+    if (!isChecked1 || !isChecked2) return;
+    if(!submitted) return;
+    // if (!submit)return;
+    for (const field of requiredPages[4]) {
+        const value = form[field];
+        if (!value || (Array.isArray(value) && value.length === 0)) {
+          // switch to page
+          setPage(4);
+
+          // scroll after page renders
+          setTimeout(() => {
+            inputRefs.current[field]?.scrollIntoView({ behavior: "smooth", block: "center" });
+            inputRefs.current[field]?.focus();
+          }, 100);
+
+          return; // stop submit
         }
-      } catch (err) {
-        console.error(err);
-        alert("An error occurred. Try again.");
-      }finally{
-        setIsSubmitting(false);
-       
       }
-};
+        setIsSubmitting(true);
+        try {
+          const res = await fetch("/api/survey-form", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify(form),
+          });
+    
+          const data = await res.json();
+    
+          if (!res.ok) {
+            console.error(data.error);
+            alert("Failed to submit form: " + data.error);
+          } else {
+            console.log("Form submitted successfully!");
+            setSubmitted(true)
+          }
+        } catch (err) {
+          console.error(err);
+          alert("An error occurred. Try again.");
+        }finally{
+          setIsSubmitting(false);
+        
+        }
+  };
 
 
 
@@ -699,8 +716,8 @@ export default function Survey() {
             <div>
             <label>Year of Establishment</label>
             <input
-                type="number"
-                value={form.establishedYear as number}
+                type="text"
+                value={form.establishedYear as string}
                 placeholder={focusStates.establishedYear ? "" : "e.g. 2015"}
                 name="establishedYear"
                 onChange={handleChange}
@@ -864,7 +881,7 @@ export default function Survey() {
                 <option value="">Select option...</option>
                 <option value="Yes">Yes</option>
                 <option value="No">No</option>
-                <option value="Not necessary">Not necessary</option>
+                <option value="Not Necessary">Not necessary</option>
                 <option value="No budget">No budget</option>
                 <option value="Other">Other</option>
             </select>
@@ -1314,23 +1331,18 @@ export default function Survey() {
             {/* Computer Crash Scenario */}
             <div>
             <label>If your computer crashes after an update, what happens? *</label>
-            <input
-                value={form.computerCrashOutcome}
-                type="text"
-                ref={el => { inputRefs.current["computerCrashOutcome"] = el }}
-                required
-                name="computerCrashOutcome"
-                placeholder={focusStates.computerCrashOutcome ? "" : "Describe the outcome"}
-                onChange={handleChange}
-                onFocus={() => setFocusStates({ ...focusStates, computerCrashOutcome: true })}
-                onBlur={(e) =>
-                setFocusStates({
-                    ...focusStates,
-                    computerCrashOutcome: e.target.value ? true : false,
-                })
-                }
-                className={inputField}
-            />
+            <div className={`${form.computerCrashOutcome === "Other" ? "grid grid-cols-4 gap-2" : ""}`}>
+            <select name="computerCrashOutcome" onChange={handleChange} className={`${inputField} ${form.computerCrashOutcome === "Other" ? "col-span-1" : ""}`}>
+              <option value="">Select option...</option>
+              <option value="We have IT Support Person">We have IT Support Person</option>
+              <option value="We call our Vendor ">We call our Vendor </option>
+              <option value="We need to search a Pro">We need to search a Pro</option>
+              <option value="Other">Other</option>
+            </select>
+            {form.computerCrashOutcome === "Other" && 
+            <input type="text" className={`${inputField} col-span-3`} name="computerCrashDescription" onChange={handleChange}/>
+            }
+            </div>
             </div>
 
             {/* Cloud Backup */}
@@ -1563,7 +1575,7 @@ export default function Survey() {
             <button
                 type="submit"
                 className="py-1 cursor-pointer active:bg-[#7a7a7a] hover:bg-red-500 px-6  text-white font-[800] bg-red-500 border-[#055D59]-1 rounded-sm " 
-                onClick={()=>{goToNextPage(),setSubmit(false)}}
+                onClick={()=>{goToNextPage();setSubmit(false)}}
              >Next
             </button>
             </div>
@@ -1574,7 +1586,7 @@ export default function Survey() {
                 onClick={()=>setSubmit(true)}
                 className="py-1 cursor-pointer  active:bg-[#7a7a7a] hover:bg-[#464646] px-6  text-white font-[800] bg-[#383838] border-[#055D59]-1 rounded-sm "
                 >
-                {isSubmitting ? "Submitting..." : "Submit Survey"}
+                {isSubmitting ? `Submitting${dots}` : "Submit Survey"}
                 </button>
             </div>}
           </div>

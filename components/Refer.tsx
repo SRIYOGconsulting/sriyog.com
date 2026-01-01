@@ -2,7 +2,7 @@
 import Ribbon from "@/components/Ribbon";
 import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/style.css";
-import { ChangeEvent, useState } from "react";
+import { ChangeEvent, useEffect, useState } from "react";
 
 type Form = {
     fullName: string,
@@ -24,6 +24,7 @@ type Form = {
 export default function Refer() {
   const [isSending,setIsSending] = useState<boolean>(false);
   const [submitted,setSubmitted] = useState<boolean>(false);
+  const [dots, setDots] = useState("");
   const [focusStates, setFocusStates] = useState({
     fullName: false,
     email: false,
@@ -54,6 +55,19 @@ export default function Refer() {
   const handleChange = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>)=>{
     setForm({...form,[e.target.name]: e.target.value})
   }
+
+  useEffect(() => {
+    if (!isSending) {
+      setDots("");
+      return;
+    }
+
+    const interval = setInterval(() => {
+      setDots(prev => (prev.length < 3 ? prev + "." : ""));
+    }, 500);
+
+    return () => clearInterval(interval);
+  }, [isSending]);
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
       e.preventDefault();
@@ -443,7 +457,7 @@ export default function Refer() {
               type="submit"
               className="py-1 cursor-pointer  active:bg-[#7a7a7a] hover:bg-[#464646] px-6  mb-24 text-white font-[800] bg-[#383838] border-[#055D59]-1 rounded-sm "
             >
-              {isSending ? "Sending..." : "Send Referal"}
+              {isSending ? `Sending${dots}` : "Send Referal"}
             </button>
           </div>
         </form>

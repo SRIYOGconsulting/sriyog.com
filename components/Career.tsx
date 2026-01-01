@@ -1,7 +1,7 @@
 'use client'
 import Ribbon from "@/components/Ribbon";
 import { Console } from "console";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/style.css";
 import Select, { MultiValue } from "react-select";
@@ -19,7 +19,7 @@ interface CareerFormData {
   interest: string;
   highestEducation: string;
   currentStatus: string;
-  topSkills: string[];
+  topSkills: SelectOption[];
   employmentStatus: string;
   employmentType: string;
   expectedSalary: string;
@@ -53,6 +53,9 @@ type SelectOption = {
   value: string;
 };
 export default function CareerPage() {
+  const [isSubmitting,setIsSubmitting] = useState<boolean>(false);
+  const [submitted,setSubmitted] = useState<boolean>(false);
+  const [dots, setDots] = useState("");
   const [careerData, setCareerData] = useState<CareerFormData>({
     firstName: "",
     lastName: "",
@@ -97,11 +100,7 @@ export default function CareerPage() {
     internshipCertificate: "",
   });
 
-  const selectFields = [
-  {
-    label: "Top Skills",
-    name: "topSkills", // must match CareerFormData key
-    options: [
+  const selectSkills = [
       { label: "PHP", value: "PHP" },
       { label: "MySQL", value: "MySQL" },
       { label: "HTML", value: "HTML" },
@@ -132,9 +131,8 @@ export default function CareerPage() {
       { label: "PostgreSQL", value: "PostgreSQL" },
       { label: "SEO", value: "SEO" },
       { label: "Photography", value: "Photography" },
-    ],
-  },
-  ];
+  ]
+  
 
   const customStyles = {
     menu: (provided: any) => ({
@@ -149,29 +147,30 @@ export default function CareerPage() {
     }),
   };
 
-  const getFileUrl = async (file: File) => {
-    console.log("Uploading file...");
+const getFileUrl = async (file: File) => {
+  console.log("Uploading file...");
 
-    const sigRes = await fetch("/api/cloudinary", { method: "POST" });
-    const sigData = await sigRes.json();
+  const sigRes = await fetch("/api/cloudinary", { method: "POST" });
+  const sigData = await sigRes.json();
 
-    const formData = new FormData();
-    formData.append("file", file);
-    formData.append("api_key", sigData.apiKey);
-    formData.append("timestamp", sigData.timestamp);
-    formData.append("signature", sigData.signature);
-    formData.append("resource_type", "raw"); // safer for PDFs
+  const formData = new FormData();
+  formData.append("file", file);
+  formData.append("api_key", sigData.apiKey);
+  formData.append("timestamp", sigData.timestamp);
+  formData.append("signature", sigData.signature);
 
-    const uploadRes = await fetch(
-        `https://api.cloudinary.com/v1_1/${sigData.cloudName}/auto/upload`,
-        { method: "POST", body: formData }
-    );
+  const uploadRes = await fetch(
+    `https://api.cloudinary.com/v1_1/${sigData.cloudName}/auto/upload`,
+    { method: "POST", body: formData }
+  );
 
-    const data = await uploadRes.json();
-    console.log("Cloudinary response:", data);
+  const data = await uploadRes.json();
+  const downloadUrl = data.secure_url
+  console.log(downloadUrl);
+  return downloadUrl;
+};
 
-    return `https://res.cloudinary.com/${sigData.cloudName}/raw/upload/fl_inline/${data.public_id}.${data.format}`;
-  };
+
 
 
 
@@ -182,14 +181,14 @@ export default function CareerPage() {
 
   const [focusStates, setFocusStates] = useState<Record<string, boolean>>({});
 
-  const renderInput = (name:string,label:string,type:string,mandatory:boolean) =>(
+  const renderInput = <K extends keyof CareerFormData>(name:K,label:string,type:string,mandatory:boolean) =>(
     <div>
         <label>{label}</label>
         <input
           name={name}
           type={type}
           required={mandatory}
-          value={careerData[name as keyof CareerFormData]}
+          value={careerData[name] as string}
           onChange={handleChange}
           placeholder={focusStates[name] ? "" : `Enter ${label.toLowerCase()}`}
           onFocus={() => setFocusStates({ ...focusStates, [name]: true })}
@@ -209,7 +208,7 @@ export default function CareerPage() {
       <label>{label}</label>
       <select
         name={name}
-        value={careerData[name as keyof CareerFormData]}
+        value={careerData[name as keyof CareerFormData] as string}
         onChange={handleChange}
         className={inputField}
       >
@@ -230,14 +229,10 @@ export default function CareerPage() {
            isMulti
            instanceId={name}
            options={options}
-           required
-           value={options.filter(opt => (careerData[name] as string[]).includes(opt.value))}
+           value={careerData.topSkills}
            styles={customStyles}
-           onChange={(selected) =>
-                setCareerData(prev => ({
-                ...prev,
-                [name]: (selected as SelectOption[]).map(opt => opt.value),
-             }))
+           onChange={(selected: MultiValue<SelectOption>) =>
+              setCareerData({ ...careerData, topSkills: selected as SelectOption[] })
            }
         />
     </div>
@@ -298,19 +293,73 @@ export default function CareerPage() {
     setCareerData((prev) => ({ ...prev, [name as keyof CareerFormData]: value }));
   };
 
-  const handleSubmit = (e:React.FormEvent)=>{
+  useEffect(() => {
+    if (!isSubmitting) {
+      setDots("");
+      return;
+    }
+
+    const interval = setInterval(() => {
+      setDots(prev => (prev.length < 3 ? prev + "." : ""));
+    }, 500);
+
+    return () => clearInterval(interval);
+  }, [isSubmitting]);
+
+  const handleSubmit = async(e:React.FormEvent)=>{
     e.preventDefault();
     console.log(careerData)
+    setIsSubmitting(true);
+    try {
+        const res = await fetch("/api/career-form", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(careerData),
+        });
+  
+        const data = await res.json();
+  
+        if (!res.ok) {
+          console.error(data.error);
+          alert("Failed to submit form: " + data.error);
+        } else {
+          console.log("Form submitted successfully!");
+          setSubmitted(true)
+        }
+      } catch (err) {
+        console.error(err);
+        alert("An error occurred. Try again.");
+      }finally{
+        setIsSubmitting(false);
+       
+      }
   }
   return (
     <>
       <Ribbon name="Career" des="" />
       <section className="max-w-[1180px] mx-auto px-6 md:px-6 lg:px-6 xl:px-0">
+        {submitted && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center">
+          <div className="text-white bg-[#055d59] rounded-lg p-5 w-[90%] max-w-md text-center shadow-xl">
+            <h2 className="text-xl font-semibold mb-3">
+              Submitted Successfully
+            </h2>
+            <p className=" mb-5">
+              Thank you! Your application has been submitted successfully.
+            </p>
+            <button
+              onClick={() => setSubmitted(false)}
+              className="bg-[#055d59] text-white border cursor-pointer active:bg-gray-300 active:text-[#055d59] hover:bg-white hover:text-[#055d59] border-white px-5 py-0.5 rounded-md"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      )}
         <h1 className="text-3xl font-[900]">SRIYOG | Career</h1>
         <p className="text-sm mt-4">Shaping Robots</p>
-
         <form onSubmit={handleSubmit} className="mt-8">
-          {/* <div>
+          <div>
             <label>Career Objective / Professional Summary</label>
             <textarea
               name="careerObjective"
@@ -319,10 +368,10 @@ export default function CareerPage() {
               className={`${inputField} h-24`}
               placeholder="Describe your career goal or objective"
             />
-          </div> */}
+          </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-              {/* {renderInput("firstName", "First Name","text",true)}
+              {renderInput("firstName", "First Name","text",true)}
               {renderInput("lastName", "Last Name","text",true)}
               {renderInput("maritalStatus", "Marital Status","text",true)}
               {renderInput("city", "City","text",true)}
@@ -334,55 +383,55 @@ export default function CareerPage() {
               {renderInput("university", "Name of University","text",true)}
               {renderInput("college", "Name of College / Campus","text",true)}
               {renderInput("interest", "Interested In","text",true)}
-              {renderInput("highestEducation", "Highest Education","text",true)} */}
+              {renderInput("highestEducation", "Highest Education","text",true)}
               {renderInput("currentStatus", "Current Semester / Passed Year","text",true)}
-
+              {renderInput("github", "GitHub URL","url",true)}
+              {renderInput("portfolio", "Project / Personal / Portfolio URL","text",false)}
               {/* Top skills */}
-              {selectFields.map(field =>
-                renderSelectSearch(field.label, field.name as keyof CareerFormData, field.options)
-              )}
+
+              {renderSelectSearch("Top skills", "topSkills", selectSkills)}
 
 
               {/* SELECT DROPDOWNS */}
               {[
-                // {
-                //   label: "Gender",
-                //   name: "gender",
-                //   options: [
-                //     "Male",
-                //     "Female"
-                //   ]
-                // },
-                // {
-                //   label: "Current Employment Status",
-                //   name: "employmentStatus",
-                //   options: [
-                //     "Looking for Better Opportunity",
-                //     "Unemployed",
-                //     "Employed",
-                //     "Self Employed",
-                //   ],
-                // },
-                // {
-                //   label: "Employment Type",
-                //   name: "employmentType",
-                //   options: ["Contract", "Full Time", "Part Time", "Internship"],
-                // },
-                // {
-                //   label: "Expected Monthly Salary",
-                //   name: "expectedSalary",
-                //   options: ["On Contract Basis", "Below 15,000", "15,000 - 25,000", "Above 25,000"],
-                // },
-                // {
-                //   label: "Duty Hours",
-                //   name: "dutyHours",
-                //   options: ["Flexible", "Morning Shift", "Evening Shift", "Night Shift"],
-                // },
-                // {
-                //   label: "Do you have driving license?",
-                //   name: "hasLicense",
-                //   options: ["Yes", "No"],
-                // },
+                {
+                  label: "Gender",
+                  name: "gender",
+                  options: [
+                    "Male",
+                    "Female"
+                  ]
+                },
+                {
+                  label: "Current Employment Status",
+                  name: "employmentStatus",
+                  options: [
+                    "Looking for Better Opportunity",
+                    "Unemployed",
+                    "Employed",
+                    "Self Employed",
+                  ],
+                },
+                {
+                  label: "Employment Type",
+                  name: "employmentType",
+                  options: ["Contract", "Full Time", "Part Time", "Internship"],
+                },
+                {
+                  label: "Expected Monthly Salary",
+                  name: "expectedSalary",
+                  options: ["On Contract Basis", "Below 15,000", "15,000 - 25,000", "Above 25,000"],
+                },
+                {
+                  label: "Duty Hours",
+                  name: "dutyHours",
+                  options: ["Flexible", "Morning Shift", "Evening Shift", "Night Shift"],
+                },
+                {
+                  label: "Do you have driving license?",
+                  name: "hasLicense",
+                  options: ["Yes", "No"],
+                },
                 {
                   label: "Do you have personal vehicle?",
                   name: "hasVehicle",
@@ -394,23 +443,21 @@ export default function CareerPage() {
 
               {/* Additional Inputs */}
               {[
-                // { label: "Tech Skills", name: "techSkills" },
-                // { label: "Soft Skills", name: "softSkills" },
-                 { label: "Work Experience 1", name: "workExperience1", type: "textarea" },
-                // { label: "Work Experience 2", name: "workExperience2", type: "textarea" },                          
-                // { label: "Hobbies", name: "hobbies" },
-                // { label: "Languages Known", name: "languages" },
-                // { label: "GitHub URL", name: "github" },
-                // { label: "Project / Personal / Portfolio URL", name: "portfolio" },
-                // { label: "Reference 1", name: "reference1" },
-                // { label: "Reference 2", name: "reference2" },
+                { label: "Tech Skills", name: "techSkills" },
+                { label: "Soft Skills", name: "softSkills" },
+                { label: "Work Experience 1", name: "workExperience1", type: "textarea" },
+                { label: "Work Experience 2", name: "workExperience2", type: "textarea" },                          
+                { label: "Hobbies", name: "hobbies" },
+                { label: "Languages Known", name: "languages" },
+                { label: "Reference 1", name: "reference1" },
+                { label: "Reference 2", name: "reference2" },
               ].map(({ label, name, type }) => (
                 <div key={name}>
                   <label>{label}</label>
                   {type === "textarea" ? (
                     <textarea
                       name={name}
-                      value={careerData[name as keyof CareerFormData]}
+                      value={careerData[name as keyof CareerFormData] as string}
                       onChange={handleChange}
                       className={`${inputField} h-24`}
                       placeholder={`Enter ${label.toLowerCase()}`}
@@ -419,7 +466,7 @@ export default function CareerPage() {
                     <input
                       name={name}
                       type="text"
-                      value={careerData[name as keyof CareerFormData]}
+                      value={careerData[name as keyof CareerFormData] as string}
                       onChange={handleChange}
                       placeholder={`Enter ${label.toLowerCase()}`}
                       className={inputField}
@@ -443,13 +490,29 @@ export default function CareerPage() {
             ].map(({ label, name }) => 
                 renderFile(label, name as keyof CareerFormData))}
 
-          {/* SUBMIT */}
+          {/* Check boxex */}
+          <div className="text-sm text-[#555555] mt-6 gap-4 flex flex-col">
+            <div className="flex items-start sm:items-center gap-2">
+              <input type="checkbox" required className="bg-[#555555] cursor-pointer mt-1.5 sm:mt-0" />{" "}
+              <label>
+                I confirm that the information provided is true and complete to the best of my knowledge.
+              </label>
+            </div>
+            <div className="flex items-start sm:items-center gap-2">
+              <input type="checkbox" className="cursor-pointer mt-1.5 sm:mt-0" required  />{" "}
+              <label className="">
+                I agree to the processing of my personal data for recruitment purposes.
+              </label>
+            </div>
+          </div>
+
+          {/* Submit */}
           <div className="w-full flex justify-center mt-10 mb-16">
             <button
               type="submit"
               className="py-2 px-10 cursor-pointer text-white font-[800] bg-[#383838] rounded-sm hover:bg-[#555]"
             >
-              Submit Application
+              {isSubmitting ? `Submitting${dots}` : "Submit Application" }
             </button>
           </div>
         </form>

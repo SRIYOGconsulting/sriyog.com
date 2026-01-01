@@ -2,7 +2,7 @@
 import Ribbon from "@/components/Ribbon";
 import { Metadata } from "next";
 import Image from "next/image";
-import React, { ChangeEvent, useState } from "react";
+import React, { ChangeEvent, useEffect, useState } from "react";
 import { LuMessageCircleMore } from "react-icons/lu";
 
 type Form = {
@@ -16,6 +16,7 @@ type Form = {
 const Feedback = () => {
   const name = "Feedback Form";
   const [isSubmitting,setIsSubmitting] = useState<boolean>(false);
+  const [dots, setDots] = useState("");
   const [submitted,setSubmitted] = useState<boolean>(false);
   const [form,setform] = useState<Form>({
        fullname : "",
@@ -28,6 +29,19 @@ const Feedback = () => {
   const handleChange = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) =>{
       setform({...form,[e.target.name]: e.target.value});
   }
+
+    useEffect(() => {
+    if (!isSubmitting) {
+      setDots("");
+      return;
+    }
+
+    const interval = setInterval(() => {
+      setDots(prev => (prev.length < 3 ? prev + "." : ""));
+    }, 500);
+
+    return () => clearInterval(interval);
+  }, [isSubmitting]);
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
       e.preventDefault();
       setIsSubmitting(true);
@@ -193,7 +207,7 @@ const Feedback = () => {
             type="submit"
             name=""
             id=""
-            value={isSubmitting ? "Submitting..." : "Submit"}
+            value={isSubmitting ? `Submitting${dots}` : "Submit"}
             className="cursor-pointer hover:bg-[#335c5a] transition-all duration-300 ease-in-out px-4 py-2 bg-[#055d59] text-white font-bold rounded-md"
           />
           </form>

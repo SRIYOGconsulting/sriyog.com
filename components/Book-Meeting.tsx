@@ -26,6 +26,7 @@ const labelStyle = "text-sm font-medium";
 const BookMeeting = () => {
   const [isSubmitting,setIsSubmitting] = useState<boolean>(false);
   const [image,setImage] = useState<File | null>(null);
+  const [dots, setDots] = useState("");
   const [submitted,setSubmitted] = useState<boolean>(false);
   const [error,setError] = useState<boolean>(false);
   const [form, setForm] = useState<FormType>({
@@ -130,6 +131,19 @@ const BookMeeting = () => {
     }
     uploadImage();
   },[image])
+
+    useEffect(() => {
+    if (!isSubmitting) {
+      setDots("");
+      return;
+    }
+
+    const interval = setInterval(() => {
+      setDots(prev => (prev.length < 3 ? prev + "." : ""));
+    }, 500);
+
+    return () => clearInterval(interval);
+  }, [isSubmitting]);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -323,7 +337,7 @@ const BookMeeting = () => {
               type="submit"
               className="py-2 cursor-pointer px-10 text-white font-[800] bg-[#383838] rounded-sm hover:bg-[#555]"
             >
-              {isSubmitting ? "Booking..." : "Book"} 
+              {isSubmitting ? `Booking${dots}` : "Book"} 
             </button>
           </div>
         </form>
