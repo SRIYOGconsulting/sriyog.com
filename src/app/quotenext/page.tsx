@@ -17,7 +17,7 @@ const Page = () => {
     contact: "",
     phonenumber: "",
     email: "",
-    whatsapp: "",
+    WhatsApp: "",
     service: "",
     budget: "",
     competitor: "",
@@ -120,7 +120,7 @@ const Page = () => {
             "Address": form.address,
             "Phone Number": form.phonenumber,
             "Email": form.email,
-            "WhatsApp Number": form.whatsapp,
+            "WhatsApp Number": form.WhatsApp,
             "Select a Service": [form.service],
             "Project Budget in NPR": form.budget,
             "Competitor 1 ": form.competitor,
@@ -168,7 +168,7 @@ const Page = () => {
           contact: "",
           phonenumber: "",
           email: "",
-          whatsapp: "",
+          WhatsApp: "",
           service: "",
           budget: "",
           competitor: "",
@@ -267,7 +267,7 @@ const Page = () => {
             {renderInput("contact", "Contact Person")}
             {renderInput("phonenumber", "Phone Number")}
             {renderInput("email", "Email", "email")}
-            {renderInput("whatsapp", "WhatsApp Number")}
+            {renderInput("WhatsApp", "WhatsApp Number")}
             {renderSelect("service", "Select a Service", services)}
             {renderSelect("budget", "Project Budget (NPR)", budgets)}
             {renderInput("competitor", "Competitor Name")}

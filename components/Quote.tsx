@@ -19,7 +19,7 @@ type FormData = {
   phonenumber: number | null;
   country:string;
   email: string;
-  whatsapp: string;
+  WhatsApp: string;
   service: option[];
   budget: string;
   competitor: string;
@@ -64,7 +64,7 @@ const Quote = () => {
     phonenumber: "",
     email: "",
     country:"",
-    whatsapp: "",
+    WhatsApp: "",
     service: [],
     budget: "",
     competitor: "",
@@ -497,7 +497,7 @@ const Quote = () => {
             </div>         
             {renderInput("name", "Name of Organization *","text",true)}
             {renderInput("email", "Email *", "email",true)}
-            {renderInput("whatsapp", "WhatsApp Number","text",false)}
+            {renderInput("WhatsApp", "WhatsApp Number","text",false)}
             {renderSelectSearch('Service','service',servicesOptions,true,false)}
             {renderSelect("budget", "Project Budget (USD) *", budgets,true)}
             {renderInput("competitor", "Competitor Name","text",false,)}

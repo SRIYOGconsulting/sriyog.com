@@ -4,7 +4,7 @@ import React from "react";
 
 
 export const metadata: Metadata = {
-  title: "Quote | SRIYOG Consulting",
+  title: "Request a Quotation | SRIYOG Consulting",
   description: "Get a quote for SRIYOG Consulting services.",
   openGraph: {
     title: "Quote | SRIYOG Consulting",

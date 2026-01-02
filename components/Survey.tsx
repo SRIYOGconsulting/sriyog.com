@@ -1343,7 +1343,7 @@ export default function Survey() {
               <option value="Other">Other</option>
             </select>
             {form.computerCrashOutcome === "Other" && 
-            <input required value={form.compute} type="text" className={`${inputField} col-span-3`} name="computerCrashDescription" onChange={handleChange}/>
+            <input required value={form.computerCrashDescription} type="text" className={`${inputField} col-span-3`} name="computerCrashDescription" onChange={handleChange}/>
             }
             </div>
             </div>
