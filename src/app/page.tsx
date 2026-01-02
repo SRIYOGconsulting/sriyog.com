@@ -1,26 +1,21 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { useFloatingIcons } from "../context/FloatingIconContext";
-import RoadBlock from "@/components/Roadblock";
 
 export default function Home() {
-  const [showRoadBlock, setShowRoadBlock] = useState(true);
   const [categoriesOpen, setCategoriesOpen] = useState(false);
   const [selectedCategories, setSelectedcategories] = useState("");
   const [selectedEvents, setSelectedEvents] = useState("");
   const [eventsOpen, setEventsOpen] = useState(false);
   const { setShowFloatingIcons } = useFloatingIcons();
-
-  const handleCloseRoadBlock = () => {
-    setShowRoadBlock(false);
-    setShowFloatingIcons(true);
-  };
-
+  useEffect(() => {
+    setShowFloatingIcons(true); 
+  }, [setShowFloatingIcons]);
   const SampleNextArrow = ({ onClick }: { onClick?: () => void }) => (
     <div
       className="absolute bottom-[-30px] max-md:bottom-[-40px] right-6 max-lg:right-0 z-10 cursor-pointer"
@@ -182,8 +177,6 @@ export default function Home() {
 
   return (
     <>
-      {/* RoadBlock Popup Overlay */}
-      {showRoadBlock && <RoadBlock onClose={handleCloseRoadBlock} />}
 
       {/* Main Content */}
       {/*hero-banner*/}

@@ -12,7 +12,7 @@ const teamMembers = [
   },
   {
     id: 2,
-    name: "Hiring Manager",
+    name: "Hiring",
     role: "Information Manager",
     image: "/assets/images/team/2.png",
   },

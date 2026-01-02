@@ -10,7 +10,7 @@ type Form = {
      lastname: string,
      email : string,
      countrycode : number | null,
-     phoneNumber : string,
+     phoneNumber : number | null,
      extension: number | null,
      help: string,
      message: string,
@@ -42,7 +42,7 @@ export default function Page() {
      lastname: "",
      email : "",
      countrycode : null,
-     phoneNumber : "",
+     phoneNumber : null,
      extension: null,
      help: "",
      message: "",
@@ -81,7 +81,7 @@ export default function Page() {
         alert("Failed to submit form: " + data.error);
       } else {
         console.log("Form submitted successfully!");
-        setform({ firstname: "", lastname: "", email: "", countrycode: null, phoneNumber: "", extension: null, help: "", message: "" });
+        setform({ firstname: "", lastname: "", email: "", countrycode: null, phoneNumber: null, extension: null, help: "", message: "" });
         setSubmitted(true)
       }
     } catch (err) {
@@ -497,9 +497,11 @@ export default function Page() {
                   <label htmlFor="phone">Phone</label>
                   <br />
                   <input
-                    type="text"
+                    type="tel"
                     name="phoneNumber"
-                    value={form.phoneNumber}
+                    inputMode="numeric"
+                    pattern="[0-9]*"
+                    value={form.phoneNumber ? form.phoneNumber : ""}
                     onChange={handleChange}
                     id="phone"
                     placeholder="Phone"
@@ -552,7 +554,8 @@ export default function Page() {
                   value={form.message}
                   onChange={handleChange}
                   id=""
-                  className="w-full h-[90px] px-3 rounded-md py-2 bg-white focus:outline-none border-[#4b4b4b]"
+                  rows={4}
+                  className="w-full px-3 rounded-md py-2 bg-white focus:outline-none border-[#4b4b4b]"
                   placeholder="Message"
                 ></textarea>
               </section>

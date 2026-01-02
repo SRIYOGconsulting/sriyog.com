@@ -150,7 +150,7 @@ export default function Testimonials() {
   return (
     <>
       <Ribbon name="Testimonials" des="" />
-      <section className=" max-w-[1180px] max-lg:container max-lg:px-3 mx-auto mb-[45px] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <section className=" max-w-295 max-lg:container max-lg:px-3 mx-auto mb-11.25 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {testimonialsData.map((item, idx) => (
           <div
             key={idx + 1}

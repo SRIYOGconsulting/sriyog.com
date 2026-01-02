@@ -109,39 +109,49 @@ export default function TrainingSinglepageComponent({ id }: { id: string }) {
 
       {/*Pricing*/}
       <section className="max-w-[1180px] mx-auto  my-24 px-6 lg:px-0 ">
-        <div className="flex items-center gap-4 justify-between">
-          <div className="">
-          <h1 className="text-md sm:text-md font-medium">
-            <span className="font-extrabold">Virtual 1 Week Session:</span> NPR {trainingData?.virtual.one_week}&#47;&#45; Google Meet
+        <div className="flex flex-col sm:flex-row items-start sm:gap-4 sm:items-center gap-8 justify-between">
+          <div className="space-y-2">
+          <h1 className="text-xl font-bold mb-2">
+            Join Our 1-Month Virtual Program!
           </h1>
           <h1 className="text-md sm:text-md font-medium">
-            <span className="font-extrabold">Virtual 4 Weeks Session:</span> NPR {trainingData?.virtual.five_week}&#47;&#45; Google Meet
+           💻 <span className="font-extrabold">Mode:</span> Live Virtual Sessions via Google Meet
+          </h1>
+          <h1 className="text-md sm:text-md font-medium">
+          📅 <span className="font-extrabold">Duration:</span> 1 Full Month
+          </h1>
+          <h1 className="text-md sm:text-md font-medium">
+            💲 <span className="font-extrabold">Fee:</span> USD 100 only
           </h1>
         </div>
-        <div className="">
+        <div className="space-y-2">
           <h1 className="text-md sm:text-md  font-medium">
-            <span className="font-extrabold">Physical Session:</span> 5 Hours
-            &#45; NPR {trainingData?.physical.five_hours}&#47;&#45; Maximum Participants: 20 Only
+            <span className="font-extrabold text-xl mb-2">What to Expect:</span>
           </h1>
           <h1 className="text-md sm:text-md  font-medium">
-           <span className="font-extrabold">Physical Session:</span> 1
-            Week &#45; NPR {trainingData?.physical.one_week} &#47;&#45; Maximum Participants: 20 Only
+           🎥 Live, interactive sessions  
+          </h1>
+          <h1 className="text-md sm:text-md  font-medium">
+           💬 Real-time discussions & Q&A
+          </h1>
+          <h1 className="text-md sm:text-md  font-medium">
+           🛠️ Practical learning and engagement  
           </h1>
         </div>
         </div>
          <div className="text-end mt-10">
           <Link
-            href={"/trainings/form"}
-            className="mr-4 text-center mt-2 w-[35%] px-8 py-3 text-sm border border-[#055D59] bg-[#055D59] text-white rounded-[8px] transition"
+            href={"/trainings/apply"}
+            className="mr-2 sm:mr-4 text-center mt-2 w-[35%] px-5 py-3 hover:bg-white active:bg-white active:text-[#02312e] hover:text-[#02312e] text-md border border-[#055D59] bg-[#055D59] text-white rounded-[8px] transition"
           >
-            Apply Now
+            Get Certified Now
           </Link>
-          <Link
+          {/* <Link
             href={"/meet"}
             className="text-center mt-2 w-[35%] px-8 py-3 text-sm border border-[#055D59] bg-[#055D59] text-white rounded-[8px] transition"
           >
             Check Schedule
-          </Link>
+          </Link> */}
         </div>
       </section>
 

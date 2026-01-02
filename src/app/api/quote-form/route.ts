@@ -63,7 +63,7 @@ export async function POST(req: Request) {
         "Address": form.address,
         "Phone Number": `${formatDialCode(form.code)} ${formatCustomNumber(form.phonenumber)}`,
         Email: form.email,
-        "WhatsApp Number": form.whatsapp,
+        "WhatsApp Number": form.WhatsApp,
         "Select a Service": form.service.map((opt:option) => opt.value),
         "Project Budget in NPR": form.budget,
         "Competitor 1 ": form.competitor,

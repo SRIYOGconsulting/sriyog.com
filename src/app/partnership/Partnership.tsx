@@ -39,46 +39,46 @@ const Partnership: React.FC = () => {
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
-    const payload: PartnershipFormValues = {
-      ...formValues,
-      phoneOrganization,
-      personalPhone,
-    };
+    // const payload: PartnershipFormValues = {
+    //   ...formValues,
+    //   phoneOrganization,
+    //   personalPhone,
+    // };
 
-    try {
-      const res = await fetch("/api/submit-partnership", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(payload),
-      });
+    // try {
+    //   const res = await fetch("/api/partnership-form", {
+    //     method: "POST",
+    //     headers: { "Content-Type": "application/json" },
+    //     body: JSON.stringify(payload),
+    //   });
 
-      let result: PartnershipResponse;
-      const contentType = res.headers.get("content-type") || "";
+    //   let result: PartnershipResponse;
+    //   const contentType = res.headers.get("content-type") || "";
 
-      if (contentType.includes("application/json")) {
-        result = await res.json();
-      } else {
-        const raw = await res.text();
-        console.error("Unexpected response format:", raw);
-        throw new Error("Invalid server response.");
-      }
+    //   if (contentType.includes("application/json")) {
+    //     result = await res.json();
+    //   } else {
+    //     const raw = await res.text();
+    //     console.error("Unexpected response format:", raw);
+    //     throw new Error("Invalid server response.");
+    //   }
 
-      if (!res.ok) {
-        console.error("Error response:", result);
-        toast.error("error" in result ? result.error : "Submission failed.");
-        return;
-      }
+    //   if (!res.ok) {
+    //     console.error("Error response:", result);
+    //     toast.error("error" in result ? result.error : "Submission failed.");
+    //     return;
+    //   }
 
-      toast.success(
-        "success" in result ? result.message : "Submitted successfully!"
-      );
-      setFormValues(initialFormValues);
-      setPhoneOrganization("");
-      setPersonalPhone("");
-    } catch (err) {
-      console.error("Submission error:", err);
-      toast.error("Something went wrong.");
-    }
+    //   toast.success(
+    //     "success" in result ? result.message : "Submitted successfully!"
+    //   );
+    //   setFormValues(initialFormValues);
+    //   setPhoneOrganization("");
+    //   setPersonalPhone("");
+    // } catch (err) {
+    //   console.error("Submission error:", err);
+    //   toast.error("Something went wrong.");
+    // }
   };
 
   return (

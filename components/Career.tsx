@@ -337,7 +337,7 @@ const getFileUrl = async (file: File) => {
   return (
     <>
       <Ribbon name="Career" des="" />
-      <section className="max-w-[1180px] mx-auto px-6 md:px-6 lg:px-6 xl:px-0">
+      <section className="max-w-295 mx-auto px-6 md:px-6 lg:px-6 xl:px-0">
         {submitted && (
         <div className="fixed inset-0 z-50 flex items-center justify-center">
           <div className="text-white bg-[#055d59] rounded-lg p-5 w-[90%] max-w-md text-center shadow-xl">
@@ -356,7 +356,7 @@ const getFileUrl = async (file: File) => {
           </div>
         </div>
       )}
-        <h1 className="text-3xl font-[900]">SRIYOG | Career</h1>
+        <h1 className="text-3xl font-black">SRIYOG | Career</h1>
         <p className="text-sm mt-4">Shaping Robots</p>
         <form onSubmit={handleSubmit} className="mt-8">
           <div>
@@ -510,7 +510,7 @@ const getFileUrl = async (file: File) => {
           <div className="w-full flex justify-center mt-10 mb-16">
             <button
               type="submit"
-              className="py-2 px-10 cursor-pointer text-white font-[800] bg-[#383838] rounded-sm hover:bg-[#555]"
+              className="py-2 px-10 cursor-pointer text-white font-extrabold bg-[#383838] rounded-sm hover:bg-[#555]"
             >
               {isSubmitting ? `Submitting${dots}` : "Submit Application" }
             </button>
