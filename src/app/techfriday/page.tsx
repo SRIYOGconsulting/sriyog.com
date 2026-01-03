@@ -10,21 +10,21 @@ export const metadata: Metadata = {
     url: "https://www.sriyog.com/techfriday",
     images: [
       {
-        url: "https://sriyog.com/assets/images/og/default.jpg",
+        url: "https://sriyog.com/og/default.jpg",
         alt: "TechFriday"
       }
     ]
   }
 };
 export default function TechFridayPage() {
-  //   "/assets/images/tech friday/1.png",
-  //   "/assets/images/techfriday/2.png",
-  //   "/assets/images/techfriday/3.png",
-  //   "/assets/images/techfriday/4.png",
-  //   "/assets/images/techfriday/5.png",
-  //   "/assets/images/techfriday/6.png",
-  //   "/assets/images/techfriday/7.png",
-  //   "/assets/images/techfriday/8.png",
+  //   "/tech friday/1.png",
+  //   "/techfriday/2.png",
+  //   "/techfriday/3.png",
+  //   "/techfriday/4.png",
+  //   "/techfriday/5.png",
+  //   "/techfriday/6.png",
+  //   "/techfriday/7.png",
+  //   "/techfriday/8.png",
   // ];
 
   return (

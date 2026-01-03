@@ -6,14 +6,14 @@ import { useState } from "react";
 
 export default function TechFriday() {
   const sponsors = [
-    "/assets/images/techfriday/1.png",
-    "/assets/images/techfriday/2.png",
-    "/assets/images/techfriday/3.png",
-    "/assets/images/techfriday/4.png",
-    "/assets/images/techfriday/5.png",
-    "/assets/images/techfriday/6.png",
-    "/assets/images/techfriday/7.png",
-    "/assets/images/techfriday/8.png",
+    "/techfriday/1.png",
+    "/techfriday/2.png",
+    "/techfriday/3.png",
+    "/techfriday/4.png",
+    "/techfriday/5.png",
+    "/techfriday/6.png",
+    "/techfriday/7.png",
+    "/techfriday/8.png",
   ];
 
   const howItWorks = [
@@ -43,17 +43,17 @@ export default function TechFriday() {
     {
       title: "Join",
       desc: "Join our community to connect with like-minded individuals and expand your network.",
-      image: "/assets/images/techfriday/join.svg",
+      image: "/techfriday/join.svg",
     },
     {
       title: "Contribute",
       desc: "You can contribute as a speaker or mentor, sharing your expertise with the community.",
-      image: "/assets/images/techfriday/contribute.svg",
+      image: "/techfriday/contribute.svg",
     },
     {
       title: "Learn",
       desc: "You can learn from industry experts and gain insights into the latest trends and technologies.",
-      image: "/assets/images/techfriday/read.svg",
+      image: "/techfriday/read.svg",
     },
   ];
 
@@ -101,7 +101,7 @@ export default function TechFriday() {
         <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat z-0"
           style={{
-            backgroundImage: "url('/assets/images/techfriday/hero.jpg')",
+            backgroundImage: "url('/techfriday/hero.jpg')",
           }}
         ></div>
         <div className="relative z-10 h-screen flex justify-between  max-lg:container  mx-auto items-end lg:pt-64 lg:pb-28 max-md:items-end max-lg:h-full max-lg:pb-4">
@@ -154,7 +154,7 @@ export default function TechFriday() {
           {/* Image Section */}
           <div className="w-full lg:w-2/5 flex justify-center border">
             <Image
-              src="/assets/images/about/noimage.png"
+              src="/about/noimage.png"
               width={500}
               height={500}
               alt="How it works"
@@ -206,7 +206,7 @@ export default function TechFriday() {
               </div>
               <p className="text-gray-700 text-sm">{item.desc}</p>
               <Image
-                src="/assets/images/techfriday/arrow.svg"
+                src="/techfriday/arrow.svg"
                 width={24}
                 height={24}
                 alt="Arrow"
@@ -236,7 +236,7 @@ export default function TechFriday() {
                 {item.title}
 
                 <Image
-                  src={"/assets/images/techfriday/up-arrow.svg"}
+                  src={"/techfriday/up-arrow.svg"}
                   width={15}
                   height={15}
                   alt="dropdown"
@@ -261,7 +261,7 @@ export default function TechFriday() {
           <div className="sm:max-w-[40%] h-full w-full ">
             <Link href="blog/corporate-email">
               <Image
-                src="/assets/images/homepage/blog/corporate-email.png"
+                src="/homepage/blog/corporate-email.png"
                 width={500}
                 height={600}
                 alt="banner_Image"
@@ -275,7 +275,7 @@ export default function TechFriday() {
           <div className="flex flex-col gap-3 px-2 lg:pr-[150px] w-full sm:max-w-[60%] mb-0 md:mb-16  ">
             <div className="flex items-center justify-start gap-2 text-gray-800">
               <Image
-                src="/assets/images/techfriday/book.svg"
+                src="/techfriday/book.svg"
                 width={50}
                 height={50}
                 alt="title_image"
@@ -331,7 +331,7 @@ export default function TechFriday() {
           <div
             className="absolute inset-0 bg-cover bg-center bg-no-repeat -z-4"
             style={{
-              backgroundImage: "url('/assets/images/techfriday)",
+              backgroundImage: "url('/techfriday)",
             }}
           ></div>
           <h1 className="text-3xl font-extrabold ">
@@ -341,7 +341,7 @@ export default function TechFriday() {
             <li className="flex items-center gap-3 text-sm">
               {" "}
               <Image
-                src="/assets/images/techfriday/correct.svg"
+                src="/techfriday/correct.svg"
                 width={15}
                 height={15}
                 alt="Correct"
@@ -351,7 +351,7 @@ export default function TechFriday() {
             <li className="flex items-center gap-3 text-sm">
               {" "}
               <Image
-                src="/assets/images/techfriday/correct.svg"
+                src="/techfriday/correct.svg"
                 width={15}
                 height={15}
                 alt="Correct"
@@ -361,7 +361,7 @@ export default function TechFriday() {
             <li className="flex items-center gap-3 text-sm">
               {" "}
               <Image
-                src="/assets/images/techfriday/correct.svg"
+                src="/techfriday/correct.svg"
                 width={15}
                 height={15}
                 alt="Correct"
@@ -389,7 +389,7 @@ export default function TechFriday() {
           <div
             className="inset-0 -z-4 bg-center bg-no-repeat bg-cover absolute"
             style={{
-              backgroundImage: "url('/assets/images/techfriday/')",
+              backgroundImage: "url('/techfriday/')",
             }}
           ></div>
           <p>Volunteering Opportunity </p>
@@ -454,7 +454,7 @@ export default function TechFriday() {
             >
               Back to You
               <Image
-                src="/assets/images/techfriday/up-arrow.svg"
+                src="/techfriday/up-arrow.svg"
                 width={20}
                 height={20}
                 alt="up-arrow"
@@ -472,7 +472,7 @@ export default function TechFriday() {
             <div className="flex gap-4 items-center">
               <Link href="https://x.com/pracas" target="_blank">
                 <Image
-                  src="/assets/icons/tweeter.svg"
+                  src="/icons/tweeter.svg"
                   width={30}
                   height={30}
                   alt="Twitter"
@@ -480,7 +480,7 @@ export default function TechFriday() {
               </Link>
               <Link href="https://linkedin.com/in/pracasupreti" target="_blank">
                 <Image
-                  src="/assets/icons/linkedin.svg"
+                  src="/icons/linkedin.svg"
                   width={30}
                   height={30}
                   alt="LinkedIn"
@@ -495,7 +495,7 @@ export default function TechFriday() {
               <Link href="https://p.sriyog.app/playcom" target="_blank">
                 <div className="relative h-[70px] w-[130px] md:w-[100px]">
                   <Image
-                    src="/assets/images/footer/google-play.svg"
+                    src="/footer/google-play.svg"
                     fill
                     className="object-contain"
                     alt="Google Play"
@@ -505,7 +505,7 @@ export default function TechFriday() {
               <Link href="https://p.sriyog.app/ioscom" target="_blank">
                 <div className="relative h-[50px] w-[130px] md:w-[100px]">
                   <Image
-                    src="/assets/images/footer/app-store.svg"
+                    src="/footer/app-store.svg"
                     fill
                     className="object-contain"
                     alt="App Store"

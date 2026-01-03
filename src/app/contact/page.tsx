@@ -27,7 +27,7 @@ const metadata: Metadata = {
     url: "https://www.sriyog.com/contact",
     images: [
       {
-        url: "https://sriyog.com/assets/images/og/default.jpg",
+        url: "https://sriyog.com/og/default.jpg",
         alt: "Contact Us"
       }
     ]
@@ -96,21 +96,21 @@ export default function Page() {
   const card = [
    
     {
-      img: "/assets/images/contact/1.png",
+      img: "/contact/1.png",
       name: "Prakash ",
       field: "Project Manager",
       app: "eMail",
       link: "mailto:pm@sriyog.com",
     },
     {
-      img: "/assets/images/contact/2.png",
+      img: "/contact/2.png",
       name: "Bijay",
       field: "Internship Coordinator",
       app: "eMail",
       link: "mailto:internship@sriyog.com",
     },
      {
-      img: "/assets/images/contact/3.png",
+      img: "/contact/3.png",
       name: "PRACAS",
       field: "CTO",
       app: "eMail",
@@ -161,7 +161,7 @@ export default function Page() {
                 <div className="flex gap-2 items-center text-[1.6rem] font-semibold ">
                   <div className="relative h-10 w-10">
                     <Image
-                      src="/assets/icons/user-id.svg"
+                      src="/icons/user-id.svg"
                       alt="registration"
                       className="object-contain"
                       fill
@@ -177,7 +177,7 @@ export default function Page() {
                 <div className="flex gap-2 items-center text-[1.6rem] font-semibold ">
                   <div className="relative h-10 w-10">
                     <Image
-                      src="/assets/icons/user.svg"
+                      src="/icons/user.svg"
                       alt="membership"
                       className="object-contain"
                       fill
@@ -194,7 +194,7 @@ export default function Page() {
                 <div className="flex gap-2 items-center text-[1.6rem] font-semibold ">
                   <div className="relative h-10 w-10">
                     <Image
-                      src="/assets/icons/loudspeaker.svg"
+                      src="/icons/loudspeaker.svg"
                       alt="promotion"
                       className="object-contain"
                       fill
@@ -210,7 +210,7 @@ export default function Page() {
                 <div className="flex gap-2 items-center text-[1.6rem] font-semibold ">
                   <div className="relative h-10 w-10">
                     <Image
-                      src="/assets/icons/shield.svg"
+                      src="/icons/shield.svg"
                       alt="security"
                       className="object-contain"
                       fill
@@ -228,7 +228,7 @@ export default function Page() {
             <div className="text-[#055d59] font-semibold text-[1.6rem] flex items-center mb-[40px]  gap-2">
               <div className="relative h-10 w-10">
                 <Image
-                  src="/assets/icons/mail.svg"
+                  src="/icons/mail.svg"
                   alt="mail"
                   fill
                   className="object-contain"

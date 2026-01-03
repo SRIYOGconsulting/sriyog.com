@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     siteName: "SRIYOG Consulting",
     images: [
       {
-        url: "https://www.sriyog.com/assets/images/og/location.png",
+        url: "https://www.sriyog.com/og/location.jpg",
         width: 1200,
         height: 630,
         alt: "SRIYOG Consulting OG Image",
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
    title: "Location | SRIYOG Consulting ",
-    images: ["https://www.sriyog.com/assets/images/og/location.png"],
+    images: ["https://www.sriyog.com/og/location.png"],
     creator: "@sriyog",
   },
 };

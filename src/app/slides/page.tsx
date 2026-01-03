@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     url: "https://www.sriyog.com/slides",
     images: [
       {
-        url: "https://sriyog.com/assets/images/og/default.jpg",
+        url: "https://sriyog.com/og/default.jpg",
         alt: "Google Slides"
       }
     ]
@@ -24,55 +24,55 @@ export default function Slides() {
     {
       id: 1,
       title: "BIRATINFO - An Intro",
-      image: "/assets/images/slide/biratinfo.png",
+      image: "/slide/biratinfo.png",
       path: "https://docs.google.com/presentation/d/1BGGyPusJSPIc1rwmqqDeT6f33Ne3S3xL9eZvtrYv82A/",
     },
     {
       id: 2,
       title: "Digital Literacy",
-      image: "/assets/images/slide/digital.png",
+      image: "/slide/digital.png",
       path: "https://docs.google.com/presentation/d/1_3BZyF6_xJ1N36Oz_wrktdJhJGYZJ77vuO5mtv9qlso/edit?usp=sharing",
     },
     {
       id: 3,
       title: "Cyber Security",
-      image: "/assets/images/slide/cyber.png",
+      image: "/slide/cyber.png",
       path: "https://docs.google.com/presentation/d/1bSA3tCwOYk2XSHr8dYdddOcUCsmvlnIW6Qf93Pu4Cew/edit?usp=sharing",
     },
     {
       id: 4,
       title: "Social Media Marketing",
-      image: "/assets/images/slide/social.png",
+      image: "/slide/social.png",
       path: "https://docs.google.com/presentation/d/1S0de1z_R_0ck08h3ETFlQeRk5c-SGMCGSHOzKsiQSd0/edit?usp=sharing",
     },
     {
       id: 5,
       title: "SRIYOG Concept Note",
-      image: "/assets/images/slide/sriyog.png",
+      image: "/slide/sriyog.png",
       path: "https://docs.google.com/presentation/d/1SmlhrAF3oniK8A_HdVe9pmh6u4ezXs7zsDNEVeTdxMk/edit?usp=sharing",
     },
     {
       id: 6,
       title: "#TechFriday - Professional UI/UX",
-      image: "/assets/images/slide/uiux.png",
+      image: "/slide/uiux.png",
       path: "https://docs.google.com/presentation/d/1v0CmwcqmrM7N4LOind06-qUH6H5r5jLxzhc4_hlE6nc/edit?usp=sharing",
     },
     {
       id: 7,
       title: "SRIYOG Consulting",
-      image: "/assets/images/slide/consulting.png",
+      image: "/slide/consulting.png",
       path: "https://docs.google.com/presentation/d/1B0ngzfRQ0hLrfmr_P2WyIGIabEY5Z-ZPyC-4syQFjRM/edit?usp=sharing",
     },
     {
       id: 8,
       title: "SRIYOG | Shark Tank Pitching",
-      image: "/assets/images/slide/sharktank.png",
+      image: "/slide/sharktank.png",
       path: "https://docs.google.com/presentation/d/1wN5_V3ZE14TuBbg3E2L1NFK1I4I-7pbGQGUdyrWT0_8/edit?usp=sharing",
     },
     {
       id:9,
       title: "Next.js - #TechFriday",
-      image: "/assets/images/slide/nextjs.png",
+      image: "/slide/nextjs.png",
       path: "https://docs.google.com/presentation/d/1KEYHWsUkPuYfzrBygAdUL2_S4S_UZWRmrVjutgsz5WI/edit?usp=sharing",
     }
   ];

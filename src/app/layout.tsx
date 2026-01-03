@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     siteName: "SRIYOG Consulting",
     images: [
       {
-        url: "https://sriyog.com/assets/images/og/default.jpg",
+        url: "https://sriyog.com/og/default.jpg",
         width: 1200,
         height: 630,
         alt: "SRIYOG Consulting OG Image",
@@ -51,7 +51,7 @@ export const metadata: Metadata = {
     title: "SRIYOG Consulting | IT Consulting Company in Nepal",
     description:
       "Discover digital innovation with SRIYOG Consulting – your trusted IT partner in Nepal.",
-    images: ["https://sriyog.com/assets/images/og/default.jpg"],
+    images: ["https://sriyog.com/og/default.jpg"],
     creator: "@sriyog",
   },
 };
@@ -84,9 +84,9 @@ export default function RootLayout({
         <title>Sriyog Consulting</title>
       </head>
       <body className={`${bellota_text.variable} antialiased`}>
+        <RoadBlock/>
         <FloatingIconsProvider>
           <Header />
-          <RoadBlock/>
           <Toaster position="top-center" />
           <Navbar />
           {children}

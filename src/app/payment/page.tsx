@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     url: "https://www.sriyog.com/payment",
     images: [
       {
-        url: "https://sriyog.com/assets/images/og/default.jpg",
+        url: "https://sriyog.com/og/default.jpg",
         alt: "Payment Details"
       }
     ]
@@ -31,7 +31,7 @@ const Payment = () => {
                 <div className="inline-block basis-full ">
                   <div className="text-[24px] text-black w-[80%] md:w-full  mb-9">
                     <Image
-                      src={"/assets/images/payment/logo.png"}
+                      src={"/payment/logo.png"}
                       alt="nabil-bank-logo"
                       width={200}
                       height={200}
@@ -70,7 +70,7 @@ const Payment = () => {
                   className="w-full"
                   width={300}
                   height={300}
-                  src="/assets/images/payment/qr.jpeg"
+                  src="/payment/qr.jpeg"
                   alt="nabil-bank-qr"
                 />
               </div>

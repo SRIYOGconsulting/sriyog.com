@@ -23,17 +23,17 @@ export default function Marketing() {
   //   {
   //     id: 1,
   //     title: "Website & App Development",
-  //     image: "/assets/images/about/noimage.png",
+  //     image: "/about/noimage.png",
   //   },
   //   {
   //     id: 2,
   //     title: "IT Consulting",
-  //     image: "/assets/images/about/noimage.png",
+  //     image: "/about/noimage.png",
   //   },
   //   {
   //     id: 3,
   //     title: "Cloud Services",
-  //     image: "/assets/images/about/noimage.png",
+  //     image: "/about/noimage.png",
   //   },
   // ];
 
@@ -79,91 +79,91 @@ export default function Marketing() {
 
   const consulting = [
     {
-      img: "/assets/images/consultingPage/data-processing.jpg",
+      img: "/consultingPage/data-processing.jpg",
       title: "Data Processing",
       desc: "We have a proven track record of delivering high-quality data analysis and reporting solutions that meet the needs of our clients.",
       link: "data-processing",
     },
     {
-      img: "/assets/images/consultingPage/database-management.jpg",
+      img: "/consultingPage/database-management.jpg",
       title: "Database Management",
       desc: "We offer a range of database management services, including database design, implementation, and optimization.",
       link: "data-management",
     },
     {
-      img: "/assets/images/consultingPage/data-analysis.jpg",
+      img: "/consultingPage/data-analysis.jpg",
       title: "Data Analysis",
       desc: "Our team of experienced data analysts can help you extract insights from your data and make data-driven decisions.",
       link: "data-analysis",
     },
     {
-      img: "/assets/images/consultingPage/software-development.jpg",
+      img: "/consultingPage/software-development.jpg",
       title: "Software Development",
       desc: "We offer a range of software development services, including coding, testing, and debugging.",
       link: "software-development",
     },
     {
-      img: "/assets/images/consultingPage/web-application-development.jpg",
+      img: "/consultingPage/web-application-development.jpg",
       title: "Web Application Development",
       desc: "We offer a range of web application development services, including design, development, and deployment.",
       link: "web-application-development",
     },
     {
-      img: "/assets/images/consultingPage/payment-processing.jpg",
+      img: "/consultingPage/payment-processing.jpg",
       title: "Payment Processing",
       desc: "Our team of experienced developers can help you build high-quality payment processing solutions that meet your business needs.",
       link: "payment-processing",
     },
     {
-      img: "/assets/images/consultingPage/survey-form-development.jpg",
+      img: "/consultingPage/survey-form-development.jpg",
       title: "Survey Form Development",
       desc: "We offer a range of survey form development services, including survey creation, data collection, and analysis.",
       link: "survey-form-development",
     },
     {
-      img: "/assets/images/consultingPage/digital-marketing.jpg",
+      img: "/consultingPage/digital-marketing.jpg",
       title: "Digital Marketing",
       desc: "We offer a range of digital marketing services, including SEO, social media management, and content creation.",
       link: "digital-marketing",
     },
     {
-      img: "/assets/images/consultingPage/seo-sem-services.jpg",
+      img: "/consultingPage/seo-sem-services.jpg",
       title: "SEO/SEM Services",
       desc: `Our team of experienced SEO experts can help you improve your website's visibility and drive more traffic to your site.`,
       link: "seo-sem-services",
     },
     {
-      img: "/assets/images/consultingPage/social-media-management.jpg",
+      img: "/consultingPage/social-media-management.jpg",
       title: "Social Media Management",
       desc: "Our team of experienced marketers can help you build high-quality social media campaigns that drive traffic and engagement.",
       link: "social-media-management",
     },
     {
-      img: "/assets/images/consultingPage/business-email.jpg",
+      img: "/consultingPage/business-email.jpg",
       title: "Business Email",
       desc: "Our team of experienced marketers can help you build high-quality business eMail campaigns that drive traffic and engagement.",
       link: "business-email",
     },
     {
-      img: "/assets/images/consultingPage/human-resource-management.jpg",
+      img: "/consultingPage/human-resource-management.jpg",
       title: "Human Resource Management",
       desc: "We offer a range of human resource management services, including recruitment, onboarding, and performance management.",
       link: "human-resource-management",
     },
     {
-      img: "/assets/images/consultingPage/it-consultancy-management.jpg",
+      img: "/consultingPage/it-consultancy-management.jpg",
       title: "IT Consultancy Management",
       desc: "We offer a range of IT consultancy services, including system design, implementation, and support.",
       link: "IT-consultancy-management",
     },
     {
-      img: "/assets/images/consultingPage/UI-UX.jpg",
+      img: "/consultingPage/UI-UX.jpg",
       title: "UI/UX Designing",
       desc: "We offer a range of UI/ UX designing services, including wireframing, prototyping, and user testing.",
       link: "ui-ux-designing",
     },
     {
-      img: "/assets/images/consultingPage/video-content-email-marketing.jpg",
+      img: "/consultingPage/video-content-email-marketing.jpg",
       title: "Video/Content/Email Marketing",
       desc: "We offer a range of video / email / content marketing services, including video creation, email marketing, and content creation.",
       link: "video-content-email",
@@ -174,7 +174,7 @@ export default function Marketing() {
       <Ribbon name="Digital Marketing" des="" />
       <section className="max-w-[1180px] mx-auto mb-[45px]  px-6 lg:px-0 ">
         <Image
-          src="/assets/images/consultingPage/digital-marketing.jpg"
+          src="/consultingPage/digital-marketing.jpg"
           width={1140}
           height={597}
           alt="top_image"
@@ -261,7 +261,7 @@ export default function Marketing() {
 
         <div className=" w-full sm:max-w-[40%] flex items-center justify-center ">
           <Image
-            src={"/assets/images/singlepage/11.png"}
+            src={"/singlepage/11.png"}
             width={329}
             height={362.64}
             alt="Testimonail_image"
@@ -303,7 +303,7 @@ export default function Marketing() {
               <div key={i} className="relative flex items-start gap-5 group">
                 <div className="w-10 h-10 flex items-center justify-center bg-[#055D59] text-white font-bold rounded-full mt-1 shrink-0">
                   <Image
-                    src="/assets/images/consulting/target.svg"
+                    src="/consulting/target.svg"
                     alt={`FAQ ${i + 1}`}
                     width={40}
                     height={40}
@@ -352,7 +352,7 @@ export default function Marketing() {
               <div key={i} className="relative flex items-start gap-5 group">
                 <div className="w-10 h-10 flex items-center justify-center bg-[#055D59] text-white font-bold rounded-full mt-1 shrink-0">
                   <Image
-                    src="/assets/images/consulting/target.svg"
+                    src="/consulting/target.svg"
                     alt={`FAQ ${i + 1}`}
                     width={40}
                     height={40}
@@ -413,7 +413,7 @@ export default function Marketing() {
                 {plan.desc.map((item, index) => (
                   <div key={index} className="flex items-center gap-2">
                     <Image
-                      src="/assets/images/singlepage/correct-success.svg"
+                      src="/singlepage/correct-success.svg"
                       width={15}
                       height={15}
                       alt="Check"

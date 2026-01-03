@@ -9,7 +9,7 @@ export const metadata:Metadata= {
     url: "https://www.sriyog.com/blog/21-stages-of-web-development",
     images: [
       {
-        url: "https://sriyog.com/assets/images/og/default.jpg",
+        url: "https://sriyog.com/og/default.jpg",
         alt: "21 Stages of Web Development"
       }
     ]
@@ -21,7 +21,7 @@ export default function WebDevelopmentStages() {
       <section className=" lg:w-[900px] max-lg:container max-lg:px-3 mx-auto my-[45px] space-y-6">
         <div className="relative w-full md:h-[450px] h-[250px] rounded-3xl overflow-hidden ">
           <Image
-            src="/assets/images/homepage/blog/web-development-stages.jpeg"
+            src="/homepage/blog/web-development-stages.jpeg"
             alt="web-development-stages"
             className="object-cover h-full w-full"
             fill
@@ -116,7 +116,7 @@ export default function WebDevelopmentStages() {
         </p>
         <div className="relative w-full md:h-[450px] h-[250px] rounded-3xl overflow-hidden ">
           <Image
-            src="/assets/images/homepage/blog/webiste-designing.png"
+            src="/homepage/blog/webiste-designing.png"
             alt="website-layout-design"
             className="object-cover h-full w-full"
             fill
@@ -173,7 +173,7 @@ export default function WebDevelopmentStages() {
         </p>
         <div className="relative w-full md:h-[450px] h-[250px] rounded-3xl overflow-hidden ">
           <Image
-            src="/assets/images/homepage/blog/front-end.png"
+            src="/homepage/blog/front-end.png"
             alt="front-end"
             className="object-cover h-full w-full"
             fill
@@ -235,7 +235,7 @@ export default function WebDevelopmentStages() {
         </p>
         <div className="relative w-full md:h-[450px] h-[250px] rounded-3xl overflow-hidden ">
           <Image
-            src="/assets/images/homepage/blog/API.png"
+            src="/homepage/blog/API.png"
             alt="API"
             className="object-cover h-full w-full"
             fill
@@ -273,7 +273,7 @@ export default function WebDevelopmentStages() {
         </p>
         <div className="relative w-full md:h-[450px] h-[250px] rounded-3xl overflow-hidden ">
           <Image
-            src="/assets/images/homepage/blog/QA.jpeg"
+            src="/homepage/blog/QA.jpeg"
             alt="QA"
             className="object-cover h-full w-full"
             fill

@@ -14,7 +14,7 @@ type FileList = {
   url: string;
   size: string;
 }
-// Updated file paths to /files/ instead of /assets/downloadFiles/
+// Updated file paths to /files/ instead of /downloadFiles/
 const fileList: FileList[] = [
   { url: "/files/Android-Mobile-WireFrame.pdf", size: "32.48 KB" },
   { url: "/files/Apple-Mobile-WireFrame.pdf", size: "16.50 KB" },

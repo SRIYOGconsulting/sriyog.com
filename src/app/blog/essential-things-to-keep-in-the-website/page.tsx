@@ -11,7 +11,7 @@ export const metadata:Metadata ={
     url: "https://www.sriyog.com/blog/essential-things-to-keep-in-the-website",
     images: [
       {
-        url: "https://sriyog.com/assets/images/og/default.jpg",
+        url: "https://sriyog.com/og/default.jpg",
         alt: "Essential Things To Keep In The Website | SRIYOG Consulting"
       }
     ]
@@ -23,7 +23,7 @@ export default function Ettkitw() {
       <section className=" lg:w-[900px] max-lg:container max-lg:px-3 mx-auto my-[45px] space-y-6">
         <div className="relative w-full md:h-[450px] h-[250px] rounded-3xl overflow-hidden ">
           <Image
-            src="/assets/images/homepage/blog/essesntial-things-to-keep-on-website.png"
+            src="/homepage/blog/essesntial-things-to-keep-on-website.png"
             alt="essesntial-things-to-keep-on-website"
             className="object-cover h-full w-full"
             fill
@@ -101,7 +101,7 @@ export default function Ettkitw() {
         </ul>
         <div className="relative w-full md:h-[450px] h-[250px] rounded-3xl overflow-hidden ">
           <Image
-            src="/assets/images/homepage/blog/uiux-design.jpg"
+            src="/homepage/blog/uiux-design.jpg"
             alt="uiux-design"
             className="object-cover h-full w-full"
             fill
@@ -155,7 +155,7 @@ export default function Ettkitw() {
           <li className="list-none">
             <div className="relative w-full md:h-[450px] h-[250px] ">
               <Image
-                src="/assets/images/homepage/blog/capcha.png"
+                src="/homepage/blog/capcha.png"
                 alt="capcha"
                 className="object-contain h-full w-full"
                 fill
@@ -211,7 +211,7 @@ export default function Ettkitw() {
           <li className="list-none">
             <div className="relative w-full md:h-[450px] h-[250px] ">
               <Image
-                src="/assets/images/homepage/blog/web-app.png"
+                src="/homepage/blog/web-app.png"
                 alt="web-app"
                 className="object-contain h-full w-full"
                 fill
@@ -262,7 +262,7 @@ export default function Ettkitw() {
           <li className="list-none">
             <div className="relative w-full md:h-[450px] h-[250px] rounded-3xl overflow-hidden">
               <Image
-                src="/assets/images/homepage/blog/cloudfare.jpg"
+                src="/homepage/blog/cloudfare.jpg"
                 alt="cloudfare"
                 className="object-cover h-full w-full"
                 fill
@@ -302,7 +302,7 @@ export default function Ettkitw() {
           <li className="list-none">
             <div className="relative w-full md:h-[450px] h-[250px] rounded-3xl overflow-hidden ">
               <Image
-                src="/assets/images/homepage/blog/contact-from-mailer.jpg"
+                src="/homepage/blog/contact-from-mailer.jpg"
                 alt="contact-from-mailer"
                 className="object-cover h-full w-full"
                 fill
@@ -346,7 +346,7 @@ export default function Ettkitw() {
           <li className="list-none">
             <div className="relative w-full md:h-[450px] h-[250px] rounded-3xl overflow-hidden ">
               <Image
-                src="/assets/images/homepage/blog/google-translate.jpg"
+                src="/homepage/blog/google-translate.jpg"
                 alt="google-translate"
                 className="object-cover h-full w-full"
                 fill

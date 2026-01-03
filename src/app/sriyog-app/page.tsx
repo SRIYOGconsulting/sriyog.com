@@ -11,7 +11,7 @@ export const metadata:Metadata={
     url: "https://www.sriyog.com/sriyog-app",
     images: [
       {
-        url: "https://sriyog.com/assets/images/og/default.jpg",
+        url: "https://sriyog.com/og/default.jpg",
         alt: "SRIYOG App"
       }
     ]
@@ -22,7 +22,7 @@ export default function App() {
     <>
       <div className="max-w-[1180px] mx-auto flex flex-col flex-auto items-center justify-center h-[80vh] gap-4">
         <Image
-          src="/assets/icons/error.svg"
+          src="/icons/error.svg"
           width={60}
           height={60}
           alt="Error Image"

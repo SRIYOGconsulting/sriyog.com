@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     url: "https://www.sriyog.com/about",
     images: [
       {
-        url: "https://sriyog.com/assets/images/og/default.jpg",
+        url: "https://sriyog.com/og/default.jpg",
         alt: "About Us"
       }
     ]
@@ -23,15 +23,15 @@ export default function Aboutpage() {
   const cardData = [
     {
       title: "Dedicated Team",
-      image: "/assets/images/about/team.jpg",
+      image: "/about/team.jpg",
     },
     {
       title: "7 Years of Service",
-      image: "/assets/images/about/year.png",
+      image: "/about/year.png",
     },
     {
       title: "Reliable Service",
-      image: "/assets/images/about/service.jpg",
+      image: "/about/service.jpg",
     },
   ];
   return (
@@ -42,7 +42,7 @@ export default function Aboutpage() {
       <div className="lg:max-w-[1180px] mx-auto px-4">
         <div className="  mx-auto flex flex-col items-center justify-center gap-5 my-10 rounded-xl ">
           <Image
-            src="/assets/images/about/mayor.jpg"
+            src="/about/mayor.jpg"
             alt="About Us"
             width={1180}
             height={500}
@@ -128,7 +128,7 @@ export default function Aboutpage() {
             {/* Image Section */}
             <div className="basis-full md:basis-[40%] flex justify-center md:justify-end ">
               <Image
-                src="/assets/images/about/aboutdemo.png"
+                src="/about/aboutdemo.png"
                 alt="aboutDemo"
                 width={310}
                 height={232}
@@ -168,7 +168,7 @@ export default function Aboutpage() {
                   <li>
                     <Link href=" https://x.com/pracas" target="_blank">
                       <Image
-                        src={"/assets/icons/tweeter.svg"}
+                        src={"/icons/tweeter.svg"}
                         width={20}
                         height={20}
                         alt="Tweeter"
@@ -178,7 +178,7 @@ export default function Aboutpage() {
                   <li>
                     <Link href="https://linkedin.com/in/pracasupreti" target="_blank">
                       <Image
-                        src={"/assets/icons/linkedin.svg"}
+                        src={"/icons/linkedin.svg"}
                         width={20}
                         height={20}
                         alt="telegram"
@@ -191,7 +191,7 @@ export default function Aboutpage() {
 
             <div className="w-full lg:w-[70%] flex justify-center items-center px-4">
               <Image
-                src="/assets/images/about/pracas_large.png"
+                src="/about/pracas_large.png"
                 alt="about_photo"
                 width={500}
                 height={500}

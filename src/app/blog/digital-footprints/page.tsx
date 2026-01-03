@@ -10,7 +10,7 @@ export const metadata:Metadata={
     url: "https://www.sriyog.com/blog/digital-footprints",
     images: [
       {
-        url: "https://sriyog.com/assets/images/og/default.jpg",
+        url: "https://sriyog.com/og/default.jpg",
         alt: "Digital Footprints"
       }
     ]
@@ -22,7 +22,7 @@ export default function page() {
       <section className="lg:w-[900px] max-lg:container max-lg:px-3 mx-auto my-[45px] space-y-6">
         <div className="relative w-full md:h-[450px] h-[250px] rounded-3xl overflow-hidden ">
           <Image
-            src="/assets/images/blog/footprints-1.jpg"
+            src="/blog/footprints-1.jpg"
             alt="things-to-keep-in-website"
             className="object-cover h-full w-full"
             fill
@@ -115,7 +115,7 @@ export default function page() {
 
         <div className="relative w-full md:h-[450px] h-[250px] rounded-3xl overflow-hidden ">
           <Image
-            src="/assets/images/blog/footprints-2.jpg"
+            src="/blog/footprints-2.jpg"
             alt="things-to-keep-in-website"
             className="object-cover h-full w-full"
             fill

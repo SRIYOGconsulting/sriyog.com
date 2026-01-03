@@ -11,7 +11,7 @@ export const trainings = [
       "Led by experienced designers and industry mentors, our training helps participants understand design thinking, accessibility standards, and responsive design principles. Through practical exercises, design critiques, and live projects, learners build a professional portfolio that showcases their capabilities. In a digital-first world, great design is key to engagement and retention  -  and our training empowers individuals and organizations to create impactful user experiences that drive results.",
     outputTraining:
       "UI/UX Designing is about creating digital interfaces that are both visually engaging and easy to use. You’ll learn how to research user needs, create wireframes, design interactive prototypes, and test user experiences. This skill is highly sought after in software development companies, mobile app startups, e-commerce platforms, financial technology (fintech) firms, healthcare technology providers, educational technology (edtech) businesses, gaming companies, and digital agencies. Graduates can work as UI/UX Designers, Product Designers, Interaction Designers, Visual Designers, or Experience Strategists. With experience, you can move into leadership roles like Design Lead, Creative Director, or even start your own design consultancy.",
-    image: "/assets/images/trainings/UI-UX.jpg",
+    image: "/trainings/UI-UX.jpg",
     path: "ui-ux",
     faq: [
       {
@@ -80,7 +80,7 @@ export const trainings = [
       "We offer an industry-aligned Digital Marketing Training program designed to equip individuals and teams with the skills needed to excel in today’s digital landscape. Our training covers the full spectrum of digital marketing, including SEO, social media, email marketing, content strategy, PPC advertising, web analytics, and more. Whether you're a beginner or looking to enhance your existing knowledge, our courses are structured to provide both theoretical understanding and hands-on experience.",
     para_two:
       "Led by experienced marketing professionals, our training ensures that learners stay updated with the latest trends, tools, and algorithms. With real-world case studies, interactive sessions, and live project work, we prepare participants to manage digital campaigns effectively and measure their success. In a fast-evolving industry, staying competitive means continuously learning  -  and our training is built to help individuals and businesses build visibility, generate leads, and drive growth through data-driven strategies.",
-    image: "/assets/images/trainings/Digital-Marketing.jpg",
+    image: "/trainings/Digital-Marketing.jpg",
     path: "digital-marketing",
     outputTraining:
       "Digital Marketing teaches you to attract, engage, and convert customers using online platforms. You’ll master content marketing, social media strategy, paid advertising, email campaigns, and analytics. The demand spans retail and e-commerce, tourism and hospitality, real estate, education, healthcare, entertainment, event management, and IT services. Job roles include Digital Marketing Specialist, Social Media Strategist, Performance Marketing Manager, and Brand Marketing Executive. Over time, you can grow into senior positions like Marketing Manager, Digital Growth Strategist, or Head of Marketing, or become a consultant for multiple brands.",
@@ -152,7 +152,7 @@ export const trainings = [
       "We offer a practical and career-focused Web Designing Training program that equips learners with the skills to design professional, responsive, and visually engaging websites. This training covers the essential aspects of web design, including HTML, CSS, JavaScript basics, responsive design, layout principles, color theory, typography, user interface basics, and tools like Figma, Adobe XD, and WordPress. Whether you’re a complete beginner or looking to build upon existing design knowledge, our training blends technical instruction with creative application.",
     para_two:
       "Led by experienced web designers, the program emphasizes both design fundamentals and modern best practices. Participants engage in hands-on projects to build real websites, ensuring a strong grasp of usability, cross-browser compatibility, and mobile-first design. In an increasingly digital world, having the ability to craft high-quality websites is a powerful skill  -  and our training prepares you to do just that with confidence and creativity.",
-    image: "/assets/images/trainings/Web-Designing.jpg",
+    image: "/trainings/Web-Designing.jpg",
     path: "web-designing",
     outputTraining:
       "Web Designing focuses on creating aesthetically pleasing, functional websites that deliver great user experiences. You’ll work with layout design, color theory, typography, and interactive elements. Career opportunities exist in advertising and creative agencies, IT service providers, NGOs, educational institutions, online media companies, corporate marketing departments, and as an independent freelancer. Roles include Web Designer, UI Designer, Creative Consultant, and Front-End Designer. With a strong portfolio, you can also move into art direction or brand identity design.",
@@ -224,7 +224,7 @@ export const trainings = [
       "Our Web Development Training program is designed to equip learners with the practical skills and knowledge required to build responsive, user-friendly, and secure web applications from the ground up. The training covers the full development lifecycle  -  from initial design and coding to deployment and ongoing maintenance. Whether you're interested in creating personal projects, business websites, or scalable web applications, this course helps you master both front-end and back-end technologies using industry-standard tools and frameworks.",
     para_two:
       "Learners will work with HTML, CSS, JavaScript, React, Node.js, databases (like MongoDB or PostgreSQL), and version control tools like Git. Emphasis is placed on building real-world projects that are scalable, performant, and optimized for user experience. Our agile-based learning approach encourages continuous improvement through hands-on practice, code reviews, and collaborative problem-solving. This training prepares you for a career as a web developer, enabling you to confidently build, deploy, and maintain modern web solutions.",
-    image: "/assets/images/trainings/Web-Development.jpg",
+    image: "/trainings/Web-Development.jpg",
     path: "web-development",
     outputTraining:
       "Web Development equips you to build responsive, secure, and scalable websites or web applications using modern programming languages and frameworks. Industries hiring include software companies, e-commerce platforms, fintech solutions, logistics and transportation, education, SaaS startups, and government IT projects. Careers include Front-End Developer, Back-End Developer, Full-Stack Developer, Application Developer, and Technical Consultant. With advanced expertise, you could become a Lead Developer, Technical Architect, or start your own development firm.",
@@ -293,7 +293,7 @@ export const trainings = [
     desc: "Master modern journalism skills  -  from digital storytelling and multimedia reporting to audience engagement, verification, and publishing  -  with our comprehensive training program.",
     para_one: "Our Digital Journalism Training is designed to equip aspiring and professional journalists with the skills and tools needed to thrive in today’s fast-paced digital media landscape. This hands-on program blends core journalistic principles with emerging digital practices to help you research, report, and publish impactful stories across digital platforms.",
     para_two: "The training covers news writing, mobile journalism (MoJo), multimedia production, social media reporting, audience analytics, and ethical journalism. You'll learn how to create engaging content for web, video, podcast, and social media, while also mastering fact-checking, digital verification, and data journalism techniques. Whether you're beginning a career in journalism or seeking to adapt to digital-first reporting, our expert-led sessions will prepare you to tell meaningful stories that inform, inspire, and engage today’s online audiences.",
-    image: "/assets/images/trainings/Digital-Journalism.jpg",
+    image: "/trainings/Digital-Journalism.jpg",
     path: "digital-journalism",
     faq: [
     {
@@ -361,7 +361,7 @@ export const trainings = [
     desc: "Master the art of organic and paid search strategies  -  from keyword research and on-page SEO to PPC campaign management and performance analytics.",
     para_one: "Our SEO/SEM Training is designed to equip learners with the skills required to drive targeted traffic and improve online visibility through both organic and paid search strategies. This comprehensive program covers the full spectrum of Search Engine Optimization (SEO) and Search Engine Marketing (SEM), helping you understand how search engines work and how to leverage them to grow a brand or business.",
     para_two: "The SEO portion includes in-depth training on keyword research, on-page and off-page optimization, technical SEO, and content strategies to boost organic rankings. For SEM, you’ll learn how to run high-converting PPC campaigns across platforms like Google Ads and Bing  -  including ad creation, bid strategy, targeting, A/B testing, and real-time performance tracking. With a focus on data analysis and ROI-driven tactics, this training helps you develop the expertise to launch, manage, and optimize search campaigns that deliver measurable results.",
-    image: "/assets/images/trainings/SEO-SEM.jpg",
+    image: "/trainings/SEO-SEM.jpg",
     path: "seo-sem",
     faq: [
      {
@@ -428,7 +428,7 @@ export const trainings = [
     desc: "Our Social Media Management Training equips learners with the practical skills and strategies needed to create engaging content, grow audiences, and drive measurable results across major social platforms. This training covers everything from content planning and creation to audience engagement, scheduling, performance analytics, and campaign optimization.",
     para_one: "Whether you're looking to build a personal brand, manage social media for a company, or start a freelance career, this course provides a step-by-step understanding of platform algorithms, visual design standards, messaging strategy, and trend-based content creation. Learners will also gain hands-on experience with popular tools for scheduling, monitoring, and analytics. By the end of the course, you'll be able to manage social media professionally and effectively, with the confidence to run successful campaigns that align with clear business goals.",
     para_two: "",
-    image: "/assets/images/trainings/Social-Media-Management.jpg",
+    image: "/trainings/Social-Media-Management.jpg",
     path: "social-media-management",
     faq: [
       {
@@ -495,7 +495,7 @@ export const trainings = [
     desc: "Learn how to craft, manage, and optimize high-converting email campaigns that boost engagement, generate leads, and retain customers.",
     para_one: "Our Email Marketing Training is designed to provide learners with in-depth knowledge and hands-on experience in creating successful email campaigns. From building a subscriber list and designing responsive email templates to writing compelling copy and analyzing performance metrics, this training equips you with the tools to communicate effectively and strategically with your audience.",
     para_two: "You’ll learn how to segment lists, automate campaigns, conduct A/B testing, and interpret key analytics to optimize for better open rates, click-through rates, and conversions. We emphasize a data-driven approach to ensure your outreach efforts are consistent, personalized, and results-oriented. Whether you're a beginner looking to start or a marketer seeking to sharpen your skills, our training empowers you to confidently run professional email campaigns that align with your overall marketing goals.",
-    image: "/assets/images/trainings/Email-Marketing.jpg",
+    image: "/trainings/Email-Marketing.jpg",
     path: "email-marketing",
     faq: [
      {
@@ -561,7 +561,7 @@ export const trainings = [
     desc: "Master essential computing skills quickly and efficiently  -  from cloud productivity suites to computer fundamentals and basic cybersecurity principles.",
     para_one: "Our Express Computing Training is designed to equip learners with practical, high-impact computing skills that are crucial in today’s digital workplace. This fast-paced program covers core applications like Google Workspace and Microsoft 365, teaching you how to work effectively with documents, spreadsheets, presentations, email, and collaboration tools. Beyond productivity software, the course includes essential computer operation skills to help you navigate systems confidently and use technology in an efficient, time-saving way.",
     para_two: "Additionally, the training introduces fundamental concepts of cybersecurity, focusing on safe computing practices, password management, phishing awareness, and data protection basics to keep you secure online. Whether you’re a beginner looking to build foundational IT skills or a professional aiming to boost your digital fluency, this course prepares you to excel in modern work environments with speed and confidence.",
-    image: "/assets/images/trainings/Express-Computing.jpg",
+    image: "/trainings/Express-Computing.jpg",
     path: "express-computing",
     faq: [
      {
@@ -628,7 +628,7 @@ export const trainings = [
     desc: "Build foundational digital skills quickly and confidently  -  from essential computing and cloud productivity to basic cybersecurity awareness.",
     para_one: "Our Digital Literacy Training is designed to empower learners with practical and high-impact digital skills needed in today’s technology-driven world. This fast-paced course covers key applications such as Google Workspace and Microsoft 365, guiding you to work efficiently with documents, spreadsheets, presentations, email, and collaboration platforms. Beyond mastering software, you’ll learn essential computer operation skills to navigate systems smoothly and use technology in a productive, time-saving way.",
     para_two: "The training also introduces core cybersecurity principles, emphasizing safe online behavior, password management, phishing prevention, and data privacy fundamentals to keep you secure. Whether you’re starting your digital journey or looking to enhance your tech confidence, this course equips you to thrive in modern digital environments with speed and assurance.",
-    image: "/assets/images/trainings/Digital-Literacy.jpg",
+    image: "/trainings/Digital-Literacy.jpg",
     path: "digital-literacy",
     faq: [
     {
@@ -695,7 +695,7 @@ export const trainings = [
     desc: "Build essential cybersecurity skills to protect yourself and your organization from online threats  -  covering safe computing, threat prevention, and data protection.    ",
     para_one: "Our Cybersecurity Training is designed to equip learners with practical knowledge and techniques needed to navigate today’s digital world securely. This course focuses on core cybersecurity principles including safe online behavior, password management, phishing detection, malware prevention, and data privacy fundamentals. You’ll learn how to identify and mitigate common cyber threats while adopting best practices for personal and organizational security.",
     para_two: "Alongside security awareness, the training covers essential digital tools and practices to help you work safely across cloud platforms such as Google Workspace and Microsoft 365. Whether you are new to cybersecurity or want to enhance your digital safety skills, this training prepares you to safeguard your data and devices effectively in an increasingly connected environment.",
-    image: "/assets/images/trainings/Cybersecurity.jpg",
+    image: "/trainings/Cybersecurity.jpg",
     path: "cybersecurity",
     faq: [
      {
@@ -762,7 +762,7 @@ export const trainings = [
     desc: "Gain practical knowledge and skills to launch and grow your own startup  -  from idea validation to business planning, funding, and scaling.",
     para_one: "Our How to Start Your Startup Training is designed to guide aspiring entrepreneurs through the essential steps of building a successful startup. This comprehensive course covers everything from refining your business idea, understanding your market, creating a business model, and developing a minimum viable product (MVP), to marketing strategies and securing funding.",
     para_two: "You’ll learn how to write effective business plans, conduct competitor analysis, build a strong team, and manage operations efficiently. The training also covers key topics such as pitching to investors, legal considerations, and growth hacking techniques to scale your startup sustainably. Whether you’re just starting out or want to strengthen your entrepreneurial skills, this program equips you with the tools and confidence to turn your vision into reality.",
-    image: "/assets/images/trainings/Startup.jpg",
+    image: "/trainings/Startup.jpg",
     path: "start-your-startup",
     faq: [
  {

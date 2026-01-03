@@ -8,163 +8,163 @@ const teamMembers = [
     id: 1,
     name: "Prakash",
     role: "Project Manager",
-    image: "/assets/images/team/1.png",
+    image: "/team/1.png",
   },
   {
     id: 2,
     name: "Hiring",
     role: "Information Manager",
-    image: "/assets/images/team/2.png",
+    image: "/team/2.png",
   },
   {
     id: 3,
     name: "Sakchyam",
     role: "Flutter Developer",
-    image: "/assets/images/team/3.png",
+    image: "/team/3.png",
   },
   {
     id: 4,
     name: "Aashma",
     role: "Backend Developer",
-    image: "/assets/images/team/4.png",
+    image: "/team/4.png",
   },
   {
     id: 5,
     name: "Bitisha",
     role: "React JS Developer",
-    image: "/assets/images/team/5.png",
+    image: "/team/5.png",
   },
   {
     id: 6,
     name: "Lasta",
     role: "React JS Developer",
-    image: "/assets/images/team/6.png",
+    image: "/team/6.png",
   },
   {
     id: 7,
     name: "Milan",
     role: "UI/UX Designer",
-    image: "/assets/images/team/7.png",
+    image: "/team/7.png",
   },
   {
     id: 8,
     name: "Prakrit",
     role: "UI/UX Designer",
-    image: "/assets/images/team/9.png",
+    image: "/team/9.png",
   },
   {
     id: 9,
     name: "Priyanka",
     role: "React JS Developer",
-    image: "/assets/images/team/10.png",
+    image: "/team/10.png",
   },
   {
     id: 10,
     name: "Sagar",
     role: "Web Developer",
-    image: "/assets/images/team/11.png",
+    image: "/team/11.png",
   },
   {
     id: 11,
     name: "Rahul",
     role: "React JS Developer",
-    image: "/assets/images/team/12.png",
+    image: "/team/12.png",
   },
   {
     id: 12,
     name: "Sarad",
     role: "React Native Developer",
-    image: "/assets/images/team/8.png",
+    image: "/team/8.png",
   },
   {
     id: 13,
     name: "Aaron",
     role: "MERN Stack",
-    image: "/assets/images/team/15.png",
+    image: "/team/15.png",
   },
   {
     id: 14,
     name: "Alisha",
     role: "MERN Stack",
-    image: "/assets/images/team/16.png",
+    image: "/team/16.png",
   },
   {
     id: 15,
     name: "Alwens",
     role: "UI/UX Designer",
-    image: "/assets/images/team/17.png",
+    image: "/team/17.png",
   },
   {
     id: 16,
     name: "Ayoola",
     role: "MERN Stack",
-    image: "/assets/images/team/18.png",
+    image: "/team/18.png",
   },
   {
     id: 17,
     name: "Binod",
     role: "ReactJS Developer",
-    image: "/assets/images/team/19.png",
+    image: "/team/19.png",
   },
   {
     id: 18,
     name: "Bitika",
     role: "MERN Stack",
-    image: "/assets/images/team/20.png",
+    image: "/team/20.png",
   },
   {
     id: 19,
     name: "Kateryna",
     role: "UI/UX Designer",
-    image: "/assets/images/team/21.png",
+    image: "/team/21.png",
   },
   {
     id: 20,
     name: "Hammoud",
     role: "MERN Stack",
-    image: "/assets/images/team/22.png",
+    image: "/team/22.png",
   },
   {
     id: 21,
     name: "Samyog",
     role: "MERN Stack",
-    image: "/assets/images/team/23.png",
+    image: "/team/23.png",
   },
   {
     id: 22,
     name: "Sanish",
     role: "ReactJS Developer",
-    image: "/assets/images/team/24.png",
+    image: "/team/24.png",
   },
   {
     id: 23,
     name: "Santosh",
     role: "React Js Developer",
-    image: "/assets/images/team/25.png",
+    image: "/team/25.png",
   },
   {
     id: 24,
     name: "Sarishma",
     role: "ReactJS Developer",
-    image: "/assets/images/team/26.png",
+    image: "/team/26.png",
   },
   {
     id: 25,
     name: "Shiva",
     role: "UI/UX Designer",
-    image: "/assets/images/team/27.png",
+    image: "/team/27.png",
   },
   {
     id: 26,
     name: "Smriti",
     role: "ReactJS Developer",
-    image: "/assets/images/team/28.png",
+    image: "/team/28.png",
   },
   {
     id: 27,
     name: "Sneha",
     role: "MERN Stack",
-    image: "/assets/images/team/29.png",
+    image: "/team/29.png",
   },
 ];
 
@@ -177,13 +177,13 @@ export const metadata: Metadata = {
     url: "https://www.sriyog.com/team",
     images: [
       {
-        url: "https://sriyog.com/assets/images/og/default.jpg",
+        url: "https://sriyog.com/og/default.jpg",
         alt: "Team"
       }
     ]
   }
 };
-const pracasImage = "/assets/images/team/pracas.png";
+const pracasImage = "/team/pracas.png";
 export default function Example() {
   return (
     <>
@@ -246,7 +246,7 @@ export default function Example() {
 
                     <Link href="https://x.com/pracas" target="_blank">
                       <Image
-                        src={"/assets/icons/tweeter.svg"}
+                        src={"/icons/tweeter.svg"}
                         width={20}
                         height={20}
                         alt="Linkedin Image"
@@ -255,7 +255,7 @@ export default function Example() {
 
                     <Link href="https://linkedin.com/in/pracasupreti" target="_blank">
                       <Image
-                        src={"/assets/icons/linkedin.svg"}
+                        src={"/icons/linkedin.svg"}
                         width={20}
                         height={20}
                         alt="Linkedin Image"

@@ -16,7 +16,7 @@ function getDateFormat(isoString: string): string {
   }).formatToParts(date);
 
   const get = (type: Intl.DateTimeFormatPartTypes) =>
-    parts.find(p => p.type === type)?.value ?? "";
+    parts.find(p => p.type === type)?.value ?? null;
 
   return `${get("month")} ${get("day")}, ${get("year")}`;
 }
@@ -68,8 +68,8 @@ export async function POST(req: Request) {
         "Project Budget in NPR": form.budget,
         "Competitor 1 ": form.competitor,
         "Reference Website link ( URL )": form.reference,
-        "Project Start Date": getDateFormat(form.startDate),
-        "Project Ending Date": getDateFormat(form.endDate),
+        "Project Start Date": form.startDate ? getDateFormat(form.startDate) : null,
+        "Project Ending Date": form.endDate ? getDateFormat(form.endDate) : null,
         "Scope of Work ": form.scope,
         "Preferred Technology Stack or Software Platforms ": form.technology,
         "Is your business on Profit?": form.business,

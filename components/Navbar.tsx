@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import { useState } from "react";
+import { ReactEventHandler, useEffect, useRef, useState } from "react";
 import { usePathname } from "next/navigation";
 import Image from "next/image";
 export default function Navbar() {
@@ -11,7 +11,29 @@ export default function Navbar() {
   const [supportOpen, setSupportOpen] = useState(false);
   const [selectedTech, setSelectedTech] = useState("");
   const [selectedSupport, setSelectedSupport] = useState("");
+  const dropMenuRef = useRef<HTMLDivElement>(null);
+  const hamburger = useRef<HTMLImageElement | null>(null);
   const pathname = usePathname();
+
+  useEffect(() => {
+    function handleClickOutside(e: PointerEvent) {
+      const target = e.target as Node;
+
+      if (
+        dropMenuRef.current &&
+        !dropMenuRef.current.contains(target) &&
+        hamburger.current &&
+        !hamburger.current.contains(target)
+      ) {
+        setHamburgerOpen(false);
+      }
+    }
+
+    document.addEventListener("pointerdown", handleClickOutside);
+    return () =>
+      document.removeEventListener("pointerdown", handleClickOutside);
+  }, []);
+
 
   const navItems = [
     { label: "Home", path: "/" },
@@ -31,7 +53,7 @@ export default function Navbar() {
             className="relative lg:h-[90px] h-[80px] w-[200px] lg:w-[200px]"
           >
             <Image
-              src="/assets/images/header/logo.svg"
+              src="/header/logo.svg"
               alt="logo"
               fill
               priority
@@ -71,7 +93,7 @@ export default function Navbar() {
             <div className="flex items-center gap-x-1">
               <div className="hidden md:block relative h-[50px] w-[50px]">
                 <Image
-                  src="/assets/images/header/notification.svg"
+                  src="/header/notification.svg"
                   alt="notification"
                   fill
                   priority
@@ -80,7 +102,7 @@ export default function Navbar() {
               </div>
               <div className="hidden md:block relative h-[50px] w-[50px]">
                 <Image
-                  src="/assets/images/header/question.svg"
+                  src="/header/question.svg"
                   alt="query"
                   fill
                   priority
@@ -90,7 +112,8 @@ export default function Navbar() {
               </div>
               <div className="relative h-[80px] w-[50px]">
                 <Image
-                  src="/assets/images/header/hamburger.svg"
+                  ref={hamburger}
+                  src="/header/hamburger.svg"
                   alt="hamburger"
                   fill
                   priority
@@ -147,8 +170,8 @@ export default function Navbar() {
                   <Image
                     src={
                       techOpen
-                        ? "/assets/images/header/dropup.svg"
-                        : "/assets/images/header/dropdown.svg"
+                        ? "/header/dropup.svg"
+                        : "/header/dropdown.svg"
                     }
                     alt="drop-down"
                     fill
@@ -190,8 +213,8 @@ export default function Navbar() {
                   <Image
                     src={
                       supportOpen
-                        ? "/assets/images/header/dropup.svg"
-                        : "/assets/images/header/dropdown.svg"
+                        ? "/header/dropup.svg"
+                        : "/header/dropdown.svg"
                     }
                     alt="drop-down"
                     fill
@@ -238,6 +261,7 @@ export default function Navbar() {
         </section>
 
         <section
+          ref={dropMenuRef}
           className={`transition-all duration-500 ease-in-out bg-white absolute top-full left-0 w-full overflow-hidden z-50 shadow-md rounded-b-md ${
             hamburgerOpen ? "max-h-[1000px] opacity-100" : "max-h-0 opacity-0"
           }`}

@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     url: "https://www.sriyog.com",
     images: [
       {
-        url: "/assets/images/homepage/hero-banner.jpg",
+        url: "/homepage/hero-banner.jpg",
         alt: "Home"
       }
     ]

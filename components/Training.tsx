@@ -57,7 +57,7 @@ export default function TrainingSinglepageComponent({ id }: { id: string }) {
               <div key={i} className="relative flex items-start gap-5 group">
                 <div className="w-10 h-10 flex items-center justify-center bg-[#055D59] text-white font-bold rounded-full mt-1 shrink-0">
                   <Image
-                    src="/assets/images/consulting/target.svg"
+                    src="/consulting/target.svg"
                     alt={`FAQ ${i + 1}`}
                     width={40}
                     height={40}
@@ -84,7 +84,7 @@ export default function TrainingSinglepageComponent({ id }: { id: string }) {
               <div key={i} className="relative flex items-start gap-5 group">
                 <div className="w-10 h-10 flex items-center justify-center bg-[#055D59] text-white font-bold rounded-full mt-1 shrink-0">
                   <Image
-                    src="/assets/images/consulting/target.svg"
+                    src="/consulting/target.svg"
                     alt={`FAQ ${i + 4}`}
                     width={40}
                     height={40}
