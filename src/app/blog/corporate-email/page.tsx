@@ -10,7 +10,7 @@ export const metadata:Metadata= {
     url: "https://www.sriyog.com/blog/corporate-email",
     images: [
       {
-        url: "https://sriyog.com/assets/images/og/default.jpg",
+        url: "https://sriyog.com/og/default.jpg",
         alt: "Corporate/Business eMail"
       }
     ]
@@ -22,7 +22,7 @@ export default function CorporateEmail() {
       <section className=" lg:w-[900px] max-lg:container max-lg:px-3 mx-auto my-[45px] space-y-6">
         <div className="relative w-full md:h-[450px] h-[250px] rounded-3xl overflow-hidden ">
           <Image
-            src="/assets/images/homepage/blog/corporate-email.png"
+            src="/homepage/blog/corporate-email.png"
             alt="corporate-email"
             className="object-cover h-full w-full"
             fill
@@ -146,7 +146,7 @@ export default function CorporateEmail() {
         </ul>
         <div className="relative w-full md:h-[450px] h-[250px] rounded-3xl overflow-hidden ">
           <Image
-            src="/assets/images/homepage/blog/email-delivery.png"
+            src="/homepage/blog/email-delivery.png"
             alt="email-delivery"
             className="object-cover h-full w-full"
             fill

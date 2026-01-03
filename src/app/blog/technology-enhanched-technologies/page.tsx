@@ -12,7 +12,7 @@ export const metadata: Metadata = {
    url: "https://www.sriyog.com/blog/digital-footprints",
    images: [
      {
-       url: "https://sriyog.com/assets/images/og/default.jpg",
+       url: "https://sriyog.com/og/default.jpg",
        alt: "Digital Footprints"
      }
    ]
@@ -24,7 +24,7 @@ export default function page() {
       <section className=" lg:w-[900px] max-lg:container max-lg:px-3 mx-auto my-[45px] space-y-6">
         <div className="relative w-full md:h-[450px] h-[250px] rounded-3xl overflow-hidden ">
           <Image
-            src="/assets/images/blog/technology.jpg"
+            src="/blog/technology.jpg"
             alt="things-to-keep-in-website"
             className="object-cover h-full w-full"
             fill
@@ -57,7 +57,7 @@ export default function page() {
         <h1 className="text-2xl font-[900]">Website Development</h1>
         <div className="relative w-full md:h-[450px] h-[250px] rounded-3xl overflow-hidden ">
           <Image
-            src="/assets/images/blog/technology-2left.jpg"
+            src="/blog/technology-2left.jpg"
             alt="things-to-keep-in-website"
             className="object-cover h-full w-full"
             fill
@@ -97,7 +97,7 @@ export default function page() {
         <h1 className="text-2xl font-[900]">Search Engine Optimization</h1>
         <div className="relative w-full md:h-[450px] h-[250px] rounded-3xl overflow-hidden ">
           <Image
-            src="/assets/images/blog/technology-1.jpg"
+            src="/blog/technology-1.jpg"
             alt="things-to-keep-in-website"
             className="object-cover h-full w-full"
             fill
@@ -142,7 +142,7 @@ export default function page() {
         <h1 className="text-2xl font-[900]">Concept Writing</h1>
         <div className="relative w-full md:h-[450px] h-[250px] rounded-3xl overflow-hidden ">
           <Image
-            src="/assets/images/blog/technology-2.jpg"
+            src="/blog/technology-2.jpg"
             alt="things-to-keep-in-website"
             className="object-cover h-full w-full"
             fill
@@ -172,7 +172,7 @@ export default function page() {
 
         <div className="relative w-full md:h-[450px] h-[250px] rounded-3xl overflow-hidden ">
           <Image
-            src="/assets/images/blog/technology-3.jpg"
+            src="/blog/technology-3.jpg"
             alt="things-to-keep-in-website"
             className="object-cover h-full w-full"
             fill
@@ -209,7 +209,7 @@ export default function page() {
         <h1 className="text-2xl font-[900]">WordPress Solutions</h1>
         <div className="relative w-full md:h-[450px] h-[250px] rounded-3xl overflow-hidden ">
           <Image
-            src="/assets/images/blog/technology-4.jpg"
+            src="/blog/technology-4.jpg"
             alt="things-to-keep-in-website"
             className="object-cover h-full w-full"
             fill
@@ -244,7 +244,7 @@ export default function page() {
 
         <div className="relative w-full md:h-[450px] h-[250px] rounded-3xl overflow-hidden ">
           <Image
-            src="/assets/images/blog/technology-5.jpg"
+            src="/blog/technology-5.jpg"
             alt="things-to-keep-in-website"
             className="object-cover h-full w-full"
             fill
@@ -279,7 +279,7 @@ export default function page() {
 
         <div className="relative w-full md:h-[450px] h-[250px] rounded-3xl overflow-hidden ">
           <Image
-            src="/assets/images/blog/technology-6.jpg"
+            src="/blog/technology-6.jpg"
             alt="things-to-keep-in-website"
             className="object-cover h-full w-full"
             fill
@@ -320,7 +320,7 @@ export default function page() {
 
         <div className="relative w-full md:h-[450px] h-[250px] rounded-3xl overflow-hidden ">
           <Image
-            src="/assets/images/blog/technology-7.jpg"
+            src="/blog/technology-7.jpg"
             alt="things-to-keep-in-website"
             className="object-cover h-full w-full"
             fill
@@ -359,7 +359,7 @@ export default function page() {
         <h1 className="text-lg font-[900]">Application Architect</h1>
         <div className="relative w-full md:h-[450px] h-[250px] rounded-3xl overflow-hidden ">
           <Image
-            src="/assets/images/blog/technology-8.jpg"
+            src="/blog/technology-8.jpg"
             alt="things-to-keep-in-website"
             className="object-cover h-full w-full"
             fill
@@ -392,7 +392,7 @@ export default function page() {
 
         <div className="relative w-full md:h-[450px] h-[250px] rounded-3xl overflow-hidden ">
           <Image
-            src="/assets/images/blog/technology-9.jpg"
+            src="/blog/technology-9.jpg"
             alt="things-to-keep-in-website"
             className="object-cover h-full w-full"
             fill
@@ -418,7 +418,7 @@ export default function page() {
         <h1 className="text-lg text-[900]">Corporate Branding</h1>
         <div className="relative w-full md:h-[450px] h-[250px] rounded-3xl overflow-hidden ">
           <Image
-            src="/assets/images/blog/technology-10.jpg"
+            src="/blog/technology-10.jpg"
             alt="things-to-keep-in-website"
             className="object-cover h-full w-full"
             fill
@@ -452,7 +452,7 @@ export default function page() {
         </h1>
         <div className="relative w-full md:h-[450px] h-[250px] rounded-3xl overflow-hidden ">
           <Image
-            src="/assets/images/blog/technology-11.jpg"
+            src="/blog/technology-11.jpg"
             alt="things-to-keep-in-website"
             className="object-cover h-full w-full"
             fill
@@ -482,7 +482,7 @@ export default function page() {
 
         <div className="relative w-full md:h-[450px] h-[250px] rounded-3xl overflow-hidden ">
           <Image
-            src="/assets/images/blog/technology-12.jpg"
+            src="/blog/technology-12.jpg"
             alt="things-to-keep-in-website"
             className="object-cover h-full w-full"
             fill

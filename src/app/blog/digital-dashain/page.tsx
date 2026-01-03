@@ -10,7 +10,7 @@ export const metadata:Metadata ={
     url: "https://www.sriyog.com/blog/digital-dashain",
     images: [
       {
-        url: "https://sriyog.com/assets/images/og/default.jpg",
+        url: "https://sriyog.com/og/default.jpg",
         alt: "Digital Dashain : Practicing FinTech in family."
       }
     ]
@@ -23,7 +23,7 @@ export default function DigitalDashain() {
       <section className="lg:w-[900px] max-lg:container max-lg:px-3 mx-auto my-[45px] space-y-6">
         <div className="relative w-full md:h-[450px] h-[250px] rounded-3xl overflow-hidden">
           <Image
-            src="/assets/images/blog/dashain-1.jpg"
+            src="/blog/dashain-1.jpg"
             alt="essential-things-to-keep-on-website"
             className="object-cover h-full w-full"
             fill
@@ -53,7 +53,7 @@ export default function DigitalDashain() {
 
         <div className="relative w-full md:h-[450px] h-[250px] rounded-3xl overflow-hidden">
           <Image
-            src="/assets/images/blog/dashain-2.jpg"
+            src="/blog/dashain-2.jpg"
             alt="essential-things-to-keep-on-website"
             className="object-cover h-full w-full"
             fill
@@ -70,7 +70,7 @@ export default function DigitalDashain() {
 
         <div className="relative w-full md:h-[450px] h-[250px] rounded-3xl overflow-hidden">
           <Image
-            src="/assets/images/blog/dashain-3.jpg"
+            src="/blog/dashain-3.jpg"
             alt="essential-things-to-keep-on-website"
             className="object-cover h-full w-full"
             fill
@@ -87,7 +87,7 @@ export default function DigitalDashain() {
 
         <div className="relative w-full md:h-[450px] h-[250px] rounded-3xl overflow-hidden">
           <Image
-            src="/assets/images/blog/dashain-4.jpg"
+            src="/blog/dashain-4.jpg"
             alt="essential-things-to-keep-on-website"
             className="object-cover h-full w-full"
             fill
@@ -115,7 +115,7 @@ export default function DigitalDashain() {
 
         <div className="relative w-full md:h-[450px] h-[250px] rounded-3xl overflow-hidden">
           <Image
-            src="/assets/images/blog/dashain-5.jpg"
+            src="/blog/dashain-5.jpg"
             alt="essential-things-to-keep-on-website"
             className="object-cover h-full w-full"
             fill
@@ -137,7 +137,7 @@ export default function DigitalDashain() {
 
         <div className="relative w-full md:h-[450px] h-[250px] rounded-3xl overflow-hidden">
           <Image
-            src="/assets/images/blog/dashain-6.jpg"
+            src="/blog/dashain-6.jpg"
             alt="essential-things-to-keep-on-website"
             className="object-cover h-full w-full"
             fill

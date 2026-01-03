@@ -21,11 +21,11 @@ export default function HomepageComponent() {
   const events = [
     {
       date: "05-29",
-      img: "/assets/images/roadblock/05-29.jpg",
+      img: "/roadblock/05-29.jpg",
     },
     {
       date: "03-08",
-      img: "/assets/images/roadblock/03-08.jpg",
+      img: "/roadblock/03-08.jpg",
     },
     {
       date: "09-22",
@@ -59,7 +59,7 @@ export default function HomepageComponent() {
     >
       <div className="relative h-[60px] w-[60px]">
         <Image
-          src="/assets/icons/next-arrow.svg"
+          src="/icons/next-arrow.svg"
           alt="next-arrow"
           fill
           className="object-contain"
@@ -76,7 +76,7 @@ export default function HomepageComponent() {
     >
       <div className="relative h-[60px] w-[60px]">
         <Image
-          src="/assets/icons/prev-arrow.svg"
+          src="/icons/prev-arrow.svg"
           alt="prev-arrow"
           fill
           className="object-contain"
@@ -121,89 +121,89 @@ export default function HomepageComponent() {
 
   const services = [
     {
-      img: "/assets/images/homepage/service/data-analysis.png",
+      img: "/homepage/service/data-analysis.png",
       name: "Data Processing / Tabulation",
     },
     {
-      img: "/assets/images/homepage/service/data-managment.jpg",
+      img: "/homepage/service/data-managment.jpg",
       name: "Database Management",
     },
     {
-      img: "/assets/images/homepage/service/data-processing.png",
+      img: "/homepage/service/data-processing.png",
       name: "Data Analysis",
     },
     {
-      img: "/assets/images/homepage/service/human-resource.jpg",
+      img: "/homepage/service/human-resource.jpg",
       name: "Software Development",
     },
     {
-      img: "/assets/images/homepage/service/it-consultancy.png",
+      img: "/homepage/service/it-consultancy.png",
       name: "Web Application Development",
     },
     {
-      img: "/assets/images/homepage/service/marketing.png",
+      img: "/homepage/service/marketing.png",
       name: "Software Development",
     },
     {
-      img: "/assets/images/homepage/service/software-development.png",
+      img: "/homepage/service/software-development.png",
       name: "Social Media Management",
     },
     {
-      img: "/assets/images/homepage/service/uiux-design.png",
+      img: "/homepage/service/uiux-design.png",
       name: "Digital Marketing",
     },
   ];
 
   const transformations = [
     {
-      img: "/assets/images/homepage/transformation/1.jpg",
+      img: "/homepage/transformation/1.jpg",
       name: "Healthcare",
       des: "We deliver secure and innovative IT solutions for the healthcare sector, including digital patient records, telemedicine systems, and compliance-focused data management to enhance patient care and streamline operations.",
     },
     {
-      img: "/assets/images/homepage/transformation/2.jpg",
+      img: "/homepage/transformation/2.jpg",
       name: "Employment",
       des: "Our IT solutions support the employment sector through job portals, HR automation, and workforce optimization tools, connecting employers and job seekers efficiently using smart, scalable platforms.",
     },
     {
-      img: "/assets/images/homepage/transformation/3.jpg",
+      img: "/homepage/transformation/3.jpg",
       name: "Tourism",
       des: "We empower tourism industry with digital booking platforms, virtual experiences, and CRM tools that improve traveler engagement, operational efficiency, and overall customer satisfaction.",
     },
   ];
   const latest = [
     {
-      img: "/assets/images/homepage/latest/1.jpg",
+      img: "/homepage/latest/1.jpg",
       title: "Birat Informatics Registered",
       date: " 21 May 2025 ",
       category: "Press releases",
     },
     {
-      img: "/assets/images/homepage/latest/1.jpg",
+      img: "/homepage/latest/1.jpg",
       title: "Address Updated to Kamalpokhari",
       date: " 15 May 2025 ",
       category: "News",
     },
     {
-      img: "/assets/images/homepage/latest/1.jpg",
+      img: "/homepage/latest/1.jpg",
       title: "SRIYOG App has a new homepage",
       date: " 12 May 2025 ",
       category: "Press releases",
     },
     {
-      img: "/assets/images/homepage/latest/1.jpg",
+      img: "/homepage/latest/1.jpg",
       title: "MoU with Islington College",
       date: " 3 Apr 2025 ",
       category: "News",
     },
     {
-      img: "/assets/images/homepage/latest/1.jpg",
+      img: "/homepage/latest/1.jpg",
       title: "Redesigning Lumanti Group Website",
       date: " 27 Feb 2025 ",
       category: "News",
     },
     {
-      img: "/assets/images/homepage/latest/1.jpg",
+      img: "/homepage/latest/1.jpg",
       title: "Operating from Kamalpokhari, Kathmandu  ",
       date: " 03 Feb 2025 ",
       category: "News",
@@ -249,7 +249,7 @@ export default function HomepageComponent() {
               className="absolute inset-0 bg-cover bg-center bg-no-repeat brightness-50 z-0"
               style={{
                 backgroundImage:
-                  "url('/assets/images/homepage/hero-banner.jpg')",
+                  "url('/homepage/hero-banner.jpg')",
               }}
             ></div>
             <div className="relative z-10 flex justify-between lg:w-[1180px] max-lg:container max-lg:px-3 mx-auto items-end lg:pt-64 lg:pb-28 max-md:items-end max-lg:h-full max-lg:pb-4">
@@ -414,8 +414,8 @@ export default function HomepageComponent() {
                     <Image
                       src={
                         categoriesOpen
-                          ? "/assets/images/header/dropup.svg"
-                          : "/assets/images/header/dropdown.svg"
+                          ? "/header/dropup.svg"
+                          : "/header/dropdown.svg"
                       }
                       alt="drop-down"
                       fill
@@ -457,7 +457,7 @@ export default function HomepageComponent() {
               >
                 <div className="relative group h-full w-full">
                   <Image
-                    src="/assets/images/homepage/blog/web-development-stages.jpeg"
+                    src="/homepage/blog/web-development-stages.jpeg"
                     alt="blog-1"
                     className="object-cover group-hover:scale-110 transition duration-500 ease-in-out"
                     fill
@@ -492,7 +492,7 @@ export default function HomepageComponent() {
               >
                 <div className="relative group  h-full w-full">
                   <Image
-                    src="/assets/images/homepage/blog/corporate-email.png"
+                    src="/homepage/blog/corporate-email.png"
                     alt="blog-2"
                     className="object-fill group-hover:scale-110 transition duration-500 ease-in-out"
                     fill
@@ -527,7 +527,7 @@ export default function HomepageComponent() {
               >
                 <div className="relative group h-full w-full">
                   <Image
-                    src="/assets/images/homepage/blog/things-to-keep-in-website.png"
+                    src="/homepage/blog/things-to-keep-in-website.png"
                     alt="blog-3"
                     sizes=""
                     className="object-cover group-hover:scale-110 transition duration-500 ease-in-out"
@@ -562,7 +562,7 @@ export default function HomepageComponent() {
               >
                 <div className="relative group  h-full w-full">
                   <Image
-                    src="/assets/images/homepage/blog/essesntial-things-to-keep-on-website.png"
+                    src="/homepage/blog/essesntial-things-to-keep-on-website.png"
                     alt="blog-4"
                     sizes=""
                     className="object-cover group-hover:scale-110 transition duration-500 ease-in-out"
@@ -631,8 +631,8 @@ export default function HomepageComponent() {
                     <Image
                       src={
                         eventsOpen
-                          ? "/assets/icons/dropup.svg"
-                          : "/assets/icons/dropdown.svg"
+                          ? "/icons/dropup.svg"
+                          : "/icons/dropdown.svg"
                       }
                       alt="drop-down"
                       fill
@@ -698,7 +698,7 @@ export default function HomepageComponent() {
           <section className="mt-[75px] mb-[45px] lg:w-[1180px] max-lg:container max-lg:px-3 mx-auto grid grid-cols-1 md:grid-cols-12 place-content-between place-items-center">
             <div className="relative hidden md:block max-md:h-[50px] h-[80px] lg:w-full">
               <Image
-                src="/assets/images/homepage/update-img.svg"
+                src="/homepage/update-img.svg"
                 alt="update-img"
                 fill
                 sizes=""
@@ -710,7 +710,7 @@ export default function HomepageComponent() {
               <div className="flex w-full items-center gap-2">
                 <div className="relative hidden max-md:block h-[50px]  w-[10%] ">
                   <Image
-                    src="/assets/images/homepage/update-img.svg"
+                    src="/homepage/update-img.svg"
                     alt="update-img"
                     fill
                     sizes=""

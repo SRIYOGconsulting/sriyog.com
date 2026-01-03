@@ -465,19 +465,19 @@ const Quote = () => {
         </div>
         )}
         <h1 className="text-3xl font-bold mb-4">IT Service Quotation</h1>
-        <p className="text-sm mb-2">
+        <p className="text-sm mb-3">
           We prioritize understanding your unique requirements, delivering personalized solutions
           that align with your goals, and maintaining high levels of security to protect your data.
         </p>
-        <p className="text-sm mb-2">
+        <p className="text-sm mb-3">
           Whether you’re a startup, an established business, or a government entity, our focus on
           excellence and customer satisfaction makes us the IT partner you can trust.
         </p>
-        <p className="text-sm mb-6">
+        <p className="text-sm mb-10">
           Please fill your requirements so that we can provide you the best proposal & pricing.
         </p>
 
-        <form onSubmit={handleSubmit} method="POST">
+        <form onSubmit={handleSubmit} className="" method="POST">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
              {renderInput("contact", "Contact Person Name *","text",true)}
              {renderSelectSearch('Country','country',countries,false,true)}
@@ -498,10 +498,10 @@ const Quote = () => {
             {renderInput("name", "Name of Organization *","text",true)}
             {renderInput("email", "Email *", "email",true)}
             {renderInput("WhatsApp", "WhatsApp Number","text",false)}
-            {renderSelectSearch('Service','service',servicesOptions,true,false)}
+            {renderSelectSearch('Select Services','service',servicesOptions,true,false)}
             {renderSelect("budget", "Project Budget (USD) *", budgets,true)}
             {renderInput("competitor", "Competitor Name","text",false,)}
-            {renderInput("reference", "Reference Website URL","url",false)}
+            {renderInput("reference", "Reference Website URL","text",false)}
             {renderInput("scope", "Scope of Work","text",false)}
             <div ref={dateRef} className="relative">
             {renderInput("startDate", "Project Start Date", "date",false)}
@@ -519,21 +519,35 @@ const Quote = () => {
             
             <div ref={industryRef} className="relative">
               {renderSelectSearch('Industry Type','industry',industryOptions,false,false)}
-              {error && <h1 className="absolute -bottom-1 text-sm text-red-600">Please select either your Industry or Organization Type</h1>}
+              {error && <h1 className="absolute -bottom-1 text-sm text-red-600">Select industry or organization</h1>}
             </div>
             
             <div className="relative">
               {renderSelectSearch('Organizatioin Type','organizationType',OrganizationTypes,false,false)}
-              {error && <h1 className="absolute -bottom-1 text-sm text-red-600">Please select either your Industry or Organization Type</h1>} 
+              {error && <h1 className="absolute -bottom-1 text-sm text-red-600">Select industry or organization</h1>} 
             </div>
             
             {renderInput("panvat", "PAN / VAT Number","text",false)}
             {renderInput("referralName", "Referral Name","text",false)}
-            {renderInput("referralPhone", "Referral Phone","text",false)}
-            {renderSelectSearch('How did you know about us?','how',KnowingUsMethod,false,false)}          
-            {renderInput("message", "Additional Message / Requirements *","text",true)}   
-          </div>
-                    <div className="text-sm text-[#555555] mt-6 gap-4 flex flex-col">
+            {renderInput("referralPhone", "Referral Phone","text",false)}         
+            </div>
+            <div className="mt-6 mb-4">
+            {renderSelectSearch('How did you know about us?','how',KnowingUsMethod,false,false)}
+            </div>
+            <div className="mt-8 mb-4">
+              <label className={labelStyle}>Additional Message / Requirements *</label>
+              <textarea
+                id="message"
+                name="message"
+                className={inputStyle}
+                required
+                rows={3}
+                value={form.message}
+                onChange={handleChange}
+                placeholder="Add Message/Note here..."
+              ></textarea>
+            </div>
+            <div className="text-sm text-[#555555] mt-6 gap-4 flex flex-col">
             <div className="flex items-start sm:items-center gap-2">
               <input type="checkbox"  required   className="bg-[#555555] cursor-pointer mt-1.5 sm:mt-0" />{" "}
               <label>

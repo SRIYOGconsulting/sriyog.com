@@ -292,7 +292,7 @@ export default function Footer() {
           <div className="border-t-4 border-[#055D59] w-[300px] pt-2 px-4 sm:px-5 max-w-md mx-auto text-[#0D5959] space-y-4 shadow-sm">
             <div className="relative w-[250px] mx-auto h-[60px] ">
               <Image
-                src="/assets/images/footer/logo.svg"
+                src="/footer/logo.svg"
                 fill
                 priority
                 className="object-contain"
@@ -302,7 +302,7 @@ export default function Footer() {
             <div className="flex items-start gap-2">
               <div className="relative w-5 h-5 mt-1">
                 <Image
-                  src="/assets/images/footer/location.svg"
+                  src="/footer/location.svg"
                   fill
                   priority
                   className="object-contain"
@@ -318,7 +318,7 @@ export default function Footer() {
             <div className="flex items-center gap-2">
               <div className="relative w-6 h-6">
                 <Image
-                  src="/assets/images/footer/phone.svg"
+                  src="/footer/phone.svg"
                   fill
                   priority
                   className="object-contain"
@@ -331,7 +331,7 @@ export default function Footer() {
             <div className="flex items-center gap-2">
               <div className="relative w-5 h-5">
                 <Image
-                  src="/assets/images/footer/mail.svg"
+                  src="/footer/mail.svg"
                   fill
                   priority
                   className="object-contain"
@@ -355,7 +355,7 @@ export default function Footer() {
         <section className="w-full border-b-24 ">
           <div className="relative max-lg:container max-lg:px-3 w-[50px] h-[40px] lg:w-[1180px] lg:h-[120px] mx-auto">
             <Image
-              src="/assets/images/footer/footer.svg"
+              src="/footer/footer.svg"
               fill
               priority
               className="object-contain"
@@ -377,7 +377,7 @@ export default function Footer() {
               >
                 <div className="relative md:h-[50px] h-[60px] w-[130px] md:w-[100px]">
                   <Image
-                    src="/assets/images/footer/google-play.svg"
+                    src="/footer/google-play.svg"
                     fill
                     priority
                     className="object-contain"
@@ -392,7 +392,7 @@ export default function Footer() {
               >
                 <div className="relative md:h-[50px] h-[60px] w-[130px] md:w-[100px]">
                   <Image
-                    src="/assets/images/footer/app-store.svg"
+                    src="/footer/app-store.svg"
                     fill
                     priority
                     className="object-contain"
@@ -405,7 +405,7 @@ export default function Footer() {
               <Link prefetch={true} href="https://github.com/SRIYOGconsulting/" target="_blank">
                 <div className="relative h-[20px] w-[20px]">
                   <Image
-                    src="/assets/icons/github.svg"
+                    src="/icons/github.svg"
                     fill
                     priority
                     className="object-contain"
@@ -416,7 +416,7 @@ export default function Footer() {
               <Link prefetch={true} href="https://d.sriyog.com/signal" target="_blank">
                 <div className="relative h-[20px] w-[20px]">
                   <Image
-                    src="/assets/icons/signal.svg"
+                    src="/icons/signal.svg"
                     fill
                     priority
                     className="object-contain"
@@ -428,7 +428,7 @@ export default function Footer() {
               <Link prefetch={true} href="https://d.sriyog.com/whatsapp" target="_blank">
                 <div className="relative h-[20px] w-[20px]">
                   <Image
-                    src="/assets/images/footer/whatsapp.svg"
+                    src="/footer/whatsapp.svg"
                     fill
                     priority
                     className="object-contain"
@@ -444,7 +444,7 @@ export default function Footer() {
               >
                 <div className="relative h-[20px] w-[20px]">
                   <Image
-                    src="/assets/images/footer/facebook.svg"
+                    src="/footer/facebook.svg"
                     fill
                     priority
                     className="object-contain"
@@ -460,7 +460,7 @@ export default function Footer() {
               >
                 <div className="relative h-[20px] w-[20px]">
                   <Image
-                    src="/assets/images/footer/linkedIn.svg"
+                    src="/footer/linkedIn.svg"
                     fill
                     priority
                     className="object-contain"
@@ -475,7 +475,7 @@ export default function Footer() {
               >
                 <div className="relative h-[20px] w-[20px]">
                   <Image
-                    src="/assets/images/footer/youtube.svg"
+                    src="/footer/youtube.svg"
                     fill
                     priority
                     className="object-contain"

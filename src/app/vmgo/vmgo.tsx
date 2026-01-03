@@ -42,7 +42,7 @@ export default function Vmgo() {
           <SwiperSlide className="h-[80vh]">
             <div className="relative w-[100%] h-full">
               <Image
-                src="/assets/images/vmgo/1.jpg"
+                src="/vmgo/1.jpg"
                 alt="first-image"
                 className="object-cover"
                 fill
@@ -52,7 +52,7 @@ export default function Vmgo() {
           <SwiperSlide className="h-[80vh]">
             <div className="relative w-[100%] h-full">
               <Image
-                src="/assets/images/vmgo/2.jpg"
+                src="/vmgo/2.jpg"
                 alt="second-image"
                 className="object-cover"
                 fill
@@ -70,7 +70,7 @@ export default function Vmgo() {
           <section className="">
             <div className="relative h-40 w-32 mx-auto">
               <Image
-                src="/assets/images/vmgo/vision.png"
+                src="/vmgo/vision.png"
                 alt="vision"
                 fill
                 className="object-contain"
@@ -81,7 +81,7 @@ export default function Vmgo() {
           <section className="">
             <div className="relative h-40 w-32 mx-auto">
               <Image
-                src="/assets/images/vmgo/mission.png"
+                src="/vmgo/mission.png"
                 alt="mission"
                 fill
                 className="object-contain"
@@ -92,7 +92,7 @@ export default function Vmgo() {
           <section className="">
             <div className="relative h-40 w-32 mx-auto">
               <Image
-                src="/assets/images/vmgo/goal.png"
+                src="/vmgo/goal.png"
                 alt="goals"
                 fill
                 className="object-contain"
@@ -103,7 +103,7 @@ export default function Vmgo() {
           <section className="">
             <div className="relative h-40 w-32 mx-auto">
               <Image
-                src="/assets/images/vmgo/objective.png"
+                src="/vmgo/objective.png"
                 alt="objectives"
                 fill
                 className="object-contain"
@@ -119,7 +119,7 @@ export default function Vmgo() {
           <section className="md:col-span-1 hidden md:block ">
             <div className="relative h-40 w-32">
               <Image
-                src="/assets/images/vmgo/vision.png"
+                src="/vmgo/vision.png"
                 alt="vision"
                 fill
                 className="object-contain"
@@ -159,7 +159,7 @@ export default function Vmgo() {
           <section className="md:col-span-1 hidden md:block ">
             <div className="relative h-40 w-32">
               <Image
-                src="/assets/images/vmgo/mission.png"
+                src="/vmgo/mission.png"
                 alt="mission"
                 fill
                 className="object-contain"
@@ -171,7 +171,7 @@ export default function Vmgo() {
           <section className="md:col-span-1 hidden md:block ">
             <div className="relative h-40 w-32">
               <Image
-                src="/assets/images/vmgo/goal.png"
+                src="/vmgo/goal.png"
                 alt="goals"
                 fill
                 className="object-contain"
@@ -281,7 +281,7 @@ export default function Vmgo() {
           <section className="md:col-span-1 hidden md:block ">
             <div className="relative h-40 w-32">
               <Image
-                src="/assets/images/vmgo/objective.png"
+                src="/vmgo/objective.png"
                 alt="objectives"
                 fill
                 className="object-contain"

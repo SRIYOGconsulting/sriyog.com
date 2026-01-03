@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     url: "https://www.sriyog.com/blog/the-unmanaged-website",
     images: [
       {
-        url: "https://sriyog.com/assets/images/og/default.jpg",
+        url: "https://sriyog.com/og/default.jpg",
         alt: "The Unmanaged Website"
       }
     ]
@@ -24,7 +24,7 @@ export default function Page() {
       <section className="lg:w-[900px] max-lg:container max-lg:px-3 mx-auto my-[45px] space-y-6">
         <div className="relative w-full md:h-[450px] h-[250px] rounded-3xl overflow-hidden ">
           <Image
-            src="/assets/images/blog/unmanaged-1.jpg"
+            src="/blog/unmanaged-1.jpg"
             alt="things-to-keep-in-website"
             className="object-cover h-full w-full"
             fill
@@ -55,7 +55,7 @@ export default function Page() {
 
         <div className="relative w-full md:h-[450px] h-[250px] rounded-3xl overflow-hidden ">
           <Image
-            src="/assets/images/blog/unmanaged-2.jpg"
+            src="/blog/unmanaged-2.jpg"
             alt="things-to-keep-in-website"
             className="object-cover h-full w-full"
             fill
@@ -89,7 +89,7 @@ export default function Page() {
 
         <div className="relative w-full md:h-[450px] h-[250px] rounded-3xl overflow-hidden ">
           <Image
-            src="/assets/images/blog/unmanaged-3.jpg"
+            src="/blog/unmanaged-3.jpg"
             alt="things-to-keep-in-website"
             className="object-cover h-full w-full"
             fill
@@ -142,7 +142,7 @@ export default function Page() {
 
         <div className="relative w-full md:h-[450px] h-[250px] rounded-3xl overflow-hidden ">
           <Image
-            src="/assets/images/blog/unmanaged-4.jpg"
+            src="/blog/unmanaged-4.jpg"
             alt="things-to-keep-in-website"
             className="object-cover h-full w-full"
             fill
@@ -172,7 +172,7 @@ export default function Page() {
 
         <div className="relative w-full md:h-[450px] h-[250px] rounded-3xl overflow-hidden ">
           <Image
-            src="/assets/images/blog/unmanaged-5.jpg"
+            src="/blog/unmanaged-5.jpg"
             alt="things-to-keep-in-website"
             className="object-cover h-full w-full"
             fill

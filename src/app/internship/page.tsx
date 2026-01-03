@@ -1,3 +1,4 @@
+import InternshipForm from "@/components/Internship";
 import Ribbon from "@/components/Ribbon";
 import { Metadata } from "next";
 
@@ -10,7 +11,7 @@ export const metadata: Metadata = {
     url: "https://www.sriyog.com/internship",
     images: [
       {
-        url: "https://sriyog.com/assets/images/og/default.jpg",
+        url: "https://sriyog.com/og/internship.jpg",
         alt: "Internship"
       }
     ]
@@ -21,7 +22,8 @@ const Internship = () => {
     <>
       <Ribbon name="Internship | SRIYOG" des="" />
       <section className="lg:w-full ">
-        <div className="">
+        <InternshipForm/>
+        {/* <div className="">
           <div className="lg:max-w-[1180px] mx-auto my-0 md:max-w-[920px] sm:max-w-[720px]  lg:px-12">
             <div>
               <iframe
@@ -32,7 +34,7 @@ const Internship = () => {
               ></iframe>
             </div>
           </div>
-        </div>
+        </div> */}
       </section>
     </>
   );

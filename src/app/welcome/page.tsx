@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     url: "https://www.sriyog.com/welcome",
     images: [
       {
-        url: "https://sriyog.com/assets/images/og/default.jpg",
+        url: "https://sriyog.com/og/default.jpg",
         alt: "Welcome to SRIYOG Consulting"
       }
     ]
@@ -31,7 +31,7 @@ const Welcome = () => {
           <div className="flex justify-center items-center">
             <div className="relative w-60  mb-10 h-20 justify-center items-center">
               <Image
-                src="/assets/images/welcome/logo.svg"
+                src="/welcome/logo.svg"
                 fill
                 alt="Pracas Upreti"
                 className="object-contain"
@@ -95,7 +95,7 @@ const Welcome = () => {
                 </p>
                 <div className=" h-76 relative  w-full col-span-2">
                   <Image
-                    src="/assets/images/about/pracas_large.png"
+                    src="/about/pracas_large.png"
                     alt="About Us"
                     fill
                     className="w-full h-auto object-contain border"
@@ -107,7 +107,7 @@ const Welcome = () => {
 
           <div className="relative w-40 h-40  mx-10 max-md:mx-0 ">
             <Image
-              src="/assets/images/welcome/prakash_sig.png"
+              src="/welcome/prakash_sig.png"
               alt="Pracas_signature"
               fill
               className="object-contain"

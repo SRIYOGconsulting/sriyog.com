@@ -1,4 +1,4 @@
-import Partnership from "./Partnership";
+import Partnership from "../../../../components/Partnership";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     url: "https://www.sriyog.com/partnership",
     images: [
       {
-        url: "https://sriyog.com/assets/images/og/default.jpg",
+        url: "https://sriyog.com/og/default.jpg",
         alt: "Partnership"
       }
     ]

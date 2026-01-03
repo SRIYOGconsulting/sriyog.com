@@ -11,7 +11,7 @@ export const metadata:Metadata ={
     url: "https://www.sriyog.com/blog/pitch-deck-magic",
     images: [
       {
-        url: "https://sriyog.com/assets/images/og/default.jpg",
+        url: "https://sriyog.com/og/default.jpg",
         alt: "Pitch Deck Magic : How to create the best pitch deck?"
       }
     ]
@@ -23,7 +23,7 @@ export default function PitchDeck() {
       <section className="lg:w-[900px] max-lg:container max-lg:px-3 mx-auto my-[45px] space-y-6">
         <div className="relative w-full md:h-[450px] h-[250px] rounded-3xl overflow-hidden ">
           <Image
-            src="/assets/images/blog/pitchdesk-1.jpg"
+            src="/blog/pitchdesk-1.jpg"
             alt="things-to-keep-in-website"
             className="object-cover h-full w-full"
             fill
@@ -54,7 +54,7 @@ export default function PitchDeck() {
 
         <div className="relative w-full md:h-[450px] h-[250px] rounded-3xl overflow-hidden ">
           <Image
-            src="/assets/images/blog/pitchdesk-2.jpg"
+            src="/blog/pitchdesk-2.jpg"
             alt="things-to-keep-in-website"
             className="object-cover h-full w-full"
             fill
@@ -105,7 +105,7 @@ export default function PitchDeck() {
 
         <div className="relative w-full md:h-[450px] h-[250px] rounded-3xl overflow-hidden ">
           <Image
-            src="/assets/images/blog/pitchdesk-3.jpg"
+            src="/blog/pitchdesk-3.jpg"
             alt="things-to-keep-in-website"
             className="object-cover h-full w-full"
             fill
@@ -297,7 +297,7 @@ export default function PitchDeck() {
 
         <div className="relative w-full md:h-[450px] h-[250px] rounded-3xl overflow-hidden ">
           <Image
-            src="/assets/images/blog/pitchdesk-3.jpg"
+            src="/blog/pitchdesk-3.jpg"
             alt="things-to-keep-in-website"
             className="object-cover h-full w-full"
             fill

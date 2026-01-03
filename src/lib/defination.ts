@@ -9,7 +9,7 @@ export interface PartnershipFormValues {
   designation: string;
   message: string;
   reason: string;
-  phoneOrganization: string;
+  organizationPhone: string;
   personalPhone: string;
 }
 

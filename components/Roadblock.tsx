@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import FloatingIcons from "./FloatingIcons";
 import Image from "next/image";
 import Link from "next/link";
+import { useFloatingIcons } from "@/src/context/FloatingIconContext";
 
 
 
@@ -115,7 +116,7 @@ const RoadBlock = ( ) => {
             >
               <div className="relative h-7.5 w-10 transition-all duration-700 ease-in-out hover:rotate-120">
                 <Image
-                  src="/assets/icons/WhatsApp.svg"
+                  src="/icons/WhatsApp.svg"
                   fill
                   priority
                   className="object-contain"
@@ -132,7 +133,7 @@ const RoadBlock = ( ) => {
             >
               <div className="relative h-7.5 w-10 animate-pulse-scale hover:mb-3 transition-all duration-200 ease-in-out">
                 <Image
-                  src="/assets/icons/phone.svg"
+                  src="/icons/phone.svg"
                   fill
                   priority
                   className="object-contain"

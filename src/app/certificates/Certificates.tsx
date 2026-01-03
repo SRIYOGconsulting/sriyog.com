@@ -12,22 +12,22 @@ export default function CertificateComponent() {
   const name = "Certificates";
 
   const images = [
-    { img: "/assets/images/certificate/1.jpg", name: "Company Registration", id: 1 },
-    { img: "/assets/images/certificate/2.jpg", name: "PAN Registration", id: 2 },
-    { img: "/assets/images/certificate/3.jpg", name: "Letter from Company Registration", id: 3 },
-    { img: "/assets/images/certificate/4.jpg", name: "SRIYOG Prabandhapatra", id: 4 },
-    { img: "/assets/images/certificate/16.jpg", name: "Address update", id: 16 },
-    { img: "/assets/images/certificate/5.jpg", name: "SRIYOG Niyamabali", id: 5 },
-    { img: "/assets/images/certificate/6.jpg", name: "Letter from Ministry of Labour", id: 6 },
-    { img: "/assets/images/certificate/7.jpg", name: "Letter from Ministry of Education", id: 7 },
-    { img: "/assets/images/certificate/8.jpg", name: "EVENT-II Data", id: 8 },
-    { img: "/assets/images/certificate/9.jpg", name: "ICT Startup & Innovation Mela, 2019", id: 9 },
-    { img: "/assets/images/certificate/10.jpg", name: "IndiaSoft Global 2020 Participation", id: 10 },
-    { img: "/assets/images/certificate/11.jpg", name: "Magic Footwear", id: 11 },
-    { img: "/assets/images/certificate/12.jpg", name: "Arogya Bhawan Works", id: 12 },
-    { img: "/assets/images/certificate/13.jpg", name: "Dr. Sudhir Khanal", id: 13 },
-    { img: "/assets/images/certificate/14.jpg", name: "Dr. Biju Thapalia", id: 14 },
-    { img: "/assets/images/certificate/15.jpg", name: "FNCCI Koshi", id: 15 },
+    { img: "/certificate/1.jpg", name: "Company Registration", id: 1 },
+    { img: "/certificate/2.jpg", name: "PAN Registration", id: 2 },
+    { img: "/certificate/3.jpg", name: "Letter from Company Registration", id: 3 },
+    { img: "/certificate/4.jpg", name: "SRIYOG Prabandhapatra", id: 4 },
+    { img: "/certificate/16.jpg", name: "Address update", id: 16 },
+    { img: "/certificate/5.jpg", name: "SRIYOG Niyamabali", id: 5 },
+    { img: "/certificate/6.jpg", name: "Letter from Ministry of Labour", id: 6 },
+    { img: "/certificate/7.jpg", name: "Letter from Ministry of Education", id: 7 },
+    { img: "/certificate/8.jpg", name: "EVENT-II Data", id: 8 },
+    { img: "/certificate/9.jpg", name: "ICT Startup & Innovation Mela, 2019", id: 9 },
+    { img: "/certificate/10.jpg", name: "IndiaSoft Global 2020 Participation", id: 10 },
+    { img: "/certificate/11.jpg", name: "Magic Footwear", id: 11 },
+    { img: "/certificate/12.jpg", name: "Arogya Bhawan Works", id: 12 },
+    { img: "/certificate/13.jpg", name: "Dr. Sudhir Khanal", id: 13 },
+    { img: "/certificate/14.jpg", name: "Dr. Biju Thapalia", id: 14 },
+    { img: "/certificate/15.jpg", name: "FNCCI Koshi", id: 15 },
   ];
 
   const [index, setIndex] = useState(-1);

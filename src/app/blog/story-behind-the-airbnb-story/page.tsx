@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     url: "https://www.sriyog.com/blog/story-behind-the-airbnb-story",
     images: [
       {
-        url: "https://sriyog.com/assets/images/og/default.jpg",
+        url: "https://sriyog.com/og/default.jpg",
         alt: "The Story Behind Airbnb"
       }
     ]
@@ -22,7 +22,7 @@ export default function Airbnb() {
       <section className="lg:w-[900px] max-lg:container max-lg:px-3 mx-auto my-[45px] space-y-6">
         <div className="relative w-full md:h-[450px] h-[250px] rounded-3xl overflow-hidden ">
           <Image
-            src="/assets/images/blog/airbnb-1.jpg"
+            src="/blog/airbnb-1.jpg"
             alt="things-to-keep-in-website"
             className="object-cover h-full w-full"
             fill
@@ -78,7 +78,7 @@ export default function Airbnb() {
 
         <div className="relative w-full md:h-[450px] h-[250px] rounded-3xl overflow-hidden ">
           <Image
-            src="/assets/images/blog/airbnb-2.jpg"
+            src="/blog/airbnb-2.jpg"
             alt="things-to-keep-in-website"
             className="object-cover h-full w-full"
             fill
@@ -109,7 +109,7 @@ export default function Airbnb() {
 
         <div className="relative w-full md:h-[450px] h-[250px] rounded-3xl overflow-hidden ">
           <Image
-            src="/assets/images/blog/airbnb-3.jpg"
+            src="/blog/airbnb-3.jpg"
             alt="things-to-keep-in-website"
             className="object-cover h-full w-full"
             fill
@@ -130,7 +130,7 @@ export default function Airbnb() {
 
         <div className="relative w-full md:h-[450px] h-[250px] rounded-3xl overflow-hidden ">
           <Image
-            src="/assets/images/blog/airbnb-4.jpg"
+            src="/blog/airbnb-4.jpg"
             alt="things-to-keep-in-website"
             className="object-cover h-full w-full"
             fill

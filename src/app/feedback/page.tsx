@@ -103,7 +103,7 @@ const Feedback = () => {
           </p>
           <div className="relative mb-4 w-full h-[400px]">
             <Image
-              src="/assets/images/feedback/feedback.png"
+              src="/feedback/feedback.png"
               fill
               alt="feedback"
               className="object-contain"

@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     url: "https://www.sriyog.com/blog/20-books-that-can-change-you",
     images: [
       {
-        url: "https://sriyog.com/assets/images/og/default.jpg",
+        url: "https://sriyog.com/og/default.jpg",
         alt: "20 Books that can change you"
       }
     ]
@@ -24,7 +24,7 @@ export default function TwentyBooks() {
       <section className=" lg:w-[900px] max-lg:container max-lg:px-3 mx-auto my-[45px] space-y-6">
         <div className="relative w-full md:h-[450px] h-[250px] rounded-3xl overflow-hidden ">
           <Image
-            src="/assets/images/blog/books-1.jpg"
+            src="/blog/books-1.jpg"
             alt="things-to-keep-in-website"
             className="object-cover h-full w-full"
             fill
@@ -58,7 +58,7 @@ export default function TwentyBooks() {
         </p>
         <div className="relative w-full md:h-[450px] h-[250px] rounded-3xl overflow-hidden ">
           <Image
-            src="/assets/images/blog/books-2.jpg"
+            src="/blog/books-2.jpg"
             alt="things-to-keep-in-website"
             className="object-cover h-full w-full"
             fill
@@ -92,7 +92,7 @@ export default function TwentyBooks() {
               className="relative w-full md:h-[450px] h-[250px] rounded-3xl overflow-hidden "
             >
               <Image
-                src={`/assets/images/blog/books-${index}.jpg`}
+                src={`/blog/books-${index}.jpg`}
                 alt="things-to-keep-in-website"
                 className="object-cover h-full w-full"
                 fill

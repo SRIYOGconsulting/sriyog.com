@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     url: "https://www.sriyog.com/blog",
     images: [
       {
-        url: "https://sriyog.com/assets/images/og/default.jpg",
+        url: "https://sriyog.com/og/default.jpg",
         alt: "SRIYOG Blog"
       }
     ]
@@ -22,7 +22,7 @@ export default function BlogPage() {
     {
       id: 1,
       title: "Top 5 UI/UX Tips to Make Your Website Look Better",
-      image: "/assets/images/blog/UI-UX-3.0.jpg",
+      image: "/blog/UI-UX-3.0.jpg",
       date: "24 DEC 2024",
       views: "13K VIEWS",
       category: "UI/UX",
@@ -31,7 +31,7 @@ export default function BlogPage() {
     {
       id: 2,
       title: "What is UI/UX Design? A Beginner’s Guide",
-      image: "/assets/images/blog/UI-UX-1.0.jpg",
+      image: "/blog/UI-UX-1.0.jpg",
       date: "26 JUNE 2025",
       views: "14K VIEWS",
       category: "UI/UX",
@@ -40,7 +40,7 @@ export default function BlogPage() {
     {
       id: 3,
       title: "Why Good UI/UX Design Matters for Any Website or App",
-      image: "/assets/images/blog/UI-UX-2.0.jpg",
+      image: "/blog/UI-UX-2.0.jpg",
       date: "13 JAN 2025",
       views: "23K VIEWS ",
       category: "UI/UX",
@@ -49,7 +49,7 @@ export default function BlogPage() {
     {
       id: 4,
       title: "What is SEO and Why Is It Important for Your Website?",
-      image: "/assets/images/blog/SEO-1.0.jpg",
+      image: "/blog/SEO-1.0.jpg",
       date: "17 FEB 2025",
       views: "3K VIEWS",
       category: "SEO",
@@ -58,7 +58,7 @@ export default function BlogPage() {
     {
       id: 5,
       title: "     SEO Techniques That Really Work in 2025     ",
-      image: "/assets/images/blog/SEO-2.0.jpg",
+      image: "/blog/SEO-2.0.jpg",
       date: "10 FEB 2025",
       views: "4.1K VIEWS",
       category: "SEO",
@@ -67,7 +67,7 @@ export default function BlogPage() {
     {
       id: 6,
       title: "How to Do Keyword Research for SEO: A Step-by-Step Guide  ",
-      image: "/assets/images/blog/SEO-3.0.jpg",
+      image: "/blog/SEO-3.0.jpg",
       date: "29 APRIL 2025",
       views: "2.2K VIEWS",
       category: "SEO",
@@ -78,7 +78,7 @@ export default function BlogPage() {
       id: 7,
       title:
         " What is Digital Marketing? A Beginner’s Guide to Growing Your Business Online",
-      image: "/assets/images/blog/digital-1.1.jpg",
+      image: "/blog/digital-1.1.jpg",
       date: "23 MAY 2025",
       views: "23K VIEWS ",
       category: "Digital Marketing",
@@ -87,7 +87,7 @@ export default function BlogPage() {
     {
       id: 8,
       title: "How SEO Helps Your Digital Marketing Strategy",
-      image: "/assets/images/blog/digital-3.0.jpg",
+      image: "/blog/digital-3.0.jpg",
       date: "21 JAN 2025",
       views: "5K VIEWS ",
       category: "Digital Marketing",
@@ -96,7 +96,7 @@ export default function BlogPage() {
     {
       id: 9,
       title: "The Importance of Social Media in Digital Marketing",
-      image: "/assets/images/blog/digital-2.0.jpg",
+      image: "/blog/digital-2.0.jpg",
       date: "08 AUGUST 2025",
       views: "2K VIEWS",
       category: "Digital Marketing",
@@ -107,14 +107,14 @@ export default function BlogPage() {
     {
       id: 1,
       title: "The Great Hack: How Social Media impacts politics?",
-      image: "/assets/images/blog/hack-1.jpg",
+      image: "/blog/hack-1.jpg",
       desc: "A great mixture of political and social media influence which shows how few millions of data can be used to win an election of the entire country easily.",
       path: "blog/the-great-hack-how-social-media-impacts-politics",
     },
     {
       id: 2,
       title: "20 Books that can change you",
-      image: "/assets/images/blog/4.jpg",
+      image: "/blog/4.jpg",
       desc: "Life is all about creating news things, changing the world. It depends upon a passion, dedication, a good mentorship, effective plan, good investment and must have a vision to serve the community.",
       path: "blog/20-books-that-can-change-you",
     },
@@ -123,7 +123,7 @@ export default function BlogPage() {
     {
       id: 1,
       title: "16-60 Theory : Design your best life",
-      image: "/assets/images/blog/lifedesign-1.jpg",
+      image: "/blog/lifedesign-1.jpg",
       category: "Lifestyle",
       desc: " We have always seen that fish mostly lies in two places, i.e. River and Aquarium. A fish living in aquarium has regular food, well maintained (artificial) ... ",
       date: "27 August 2025",
@@ -135,7 +135,7 @@ export default function BlogPage() {
     {
       id: 2,
       title: 'Story behind "the airbnb story"​ book',
-      image: "/assets/images/blog/airbnb-1.jpg",
+      image: "/blog/airbnb-1.jpg",
       category: "Hotels",
       desc: "People worked for vision not to change the society but to make a Digital Empire to print money, create opportunities and inject few things which disrupted an industry but not the thoughts and even feelings.",
       date: "18 August 2025",
@@ -147,7 +147,7 @@ export default function BlogPage() {
     {
       id: 3,
       title: "Project Ideas Around the House",
-      image: "/assets/images/blog/pitchdesk-1.jpg",
+      image: "/blog/pitchdesk-1.jpg",
       category: "Lifestyle",
       desc: " Creating pitch deck is the most essential part of startup growth. Few number of slides helps to build multinational brands from hundreds...",
       date: "27 August 2025",
@@ -170,7 +170,7 @@ export default function BlogPage() {
           >
             <div className="relative group h-full w-full">
               <Image
-                src="/assets/images/homepage/blog/web-development-stages.jpeg"
+                src="/homepage/blog/web-development-stages.jpeg"
                 alt="blog-1"
                 className="object-cover group-hover:scale-110 transition duration-500 ease-in-out"
                 fill
@@ -206,7 +206,7 @@ export default function BlogPage() {
           >
             <div className="relative group h-full w-full">
               <Image
-                src="/assets/images/homepage/blog/corporate-email.png"
+                src="/homepage/blog/corporate-email.png"
                 alt="blog-2"
                 className="object-fill group-hover:scale-110 transition duration-500 ease-in-out"
                 fill
@@ -242,7 +242,7 @@ export default function BlogPage() {
           >
             <div className="relative group h-full w-full">
               <Image
-                src="/assets/images/homepage/blog/things-to-keep-in-website.png"
+                src="/homepage/blog/things-to-keep-in-website.png"
                 alt="blog-3"
                 fill
                 sizes="100vw"
@@ -278,7 +278,7 @@ export default function BlogPage() {
           >
             <div className="relative group h-full w-full">
               <Image
-                src="/assets/images/homepage/blog/essesntial-things-to-keep-on-website.png"
+                src="/homepage/blog/essesntial-things-to-keep-on-website.png"
                 alt="blog-4"
                 fill
                 sizes="100vw"
@@ -315,7 +315,7 @@ export default function BlogPage() {
           {/* Left Column */}
           <div className="md:w-1/2 border border-gray-300 p-4 shadow-lg rounded-lg">
             <Image
-              src="/assets/images/homepage/blog/corporate-email.png"
+              src="/homepage/blog/corporate-email.png"
               width={500}
               height={300}
               alt="corporate-email"
@@ -357,7 +357,7 @@ export default function BlogPage() {
                 </Link>
               </div>
               <Image
-                src="/assets/images/blog/dashain-1.jpg"
+                src="/blog/dashain-1.jpg"
                 width={150}
                 height={250}
                 alt="things-to-keep"
@@ -383,7 +383,7 @@ export default function BlogPage() {
                 </Link>
               </div>
               <Image
-                src="/assets/images/blog/5.jpg"
+                src="/blog/5.jpg"
                 width={150}
                 height={150}
                 alt="pegasus"

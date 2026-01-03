@@ -7,7 +7,7 @@ export default function Services() {
           <div className=" flex basis-1/2 gap-6 items-center my-6 pr-8 lg:m-0 lg:p-0 md:gap-6 lg:pr-8 lg:pb-8 ">
             <div className="inline basis-[17%]">
               <Image
-                src={"/assets/images/about/teamw.svg"}
+                src={"/about/teamw.svg"}
                 width={66}
                 height={66}
                 alt="experienced_team"
@@ -29,7 +29,7 @@ export default function Services() {
           <div className=" flex basis-1/2 items-center my-6 pr-8 lg:m-0 lg:p-0 gap-6 md:gap-6 lg:pr-8 lg:pb-8 ">
             <div className="inline basis-[17%]">
               <Image
-                src={"/assets/images/about/buildingw.svg"}
+                src={"/about/buildingw.svg"}
                 width={66}
                 height={66}
                 alt="experienced_team"
@@ -51,7 +51,7 @@ export default function Services() {
           <div className=" flex basis-1/2 items-center my-6 gap-6  pr-8 lg:m-0 lg:p-0  lg:pr-8 lg:pb-8 ">
             <div className="inline basis-[17%]">
               <Image
-                src={"/assets/images/about/flagw.svg"}
+                src={"/about/flagw.svg"}
                 width={66}
                 height={66}
                 alt="experienced_team"
@@ -73,7 +73,7 @@ export default function Services() {
           <div className=" flex basis-1/2 items-center my-6 pr-8 gap-6 lg:m-0 lg:p-0 lg:pr-8 lg:pb-8 ">
             <div className="inline basis-[17%]">
               <Image
-                src={"/assets/images/about/skillsw.svg"}
+                src={"/about/skillsw.svg"}
                 width={66}
                 height={66}
                 alt="experienced_team"

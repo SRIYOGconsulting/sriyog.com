@@ -13,7 +13,7 @@ export const metadata:Metadata = {
     url: "https://www.sriyog.com/consulting",
     images: [
       {
-        url: "https://sriyog.com/assets/images/og/default.jpg",
+        url: "https://sriyog.com/og/default.jpg",
         alt: "Consulting Services"
       }
     ]
@@ -22,91 +22,91 @@ export const metadata:Metadata = {
 export default function Consulting() {
   const consulting = [
     {
-      img: "/assets/images/consulting/data-processing.svg",
+      img: "/consulting/data-processing.svg",
       title: "Data Processing",
       desc: "We have a proven track record of delivering high-quality data analysis and reporting solutions that meet the needs of our clients.",
       link: "data-processing",
     },
     {
-      img: "/assets/images/consulting/data-management.svg",
+      img: "/consulting/data-management.svg",
       title: "Database Management",
       desc: "We offer a range of database management services, including database design, implementation, and optimization.",
       link: "data-management",
     },
     {
-      img: "/assets/images/consulting/data-analysis.svg",
+      img: "/consulting/data-analysis.svg",
       title: "Data Analysis",
       desc: "Our team of experienced data analysts can help you extract insights from your data and make data-driven decisions.",
       link: "data-analysis",
     },
     {
-      img: "/assets/images/consulting/software.svg",
+      img: "/consulting/software.svg",
       title: "Software Development",
       desc: "We offer a range of software development services, including coding, testing, and debugging.",
       link: "software-development",
     },
     {
-      img: "/assets/images/consulting/web-application.svg",
+      img: "/consulting/web-application.svg",
       title: "Web Application Development",
       desc: "We offer a range of web application development services, including design, development, and deployment.",
       link: "web-application-development",
     },
     {
-      img: "/assets/images/consulting/payment.svg",
+      img: "/consulting/payment.svg",
       title: "Payment Processing",
       desc: "Our team of experienced developers can help you build high-quality payment processing solutions that meet your business needs.",
       link: "payment-processing",
     },
     {
-      img: "/assets/images/consulting/survey.svg",
+      img: "/consulting/survey.svg",
       title: "Survey Form Development",
       desc: "We offer a range of survey form development services, including survey creation, data collection, and analysis.",
       link: "survey-form-development",
     },
     {
-      img: "/assets/images/consulting/digital-marketing.svg",
+      img: "/consulting/digital-marketing.svg",
       title: "Digital Marketing",
       desc: "We offer a range of digital marketing services, including SEO, social media management, and content creation.",
       link: "digital-marketing",
     },
     {
-      img: "/assets/images/consulting/seo.svg",
+      img: "/consulting/seo.svg",
       title: "SEO/SEM Services",
       desc: `Our team of experienced SEO experts can help you improve your website's visibility and drive more traffic to your site.`,
       link: "seo-sem-services",
     },
     {
-      img: "/assets/images/consulting/social-media.svg",
+      img: "/consulting/social-media.svg",
       title: "Social Media Management",
       desc: "Our team of experienced marketers can help you build high-quality social media campaigns that drive traffic and engagement.",
       link: "social-media-management",
     },
     {
-      img: "/assets/images/consulting/business-email.svg",
+      img: "/consulting/business-email.svg",
       title: "Business eMail",
       desc: "Our team of experienced marketers can help you build high-quality Business eMail campaigns that drive traffic and engagement.",
       link: "business-email",
     },
     {
-      img: "/assets/images/consulting/human-resource.svg",
+      img: "/consulting/human-resource.svg",
       title: "Human Resource Management",
       desc: "We offer a range of human resource management services, including recruitment, onboarding, and performance management.",
       link: "human-resource-management",
     },
     {
-      img: "/assets/images/consulting/it-consulting.svg",
+      img: "/consulting/it-consulting.svg",
       title: "IT Consultancy Management",
       desc: "We offer a range of IT consultancy services, including system design, implementation, and support.",
       link: "it-consulting",
     },
     {
-      img: "/assets/images/consulting/ui-ux.svg",
+      img: "/consulting/ui-ux.svg",
       title: "UI/UX Designing",
       desc: "We offer a range of UI/ UX designing services, including wireframing, prototyping, and user testing.",
       link: "ui-ux-designing",
     },
     {
-      img: "/assets/images/consulting/video-content.svg",
+      img: "/consulting/video-content.svg",
       title: "Content/ Email Marketing",
       desc: "We offer a range of video / email / content marketing services, including video creation, email marketing, and content creation.",
       link: "video-content-email",

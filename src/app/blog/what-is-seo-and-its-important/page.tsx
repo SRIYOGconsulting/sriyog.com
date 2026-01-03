@@ -11,7 +11,7 @@ export const metadata:Metadata ={
     url: "https://www.sriyog.com/blog/what-is-seo-and-its-important",
     images: [
       {
-        url: "https://sriyog.com/assets/images/og/default.jpg",
+        url: "https://sriyog.com/og/default.jpg",
         alt: "What is SEO and Why Is It Important for Your Website?"
       }
     ]
@@ -23,7 +23,7 @@ export default function WhatisSEOAndItsImportance() {
       <section className=" lg:w-[900px] max-lg:container max-lg:px-3 mx-auto my-[45px] space-y-6">
         <div className="relative w-full md:h-[450px] h-[250px] rounded-3xl overflow-hidden ">
           <Image
-            src="/assets/images/blog/SEO-1.0.jpg"
+            src="/blog/SEO-1.0.jpg"
             alt="things-to-keep-in-website"
             className="object-cover h-full w-full"
             fill
@@ -53,7 +53,7 @@ export default function WhatisSEOAndItsImportance() {
 
         <div className="relative w-full md:h-[450px] h-[250px] rounded-3xl overflow-hidden ">
           <Image
-            src="/assets/images/blog/SEO-1.1.jpg"
+            src="/blog/SEO-1.1.jpg"
             alt="things-to-keep-in-website"
             className="object-cover h-full w-full"
             fill
@@ -87,7 +87,7 @@ export default function WhatisSEOAndItsImportance() {
 
         <div className="relative w-full md:h-[450px] h-[250px] rounded-3xl overflow-hidden ">
           <Image
-            src="/assets/images/blog/SEO-1.2.jpg"
+            src="/blog/SEO-1.2.jpg"
             alt="things-to-keep-in-website"
             className="object-cover h-full w-full"
             fill
