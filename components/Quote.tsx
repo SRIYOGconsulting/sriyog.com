@@ -371,7 +371,7 @@ const Quote = () => {
       <select
         id={id}
         required={obligatory}
-        value={form[id]}
+        value={form[id] as string}
         onChange={handleChange}
         className={inputStyle}
       >
@@ -422,7 +422,7 @@ const Quote = () => {
         id={id}
         type={type}
         required = {obligatory}
-        value={form[id]}
+        value={form[id] as  string}
         onChange={handleChange}
         placeholder={`Enter ${id ==="phonenumber" ? "Phone Number" : label.toLowerCase()}`}
         className={inputStyle}
