@@ -424,7 +424,7 @@ export default function Survey() {
     e.preventDefault();
     console.log(form)
     if (!isChecked1 || !isChecked2) return;
-    // if (!submit)return;
+    if (!submit)return;
     for (const field of requiredPages[4]) {
         const value = form[field];
         if (!value || (Array.isArray(value) && value.length === 0)) {
