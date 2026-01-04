@@ -78,7 +78,7 @@ export async function POST(req: Request) {
         "Organization Registration Type": form.registration,
         "Type of Organisation": form.organizationType,
         "Industry Type": form.industry,
-        "Organisation PAN/ VAT Number": form.panvat ? form.panvat : null,
+        "Organisation PAN/ VAT Number": form.panvat,
         "Name of Referral Person": form.referralName,
         "Referral Phone Number": form.referralPhone,
         "How did you know about us ?": form.how,

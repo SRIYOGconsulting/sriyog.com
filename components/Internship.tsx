@@ -223,6 +223,7 @@ export default function InternshipForm() {
 
   return (
     <>
+      <Ribbon des="" name="Internship" />
         {submitted && (
         <div className="fixed inset-0 z-50 flex items-center justify-center">
           <div className="text-white bg-[#055d59] rounded-lg p-5 w-[90%] max-w-md text-center shadow-xl">
@@ -534,6 +535,7 @@ Time Zone : Coordinated Universal Time (UTC) of UTC+03:00 ( <a className="border
               <input
                 name="semester"
                 type="number"
+                pattern="[0-9]+"
                 placeholder={focusStates.semester ? "" : "Enter semester"}
                 value={formData.semester}
                 onChange={handleChange}
@@ -550,7 +552,7 @@ Time Zone : Coordinated Universal Time (UTC) of UTC+03:00 ( <a className="border
                 onChange={handleChange}
                 className={inputField}
               >
-                <option value="">Select Gender</option>
+                <option value="">Select Period</option>
                 {Period.map((opt) => (
                   <option key={opt} value={opt}>{opt}</option>
                 ))}

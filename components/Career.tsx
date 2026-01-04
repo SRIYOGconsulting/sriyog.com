@@ -336,7 +336,6 @@ const getFileUrl = async (file: File) => {
   }
   return (
     <>
-      <Ribbon name="Career" des="" />
       <section className="max-w-295 mx-auto px-6 md:px-6 lg:px-6 xl:px-0">
         {submitted && (
         <div className="fixed inset-0 z-50 flex items-center justify-center">
@@ -373,7 +372,6 @@ const getFileUrl = async (file: File) => {
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
               {renderInput("firstName", "First Name","text",true)}
               {renderInput("lastName", "Last Name","text",true)}
-              {renderInput("maritalStatus", "Marital Status","text",true)}
               {renderInput("city", "City","text",true)}
               {renderphoneInput("phone", "Phone")}
               {renderInput("country","Country","text",true)}
@@ -400,6 +398,16 @@ const getFileUrl = async (file: File) => {
                   options: [
                     "Male",
                     "Female"
+                  ]
+                },
+                {
+                  label:"Marital Status",
+                  name:"maritalStatus",
+                  options: [
+                    "Single",
+                    "Maried",
+                    "Complicated",
+                    "Prefer not to say",
                   ]
                 },
                 {

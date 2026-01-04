@@ -1,3 +1,4 @@
+import CareerPage from "@/components/Career";
 import Ribbon from "@/components/Ribbon";
 import { Metadata } from "next";
 
@@ -22,7 +23,7 @@ const Career = () => {
       <Ribbon name="Career" des="" />
       <section className=" max-w-[1180px] mx-auto">
         {/* form field of request quote */}
-        <div className=" mx-auto my-0">
+        {/* <div className=" mx-auto my-0">
           <iframe
             className="airtable-embed  h-full w-full"
             src="https://airtable.com/embed/appcRLi3R3qIFyPIU/pagRhDtt6qX4O0LZ7/form"
@@ -31,7 +32,8 @@ const Career = () => {
               height:"2230px"
             }}
           ></iframe>
-        </div>
+        </div> */}
+        <CareerPage/>
       </section>
     </>
   );
