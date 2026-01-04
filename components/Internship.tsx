@@ -534,6 +534,7 @@ Time Zone : Coordinated Universal Time (UTC) of UTC+03:00 ( <a className="border
               <input
                 name="semester"
                 type="number"
+                pattern="[0-9]+"
                 placeholder={focusStates.semester ? "" : "Enter semester"}
                 value={formData.semester}
                 onChange={handleChange}
@@ -550,7 +551,7 @@ Time Zone : Coordinated Universal Time (UTC) of UTC+03:00 ( <a className="border
                 onChange={handleChange}
                 className={inputField}
               >
-                <option value="">Select Gender</option>
+                <option value="">Select Period</option>
                 {Period.map((opt) => (
                   <option key={opt} value={opt}>{opt}</option>
                 ))}

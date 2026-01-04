@@ -372,7 +372,6 @@ const getFileUrl = async (file: File) => {
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
               {renderInput("firstName", "First Name","text",true)}
               {renderInput("lastName", "Last Name","text",true)}
-              {renderInput("maritalStatus", "Marital Status","text",true)}
               {renderInput("city", "City","text",true)}
               {renderphoneInput("phone", "Phone")}
               {renderInput("country","Country","text",true)}
@@ -399,6 +398,16 @@ const getFileUrl = async (file: File) => {
                   options: [
                     "Male",
                     "Female"
+                  ]
+                },
+                {
+                  label:"Marital Status",
+                  name:"maritalStatus",
+                  options: [
+                    "Single",
+                    "Maried",
+                    "Complicated",
+                    "Prefer not to say",
                   ]
                 },
                 {

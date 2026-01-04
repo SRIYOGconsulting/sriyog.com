@@ -35,7 +35,7 @@ type FormData = {
   registration: string;
   industry: string;
   organizationType:string;
-  panvat: string;
+  panvat: number | null;
   referralName: string;
   referralPhone: string;
   how: string;
@@ -51,10 +51,8 @@ const Quote = () => {
   const [isSubmitting,setIsSubmitting] = useState<boolean>(false);
   const [submitted,setSubmitted] = useState<boolean>(false);
   const [dots, setDots] = useState("");
-  const [error,setError] = useState<boolean>(false);
   const [StartdateError,setStartDateError] = useState<boolean>(false);
   const [EnddateError,setEndDateError] = useState<boolean>(false);
-  const industryRef = useRef<HTMLDivElement>(null);
   const dateRef = useRef<HTMLDivElement>(null);
   const [form, setForm] = useState({
     name: "",
@@ -79,7 +77,7 @@ const Quote = () => {
     registration: "",
     organizationType:"",
     industry: "",
-    panvat: "",
+    panvat: null,
     referralName: "",
     referralPhone: "",
     how: "",
@@ -294,13 +292,7 @@ const Quote = () => {
     "Above $250 Monthly",
   ]
 
-  useEffect(()=>{
-    if(form.industry && form.organizationType){
-      setError(true)
-      return;
-    }
-    setError(false)
-  },[form.industry,form.organizationType])
+
   
 
   useEffect(() => {
@@ -337,8 +329,6 @@ const Quote = () => {
   
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    if(!form.industry && !form.organizationType){setError(true); industryRef.current?.scrollIntoView({ behavior: "smooth", block: "center" }); return}
-    if(form.industry && form.organizationType){setError(true); industryRef.current?.scrollIntoView({ behavior: "smooth", block: "center" }); return}
     if(StartdateError || EnddateError){dateRef.current?.scrollIntoView({ behavior: "smooth", block: "center" }) ; return};
     console.log(form)
     setIsSubmitting(true)
@@ -421,7 +411,7 @@ const Quote = () => {
   const renderInput = (
     id: keyof typeof form,
     label: string,
-    type: "text" | "email" | "date" | "url" | "tel" = "text",
+    type: "text" | "email" | "date" | "url" | "tel" | "number" = "text",
     obligatory: boolean,
   ) => (
     <div key={id}>
@@ -517,17 +507,15 @@ const Quote = () => {
             {renderInput("vendor", "Existing IT Vendor","text",false)}
             {renderSelect("registration", "Registration Type *", registrationTypes,true)}
             
-            <div ref={industryRef} className="relative">
-              {renderSelectSearch('Industry Type','industry',industryOptions,false,false)}
-              {error && <h1 className="absolute -bottom-1 text-sm text-red-600">Select industry or organization</h1>}
+            <div className="relative">
+              {renderSelectSearch('Industry Type','industry',industryOptions,false,true)}
             </div>
             
             <div className="relative">
               {renderSelectSearch('Organizatioin Type','organizationType',OrganizationTypes,false,false)}
-              {error && <h1 className="absolute -bottom-1 text-sm text-red-600">Select industry or organization</h1>} 
             </div>
             
-            {renderInput("panvat", "PAN / VAT Number","text",false)}
+            {renderInput("panvat", "PAN / VAT Number","number",false)}
             {renderInput("referralName", "Referral Name","text",false)}
             {renderInput("referralPhone", "Referral Phone","text",false)}         
             </div>

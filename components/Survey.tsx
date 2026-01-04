@@ -424,7 +424,6 @@ export default function Survey() {
     e.preventDefault();
     console.log(form)
     if (!isChecked1 || !isChecked2) return;
-    if(!submit) return;
     // if (!submit)return;
     for (const field of requiredPages[4]) {
         const value = form[field];
@@ -1430,7 +1429,7 @@ export default function Survey() {
             <select value={form.usesLicensedWindows} ref={el => { inputRefs.current["usesLicensedWindows"] = el }} name="usesLicensedWindows" required className={inputField} style={{cursor: "pointer"}} onChange={handleChange}>
                 <option value="">Select option...</option>
                 <option value="Yes">Yes</option>
-                <option value="No">No, cracked</option>
+                <option value="No, cracked">No, cracked</option>
                 <option value="Don't know">Don't know</option>
                 <option value="Trying to keep it genuine">Trying to keep it genuine</option>
                 <option value="Other">Other</option>
