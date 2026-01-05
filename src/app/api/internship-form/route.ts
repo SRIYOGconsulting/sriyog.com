@@ -24,7 +24,6 @@ export async function POST(req: Request) {
       "Interested In":form.interest,
       "Highest Education":form.education,
       "Current Semester / Passed Year":form.semesterYear,
-      Semester:form.semester ? form.semester : null,
       "Expertise / Interest": form.interests.map((opt:Option) => opt.value),
       "Gender" : form.gender,
       "Internship Period":form.period,

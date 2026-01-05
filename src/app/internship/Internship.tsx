@@ -20,7 +20,6 @@ interface FormData {
   education: string;
   semesterYear: string;
   college: string;
-  semester: string;
   period: string;
   course: string;
   interests: option[];
@@ -48,7 +47,6 @@ export default function InternshipForm() {
     education: "",
     semesterYear: "",
     college: "",
-    semester: "",
     period: "",
     course: "",
     interests: [],
@@ -223,6 +221,7 @@ export default function InternshipForm() {
 
   return (
     <>
+      <Ribbon des="" name="Internship" />
         {submitted && (
         <div className="fixed inset-0 z-50 flex items-center justify-center">
           <div className="text-white bg-[#055d59] rounded-lg p-5 w-[90%] max-w-md text-center shadow-xl">
@@ -323,7 +322,7 @@ Verbal Round&#41;
               </span>
             </li>
             <li>
-              <span className="font-bold">Technical Test</span> &#45; text-sm A written or live test to evaluate
+              <span className="font-bold">Technical Test</span> &#45;  A written or live test to evaluate
               relevant knowledge and problem-solving abilities.
             </li>
             <li>
@@ -489,60 +488,6 @@ Time Zone : Coordinated Universal Time (UTC) of UTC+03:00 ( <a className="border
             </div>
 
             <div>
-              <label>Emergency Contact Person</label>
-              <input
-                required
-                name="emergencyContact"
-                placeholder="Enter emergency contact person"
-                type="text"
-                value={formData.emergencyContact}
-                onChange={handleChange}
-                className={inputField}
-              />
-            </div>
-
-            <div>
-              <label className="block mb-1">Emergency Phone Number</label>
-              <PhoneInput
-                country="np"
-                value={formData.emergencyPhone}
-                onChange={(value) => handlePhoneChange(value, "emergencyPhone")}
-                inputProps={{ name: "emergencyPhone", required: true }}
-                inputStyle={{ width: "100%", paddingLeft: "48px", fontSize: 16,height:"40px" }}
-                placeholder="+977 98XXXXXXXX"
-                enableSearch
-                countryCodeEditable={false}
-                containerClass="mb-4"
-              />
-            </div>
-
-            <div>
-              <label>Relation</label>
-              <input
-                required
-                name="relation"
-                placeholder="Enter relation"
-                type="text"
-                value={formData.relation}
-                onChange={handleChange}
-                className={inputField}
-              />
-            </div>
-
-            <div>
-              <label>Semester</label>
-              <input
-                name="semester"
-                type="number"
-                pattern="[0-9]+"
-                placeholder={focusStates.semester ? "" : "Enter semester"}
-                value={formData.semester}
-                onChange={handleChange}
-                className={inputField}
-              />
-            </div>
-
-            <div>
               <label>Internship Period</label>
               <select
                 required
@@ -589,7 +534,7 @@ Time Zone : Coordinated Universal Time (UTC) of UTC+03:00 ( <a className="border
             </div>
 
             <div>
-              <label>Select Virtual Interview Slot</label>
+              <label>Select Virtual Internship Slot</label>
               <select
                 required
                 name="interviewSlot"
@@ -603,22 +548,66 @@ Time Zone : Coordinated Universal Time (UTC) of UTC+03:00 ( <a className="border
                 ))}
               </select>
             </div>
-            
-          </div>              
-          <div className="mt-4">
-            <label>Expertise / Interest</label>
-            <Select
+            <div className="">
+              <label className="mb-1 block">Expertise / Interest</label>
+              <Select
+                  required
+                  isMulti
+                  instanceId="skills"
+                  options={selectSkills}
+                  value={formData.interests}
+                  styles={customStyles}
+                  onChange={(selected) =>
+                      setFormData({ ...formData, interests: selected as option[] })
+                  }
+              />
+            </div>
+
+            <div>
+              <label>Emergency Contact Person</label>
+              <input
                 required
-                isMulti
-                instanceId="skills"
-                options={selectSkills}
-                value={formData.interests}
-                styles={customStyles}
-                onChange={(selected) =>
-                    setFormData({ ...formData, interests: selected as option[] })
-                }
-            />
-          </div>
+                name="emergencyContact"
+                placeholder="Enter emergency contact person"
+                type="text"
+                value={formData.emergencyContact}
+                onChange={handleChange}
+                className={inputField}
+              />
+            </div>
+
+            <div>
+              <label className="block mb-1">Emergency Phone Number</label>
+              <PhoneInput
+                country="np"
+                value={formData.emergencyPhone}
+                onChange={(value) => handlePhoneChange(value, "emergencyPhone")}
+                inputProps={{ name: "emergencyPhone", required: true }}
+                inputStyle={{ width: "100%", paddingLeft: "48px", fontSize: 16,height:"40px" }}
+                placeholder="+977 98XXXXXXXX"
+                enableSearch
+                countryCodeEditable={false}
+                containerClass="mb-4"
+              />
+            </div>
+
+            <div>
+              <label>Relation</label>
+              <select
+                required
+                name="relation"
+                value={formData.relation}
+                onChange={handleChange}
+                className={inputField}
+              >
+                <option value="">Select Relation</option>
+                <option value="Father">Father</option>
+                <option value="Mother">Mother</option>
+              </select>
+            </div>
+
+          </div>              
+
 
           {/* File Uploads */}
           <div>
@@ -629,6 +618,7 @@ Time Zone : Coordinated Universal Time (UTC) of UTC+03:00 ( <a className="border
                 required
                 type="file"
                 name="cv"
+                accept=".pdf"
                 className={`${fileinputStyle} mb-4`}
                 onChange={async(e)=>{
                   const file = e.target.files?.[0]
@@ -638,11 +628,12 @@ Time Zone : Coordinated Universal Time (UTC) of UTC+03:00 ( <a className="border
             </label>
 
             <label className="block mb-2">
-              Upload Cover Letter:
+              Upload Handwritten Cover Letter:
               <input
                 required
                 type="file"
                 name="coverLetter"
+                accept=".pdf"
                 className={`${fileinputStyle} mb-4`}
                 onChange={async(e)=>{
                   const file = e.target.files?.[0]
@@ -652,10 +643,11 @@ Time Zone : Coordinated Universal Time (UTC) of UTC+03:00 ( <a className="border
             </label>
 
             <label className="block mb-4">
-              Upload Headshot:
+              Upload Current Headshot:
               <input
                 required
                 type="file"
+                accept=".jpg,.jpeg"
                 name="headshot"
                 className={`${fileinputStyle}`}
                 onChange={async(e)=>{

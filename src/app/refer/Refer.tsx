@@ -435,7 +435,7 @@ export default function Refer() {
             ></textarea>
           </div>
 
-          <div className="text-sm text-[#555555] mt-6 gap-4 flex flex-col">
+          <div className="text-sm text-[#555555] mt-2 gap-4 flex flex-col">
             <div className="flex items-start sm:items-center gap-2">
               <input type="checkbox"  required   className="bg-[#555555] cursor-pointer mt-1.5 sm:mt-0" />{" "}
               <label>

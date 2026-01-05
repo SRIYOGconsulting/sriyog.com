@@ -132,7 +132,7 @@ export default function Testimonials() {
     {
       title: "Singh Engineering Works",
       desc: "We appreciated SRIYOG Consulting's dedication to crafting a tailored, high-quality website that truly reflects our brand and meets our business goals. Their team worked closely with us throughout the process, ensuring every detail aligned with our vision and expectations perfectly.",
-      name: "Arbin Singh",
+      name: "Arvind Singh",
       stack: "Director",
       image: "/testimonials/8.png",
        addr:"Biratnagar"

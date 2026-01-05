@@ -3,10 +3,10 @@ import Image from "next/image";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "SRIYOG Blog | SRIYOG Consulting",
+  title: "Blog | SRIYOG Consulting",
   description: "Stay updated with the latest insights and trends in UI/UX, SEO, and Digital Marketing.",
   openGraph: {
-    title: "SRIYOG Blog | SRIYOG Consulting",
+    title: "Blog | SRIYOG Consulting",
     description: "Stay updated with the latest insights and trends in UI/UX, SEO, and Digital Marketing.",
     url: "https://www.sriyog.com/blog",
     images: [

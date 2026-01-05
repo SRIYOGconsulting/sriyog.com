@@ -1,4 +1,4 @@
-import BookMeeting from "@/components/Book-Meeting";
+import BookMeeting from "@/src/app/meeting/Book-Meeting";
 import Ribbon from "@/components/Ribbon";
 import { Metadata } from "next";
 import React from "react";

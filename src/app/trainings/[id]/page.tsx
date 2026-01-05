@@ -1,5 +1,5 @@
 import { trainings } from "@/src/data/trainings";
-import TrainingSinglepageComponent from "@/components/Training";
+import TrainingSinglepageComponent from "@/src/app/trainings/[id]/Training";
 import type { Metadata } from "next";
 
 type Props = {

@@ -470,7 +470,7 @@ export default function Footer() {
               </Link>
               <Link
                 prefetch={true}
-                href="https://www.youtube.com/@sriyogdotcom8535"
+                href="https://youtube.com/@sriyogconsulting"
                 target="_blank"
               >
                 <div className="relative h-[20px] w-[20px]">
