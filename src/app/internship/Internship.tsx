@@ -449,6 +449,7 @@ Time Zone : Coordinated Universal Time (UTC) of UTC+03:00 ( <a className="border
             <div>
               <label>Highest Education</label>
               <select
+              required
                 name="education"
                 value={formData.education}
                 onChange={handleChange}
@@ -505,15 +506,18 @@ Time Zone : Coordinated Universal Time (UTC) of UTC+03:00 ( <a className="border
 
             <div>
               <label>Internship Subject / Course</label>
-              <input
-                required
-                name="course"
-                type="text"
-                placeholder={focusStates.course ? "" : "Enter internship subject/course"}
-                value={formData.course}
-                onChange={handleChange}
-                className={inputField}
-              />
+              <select name="course" className={inputField} required onChange={handleChange} value={formData.course} >
+                <option value="">Select Subject</option>
+                <option value="Web Development">Web Development</option>
+                <option value="App Developement">App Developement</option>
+                <option value="MERN Stack">MERN Stack</option>
+                <option value="Fullstack Development">Fullstack Development</option>
+                <option value="Social Media Management">Social Media Management</option>
+                <option value="Data Science">Data Science</option>
+                <option value="Quality Assurance">Quality Assurance</option>
+                <option value="Content Writing">Content Writing</option>    
+                <option value="Other">Other</option>            
+              </select>
             </div>
 
 

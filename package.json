@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@types/nodemailer": "^7.0.4",
     "airtable": "^0.12.2",
     "antd": "^5.25.3",
     "cloudinary": "^2.8.0",
@@ -16,6 +17,7 @@
     "dotenv": "^17.2.3",
     "framer-motion": "^12.14.0",
     "next": "^16.0.10",
+    "nodemailer": "^7.0.12",
     "react": "^19.2.3",
     "react-dom": "^19.2.3",
     "react-hot-toast": "^2.5.2",
