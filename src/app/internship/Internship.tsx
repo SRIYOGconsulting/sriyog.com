@@ -24,7 +24,6 @@ interface FormData {
   college:string;
   period: string;
   course: string;
-  interestedin : string;
   interests: Option[];
   type: string;
   internshipSlot: string;
@@ -34,12 +33,13 @@ interface FormData {
   cv:File | null,
   headshot:File | null,
   coverletter:File | null,
-  citizenship: string[],
+  citizenship: File[],
 }
 const fileinputStyle = "w-full file:bg-[#383838] py-2.5 file:text-white file:mr-3 file:hover:bg-[#383100] file:active:bg-[#606060] file:px-2 file:rounded-md file:cursor-pointer pointer-events-auto mt-1 outline-none bg-white shadow-[#CBD0DB2E] shadow-xl p-2 border-[#EAEAEA] border rounded mb-1";
 
 export default function InternshipForm() {
   const [isSubmitting,setIsSubmitting] = useState<boolean>(false);
+  const [isLoading,setIsLoading] = useState<boolean>(false);
   const [submitted,setSubmitted] = useState<boolean>(false);
   const [dots, setDots] = useState("");
   const [formData, setFormData] = useState<FormData>({
@@ -55,7 +55,6 @@ export default function InternshipForm() {
     college:"",
     period: "",
     course: "",
-    interestedin:"",
     interests: [],
     type: "",
     internshipSlot: "",
@@ -89,28 +88,34 @@ export default function InternshipForm() {
     }),
   };
 
-  const getFileUrl = async (file: File) => {
-    console.log("Uploading file...");
+const getFileUrl = async (file: File) => {
+    console.log("Uploading file...");  
+    try{
+      setIsLoading(true)
+      const sigRes = await fetch("/api/cloudinary", { method: "POST" });
+      const sigData = await sigRes.json();
 
-    const sigRes = await fetch("/api/cloudinary", { method: "POST" });
-    const sigData = await sigRes.json();
+      const formData = new FormData();
+      formData.append("file", file);
+      formData.append("api_key", sigData.apiKey);
+      formData.append("timestamp", sigData.timestamp);
+      formData.append("signature", sigData.signature);
 
-    const formData = new FormData();
-    formData.append("file", file);
-    formData.append("api_key", sigData.apiKey);
-    formData.append("timestamp", sigData.timestamp);
-    formData.append("signature", sigData.signature);
+      const uploadRes = await fetch(
+        `https://api.cloudinary.com/v1_1/${sigData.cloudName}/auto/upload`,
+        { method: "POST", body: formData }
+      );
 
-    const uploadRes = await fetch(
-      `https://api.cloudinary.com/v1_1/${sigData.cloudName}/auto/upload`,
-      { method: "POST", body: formData }
-    );
-
-    const data = await uploadRes.json();
-    const downloadUrl = data.secure_url
-    console.log(downloadUrl);
-    return downloadUrl;
-  };
+      const data = await uploadRes.json();
+      const downloadUrl = data.secure_url
+      console.log(downloadUrl);
+      return downloadUrl;
+    }catch(error){
+      console.error(error)
+    }finally{
+      setIsLoading(false)
+    }
+  }
 
   const [focusStates, setFocusStates] = useState<Record<string, boolean>>({});
 
@@ -204,38 +209,47 @@ export default function InternshipForm() {
       return () => clearInterval(interval);
     }, [isSubmitting]);
   
-    const handleSubmit = async(e:React.FormEvent)=>{
-      e.preventDefault();
-      console.log(formData)
-      setIsSubmitting(true);
-      try {
-          const res = await fetch("/api/internship-form", {
-            method: "POST",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify(formData),
-          });
-    
-          const data = await res.json();
-    
-          if (!res.ok) {
-            console.error(data.error);
-            alert("Failed to submit form: " + data.error);
-          } else {
-            console.log("Form submitted successfully!");
-            setSubmitted(true)
-          }
-        } catch (err) {
-          console.error(err);
-          alert("An error occurred. Try again.");
-        }finally{
-          setIsSubmitting(false);
-         
+  const handleSubmit = async(e:React.FormEvent)=>{
+    e.preventDefault();
+    console.log(formData)
+    setIsSubmitting(true);
+    try {
+        const res = await fetch("/api/internship-form", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(formData),
+        });
+  
+        const data = await res.json();
+  
+        if (!res.ok) {
+          console.error(data.error);
+          alert("Failed to submit form: " + data.error);
+        } else {
+          console.log("Form submitted successfully!");
+          setSubmitted(true)
         }
-    }
+      } catch (err) {
+        console.error(err);
+        alert("An error occurred. Try again.");
+      }finally{
+        setIsSubmitting(false);
+       
+      }
+  }
 
   return (
     <>
       <Ribbon des="" name="Internship" />
+        {isLoading && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center">
+          <div className="flex items-center justify-center">
+            <div
+              className="h-8 w-8 animate-spin rounded-full border-4 border-solid border-blue-400 border-t-transparent"
+            ></div>
+          </div>
+        </div>
+        )}
         {submitted && (
         <div className="fixed inset-0 z-50 flex items-center justify-center">
           <div className="text-white bg-[#055d59] rounded-lg p-5 w-[90%] max-w-md text-center shadow-xl">
@@ -256,7 +270,6 @@ export default function InternshipForm() {
       )}
       <section className="p-4 max-w-[1180px] md:px-0 mx-auto">
         <div>
-          <h1 className="font-bold text-3xl mb-4">SRIYOG | Internship</h1>
          <div className="text-sm ">
            <p className="font-bold mb-4 text-sm">Hi,</p>
           <p className="text-sm">
@@ -534,7 +547,6 @@ Time Zone : Coordinated Universal Time (UTC) of UTC+03:00 ( <a className="border
               />
             </div>
 
-
             <div>
               <label>Internship Period</label>
               <select
@@ -550,17 +562,6 @@ Time Zone : Coordinated Universal Time (UTC) of UTC+03:00 ( <a className="border
                 ))}
               </select>
             </div>
-
-            <div>
-              <label>Interested In</label>
-              <select name="interestedin" className={inputField} required onChange={handleChange} value={formData.interestedin} >
-                <option value="">Select Subject</option>
-                {InterestedIn.map((opt,i)=>(
-                  <option key={i} value={opt}>{opt}</option>
-                ))}
-              </select>
-            </div>
-
             <div>
               <label>Internship Subject / Course</label>
               <select name="course" className={inputField} required onChange={handleChange} value={formData.course} >
@@ -651,11 +652,8 @@ Time Zone : Coordinated Universal Time (UTC) of UTC+03:00 ( <a className="border
                 containerClass="mb-4"
               />
             </div>
-
-          </div>              
-
-          <div>
-              <label className="block mt-6">Relation</label>
+            <div>
+              <label className="">Relation</label>
               <select
                 required
                 name="relation"
@@ -669,75 +667,77 @@ Time Zone : Coordinated Universal Time (UTC) of UTC+03:00 ( <a className="border
                 <option value="Other">Other</option>
               </select>
             </div>
-
+          </div>              
 
           {/* File Uploads */}
           <div>
             <h2 className="font-[700] text-xl mt-8 mb-6 border-b border-black pb-1 w-fit">Uploads</h2>
-            <label className="block mb-2">
-              Upload CV/Resume:
-              <input
-                required
-                type="file"
-                name="cv"
-                accept=".pdf"
-                className={`${fileinputStyle} mb-4`}
-                onChange={async(e)=>{
-                  const file = e.target.files?.[0]
-                  if(!file)return;
-                  setFormData({...formData,cv: await getFileUrl(file)})}}
-              />
-            </label>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <label className="block mb-2">
+                Upload CV / Resume:
+                <input
+                  required
+                  type="file"
+                  name="cv"
+                  accept=".pdf"
+                  className={`${fileinputStyle} mb-4`}
+                  onChange={async(e)=>{
+                    const file = e.target.files?.[0]
+                    if(!file)return;
+                    setFormData({...formData,cv: await getFileUrl(file)})}}
+                />
+              </label>
 
-            <label className="block mb-2">
-              Upload Handwritten Cover Letter:
-              <input
-                required
-                type="file"
-                name="coverLetter"
-                accept=".pdf"
-                className={`${fileinputStyle} mb-4`}
-                onChange={async(e)=>{
-                  const file = e.target.files?.[0]
-                  if(!file)return;
-                  setFormData({...formData,coverletter: await getFileUrl(file)})}}
-              />
-            </label>
+              <label className="block mb-2">
+                Upload Handwritten Cover Letter:
+                <input
+                  required
+                  type="file"
+                  name="coverLetter"
+                  accept=".pdf"
+                  className={`${fileinputStyle} mb-4`}
+                  onChange={async(e)=>{
+                    const file = e.target.files?.[0]
+                    if(!file)return;
+                    setFormData({...formData,coverletter: await getFileUrl(file)})}}
+                />
+              </label>
 
-            <label className="block mb-4">
-              Upload Current Headshot:
-              <input
-                required
-                type="file"
-                accept=".jpg,.jpeg"
-                name="headshot"
-                className={`${fileinputStyle}`}
-                onChange={async(e)=>{
-                  const file = e.target.files?.[0]
-                  if(!file)return;
-                  setFormData({...formData,headshot: await getFileUrl(file)})}}
-              />
-            </label>
+              <label className="block mb-4">
+                Upload Current Headshot:
+                <input
+                  required
+                  type="file"
+                  accept=".jpg,.jpeg"
+                  name="headshot"
+                  className={`${fileinputStyle}`}
+                  onChange={async(e)=>{
+                    const file = e.target.files?.[0]
+                    if(!file)return;
+                    setFormData({...formData,headshot: await getFileUrl(file)})}}
+                />
+              </label>
 
-            <label className="block mb-4">
-              Upload Citizenship:
-              <input
-                required
-                type="file"
-                multiple
-                accept=".jpg,.jpeg,.png"
-                name="citizenship"
-                className={`${fileinputStyle}`}
-                onChange={async (e) => {
-                  const files = Array.from(e.target.files ?? []);
-                  const urls = await Promise.all(
-                    files.map(file => getFileUrl(file))
-                  );
+              <label className="block mb-4">
+                Upload Citizenship / Government ID:
+                <input
+                  required
+                  type="file"
+                  multiple
+                  accept=".jpg,.jpeg,.png,.pdf"
+                  name="citizenship"
+                  className={`${fileinputStyle}`}
+                  onChange={async (e) => {
+                    const files = Array.from(e.target.files ?? []);
+                    const urls = await Promise.all(
+                      files.map(file => getFileUrl(file))
+                    );
 
-                  setFormData({ ...formData, citizenship: urls });
-                }}
-              />
-            </label>
+                    setFormData({ ...formData, citizenship: urls });
+                  }}
+                />
+              </label>
+            </div>
           </div>
           <div className="space-y-2 mt-2">
             <div className="flex items-start sm:items-center gap-2">
