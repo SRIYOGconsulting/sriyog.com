@@ -1,13 +1,13 @@
 "use client";
 
 import Ribbon from "@/components/Ribbon";
-import { get } from "http";
+import { countries } from "@/data/countries";
 import React, { useEffect, useState } from "react";
 import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/style.css";
-import Select from "react-select";
+import Select, { SingleValue } from "react-select";
 
-type option = {
+type Option = {
   label:string,
   value:string
 }
@@ -16,21 +16,25 @@ interface FormData {
   lastName: string;
   phone: string;
   email: string;
+  country : string;
   gender: string;
   education: string;
   semesterYear: string;
-  college: string;
+  university: string;
+  college:string;
   period: string;
   course: string;
-  interests: option[];
+  interestedin : string;
+  interests: Option[];
   type: string;
-  interviewSlot: string;
+  internshipSlot: string;
   emergencyContact: string;
   relation: string;
   emergencyPhone: string;
   cv:File | null,
   headshot:File | null,
   coverletter:File | null,
+  citizenship: string[],
 }
 const fileinputStyle = "w-full file:bg-[#383838] py-2.5 file:text-white file:mr-3 file:hover:bg-[#383100] file:active:bg-[#606060] file:px-2 file:rounded-md file:cursor-pointer pointer-events-auto mt-1 outline-none bg-white shadow-[#CBD0DB2E] shadow-xl p-2 border-[#EAEAEA] border rounded mb-1";
 
@@ -42,22 +46,26 @@ export default function InternshipForm() {
     firstName: "",
     lastName: "",
     phone: "",
+    country : "",
     email: "",
     gender: "",
     education: "",
     semesterYear: "",
-    college: "",
+    university: "",
+    college:"",
     period: "",
     course: "",
+    interestedin:"",
     interests: [],
     type: "",
-    interviewSlot: "",
+    internshipSlot: "",
     emergencyContact: "",
     relation: "",
     emergencyPhone: "",
     cv:null,
     headshot:null,
     coverletter: null,
+    citizenship: [],
   });
 
   const customStyles = {
@@ -115,35 +123,41 @@ export default function InternshipForm() {
     "Ph. D",
     "Other",
   ];
+  
+  const InterestedIn = [
+    "Part Time Work",
+    "Full Time Job",
+    "Project Based Work",
+    "Internship",
+    "Training",
+    "Career Growth",
+    "Others"
+  ]
+
   const genderOptions = ["Female", "Male"];
   const typeOptions = ["Hybrid", "Remote", "Onsite"];
-  const interviewSlots = [
-    "Sunday - Friday 8:15 AM to 10:15 AM (GMT+3)",
-    "Sunday - Friday 12:15 PM to 3:15 PM (GMT+3)",
-    "Sunday - Friday 4:15 PM to 7:15 PM (GMT+3)",
-  ];
 
   const Period = [
     "2 Months","3 Months","6 Months"
   ]
     const selectSkills = [
-      { label: "PHP", value: "PHP" },
-      { label: "MySQL", value: "MySQL" },
+      { label: "PHP", value: "Php" },
+      { label: "MySQL", value: "MySql" },
       { label: "HTML", value: "HTML" },
       { label: "Bootstrap", value: "Bootstrap" },
-      { label: "Next.js", value: "Next.js" },
+      { label: "Next.js", value: "Next Js" },
       { label: "Laravel", value: "Laravel" },
       { label: "React", value: "React" },
       { label: "Flutter", value: "Flutter" },
       { label: "React Native", value: "React Native" },
       { label: "Figma", value: "Figma" },
-      { label: "JavaScript", value: "JavaScript" },
-      { label: "Vue.js", value: "Vue.js" },
+      { label: "JavaScript", value: "Javascript" },
+      { label: "Vue.js", value: "Vue Js" },
       { label: "Tailwind", value: "Tailwind" },
-      { label: "TypeScript", value: "TypeScript" },
+      { label: "TypeScript", value: "Typescript" },
       { label: "WordPress", value: "WordPress" },
-      { label: "Node.js", value: "Node.js" },
-      { label: "MongoDB", value: "MongoDB" },
+      { label: "Node.js", value: "Node Js" },
+      { label: "MongoDB", value: "Mongo DB" },
       { label: "Express", value: "Express" },
       { label: "Photoshop", value: "Photoshop" },
       { label: "Canva", value: "Canva" },
@@ -394,7 +408,26 @@ Time Zone : Coordinated Universal Time (UTC) of UTC+03:00 ( <a className="border
                 className={inputField}
               />
             </div>
-
+            <div>
+              <label className="block mb-1.5">Country</label>
+              <Select<Option, false>
+                instanceId="country"
+                options={countries}
+                required
+                styles={customStyles}
+                value={
+                  countries.find(
+                    (c) => c.value === formData.country
+                  ) ?? null
+                }
+                onChange={(option) =>
+                  setFormData({
+                    ...formData,
+                    country: option?.value ?? ""
+                  })
+                }
+              />
+            </div>
             <div>
               <label>Email</label>
               <input
@@ -476,17 +509,31 @@ Time Zone : Coordinated Universal Time (UTC) of UTC+03:00 ( <a className="border
             </div>
 
             <div>
+              <label>Name of University</label>
+              <input
+                required
+                name="university"
+                type="text"
+                placeholder={focusStates.university ? "" : "Enter university name"}
+                value={formData.university}
+                onChange={handleChange}
+                className={inputField}
+              />
+            </div>
+            
+            <div>
               <label>Name of College / Campus</label>
               <input
                 required
                 name="college"
                 type="text"
-                placeholder={focusStates.college ? "" : "Enter college or campus name"}
+                placeholder={focusStates.college ? "" : "Enter college / campus name"}
                 value={formData.college}
                 onChange={handleChange}
                 className={inputField}
               />
             </div>
+
 
             <div>
               <label>Internship Period</label>
@@ -500,6 +547,16 @@ Time Zone : Coordinated Universal Time (UTC) of UTC+03:00 ( <a className="border
                 <option value="">Select Period</option>
                 {Period.map((opt) => (
                   <option key={opt} value={opt}>{opt}</option>
+                ))}
+              </select>
+            </div>
+
+            <div>
+              <label>Interested In</label>
+              <select name="interestedin" className={inputField} required onChange={handleChange} value={formData.interestedin} >
+                <option value="">Select Subject</option>
+                {InterestedIn.map((opt,i)=>(
+                  <option key={i} value={opt}>{opt}</option>
                 ))}
               </select>
             </div>
@@ -541,15 +598,15 @@ Time Zone : Coordinated Universal Time (UTC) of UTC+03:00 ( <a className="border
               <label>Select Virtual Internship Slot</label>
               <select
                 required
-                name="interviewSlot"
-                value={formData.interviewSlot}
+                name="internshipSlot"
+                value={formData.internshipSlot}
                 onChange={handleChange}
                 className={inputField}
               >
                 <option value="">Select Interview Slot</option>
-                {interviewSlots.map((opt) => (
-                  <option key={opt} value={opt}>{opt}</option>
-                ))}
+                <option value="Morning  8:00 AM – 11:00 AM (GMT+3)">Sunday - Friday 8:15 AM to 10:15 AM (GMT+3)</option>
+                <option value="Afternoon  12:00 PM – 3:00 PM (GMT+3)">Sunday - Friday 12:15 PM to 3:15 PM (GMT+3)</option>
+                <option value="Evening  4:00 PM – 7:00 PM (GMT+3)">Sunday - Friday 4:15 PM to 7:15 PM (GMT+3)</option>
               </select>
             </div>
             <div className="">
@@ -562,7 +619,7 @@ Time Zone : Coordinated Universal Time (UTC) of UTC+03:00 ( <a className="border
                   value={formData.interests}
                   styles={customStyles}
                   onChange={(selected) =>
-                      setFormData({ ...formData, interests: selected as option[] })
+                      setFormData({ ...formData, interests: selected as Option[] })
                   }
               />
             </div>
@@ -595,8 +652,10 @@ Time Zone : Coordinated Universal Time (UTC) of UTC+03:00 ( <a className="border
               />
             </div>
 
-            <div>
-              <label>Relation</label>
+          </div>              
+
+          <div>
+              <label className="block mt-6">Relation</label>
               <select
                 required
                 name="relation"
@@ -607,10 +666,9 @@ Time Zone : Coordinated Universal Time (UTC) of UTC+03:00 ( <a className="border
                 <option value="">Select Relation</option>
                 <option value="Father">Father</option>
                 <option value="Mother">Mother</option>
+                <option value="Other">Other</option>
               </select>
             </div>
-
-          </div>              
 
 
           {/* File Uploads */}
@@ -658,6 +716,26 @@ Time Zone : Coordinated Universal Time (UTC) of UTC+03:00 ( <a className="border
                   const file = e.target.files?.[0]
                   if(!file)return;
                   setFormData({...formData,headshot: await getFileUrl(file)})}}
+              />
+            </label>
+
+            <label className="block mb-4">
+              Upload Citizenship:
+              <input
+                required
+                type="file"
+                multiple
+                accept=".jpg,.jpeg,.png"
+                name="citizenship"
+                className={`${fileinputStyle}`}
+                onChange={async (e) => {
+                  const files = Array.from(e.target.files ?? []);
+                  const urls = await Promise.all(
+                    files.map(file => getFileUrl(file))
+                  );
+
+                  setFormData({ ...formData, citizenship: urls });
+                }}
               />
             </label>
           </div>

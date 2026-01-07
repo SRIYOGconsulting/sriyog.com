@@ -8,33 +8,34 @@ export async function POST(req: Request) {
   try {
     const form = await req.json();
 
-    const url = `https://api.airtable.com/v0/${process.env.AIRTABLE_BASE_ID}/Internship`;
+    const url = `https://api.airtable.com/v0/${process.env.AIRTABLE_SRIYOG_BASE_ID}/WorkForce`;
 
     const fields = {
       "First Name": form.firstName,
       "Last Name": form.lastName,
       "City" : form.city,
-      "Country": form.country,
-      "Phone Number": form.phone,
-      Email: form.email,
+      "Country": form.country.value,
+      "Phone": form.phone,
+      eMail: form.email,
       "Emergency Contact Person": form.emergencyContact,
       "Emergency Phone Number": form.emergencyPhone,
       "Relation": form.relation,
-      "Name of College / Campus":form.college,
-      "Interested In":form.interest,
+      "Name of University":form.university,
+      "Name of College / Campus": form.college,
+      "Interested in":form.interestedin,
       "Highest Education":form.education,
       "Current Semester / Passed Year":form.semesterYear,
-      "Expertise / Interest": form.interests.map((opt:Option) => opt.value),
+      "Expertise/ Interest": form.interests.map((opt:Option) => opt.value),
       "Gender" : form.gender,
       "Internship Period":form.period,
-      "Internship Subject":form.course,
-      "Virtual Interview Slot":form.interviewSlot,
-      "Internship Type": form.type,
-      "CV/Resume": [{
+      "Internship Subject / Course":form.course,
+      "Internship Slot":form.internshipSlot,
+      "Hybrid/ Remote/ OnSIte": form.type,
+      "Upload CV/ Resume": [{
             url: form.cv,
             filename: `${form.firstname} cv`
       }],
-      "Cover Letter": [{
+      "Upload Cover Letter": [{
             url: form.coverletter,
             filename: `${form.firstname} cover letter`
       }],
@@ -42,12 +43,16 @@ export async function POST(req: Request) {
             url: form.headshot,
             filename: `${form.firstname} headshot`
       }],
+      "Citizenship/ Government Issued ID":form.citizenship.map((url:string, index:number) => ({
+        url,
+        filename: `${form.firstname} citizenship ${index + 1}`
+      }))
     };
 
     const airtableRes = await fetch(url, {
       method: "POST",
       headers: {
-        Authorization: `Bearer ${process.env.AIRTABLE_TOKEN}`,
+        Authorization: `Bearer ${process.env.AIRTABLE_SRIYOG_TOKEN}`,
         "Content-Type": "application/json",
       },
       body: JSON.stringify({

@@ -413,17 +413,6 @@ export default function Footer() {
                   />
                 </div>
               </Link>
-              <Link prefetch={true} href="https://d.sriyog.com/signal" target="_blank">
-                <div className="relative h-[20px] w-[20px]">
-                  <Image
-                    src="/icons/signal.svg"
-                    fill
-                    priority
-                    className="object-contain"
-                    alt="signal"
-                  />
-                </div>
-              </Link>
               
               <Link prefetch={true} href="https://d.sriyog.com/whatsapp" target="_blank">
                 <div className="relative h-[20px] w-[20px]">
