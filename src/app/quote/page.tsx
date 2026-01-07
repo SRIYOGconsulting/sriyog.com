@@ -1,4 +1,4 @@
-import Quote from "@/components/Quote";
+import Quote from "@/src/app/quote/Quote";
 import { Metadata } from "next";
 import React from "react";
 

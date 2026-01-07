@@ -1,17 +1,17 @@
 'use client'
-import Ribbon from "@/components/Ribbon";
-import { Console } from "console";
+
+import { countries } from "@/data/countries";
 import { useEffect, useState } from "react";
 import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/style.css";
-import Select, { MultiValue } from "react-select";
+import Select, { MultiValue, SingleValue } from "react-select";
 interface CareerFormData {
   firstName: string;
   lastName: string;
   maritalStatus: string;
   city: string;
   phone: string;
-  country: string;
+  country: SelectOption[];
   email: string;
   gender: string;
   university: string;
@@ -62,7 +62,7 @@ export default function CareerPage() {
     maritalStatus: "",
     city: "",
     phone: "",
-    country:"",
+    country:[],
     email: "",
     gender: "",
     university: "",
@@ -207,6 +207,7 @@ const getFileUrl = async (file: File) => {
     <div key={name}>
       <label>{label}</label>
       <select
+        required
         name={name}
         value={careerData[name as keyof CareerFormData] as string}
         onChange={handleChange}
@@ -222,26 +223,41 @@ const getFileUrl = async (file: File) => {
     </div>
   )
 
-  const renderSelectSearch = <K extends keyof CareerFormData>(label:string,name:K,options: SelectOption[])=>(
-    <div key={label} className="mb-4">
-        <label className="block mb-1">{label}</label>
-        <Select
-           isMulti
-           instanceId={name}
-           options={options}
-           value={careerData.topSkills}
-           styles={customStyles}
-           onChange={(selected: MultiValue<SelectOption>) =>
-              setCareerData({ ...careerData, topSkills: selected as SelectOption[] })
-           }
-        />
-    </div>
-  )
+const renderSelectSearch = <K extends keyof CareerFormData>(
+  label: string,
+  name: K,
+  options: SelectOption[],
+  multi: boolean
+) => {
 
-  const renderFile = (label:string,name: keyof CareerFormData)=>(
+  const handleChange = (value: MultiValue<SelectOption> | SingleValue<SelectOption>) => {
+    if (multi) {
+      setCareerData({ ...careerData, [name]: value as SelectOption[] });
+    } else {
+      setCareerData({ ...careerData, [name]:  value as SelectOption });
+    }
+  };
+
+  return (
+    <div key={label} className="mb-4">
+      <label className="block mb-1">{label}</label>
+      <Select
+        isMulti={multi}
+        instanceId={name}
+        options={options}
+        value={careerData[name] as any} 
+        styles={customStyles}
+        onChange={handleChange}
+      />
+    </div>
+  );
+};
+
+  const renderFile = (label:string,name: keyof CareerFormData,req:boolean)=>(
     <div key={label} className="mb-4">
       <label className="block mb-1">{label}</label>
       <input
+        required={req}
         type="file"
         className={fileinputStyle}
         onChange={(e) => handleFileChange(e, name)}
@@ -370,24 +386,24 @@ const getFileUrl = async (file: File) => {
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-              {renderInput("firstName", "First Name","text",true)}
-              {renderInput("lastName", "Last Name","text",true)}
-              {renderInput("city", "City","text",true)}
-              {renderphoneInput("phone", "Phone")}
-              {renderInput("country","Country","text",true)}
-              {renderInput("fatherName","Father's Name","text",true)}
-              {renderphoneInput("fatherPhone", "Father's Phone Number")}      
-              {renderInput("email", "Email","email",true)}
-              {renderInput("university", "Name of University","text",true)}
+              {renderInput("firstName", "First Name *","text",true)}
+              {renderInput("lastName", "Last Name *","text",true)}
+              {renderSelectSearch("Country *","country",countries,false)}
+              {renderphoneInput("phone", "Phone *")}
+              {renderInput("city", "City *","text",true)}
+              {renderInput("fatherName","Father's Name *","text",true)}
+              {renderphoneInput("fatherPhone", "Father's Phone Number *")}      
+              {renderInput("email", "Email *","email",true)}
+              {renderInput("university", "Name of University *","text",true)}
               {renderInput("college", "Name of College / Campus","text",true)}
-              {renderInput("interest", "Interested In","text",true)}
-              {renderInput("highestEducation", "Highest Education","text",true)}
-              {renderInput("currentStatus", "Current Semester / Passed Year","text",true)}
+              {renderInput("interest", "Interested In *","text",true)}
+              {renderInput("highestEducation", "Highest Education *","text",true)}
+              {renderInput("currentStatus", "Current Semester / Passed Year *","text",true)}
               {renderInput("github", "GitHub URL","url",true)}
               {renderInput("portfolio", "Project / Personal / Portfolio URL","text",false)}
               {/* Top skills */}
 
-              {renderSelectSearch("Top skills", "topSkills", selectSkills)}
+              {renderSelectSearch("Top skills *", "topSkills", selectSkills,true)}
 
 
               {/* SELECT DROPDOWNS */}
@@ -487,16 +503,16 @@ const getFileUrl = async (file: File) => {
 
             <h2 className="font-bold text-lg mt-6 col-span-2 mb-8 border-b pb-1 border-[#383838]">Uploads</h2>
             {[
-            { label: "Upload CV/Resume", name: "cv" },
-            { label: "Upload Handwritten Cover Letter", name: "coverletter" },
-            { label: "Headshot", name: "headshot" },
-            { label: "Citizenship", name: "citizenship" },
-            { label: "Academic Certificate", name: "academicCertificate" },
-            { label: "Training Certificate", name: "trainingCertificate" },
-            { label: "Volunteering Certificate", name: "volunteeringCertificate" },
-            { label: "Internship Certificate", name: "internshipCertificate" },
-            ].map(({ label, name }) => 
-                renderFile(label, name as keyof CareerFormData))}
+            { label: "Upload CV/Resume", name: "cv" , req:true},
+            { label: "Upload Handwritten Cover Letter", name: "coverletter", req:true },
+            { label: "Headshot", name: "headshot" , req:true},
+            { label: "Citizenship", name: "citizenship" , req:true},
+            { label: "Academic Certificate", name: "academicCertificate", req:false },
+            { label: "Training Certificate", name: "trainingCertificate" , req:false},
+            { label: "Volunteering Certificate", name: "volunteeringCertificate" , req:false},
+            { label: "Internship Certificate", name: "internshipCertificate", req:false },
+            ].map(({ label, name ,req}) => 
+                renderFile(label, name as keyof CareerFormData,req))}
 
           {/* Check boxex */}
           <div className="text-sm text-[#555555] mt-6 gap-4 flex flex-col">

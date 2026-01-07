@@ -1,4 +1,4 @@
-import CareerPage from "@/components/Career";
+import CareerPage from "@/src/app/career/Career";
 import Ribbon from "@/components/Ribbon";
 import { Metadata } from "next";
 

@@ -20,7 +20,6 @@ interface FormData {
   education: string;
   semesterYear: string;
   college: string;
-  semester: string;
   period: string;
   course: string;
   interests: option[];
@@ -48,7 +47,6 @@ export default function InternshipForm() {
     education: "",
     semesterYear: "",
     college: "",
-    semester: "",
     period: "",
     course: "",
     interests: [],
@@ -223,6 +221,7 @@ export default function InternshipForm() {
 
   return (
     <>
+      <Ribbon des="" name="Internship" />
         {submitted && (
         <div className="fixed inset-0 z-50 flex items-center justify-center">
           <div className="text-white bg-[#055d59] rounded-lg p-5 w-[90%] max-w-md text-center shadow-xl">
@@ -323,7 +322,7 @@ Verbal Round&#41;
               </span>
             </li>
             <li>
-              <span className="font-bold">Technical Test</span> &#45; text-sm A written or live test to evaluate
+              <span className="font-bold">Technical Test</span> &#45;  A written or live test to evaluate
               relevant knowledge and problem-solving abilities.
             </li>
             <li>
@@ -450,6 +449,7 @@ Time Zone : Coordinated Universal Time (UTC) of UTC+03:00 ( <a className="border
             <div>
               <label>Highest Education</label>
               <select
+              required
                 name="education"
                 value={formData.education}
                 onChange={handleChange}
@@ -489,6 +489,85 @@ Time Zone : Coordinated Universal Time (UTC) of UTC+03:00 ( <a className="border
             </div>
 
             <div>
+              <label>Internship Period</label>
+              <select
+                required
+                name="period"
+                value={formData.period}
+                onChange={handleChange}
+                className={inputField}
+              >
+                <option value="">Select Period</option>
+                {Period.map((opt) => (
+                  <option key={opt} value={opt}>{opt}</option>
+                ))}
+              </select>
+            </div>
+
+            <div>
+              <label>Internship Subject / Course</label>
+              <select name="course" className={inputField} required onChange={handleChange} value={formData.course} >
+                <option value="">Select Subject</option>
+                <option value="Web Development">Web Development</option>
+                <option value="App Developement">App Developement</option>
+                <option value="MERN Stack">MERN Stack</option>
+                <option value="Fullstack Development">Fullstack Development</option>
+                <option value="Social Media Management">Social Media Management</option>
+                <option value="Data Science">Data Science</option>
+                <option value="Quality Assurance">Quality Assurance</option>
+                <option value="Content Writing">Content Writing</option>    
+                <option value="Other">Other</option>            
+              </select>
+            </div>
+
+
+            <div>
+              <label>Internship Type</label>
+              <select
+                required
+                name="type"
+                value={formData.type}
+                onChange={handleChange}
+                className={inputField}
+              >
+                <option value="">Select Internship Type</option>
+                {typeOptions.map((opt) => (
+                  <option key={opt} value={opt}>{opt}</option>
+                ))}
+              </select>
+            </div>
+
+            <div>
+              <label>Select Virtual Internship Slot</label>
+              <select
+                required
+                name="interviewSlot"
+                value={formData.interviewSlot}
+                onChange={handleChange}
+                className={inputField}
+              >
+                <option value="">Select Interview Slot</option>
+                {interviewSlots.map((opt) => (
+                  <option key={opt} value={opt}>{opt}</option>
+                ))}
+              </select>
+            </div>
+            <div className="">
+              <label className="mb-1 block">Expertise / Interest</label>
+              <Select
+                  required
+                  isMulti
+                  instanceId="skills"
+                  options={selectSkills}
+                  value={formData.interests}
+                  styles={customStyles}
+                  onChange={(selected) =>
+                      setFormData({ ...formData, interests: selected as option[] })
+                  }
+              />
+            </div>
+
+            <div>
               <label>Emergency Contact Person</label>
               <input
                 required
@@ -518,107 +597,21 @@ Time Zone : Coordinated Universal Time (UTC) of UTC+03:00 ( <a className="border
 
             <div>
               <label>Relation</label>
-              <input
+              <select
                 required
                 name="relation"
-                placeholder="Enter relation"
-                type="text"
                 value={formData.relation}
                 onChange={handleChange}
                 className={inputField}
-              />
-            </div>
-
-            <div>
-              <label>Semester</label>
-              <input
-                name="semester"
-                type="number"
-                pattern="[0-9]+"
-                placeholder={focusStates.semester ? "" : "Enter semester"}
-                value={formData.semester}
-                onChange={handleChange}
-                className={inputField}
-              />
-            </div>
-
-            <div>
-              <label>Internship Period</label>
-              <select
-                required
-                name="period"
-                value={formData.period}
-                onChange={handleChange}
-                className={inputField}
               >
-                <option value="">Select Period</option>
-                {Period.map((opt) => (
-                  <option key={opt} value={opt}>{opt}</option>
-                ))}
+                <option value="">Select Relation</option>
+                <option value="Father">Father</option>
+                <option value="Mother">Mother</option>
               </select>
             </div>
 
-            <div>
-              <label>Internship Subject / Course</label>
-              <input
-                required
-                name="course"
-                type="text"
-                placeholder={focusStates.course ? "" : "Enter internship subject/course"}
-                value={formData.course}
-                onChange={handleChange}
-                className={inputField}
-              />
-            </div>
-
-
-            <div>
-              <label>Internship Type</label>
-              <select
-                required
-                name="type"
-                value={formData.type}
-                onChange={handleChange}
-                className={inputField}
-              >
-                <option value="">Select Internship Type</option>
-                {typeOptions.map((opt) => (
-                  <option key={opt} value={opt}>{opt}</option>
-                ))}
-              </select>
-            </div>
-
-            <div>
-              <label>Select Virtual Interview Slot</label>
-              <select
-                required
-                name="interviewSlot"
-                value={formData.interviewSlot}
-                onChange={handleChange}
-                className={inputField}
-              >
-                <option value="">Select Interview Slot</option>
-                {interviewSlots.map((opt) => (
-                  <option key={opt} value={opt}>{opt}</option>
-                ))}
-              </select>
-            </div>
-            
           </div>              
-          <div className="mt-4">
-            <label>Expertise / Interest</label>
-            <Select
-                required
-                isMulti
-                instanceId="skills"
-                options={selectSkills}
-                value={formData.interests}
-                styles={customStyles}
-                onChange={(selected) =>
-                    setFormData({ ...formData, interests: selected as option[] })
-                }
-            />
-          </div>
+
 
           {/* File Uploads */}
           <div>
@@ -629,6 +622,7 @@ Time Zone : Coordinated Universal Time (UTC) of UTC+03:00 ( <a className="border
                 required
                 type="file"
                 name="cv"
+                accept=".pdf"
                 className={`${fileinputStyle} mb-4`}
                 onChange={async(e)=>{
                   const file = e.target.files?.[0]
@@ -638,11 +632,12 @@ Time Zone : Coordinated Universal Time (UTC) of UTC+03:00 ( <a className="border
             </label>
 
             <label className="block mb-2">
-              Upload Cover Letter:
+              Upload Handwritten Cover Letter:
               <input
                 required
                 type="file"
                 name="coverLetter"
+                accept=".pdf"
                 className={`${fileinputStyle} mb-4`}
                 onChange={async(e)=>{
                   const file = e.target.files?.[0]
@@ -652,10 +647,11 @@ Time Zone : Coordinated Universal Time (UTC) of UTC+03:00 ( <a className="border
             </label>
 
             <label className="block mb-4">
-              Upload Headshot:
+              Upload Current Headshot:
               <input
                 required
                 type="file"
+                accept=".jpg,.jpeg"
                 name="headshot"
                 className={`${fileinputStyle}`}
                 onChange={async(e)=>{

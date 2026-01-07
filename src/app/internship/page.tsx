@@ -1,4 +1,4 @@
-import InternshipForm from "@/components/Internship";
+import InternshipForm from "@/src/app/internship/Internship";
 import Ribbon from "@/components/Ribbon";
 import { Metadata } from "next";
 
@@ -20,7 +20,6 @@ export const metadata: Metadata = {
 const Internship = () => {
   return (
     <>
-      <Ribbon name="Internship | SRIYOG" des="" />
       <section className="lg:w-full ">
         <InternshipForm/>
         {/* <div className="">

@@ -1,4 +1,4 @@
-import Refer from "@/components/Refer";
+import Refer from "@/src/app/refer/Refer";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {

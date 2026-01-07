@@ -1,5 +1,6 @@
-import Partnership from "../../../../components/Partnership";
+
 import { Metadata } from "next";
+import Partnership from "./Partnership";
 
 export const metadata: Metadata = {
   title: "Partnership | SRIYOG Consulting",

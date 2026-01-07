@@ -1,5 +1,5 @@
 import Ribbon from "@/components/Ribbon";
-import TrainingApplyForm from "@/components/Training-Form";
+import TrainingApplyForm from "@/src/app/trainings/apply/Training-Form";
 import { Metadata } from "next";
 
 

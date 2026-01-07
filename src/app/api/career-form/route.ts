@@ -15,7 +15,7 @@ export async function POST(req: Request) {
       "Last Name": form.lastName,
       "Marital Status": form.maritalStatus,
       "City" : form.city,
-      "Country": form.country,
+      "Country": form.country.value,
       "Phone Number": form.phone,
       "Father's Name": form.fatherName,
       "Father's Phone Number":form.fatherPhone,

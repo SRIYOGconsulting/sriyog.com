@@ -422,7 +422,7 @@ const Quote = () => {
         id={id}
         type={type}
         required = {obligatory}
-        value={form[id] as  string}
+        value={form[id] ? form[id] : ""}
         onChange={handleChange}
         placeholder={`Enter ${id ==="phonenumber" ? "Phone Number" : label.toLowerCase()}`}
         className={inputStyle}
