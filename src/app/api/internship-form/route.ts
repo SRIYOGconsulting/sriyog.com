@@ -22,7 +22,6 @@ export async function POST(req: Request) {
       "Relation": form.relation,
       "Name of University":form.university,
       "Name of College / Campus": form.college,
-      "Interested in":form.interestedin,
       "Highest Education":form.education,
       "Current Semester / Passed Year":form.semesterYear,
       "Expertise/ Interest": form.interests.map((opt:Option) => opt.value),

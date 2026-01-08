@@ -38,11 +38,9 @@ export default function Navbar() {
   const navItems = [
     { label: "Home", path: "/" },
     { label: "About", path: "/about" },
-    { label: "Team", path: "/team" },
     { label: "Consulting", path: "/consulting" },
     { label: "Pricing", path: "/pricing" },
     { label: "Clients", path: "/clients" },
-    { label: "Contact", path: "/contact" },
   ];
   return (
     <>
