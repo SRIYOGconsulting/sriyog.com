@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Ui Ux Designing | SRIYOG Consulting",
     description: "Expert ui ux designing services from SRIYOG Consulting.",
-    url: "https://www.sriyog.com/consulting/ui-ux-designing",
+    url: "https://www.sriyog.com/consulting/uiux-designing",
     images: [
       {
         url: "https://sriyog.com/og/default.jpg",

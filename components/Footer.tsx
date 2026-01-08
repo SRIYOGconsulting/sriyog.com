@@ -4,6 +4,8 @@ import Link from "next/link";
 import Image from "next/image";
 
 export default function Footer() {
+  const date = new Date();
+  const year = date.getFullYear();
   return (
     <>
       <footer className="border-t border-[#dee2e6] w-full bg-white">
@@ -367,7 +369,7 @@ export default function Footer() {
         <section className="w-full">
           <div className="lg:w-[1180px] my-4 mx-auto max-md:space-y-2 max-lg:container px-3 flex flex-wrap justify-between items-center">
             <p className="text-[14px] max-md:w-full max-md:text-[12px] max-md:text-center">
-              All Rights Reserved. © 2018-2025 SRIYOG Consulting Pvt. Ltd.
+              All Rights Reserved. © 2018-{year} SRIYOG Consulting
             </p>
             <div className="flex max-md:w-full max-md:justify-center gap-3">
               <Link
@@ -428,7 +430,7 @@ export default function Footer() {
               
               <Link
                 prefetch={true}
-                href="https://www.facebook.com/sriyogdotcom"
+                href="https://www.facebook.com/sriyog"
                 target="_blank"
               >
                 <div className="relative h-[20px] w-[20px]">

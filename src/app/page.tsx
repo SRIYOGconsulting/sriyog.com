@@ -139,6 +139,12 @@ export default function Home() {
   const latest = [
     {
       img: "/homepage/latest/1.jpg",
+      title: "Dr. Priyankas's Clinic Website redesigned",
+      date: " 10 Jan 2026 ",
+      category: "News",
+    },
+    {
+      img: "/homepage/latest/1.jpg",
       title: "Birat Informatics Registered",
       date: " 21 May 2025 ",
       category: "Press releases",
@@ -173,6 +179,7 @@ export default function Home() {
       date: " 03 Feb 2025 ",
       category: "News",
     },
+
   ];
 
   return (
@@ -403,9 +410,6 @@ export default function Home() {
                   <div className="absolute p-4 z-10 bottom-0 bg-[linear-gradient(180deg,_transparent,_rgba(0,_0,_0,_0.85)_30%,_rgba(0,_0,_0,_0.85))] text-white w-full">
                     <section className="flex gap-4 text-sm mb-1">
                       <p>Web Dev</p>
-                      <p>
-                        9<sup>th</sup> March , 2025
-                      </p>
                     </section>
                     <p className=" text-2xl translate-y-2 group-hover:translate-y-0  transition-all duration-500 ease-in-out">
                       21 Stages of Web Development
@@ -438,9 +442,6 @@ export default function Home() {
                   <div className="absolute p-4 z-10 bottom-0 bg-[linear-gradient(180deg,_transparent,_rgba(0,_0,_0,_0.85)_30%,_rgba(0,_0,_0,_0.85))] text-white w-full">
                     <section className="flex gap-4 mb-1 text-sm">
                       <p>Email</p>
-                      <p>
-                        9<sup>th</sup> March , 2025
-                      </p>
                     </section>
                     <p className=" text-2xl translate-y-2 group-hover:translate-y-0 transition-all duration-500 ease-in-out">
                       What is a Corporate/Business eMail?
@@ -470,9 +471,6 @@ export default function Home() {
                   <div className="absolute p-4 z-10 bottom-0 bg-[linear-gradient(180deg,_transparent,_rgba(0,_0,_0,_0.85)_30%,_rgba(0,_0,_0,_0.85))] text-white w-full">
                     <section className="flex gap-4 mb-1 text-sm">
                       <p>Technology</p>
-                      <p>
-                        9<sup>th</sup> March, 2025
-                      </p>
                     </section>
                     <p className=" text-2xl translate-y-2 group-hover:translate-y-0 transition-all duration-500 ease-in-out">
                       Things to keep in business website
@@ -502,9 +500,6 @@ export default function Home() {
                   <div className="absolute p-4 z-10 bottom-0 bg-[linear-gradient(180deg,_transparent,_rgba(0,_0,_0,_0.85)_30%,_rgba(0,_0,_0,_0.85))] text-white w-full">
                     <section className="flex gap-4 mb-1">
                       <p>Web</p>
-                      <p>
-                        28<sup>th</sup> August, 2019
-                      </p>
                     </section>
                     <p className=" text-xl translate-y-2 group-hover:translate-y-0 transition-all duration-500 ease-in-out">
                       Essential things to Keep in the Website

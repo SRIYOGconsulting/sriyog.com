@@ -37,7 +37,7 @@ export default function Aboutpage() {
   return (
     <>
       {/* About section*/}
-      <Ribbon name="About" des="" />
+      <Ribbon name="About SRIYOG Consulting" des="" />
 
       <div className="lg:max-w-[1180px] mx-auto px-4">
         <div className="  mx-auto flex flex-col items-center justify-center gap-5 my-10 rounded-xl ">

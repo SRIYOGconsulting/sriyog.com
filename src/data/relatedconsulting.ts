@@ -45,7 +45,7 @@ const relatedConsulting: ConsultingItem[] = [
       "Data Analysis",
       "UI/UX Designing",
       "Payment Processing",
-      "Video/Content/Email Marketing",
+      "Video/ Content/ Email Marketing",
       "Database Management",
     ],
   },
@@ -68,7 +68,7 @@ const relatedConsulting: ConsultingItem[] = [
       "UI/UX Designing",
       "Business Email",
       "Web Application Development",
-      "Video/Content/Email Marketing",
+      "Video/ Content/ Email Marketing",
     ],
   },
   {
@@ -85,7 +85,7 @@ const relatedConsulting: ConsultingItem[] = [
   {
     main: "Digital Marketing",
     related: [
-      "Video/Content/Email Marketing",
+      "Video/ Content/ Email Marketing",
       "Social Media Management",
       "SEO/SEM Services",
       "Web Application Development",
@@ -98,7 +98,7 @@ const relatedConsulting: ConsultingItem[] = [
     related: [
       "Digital Marketing",
       "UI/UX Designing",
-      "Video/Content/Email Marketing",
+      "Video/ Content/ Email Marketing",
       "Web Application Development",
       "Survey Form Development",
       "Database Management",
@@ -111,7 +111,7 @@ const relatedConsulting: ConsultingItem[] = [
       "SEO/SEM Services",
       "Human Resource Management",
       "Business Email",
-      "Video/Content/Email Marketing",
+      "Video/ Content/ Email Marketing",
       "Data Analysis",
     ],
   },
@@ -152,7 +152,7 @@ const relatedConsulting: ConsultingItem[] = [
     main: "UI/UX Designing",
     related: [
       "Software Development",
-      "Video/Content/Email Marketing",
+      "Video/ Content/ Email Marketing",
       "SEO/SEM Services",
       "Data Processing",
       "Digital Marketing",
@@ -160,7 +160,7 @@ const relatedConsulting: ConsultingItem[] = [
     ],
   },
   {
-    main: "Video/Content/Email Marketing",
+    main: "Video/ Content/ Email Marketing",
     related: [
       "Digital Marketing",
       "Social Media Management",

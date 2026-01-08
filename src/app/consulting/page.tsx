@@ -83,7 +83,7 @@ export default function Consulting() {
     },
     {
       img: "/consulting/business-email.svg",
-      title: "Business eMail",
+      title: "Business Email",
       desc: "Our team of experienced marketers can help you build high-quality Business eMail campaigns that drive traffic and engagement.",
       link: "business-email",
     },
@@ -95,7 +95,7 @@ export default function Consulting() {
     },
     {
       img: "/consulting/it-consulting.svg",
-      title: "IT Consultancy Management",
+      title: "IT Consulting",
       desc: "We offer a range of IT consultancy services, including system design, implementation, and support.",
       link: "it-consulting",
     },
@@ -103,7 +103,7 @@ export default function Consulting() {
       img: "/consulting/ui-ux.svg",
       title: "UI/UX Designing",
       desc: "We offer a range of UI/ UX designing services, including wireframing, prototyping, and user testing.",
-      link: "ui-ux-designing",
+      link: "uiux-designing",
     },
     {
       img: "/consulting/video-content.svg",

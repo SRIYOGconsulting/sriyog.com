@@ -174,6 +174,12 @@ export default function HomepageComponent() {
   const latest = [
     {
       img: "/homepage/latest/1.jpg",
+      title: "Dr. Priyankas's Clinic Website redesigned",
+      date: " 10 Jan 2026 ",
+      category: "News",
+    },
+    {
+      img: "/homepage/latest/1.jpg",
       title: "Birat Informatics Registered",
       date: " 21 May 2025 ",
       category: "Press releases",

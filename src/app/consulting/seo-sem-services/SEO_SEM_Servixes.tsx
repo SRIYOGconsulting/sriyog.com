@@ -136,8 +136,8 @@ export default function SEOSEM() {
     },
     {
       img: "/consultingPage/business-email.jpg",
-      title: "Business eMail",
-      desc: "Our team of experienced marketers can help you build high-quality Business eMail campaigns that drive traffic and engagement.",
+      title: "Business Email",
+      desc: "Our team of experienced marketers can help you build high-quality Business Email campaigns that drive traffic and engagement.",
       link: "business-email",
     },
     {
@@ -150,17 +150,17 @@ export default function SEOSEM() {
       img: "/consultingPage/it-consultancy-management.jpg",
       title: "IT Consultancy Management",
       desc: "We offer a range of IT consultancy services, including system design, implementation, and support.",
-      link: "IT-consultancy-management",
+      link: "it-consulting",
     },
     {
       img: "/consultingPage/UI-UX.jpg",
       title: "UI/UX Designing",
       desc: "We offer a range of UI/ UX designing services, including wireframing, prototyping, and user testing.",
-      link: "uiux",
+      link: "uiux-designing",
     },
     {
       img: "/consultingPage/video-content-email-marketing.jpg",
-      title: "Video/Content/Email Marketing",
+      title: "Video/ Content/ Email Marketing",
       desc: "We offer a range of video / email / content marketing services, including video creation, email marketing, and content creation.",
       link: "video-content-email",
     },

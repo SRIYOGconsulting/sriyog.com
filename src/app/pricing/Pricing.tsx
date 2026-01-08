@@ -126,7 +126,7 @@ const Pricing = () => {
                 </ul>
                 </div>
                 <div className='flex items-center justify-center w-full'>
-                <button className={`px-7 py-2 w-full mt-2 rounded-md cursor-pointer ${plan.name === "Professional" ? "bg-blue-900 text-white hover:bg-blue-950 active:bg-blue-400" : "bg-gray-200 hover:bg-gray-300 active:bg-gray-100 text-black"}`}>Subscribe</button>
+                <button className={`px-7 py-2 w-full mt-2 rounded-md cursor-pointer ${plan.name === "Professional" ? "bg-blue-900 text-white hover:bg-blue-950 active:bg-blue-400" : "bg-gray-200 hover:bg-gray-300 active:bg-gray-100 text-black"}`}>Request a Quote</button>
                 </div>
             </div>
             </div>

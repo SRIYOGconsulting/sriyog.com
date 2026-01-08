@@ -141,8 +141,8 @@ export default function ConsultingManagement() {
     },
     {
       img: "/consultingPage/business-email.jpg",
-      title: "Business eMail",
-      desc: "Our team of experienced marketers can help you build high-quality Business eMail campaigns that drive traffic and engagement.",
+      title: "Business Email",
+      desc: "Our team of experienced marketers can help you build high-quality Business Email campaigns that drive traffic and engagement.",
       link: "business-email",
     },
     {
@@ -161,11 +161,11 @@ export default function ConsultingManagement() {
       img: "/consultingPage/UI-UX.jpg",
       title: "UI/UX Designing",
       desc: "We offer a range of UI/ UX designing services, including wireframing, prototyping, and user testing.",
-      link: "ui-ux-designing",
+      link: "uiux-designing",
     },
     {
       img: "/consultingPage/video-content-email-marketing.jpg",
-      title: "Video/Content/Email Marketing",
+      title: "Video/ Content/ Email Marketing",
       desc: "We offer a range of video / email / content marketing services, including video creation, email marketing, and content creation.",
       link: "video-content-email",
     },
@@ -182,7 +182,7 @@ export default function ConsultingManagement() {
           className=" border-1 border-blue-50 mb-[45px] rounded-[15px]"
         />
         <h1 className="font-extrabold text-[34px] text-center">
-          IT Consultancy
+          IT Consulting
         </h1>
         <p className="text-center text-[16px] mb-[45px]">
           Your internal teams to understand your objectives and create tailored
