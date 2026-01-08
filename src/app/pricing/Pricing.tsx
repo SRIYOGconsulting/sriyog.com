@@ -1,4 +1,5 @@
 'use client'
+import Link from 'next/link'
 import React, { useEffect, useState } from 'react'
 type PlanType = {
   name: string
@@ -126,7 +127,9 @@ const Pricing = () => {
                 </ul>
                 </div>
                 <div className='flex items-center justify-center w-full'>
+                <Link href="/quote">
                 <button className={`px-7 py-2 w-full mt-2 rounded-md cursor-pointer ${plan.name === "Professional" ? "bg-blue-900 text-white hover:bg-blue-950 active:bg-blue-400" : "bg-gray-200 hover:bg-gray-300 active:bg-gray-100 text-black"}`}>Request a Quote</button>
+                </Link>
                 </div>
             </div>
             </div>
