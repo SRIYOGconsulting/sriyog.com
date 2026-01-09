@@ -371,6 +371,7 @@ export default function Home() {
                 {categoriesOpen && (
                   <ul className="absolute top-full left-0 w-full bg-white border border-[#ccc] z-20 rounded-md shadow-md">
                     {[
+                      "All Categories",
                       "Digitalization",
                       "Growth",
                       "Resilience",
@@ -570,6 +571,7 @@ export default function Home() {
                 {eventsOpen && (
                   <ul className="absolute top-full left-0 w-full bg-white border border-[#ccc] z-20 rounded-md shadow-md">
                     {[
+                      "View All Events",
                       "TechFriday",
                       "Company Updates",
                       "Product Release",

@@ -113,8 +113,8 @@ export default function Footer() {
                 {
                   label: (
                     <>
-                      <Link prefetch={true} href="/pitch">
-                        Pitch Deck
+                      <Link prefetch={true} href="/branches">
+                        Branches
                       </Link>
                     </>
                   ),

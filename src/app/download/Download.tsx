@@ -44,7 +44,6 @@ const fileList: FileList[] = [
 
   { url: "/files/SRIYOG-Consulting-Meeting-Minutes.pdf", size: "44.42 KB" },
   { url: "/files/SRIYOG-Consulting-Order.docx", size: "9.07 KB" },
-  { url: "/files/Work-Order.docx", size: "9.07 KB" },
 ];
 
 

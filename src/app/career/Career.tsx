@@ -501,7 +501,8 @@ const renderSelectSearch = <K extends keyof CareerFormData>(
 
           </div>
 
-            <h2 className="font-bold text-lg mt-6 col-span-2 mb-8 border-b pb-1 border-[#383838]">Uploads</h2>
+          <h2 className="font-bold text-xl mt-6 col-span-2 mb-8 border-b pb-1 border-[#383838]">Uploads</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
             {[
             { label: "Upload CV/Resume", name: "cv" , req:true},
             { label: "Upload Handwritten Cover Letter", name: "coverletter", req:true },
@@ -513,7 +514,7 @@ const renderSelectSearch = <K extends keyof CareerFormData>(
             { label: "Internship Certificate", name: "internshipCertificate", req:false },
             ].map(({ label, name ,req}) => 
                 renderFile(label, name as keyof CareerFormData,req))}
-
+          </div>
           {/* Check boxex */}
           <div className="text-sm text-[#555555] mt-6 gap-4 flex flex-col">
             <div className="flex items-start sm:items-center gap-2">
