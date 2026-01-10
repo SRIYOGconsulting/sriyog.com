@@ -54,7 +54,6 @@ export const metadata: Metadata = {
     images: ["https://sriyog.com/og/default.jpg"],
     creator: "@sriyog",
   },
-  manifest: "/manifest.json",
 };
 
 export default function RootLayout({

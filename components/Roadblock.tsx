@@ -116,7 +116,7 @@ const RoadBlock = ( ) => {
             >
               <div className="relative h-7.5 w-10 transition-all duration-700 ease-in-out hover:rotate-120">
                 <Image
-                  src="/icons/WhatsApp.svg"
+                  src="/icons/whatsapp.svg"
                   fill
                   priority
                   className="object-contain"

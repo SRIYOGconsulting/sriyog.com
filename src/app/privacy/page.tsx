@@ -21,8 +21,8 @@ export default function Privacy() {
   return (
     <>
     <Ribbon name={name} des={""}/>
-      <section className=" mb-[45px] flex justify-center align-middle mt-0 w-full">
-        <div className=" bg-white  text-justify w-[1180px] mx-auto max-lg:container max-lg:px-3">
+      <section className="mb-[45px] mx-auto max-lg:container max-lg:px-3 lg:w-[1180px] max-md:shadow-none border max-md:border-none border-[#dbdbdb] ">
+        <div className=" bg-white p-[55px] max-md:p-0  text-justify w-[1180px] mx-auto max-lg:container max-lg:px-3">
           <p className="text-[17px] mb-4 font-Normal leading-6 text-[#333] text-justify">
             Effective Date : 1<sup>st</sup>June, 2025
           </p>
