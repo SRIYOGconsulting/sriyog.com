@@ -19,6 +19,13 @@ export const metadata: Metadata = {
   }
 };
 export default function Page() {
+    // const res = await fetch("/api/partnership", {
+    //   method: "GET",
+    //   cache: "no-store",
+    // });
+
+    // const data = await res.json();
+    // console.log(data.records);
   const partner = [
     {
   name: "Khalti",

@@ -6,7 +6,7 @@ import "react-phone-input-2/lib/style.css";
 import Ribbon from "@/components/Ribbon";
 import Select from "react-select";
 import type { PartnershipFormValues } from "@/src/lib/defination";
-import { countries } from "@/data/countries";
+import { countries } from "@/src/data/countries";
 
 type PartnershipResponse =
   | { success: boolean; message: string }

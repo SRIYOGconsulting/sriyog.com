@@ -4,7 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import Ribbon from "@/components/Ribbon";
 import "react-phone-input-2/lib/style.css";
 import Select, { MultiValue, SingleValue } from "react-select";
-import { countries, countriesDialCodes } from "@/data/countries";
+import { countries, countriesDialCodes } from "@/src/data/countries";
 
 const inputStyle =
   "w-full mt-1 outline-none focus:border-2 focus:border-[#055d59] bg-white shadow-[#CBD0DB2E] shadow-xl p-2 border-[#EAEAEA] border rounded mb-4";

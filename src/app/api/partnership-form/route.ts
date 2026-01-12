@@ -54,3 +54,38 @@ export async function POST(req: Request) {
     );
   }
 }
+
+
+export async function GET() {
+  try {
+    const url = `https://api.airtable.com/v0/${process.env.AIRTABLE_BASE_ID}/Partnership`;
+
+    const airtableRes = await fetch(url, {
+      method: "GET",
+      headers: {
+        Authorization: `Bearer ${process.env.AIRTABLE_TOKEN}`,
+      },
+      // Important: prevent caching if data changes often
+      cache: "no-store",
+    });
+
+    const data = await airtableRes.json();
+
+    if (!airtableRes.ok) {
+      return NextResponse.json(
+        { success: false, error: data.error?.message },
+        { status: 500 }
+      );
+    }
+
+    return NextResponse.json(
+      { success: true, records: data.records },
+      { status: 200 }
+    );
+  } catch (error: any) {
+    return NextResponse.json(
+      { success: false, error: error.message },
+      { status: 500 }
+    );
+  }
+}
