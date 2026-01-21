@@ -174,7 +174,7 @@ const Fonts = () => {
               {item.name}
             </p>
             <a
-              href={item.link}
+              href={item.link.toLowerCase()}
               download
               className="border-[1.5px] text-[#4b4b4b] hover:bg-[#055d59] hover:text-white px-5 py-3 rounded-md font-semibold transition-all duration-300 ease-in-out"
             >
