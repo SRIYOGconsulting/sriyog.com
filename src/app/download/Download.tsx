@@ -40,10 +40,10 @@ const fileList: FileList[] = [
   { url: "/files/SRIYOG-Consulting-guestbook-feedback-form.pdf", size: "124.43 KB" },
   { url: "/files/SRIYOG-Consulting-Internship-Application-Letter.docx", size: "8.15 KB" },
   { url: "/files/SRIYOG-Consulting-Internship-Recommendation-Letter-From-College.docx", size: "7.21 KB" },
-  { url: "/files/sriyog-consulting-logos.zip", size: "268.70 KB" },
+  { url: "/files/SRIYOG-Consulting-Logos.zip", size: "268.70 KB" },
 
   { url: "/files/SRIYOG-Consulting-Meeting-Minutes.pdf", size: "44.42 KB" },
-  { url: "/files/SRIYOG-Consulting-Order.docx", size: "9.07 KB" },
+  { url: "/files/SRIYOG-Work-Order.docx", size: "9.07 KB" },
 ];
 
 

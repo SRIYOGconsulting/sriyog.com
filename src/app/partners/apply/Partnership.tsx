@@ -278,14 +278,14 @@ const Partnership: React.FC = () => {
           
           <div className="space-y-2">
            <div className="flex items-start sm:items-center gap-2">
-              <input type="checkbox"  required   className="bg-[#555555] cursor-pointer mt-1.5 sm:mt-0" />{" "}
-              <label className="text-sm text-gray-600">
+              <input type="checkbox"  required   className="bg-[#555555]  h-3.75 w-3.75 cursor-pointer mt-1.5 sm:mt-0" />{" "}
+              <label className="text-md text-gray-600">
                 I confirm that the information provided in this partnership application is true, accurate, and complete to the best of my knowledge.
               </label>
             </div>
             <div className="flex items-start sm:items-center gap-2">
-              <input type="checkbox" className="cursor-pointer mt-1.5 sm:mt-0" required  />{" "}
-              <label className="text-sm text-gray-600">
+              <input type="checkbox" className="cursor-pointer mt-1.5 h-3.75 w-3.75 sm:mt-0" required  />{" "}
+              <label className="text-md text-gray-600">
                 I agree to be contacted by your company regarding this partnership application and understand that further discussions may be required.
               </label>
             </div>

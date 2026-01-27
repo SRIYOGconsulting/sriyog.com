@@ -8,16 +8,16 @@ const relatedConsulting: ConsultingItem[] = [
   {
     main: "Data Processing",
     related: [
-      "Database Management",
+      "Data Management",
       "Data Analysis",
       "Software Development",
       "UI/UX Designing",
       "SEO/SEM Services",
-      "IT Consultancy Management",
+      "IT Consulting",
     ],
   },
   {
-    main: "Database Management",
+    main: "Data Management",
     related: [
       "Data Processing",
       "Payment Processing",
@@ -46,7 +46,7 @@ const relatedConsulting: ConsultingItem[] = [
       "UI/UX Designing",
       "Payment Processing",
       "Video/ Content/ Email Marketing",
-      "Database Management",
+      "Data Management",
     ],
   },
   {
@@ -57,13 +57,13 @@ const relatedConsulting: ConsultingItem[] = [
       "Digital Marketing",
       "Data Processing",
       "Human Resource Management",
-      "IT Consultancy Management",
+      "IT Consulting",
     ],
   },
   {
     main: "Payment Processing",
     related: [
-      "Database Management",
+      "Data Management",
       "Data Processing",
       "UI/UX Designing",
       "Business Email",
@@ -79,7 +79,7 @@ const relatedConsulting: ConsultingItem[] = [
       "Digital Marketing",
       "SEO/SEM Services",
       "Software Development",
-      "IT Consultancy Management",
+      "IT Consulting",
     ],
   },
   {
@@ -101,7 +101,7 @@ const relatedConsulting: ConsultingItem[] = [
       "Video/ Content/ Email Marketing",
       "Web Application Development",
       "Survey Form Development",
-      "Database Management",
+      "Data Management",
     ],
   },
   {
@@ -123,7 +123,7 @@ const relatedConsulting: ConsultingItem[] = [
       "Human Resource Management",
       "UI/UX Designing",
       "SEO/SEM Services",
-      "Database Management",
+      "Data Management",
     ],
   },
   {
@@ -138,9 +138,9 @@ const relatedConsulting: ConsultingItem[] = [
     ],
   },
   {
-    main: "IT Consultancy Management",
+    main: "IT Consulting",
     related: [
-      "Database Management",
+      "Data Management",
       "Data Analysis",
       "Web Application Development",
       "Software Development",

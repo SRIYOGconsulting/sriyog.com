@@ -62,7 +62,7 @@ export default function HomepageComponent() {
           src="/icons/next-arrow.svg"
           alt="next-arrow"
           fill
-          className="object-contain"
+          className="object-contain hover:scale-[1.1] transform transition-transform duration-200"
           sizes=""
         />
       </div>
@@ -79,7 +79,7 @@ export default function HomepageComponent() {
           src="/icons/prev-arrow.svg"
           alt="prev-arrow"
           fill
-          className="object-contain"
+          className="object-contain hover:scale-[1.1] transform transition-transform duration-200"
           sizes=""
         />
       </div>
@@ -126,7 +126,7 @@ export default function HomepageComponent() {
     },
     {
       img: "/homepage/service/data-managment.jpg",
-      name: "Database Management",
+      name: "Data Management",
     },
     {
       img: "/homepage/service/data-processing.png",

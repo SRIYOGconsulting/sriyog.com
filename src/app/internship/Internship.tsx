@@ -328,7 +328,7 @@ const getFileUrl = async (file: File) => {
             <li>Mobile App Development : React Native/ Flutter</li>
             <li>Website Designing : React Js / Next Js / MERN Stack</li>
             <li>UI/UX Designing : Figma</li>
-            <li>Database Management : AirTable / MongoD / Supabase</li>
+            <li>Data Management : AirTable / MongoD / Supabase</li>
             <li>Digital Marketing : Various Tools</li>
           </ul>
 <br />

@@ -53,13 +53,10 @@ const BookMeeting = () => {
   };
 
   const dayslot = [
-  "Sunday ( 11 AM - 1 PM )",
-  "Monday ( 11 AM - 3 PM )",
-  "Tuesday ( 11 AM - 5 PM )",
-  "Wednesday ( 5 AM - 7 PM )",
-  "Thursday ( 11 AM - 3 PM )",
-  "Friday ( 11 AM - 12 PM )",
-  // "Saturday ( 1 PM - 5 PM )",
+  "Morning",
+  "Afternoon",
+  "Evening",
+  "Other",
 ];
 
   const Duration = [
@@ -70,7 +67,7 @@ const BookMeeting = () => {
     "2 Hours",
     "5 Hours",
     "10 AM to 5 PM",
-    "Whole Day Training",
+    "Whole Day",
   ];
 
   const meetingType = [

@@ -90,7 +90,7 @@ export default function Home() {
     },
     {
       img: "/homepage/service/data-managment.jpg",
-      name: "Database Management",
+      name: "Data Management",
     },
     {
       img: "/homepage/service/data-processing.png",

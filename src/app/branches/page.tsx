@@ -79,7 +79,7 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <>
-      <Ribbon name="Our Global Branches" des="" />
+      <Ribbon name="Our Branches" des="" />
       <section className="lg:w-[1180px] max-lg:container max-lg:px-3 mx-auto mb-[45px]">
         <p className="max-w-[800px] mx-auto text-center mb-[45px]">
           SRIYOG Consulting operates across multiple international locations to
@@ -99,6 +99,11 @@ export default function Page() {
               <p className=" mb-2 md:h-24 h-32 ">
                 {item.description.slice(0, 160)}...
               </p>
+              <Link href="/partners/apply">
+              <button className="border border-[#055d59] px-2 py-1 mt-2 rounded-md cursor-pointer hover:bg-[#055d59] hover:text-white">
+                Become a Partner
+              </button>
+              </Link>
               {/* <p className="border-b pb-2 border-[#dbdbdb]">
                 Service Started Date : {item.date}
               </p> */}

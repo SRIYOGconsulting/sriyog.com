@@ -5,7 +5,7 @@ import Link from "next/link";
 
 
 export const metadata:Metadata = {
-  title: "Consulting Services | SRIYOG Consulting",
+  title: "IT Consulting Services | SRIYOG Consulting",
   description: "Explore our range of consulting services designed to help your business thrive.",
   openGraph: {
     title: "Consulting Services | SRIYOG Consulting",
@@ -29,7 +29,7 @@ export default function Consulting() {
     },
     {
       img: "/consulting/data-management.svg",
-      title: "Database Management",
+      title: "Data Management",
       desc: "We offer a range of database management services, including database design, implementation, and optimization.",
       link: "data-management",
     },
@@ -115,7 +115,7 @@ export default function Consulting() {
 
   return (
     <>
-      <Ribbon name="Consulting" des="" />
+      <Ribbon name="IT Consulting" des="" />
 
       <section className="mx-auto lg:w-[1180px] max-lg:container max-lg:px-3 mb-[45px]">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 place-content-between gap-10">

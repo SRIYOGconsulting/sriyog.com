@@ -82,7 +82,7 @@ export default function SEOSEM() {
     },
     {
       img: "/consultingPage/database-management.jpg",
-      title: "Database Management",
+      title: "Data Management",
       desc: "We offer a range of database management services, including database design, implementation, and optimization.",
       link: "data-management",
     },
@@ -148,7 +148,7 @@ export default function SEOSEM() {
     },
     {
       img: "/consultingPage/it-consultancy-management.jpg",
-      title: "IT Consultancy Management",
+      title: "IT Consulting",
       desc: "We offer a range of IT consultancy services, including system design, implementation, and support.",
       link: "it-consulting",
     },

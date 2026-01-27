@@ -105,15 +105,7 @@ const Welcome = () => {
             </div>
           </div>
 
-          <div className="relative w-40 h-40  mx-10 max-md:mx-0 ">
-            <Image
-              src="/welcome/prakash_sig.png"
-              alt="Pracas_signature"
-              fill
-              className="object-contain"
-            />
-          </div>
-          <div className="flex mx-14 max-md:mx-7 mb-[25px]">
+          <div className="flex ml-10 mr-14 max-md:mr-7 mb-[25px] mt-5">
             <div className=" text-base font-semibold">
               Prakash Upreti [ PRACAS ]
               <br />

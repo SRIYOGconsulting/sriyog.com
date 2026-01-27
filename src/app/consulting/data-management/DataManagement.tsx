@@ -11,7 +11,7 @@ export default function Management() {
   const [data, setData] = useState<ConsultingItem[]>([]);
   useEffect(() => {
     const filtered = relatedConsulting.filter(
-      (item) => item.main === "Database Management"
+      (item) => item.main === "Data Management"
     );
     setData(filtered);
   }, []);
@@ -82,7 +82,7 @@ export default function Management() {
     },
     {
       img: "/consultingPage/database-management.jpg",
-      title: "Database Management",
+      title: "Data Management",
       desc: "We offer a range of database management services, including database design, implementation, and optimization.",
       link: "data-management",
     },
@@ -148,7 +148,7 @@ export default function Management() {
     },
     {
       img: "/consultingPage/it-consultancy-management.jpg",
-      title: "IT Consultancy Management",
+      title: "IT Consulting",
       desc: "We offer a range of IT consultancy services, including system design, implementation, and support.",
       link: "it-consulting",
     },
@@ -177,7 +177,7 @@ export default function Management() {
           className=" border-1 border-blue-50 mb-[45px] rounded-[15px]"
         />
         <h1 className="font-extrabold text-[34px] text-center">
-          Database Management
+          Data Management
         </h1>
         <p className="text-center text-[16px] mb-[45px]">
           Deep understanding of your business needs and translate them into a

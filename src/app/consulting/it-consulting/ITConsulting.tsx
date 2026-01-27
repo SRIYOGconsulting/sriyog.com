@@ -16,7 +16,7 @@ export default function ConsultingManagement() {
   const [data, setData] = useState<ConsultingItem[]>([]);
   useEffect(() => {
     const filtered = relatedConsulting.filter(
-      (item) => item.main === "IT Consultancy Management"
+      (item) => item.main === "IT Consulting"
     );
     setData(filtered);
   }, []);
@@ -87,7 +87,7 @@ export default function ConsultingManagement() {
     },
     {
       img: "/consultingPage/database-management.jpg",
-      title: "Database Management",
+      title: "Data Management",
       desc: "We offer a range of database management services, including database design, implementation, and optimization.",
       link: "data-management",
     },
@@ -153,7 +153,7 @@ export default function ConsultingManagement() {
     },
     {
       img: "/consultingPage/it-consultancy-management.jpg",
-      title: "IT Consultancy Management",
+      title: "IT Consulting",
       desc: "We offer a range of IT consultancy services, including system design, implementation, and support.",
       link: "it-consulting",
     },

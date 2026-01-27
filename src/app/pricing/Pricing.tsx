@@ -101,9 +101,9 @@ const Pricing = () => {
         </div>
         <div className="grid grid-cols-1 px-4 sm:grid-cols-2 lg:grid-cols-3 place-items-center items-stretch lg:items-start gap-8 max-w-7xl mx-auto">
         {plans.map((plan,i) => (
-            <div key={i} className={`border border-gray-300 relative max-w-sm w-full ${plan.name === "Professional" ? "bg-blue-200 p-0.5 mt-6 sm:mt-0 mb-2 sm:mb-0 rounded-b-xl" : "rounded-xl"}`}>
+            <div key={i} className={`border border-gray-300 relative max-w-sm w-full ${plan.name === "Professional" ? "bg-[#42c95e] p-0.5 mt-6 sm:mt-0 mb-2 sm:mb-0 rounded-b-xl" : "rounded-xl"}`}>
             {plan.name === "Professional" && (
-                <p className="absolute z-0  -top-6 -left-[1px]   w-[100.3%] bg-blue-200  text-center font-medium py-1 rounded-t-xl">
+                <p className="absolute z-0  -top-6 -left-[1px]   w-[100.3%] bg-[#42c95e]  text-center font-medium py-1 rounded-t-xl">
                 Recommended for you
                 </p>
             )}

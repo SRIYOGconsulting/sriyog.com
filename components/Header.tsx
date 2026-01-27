@@ -1,9 +1,8 @@
 "use client";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Link from "next/link";
 export default function Header() {
   const [topOpen, setTopOpen] = useState(true);
-
   return (
     <>
       <header className="w-full h-auto">
