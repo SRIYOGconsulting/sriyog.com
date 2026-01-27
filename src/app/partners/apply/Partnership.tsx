@@ -18,8 +18,9 @@ const initialFormValues: PartnershipFormValues = {
   website: "",
   city: "",
   country: "",
-  organizationPhone:"",
-  personalPhone:"",
+  countryCode: "",
+  organizationPhone: "",
+  personalPhone: "",
   personalName: "",
   personalEmail: "",
   designation: "",
@@ -28,9 +29,9 @@ const initialFormValues: PartnershipFormValues = {
 };
 
 const Partnership: React.FC = () => {
-  const [isSubmitting,setIsSubmitting] = useState<boolean>(false);
+  const [isSubmitting, setIsSubmitting] = useState<boolean>(false);
   const [dots, setDots] = useState("");
-  const [submitted,setSubmitted] = useState<boolean>(false);
+  const [submitted, setSubmitted] = useState<boolean>(false);
   const [formValues, setFormValues] = useState(initialFormValues);
   const customStyles = {
     control: (provided: any, state: any) => ({
@@ -42,14 +43,14 @@ const Partnership: React.FC = () => {
       },
     }),
     menu: (provided: any) => ({
-        ...provided,
-        height: "100px", 
-        overflow: "hidden", 
+      ...provided,
+      height: "100px",
+      overflow: "hidden",
     }),
     menuList: (provided: any) => ({
-        ...provided,
-        maxHeight: "100px", 
-        overflowY: "auto",
+      ...provided,
+      maxHeight: "100px",
+      overflowY: "auto",
     }),
   };
 
@@ -60,51 +61,54 @@ const Partnership: React.FC = () => {
     }
 
     const interval = setInterval(() => {
-      setDots(prev => (prev.length < 3 ? prev + "." : ""));
+      setDots((prev) => (prev.length < 3 ? prev + "." : ""));
     }, 500);
 
     return () => clearInterval(interval);
   }, [isSubmitting]);
 
   const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
   ) => {
     const { name, value } = e.target;
     setFormValues((prev) => ({ ...prev, [name]: value }));
   };
+  useEffect(() => {
+    console.log("Country value:", formValues.country);
+    
+  }, [formValues.country]);
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-      e.preventDefault();
-      setIsSubmitting(true);
-      try {
-        const res = await fetch("/api/partnership-form", {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify(formValues),
-        });
-  
-        const data = await res.json();
-  
-        if (!res.ok) {
-          console.error(data.error);
-          alert("Failed to submit form: " + data.error);
-        } else {
-          console.log("Form submitted successfully!");
-          setSubmitted(true)
-        }
-      } catch (err) {
-        console.error(err);
-        alert("An error occurred. Try again.");
-      }finally{
-        setIsSubmitting(false);
-       
+    e.preventDefault();
+    setIsSubmitting(true);
+    try {
+      const res = await fetch("/api/partnership-form", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formValues),
+      });
+
+      const data = await res.json();
+
+      if (!res.ok) {
+        console.error(data.error);
+        alert("Failed to submit form: " + data.error);
+      } else {
+        console.log("Form submitted successfully!");
+        setSubmitted(true);
       }
-    };
+    } catch (err) {
+      console.error(err);
+      alert("An error occurred. Try again.");
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
 
   return (
     <>
       <Ribbon name="Become a Partner" des="" />
-       {submitted && (
+      {submitted && (
         <div className="fixed inset-0 z-50 flex items-center justify-center">
           <div className="text-white bg-[#055d59] rounded-lg p-5 w-[90%] max-w-md text-center shadow-xl">
             <h2 className="text-xl font-semibold mb-3">
@@ -128,9 +132,9 @@ const Partnership: React.FC = () => {
             {/* Left */}
             <div className="flex-1">
               <div className="flex items-center justify-center border-b mb-6 border-gray-600 max-w-sm mx-auto ">
-              <h1 className="font-[800] text-2xl text-center  pb-2 ">
-                Organization Information
-              </h1>
+                <h1 className="font-[800] text-2xl text-center  pb-2 ">
+                  Organization Information
+                </h1>
               </div>
               <label>Name of Organization</label>
               <input
@@ -160,7 +164,13 @@ const Partnership: React.FC = () => {
                   styles={customStyles}
                   options={countries}
                   isSearchable
-                  onChange={selected => setFormValues({...formValues,country: selected?.value as string})}
+                  onChange={(selected) =>
+                    setFormValues({
+                      ...formValues,
+                      country: selected?.label as string,
+                      countryCode: selected?.value as string,
+                    })
+                  }
                 />
               </div>
               <label>City</label>
@@ -174,12 +184,14 @@ const Partnership: React.FC = () => {
               />
               <label>Landline Number</label>
               <PhoneInput
-                country="np"
+                country={formValues.countryCode?.toLowerCase() || "np"}
                 value={formValues.organizationPhone}
-                onChange={(phone: string) => setFormValues({...formValues,organizationPhone:phone})}
+                onChange={(phone: string) =>
+                  setFormValues({ ...formValues, organizationPhone: phone })
+                }
                 inputProps={{
-                    required: true,
-                    autoFocus: false,
+                  required: true,
+                  autoFocus: false,
                 }}
                 inputStyle={{
                   width: "100%",
@@ -197,15 +209,14 @@ const Partnership: React.FC = () => {
                 placeholder="Enter website URL"
                 className="w-full mt-1 p-2 border border-gray-300 rounded mb-4"
               />
-              
             </div>
 
             {/* Right */}
             <div className="flex-1">
               <div className="flex items-center justify-center border-b mb-6 border-gray-600 max-w-sm mx-auto ">
-              <h1 className="font-[800] text-2xl pb-2">
-                Contact Person Information
-              </h1>
+                <h1 className="font-[800] text-2xl pb-2">
+                  Contact Person Information
+                </h1>
               </div>
               <label>Your Name</label>
               <input
@@ -229,12 +240,14 @@ const Partnership: React.FC = () => {
 
               <label className="block mt-1.5">Mobile Number</label>
               <PhoneInput
-                country="np"
+                country={formValues.countryCode?.toLowerCase() || "np"}
                 value={formValues.personalPhone}
-                onChange={(phone: string) => setFormValues({...formValues,personalPhone:phone})}
+                onChange={(phone: string) =>
+                  setFormValues({ ...formValues, personalPhone: phone })
+                }
                 inputProps={{
-                    required: true,
-                    autoFocus: false,
+                  required: true,
+                  autoFocus: false,
                 }}
                 inputStyle={{
                   width: "100%",
@@ -275,18 +288,30 @@ const Partnership: React.FC = () => {
             placeholder="Tell us your reason…"
             className="w-full mt-1 p-2 border border-gray-300 rounded mb-4 h-[200px]"
           />
-          
+
           <div className="space-y-2">
-           <div className="flex items-start sm:items-center gap-2">
-              <input type="checkbox"  required   className="bg-[#555555]  h-3.75 w-3.75 cursor-pointer mt-1.5 sm:mt-0" />{" "}
+            <div className="flex items-start sm:items-center gap-2">
+              <input
+                type="checkbox"
+                required
+                className="bg-[#555555]  h-3.75 w-3.75 cursor-pointer mt-1.5 sm:mt-0"
+              />{" "}
               <label className="text-md text-gray-600">
-                I confirm that the information provided in this partnership application is true, accurate, and complete to the best of my knowledge.
+                I confirm that the information provided in this partnership
+                application is true, accurate, and complete to the best of my
+                knowledge.
               </label>
             </div>
             <div className="flex items-start sm:items-center gap-2">
-              <input type="checkbox" className="cursor-pointer mt-1.5 h-3.75 w-3.75 sm:mt-0" required  />{" "}
+              <input
+                type="checkbox"
+                className="cursor-pointer mt-1.5 h-3.75 w-3.75 sm:mt-0"
+                required
+              />{" "}
               <label className="text-md text-gray-600">
-                I agree to be contacted by your company regarding this partnership application and understand that further discussions may be required.
+                I agree to be contacted by your company regarding this
+                partnership application and understand that further discussions
+                may be required.
               </label>
             </div>
           </div>
@@ -296,7 +321,7 @@ const Partnership: React.FC = () => {
               type="submit"
               className="py-2 cursor-pointer px-10 text-white font-[800] bg-[#383838] rounded-sm hover:bg-[#555]"
             >
-              {isSubmitting ? `Submitting${dots}` : "Submit"} 
+              {isSubmitting ? `Submitting${dots}` : "Submit"}
             </button>
           </div>
         </form>
