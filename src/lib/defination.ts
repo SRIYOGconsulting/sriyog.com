@@ -4,6 +4,7 @@ export interface PartnershipFormValues {
   website: string;
   city: string;
   country: string;
+  countryCode:string;
   personalName: string;
   personalEmail: string;
   designation: string;
