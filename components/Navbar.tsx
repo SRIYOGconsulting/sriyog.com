@@ -3,8 +3,9 @@ import Link from "next/link";
 import { ReactEventHandler, useEffect, useRef, useState } from "react";
 import { usePathname } from "next/navigation";
 import Image from "next/image";
+import { navbarConfig } from "@/src/config/navbarCtaConfig";
+
 export default function Navbar() {
- 
   const [hamburgerOpen, setHamburgerOpen] = useState(false);
   const [reqSupportOpen, setReqSupportOpen] = useState(false);
   const [techOpen, setTechOpen] = useState(false);
@@ -15,6 +16,9 @@ export default function Navbar() {
   const hamburger = useRef<HTMLImageElement | null>(null);
   const pathname = usePathname();
 
+  const cta = navbarConfig.find((rule)=>rule.match(pathname)) || {text:"Request a Quote",link:"/quote"}
+
+  
   useEffect(() => {
     function handleClickOutside(e: PointerEvent) {
       const target = e.target as Node;
@@ -33,7 +37,6 @@ export default function Navbar() {
     return () =>
       document.removeEventListener("pointerdown", handleClickOutside);
   }, []);
-
 
   const navItems = [
     { label: "Home", path: "/" },
@@ -63,8 +66,8 @@ export default function Navbar() {
               {navItems.map((item, idx) => (
                 <li key={idx}>
                   <Link
-                  prefetch={true}
-                  scroll={true}
+                    prefetch={true}
+                    scroll={true}
                     href={item.path}
                     className={`py-2 px-2 font-bold transition duration-300 ease-in-out ${
                       pathname === item.path
@@ -78,11 +81,11 @@ export default function Navbar() {
               ))}
               <li>
                 <Link
-                 prefetch={true}
-                  href="/quote"
+                  prefetch={true}
+                  href={cta.link}
                   className="bg-[#0D5D59] px-3 text-white font-semibold rounded-lg p-2 hover:bg-[#2e5250]"
                 >
-                  Request a Quote
+                  {cta.text}
                 </Link>
               </li>
             </ul>
@@ -150,7 +153,7 @@ export default function Navbar() {
                   placeholder={placeholder}
                   className="px-2 py-3 w-full focus:outline-none border border-[#4b4b4b] rounded-md"
                 />
-              )
+              ),
             )}
 
             <div className="relative w-full border border-[#4b4b4b] rounded-md">
@@ -167,9 +170,7 @@ export default function Navbar() {
                 <span className="relative h-[30px] w-[25px]">
                   <Image
                     src={
-                      techOpen
-                        ? "/header/dropup.svg"
-                        : "/header/dropdown.svg"
+                      techOpen ? "/header/dropup.svg" : "/header/dropdown.svg"
                     }
                     alt="drop-down"
                     fill
@@ -248,7 +249,7 @@ export default function Navbar() {
                     placeholder === "Message" ? "pt-2 pb-16" : "py-3"
                   } w-full focus:outline-none border border-[#4b4b4b] rounded-md`}
                 />
-              )
+              ),
             )}
             <input
               type="submit"
@@ -268,7 +269,7 @@ export default function Navbar() {
             {navItems.map((item, idx) => (
               <li key={idx}>
                 <Link
-                 prefetch={true}
+                  prefetch={true}
                   href={item.path}
                   className={`font-semibold ${
                     pathname === item.path
@@ -284,7 +285,7 @@ export default function Navbar() {
             <li>
               <Link
                 href="/quote"
-                 prefetch={true}
+                prefetch={true}
                 className="bg-[#0D5D59] px-3 text-white font-semibold rounded-lg p-2 hover:bg-[#2e5250]"
               >
                 Request a Quote

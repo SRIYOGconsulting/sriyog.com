@@ -7,58 +7,59 @@ const branches = [
   {
     id: 1,
     title: "Dubai",
-    date: "04 Feb 2013",
+    country: "United Arab Emirates",
+    tagline: "IT Consulting Company in Dubai",
     description:
-      "The Dubai branch of SRIYOG Consulting serves as our Middle East hub, delivering enterprise IT solutions, cloud services, and digital transformation strategies tailored for fast-growing regional businesses.",
-    service: ["Website", "Cloud Solutions", "Business eMail"],
+      "We Are Looking For An IT Service Providers Working As IT Support/ Hardware Maintenance/ Networking/ Website Development/ Digital Marketing Agencies And Professional Working As An IT Educator, IT Students, Aspiring Startup Founder, Startup Working In Healthcare, Employment & Tourism To Start A New Venture Or To Become A Part Of The Digital Revolution.",
     path: "https://www.sriyog.com",
   },
   {
     id: 2,
     title: "Sydney",
-    date: "13 Sep 2007",
+    country: "Australia",
+    tagline: "IT Consulting Company in Australia",
     description:
-      "Our Sydney branch supports clients across Australia with modern web development, IT consulting, and scalable digital infrastructure designed to meet global compliance and performance standards.",
-    service: ["Website", "IT Consulting", "Business eMail"],
+      "We are expanding our technology consulting and digital infrastructure services across Australia, supporting businesses, institutions, and startups with scalable IT solutions.",
     path: "https://www.sriyog.com",
   },
   {
     id: 3,
     title: "Moscow",
-    date: "04 Aug 2013",
+    country: "Russia",
+    tagline: "IT Consulting Company in Russia",
     description:
-      "The Moscow branch focuses on enterprise software solutions, system integrations, and secure IT operations, helping organizations modernize and streamline their digital ecosystems.",
-    service: ["Enterprise Software", "Business eMail"],
+      "Our Moscow branch focuses on enterprise software, secure systems, and digital modernization for organizations operating at scale.",
     path: "https://www.sriyog.com",
   },
   {
     id: 7,
     title: "New Delhi",
-    date: "04 Feb 2013",
+    country: "India",
+    tagline: "IT Consulting Company in India",
     description:
-      "SRIYOG Consulting’s New Delhi branch delivers technology consulting, academic systems, and digital platforms, supporting institutions and businesses across India with reliable IT services.",
-    service: ["Website", "Business eMail", "IT Consulting"],
+      "Delivering academic platforms, enterprise IT services, and digital transformation for institutions and businesses across India.",
     path: "https://www.sriyog.com",
   },
   {
     id: 8,
     title: "Hyderabad",
-    date: "04 Feb 2013",
+    country: "India",
+    tagline: "Healthcare IT & Digital Solutions",
     description:
-      "The Hyderabad branch specializes in healthcare IT solutions, secure data systems, and web platforms, helping organizations improve operational efficiency through technology.",
-    service: ["Website", "Business eMail", "IT Support"],
+      "Specialized in healthcare IT, secure systems, and web platforms to improve operational efficiency.",
     path: "https://www.sriyog.com",
   },
   {
     id: 9,
     title: "Bangalore",
-    date: "04 Feb 2013",
+    country: "India",
+    tagline: "Technology & Innovation Hub",
     description:
-      "Our Bangalore branch acts as a technology and innovation center, delivering software development, cloud services, and digital transformation solutions for startups and enterprises.",
-    service: ["Software Development", "Cloud Services", "Business eMail"],
+      "Focused on software development, cloud services, and digital transformation for startups and enterprises.",
     path: "https://www.sriyog.com",
   },
 ];
+
 
 export const metadata: Metadata = {
   title: "Branches | SRIYOG Consulting",
@@ -88,27 +89,50 @@ export default function Page() {
           expertise backed by our global standards.
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 place-content-between gap-10">
-          {branches.map((item, idx) => (
-            <div
-              key={idx + 1}
-              className="relative text-gray-700 shadow-[0_.5rem_1rem_rgba(0,0,0,.15)] rounded-lg px-4 pb-5 h-auto  hover:shadow-lg transition duration-300 ease-in-out"
-            >
-              <section className="flex items-center justify-center h-48 md:h-32 w-full mb-2 border-b border-[#dbdbdb]">
-                <h1 className="text-5xl text-gray-700">{item.title}</h1>
-              </section>
-              <p className=" mb-2 md:h-24 h-32 ">
-                {item.description.slice(0, 160)}...
-              </p>
-              <Link href="/partners/apply">
-              <button className="border border-[#055d59] px-2 py-1 mt-2 rounded-md cursor-pointer hover:bg-[#055d59] hover:text-white">
-                Become a Partner
-              </button>
-              </Link>
-              {/* <p className="border-b pb-2 border-[#dbdbdb]">
-                Service Started Date : {item.date}
-              </p> */}
-            </div>
-          ))}
+{branches.map((item, idx) => (
+  <div
+    key={item.id}
+    className="bg-white rounded-xl border border-[#e5e5e5] shadow-sm hover:shadow-md transition-all duration-300 p-6 flex flex-col justify-between"
+  >
+    {/* Top meta */}
+    <div>
+      <p className="text-sm font-semibold text-black mb-2">
+        Total DropZone : 1
+      </p>
+
+      <p className="text-sm text-gray-400 mb-6">
+        {item.tagline}
+      </p>
+
+      {/* City */}
+      <h1 className="text-5xl font-bold text-black mb-2">
+        {item.title}
+      </h1>
+
+      {/* Country */}
+      <p className="text-base text-gray-700 mb-6">
+        {item.country}
+      </p>
+
+      <hr className="border-[#dcdcdc] mb-6" />
+
+      {/* Description */}
+      <p className="text-gray-700 leading-relaxed text-sm">
+        {item.description}
+      </p>
+    </div>
+
+    {/* Button */}
+    <div className="mt-8">
+      <Link href="/partners/apply">
+        <button className="px-6 py-3 rounded-xl border border-[#cfd4d8] text-[#1f3a5f] font-semibold hover:bg-gray-100 transition">
+          Become a Partner
+        </button>
+      </Link>
+    </div>
+  </div>
+))}
+
         </div>
       </section>
     </>
