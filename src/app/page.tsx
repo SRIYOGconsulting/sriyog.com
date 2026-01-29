@@ -6,8 +6,10 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { useFloatingIcons } from "../context/FloatingIconContext";
+import { useRouter } from "next/navigation";
 
 export default function Home() {
+  const router = useRouter();
   const [categoriesOpen, setCategoriesOpen] = useState(false);
   const [selectedCategories, setSelectedcategories] = useState("");
   const [selectedEvents, setSelectedEvents] = useState("");
@@ -85,36 +87,44 @@ export default function Home() {
 
   const services = [
     {
-      img: "/homepage/service/data-analysis.png",
+      img: "/homepage/service/data-processing.png",
       name: "Data Processing / Tabulation",
+      link: "/consulting/data-processing"
     },
     {
       img: "/homepage/service/data-managment.jpg",
       name: "Data Management",
+      link: "/consulting/data-management"
     },
     {
-      img: "/homepage/service/data-processing.png",
+      img: "/homepage/service/data-analysis.png",
       name: "Data Analysis",
+      link:"/consulting/data-analysis"
     },
     {
-      img: "/homepage/service/human-resource.jpg",
+      img: "/homepage/service/software-development.png",
       name: "Software Development",
+      link:"/consulting/software-development"
     },
     {
       img: "/homepage/service/it-consultancy.png",
       name: "Web Application Development",
+      link:"/consulting/web-application-development"
     },
     {
       img: "/homepage/service/marketing.png",
-      name: "Software Development",
+      name: "Digital Marketing",
+      link:"/consulting/digital-marketing"
     },
     {
-      img: "/homepage/service/software-development.png",
+      img: "/consultingPage/social-media-management.jpg",
       name: "Social Media Management",
+      link:"/consulting/social-media-management"
     },
     {
       img: "/homepage/service/uiux-design.png",
-      name: "Digital Marketing",
+      name: "UI/UX Designing",
+      link: "/consulting/uiux-designing"
     },
   ];
 
@@ -314,11 +324,12 @@ export default function Home() {
             <Slider {...settings} className="custom-slider w-full pb-[55px]">
               {services.map((item, idx) => (
                 <div key={idx} className="px-4">
-                  <div className="relative max-md:h-[250px] h-[180px] w-full">
+                  <div className="relative max-md:h-[250px] h-[180px] w-full mt-4">
                     <Image
                       src={item.img}
                       alt={item.name}
-                      className="object-cover rounded-lg"
+                      onClick={()=>router.push(item.link)}
+                      className="object-cover rounded-lg cursor-pointer transform transition-transform duration-300 hover:scale-[1.07]"
                       fill
                       sizes=""
                     />
@@ -326,6 +337,9 @@ export default function Home() {
                   <p className="text-center text-lg font-semibold mt-4 text-[#055d59]">
                     {item.name}
                   </p>
+                  <div className="flex items-center justify-center w-full">
+                  <button onClick={()=>router.push(item.link)} className="border border-[#055d59] hover:bg-[#055d59] cursor-pointer hover:text-white mt-2 py-px text-md px-2 rounded-md">Read More</button>
+                  </div>
                 </div>
               ))}
             </Slider>

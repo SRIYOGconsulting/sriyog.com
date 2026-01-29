@@ -4,43 +4,30 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 
 export default function Header() {
-  const [topOpen, setTopOpen] = useState(false);
+  const [topOpen, setTopOpen] = useState(true);
 
-  useEffect(() => {
-    const closeAfterDelay = (delay: number) => {
-      if (delay <= 0) {
-        setTopOpen(false);
-      } else {
-        setTopOpen(true);
-        setTimeout(() => setTopOpen(false), delay);
-      }
-    };
-
+useEffect(() => {
+  setInterval(() => {
     const closedAt = sessionStorage.getItem("roadblockClosedAt");
-
     if (closedAt) {
-      const elapsed = Date.now() - Number(closedAt);
-      closeAfterDelay(10000 - elapsed);
-    } else {
-      setTopOpen(true);
+      setTimeout(() => {
+        setTopOpen(false)
+      }, 100);
+    }else{
+      setTimeout(() => {
+        setTopOpen(false)
+      }, 10000);
     }
-
-    const onRoadblockClosed = () => {
-      closeAfterDelay(10000);
-    };
-
-    window.addEventListener("roadblock-closed", onRoadblockClosed);
-    return () => {
-      window.removeEventListener("roadblock-closed", onRoadblockClosed);
-    };
+  }, 10000);
   }, []);
+
 
   if (!topOpen) return null;
 
   return (
     <header className="w-full">
       <section className="bg-[#055d59] py-3 text-white">
-        <div className="max-w-[1180px] mx-auto flex flex-col md:flex-row items-center justify-center gap-3 px-3 text-sm">
+        <div className="max-w-295 mx-auto flex flex-col md:flex-row items-center justify-center gap-3 px-3 text-sm">
           <i className="text-center">
             Discover skilled professionals all over Nepal—right from one app.
           </i>
