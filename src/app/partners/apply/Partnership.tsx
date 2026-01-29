@@ -206,7 +206,7 @@ const Partnership: React.FC = () => {
                 name="website"
                 value={formValues.website}
                 onChange={handleChange}
-                placeholder="Enter website URL"
+                placeholder="Enter website [www.sriyog.com]"
                 className="w-full mt-1 p-2 border border-gray-300 rounded mb-4"
               />
             </div>
