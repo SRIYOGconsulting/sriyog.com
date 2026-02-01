@@ -328,8 +328,7 @@ export default function Home() {
                     <Image
                       src={item.img}
                       alt={item.name}
-                      onClick={()=>router.push(item.link)}
-                      className="object-cover rounded-lg cursor-pointer transform transition-transform duration-300 hover:scale-[1.07]"
+                      className="object-cover rounded-lg "
                       fill
                       sizes=""
                     />
