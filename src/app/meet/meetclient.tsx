@@ -54,9 +54,9 @@ export default function MeetClient() {
   } = {
     "Virtual Meetings - TimeZone GMT+3 (Buffer Time : 15 Minutes)": [
       { time: "8:15 AM – 3:15 AM - Host : CTO", title: "Emergency Meeting - ( Sun - Fri )", link: "https://meet.google.com/fuu-fsjz-yhj" },
-      { time: "8:15 AM – 11:15 AM - Host : Hammoud", title: "Morning Session - (Sun-Fri)", link: "https://meet.google.com/juu-jubx-suf" },
-      { time: "12:15 PM – 3:15 PM - Host : BroadPress", title: "Afternoon Session - (Sun-Fri)", link: "https://meet.google.com/gue-iohz-pdq" },
-      { time: "4:15 PM – 7:15 PM - Host : BroadPress", title: "Evening Session - (Sun-Fri)", link: "https://meet.google.com/ndu-ffpw-oiv" },
+      { time: "8:15 AM – 11:15 AM - Host : BroadPress", title: "Morning Session - (Sun-Fri)", link: "https://d.sriyog.com/morning" },
+      { time: "12:15 PM – 3:15 PM - Host : BroadPress", title: "Afternoon Session - (Sun-Fri)", link: "https://d.sriyog.com/afternoon" },
+      { time: "4:15 PM – 7:15 PM - Host : BroadPress", title: "Evening Session - (Sun-Fri)", link: "https://d.sriyog.com/evening" },
       { time: "12:15 PM – 2:15 PM - Host : CEO", title: "Interview - (Sun-Thurs)", link: "https://meet.google.com/vsb-buwu-pub" },
       { time: "4:15 PM – 5:00 PM - Host : BroadPress", title: "BroadMeet - (Sun)", link: "https://meet.google.com/arm-rudj-mpt" },
       { time: "10:30 AM – 11:15 AM - Host : CTO", title: "#TechFriday - (Fri)", link: "https://meet.google.com/tat-vvcq-pzu" },
