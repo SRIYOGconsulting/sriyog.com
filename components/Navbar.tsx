@@ -16,7 +16,7 @@ export default function Navbar() {
   const hamburger = useRef<HTMLImageElement | null>(null);
   const pathname = usePathname();
 
-  const cta = navbarConfig.find((rule)=>rule.match(pathname)) || {text:"Request a Quote",link:"/quote"}
+  const cta = navbarConfig.find((rule)=>rule.match(pathname)) || {text:"Virtual Meeting",link:"/meet"}
 
   
   useEffect(() => {
