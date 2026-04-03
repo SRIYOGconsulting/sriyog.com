@@ -13,37 +13,35 @@ const TIMEZONES = [
   { label: "GMT+4", offset: 4 },
   { label: "GMT+5", offset: 5 },
   { label: "GMT+5:45", offset: 5.75 },
-  { label: "GMT+6", offset: 6 }
+  { label: "GMT+6", offset: 6 },
+  { label: "GMT+7", offset: 7 },
+  { label: "GMT+8", offset: 8 },
+  { label: "GMT+9", offset: 9 },
+  { label: "GMT+10", offset: 10 }
 ];
 
-/* ================= TIME CONVERTER ================= */
+/* ================= TIME CONVERTER (PURE 24H) ================= */
 const convertTime = (
   timeRange: string,
   fromOffset: number,
   toOffset: number
 ) => {
-  const diff = toOffset - fromOffset;
+  const diffMinutes = (toOffset - fromOffset) * 60;
 
-  return timeRange.replace(
-    /(\d{1,2}):(\d{2})\s?(AM|PM)/g,
-    (_, h, m, period) => {
-      let hour = parseInt(h, 10);
-      const minute = parseInt(m, 10);
+  return timeRange.replace(/(\d{2}):(\d{2})/g, (_, h, m) => {
+    let hour = parseInt(h, 10);
+    let minute = parseInt(m, 10);
 
-      if (period === "PM" && hour !== 12) hour += 12;
-      if (period === "AM" && hour === 12) hour = 0;
+    let totalMinutes = hour * 60 + minute + diffMinutes;
+    totalMinutes = ((totalMinutes % 1440) + 1440) % 1440;
 
-      const totalMinutes = hour * 60 + minute + diff * 60;
-      let newHour = Math.floor(((totalMinutes % 1440) + 1440) % 1440 / 60);
-      let newMinute = Math.round(((totalMinutes % 60) + 60) % 60);
+    const newHour = Math.floor(totalMinutes / 60);
+    const newMinute = totalMinutes % 60;
 
-      const newPeriod = newHour >= 12 ? "PM" : "AM";
-      if (newHour === 0) newHour = 12;
-      else if (newHour > 12) newHour -= 12;
-
-      return `${newHour}:${String(newMinute).padStart(2, "0")} ${newPeriod}`;
-    }
-  );
+    return `${String(newHour).padStart(2, "0")}:${String(
+      newMinute
+    ).padStart(2, "0")}`;
+  });
 };
 
 export default function MeetClient() {
@@ -53,14 +51,15 @@ export default function MeetClient() {
     [day: string]: { time: string; title: string; link: string }[];
   } = {
     "Virtual Meetings - TimeZone GMT+3 (Buffer Time : 15 Minutes)": [
-      { time: "8:15 AM – 3:15 AM - Host : CTO", title: "Emergency Meeting - ( Sun - Fri )", link: "https://meet.google.com/fuu-fsjz-yhj" },
-      { time: "8:15 AM – 11:15 AM - Host : BroadPress", title: "Morning Session - (Sun-Fri)", link: "https://d.sriyog.com/morning" },
-      { time: "12:15 PM – 3:15 PM - Host : BroadPress", title: "Afternoon Session - (Sun-Fri)", link: "https://d.sriyog.com/afternoon" },
-      { time: "4:15 PM – 7:15 PM - Host : BroadPress", title: "Evening Session - (Sun-Fri)", link: "https://d.sriyog.com/evening" },
-      { time: "12:15 PM – 2:15 PM - Host : CEO", title: "Interview - (Sun-Thurs)", link: "https://meet.google.com/vsb-buwu-pub" },
-      { time: "4:15 PM – 5:00 PM - Host : BroadPress", title: "BroadMeet - (Sun)", link: "https://meet.google.com/arm-rudj-mpt" },
-      { time: "10:30 AM – 11:15 AM - Host : CTO", title: "#TechFriday - (Fri)", link: "https://meet.google.com/tat-vvcq-pzu" },
-      { time: "12:15 PM – 1:00 PM - Host : BroadPress", title: "BroadPress Showcase - (Fri)", link: "https://meet.google.com/xyk-cbam-nzn" },
+      { time: "08:15 – 02:15 - Host : CTO", title: "Meeting with CTO - ( Sun - Thu )", link: "https://cal.com/pracas" },
+      { time: "08:15 – 11:15 - Host : BroadPress", title: "Internship Slot 1 - (Sun-Thu)", link: "https://d.sriyog.com/morning" },
+      { time: "12:15 – 15:15 - Host : BroadPress", title: "Internship Slot 2 - (Sun-Thu)", link: "https://d.sriyog.com/afternoon" },
+      { time: "12:45 – 13:30 - Host : BiratInfo", title: "Digital Journalism Training - (Sun-Thu)", link: "https://meet.google.com/drz-rdcb-rfa" },
+      { time: "12:15 – 15:15 - Host : SRIYOG", title: "ai Academy - (Sun-Thu)", link: "https://meet.google.com/hjn-jwzy-sna" },
+      { time: "12:15 – 15:15 - Host : BroadPress", title: "UI/UX Training - (Sun-Thu)", link: "meet.google.com/uhp-wfzm-awa" },
+      { time: "12:15 – 13:00 - Host : BroadPress", title: "Full Stack Academy - (Sun-Thu)", link: "meet.google.com/mmo-uzpj-qnp" },
+      { time: "10:30 – 11:15 - Host : CTO", title: "#TechFriday - (Fri)", link: "https://meet.google.com/tat-vvcq-pzu" },
+      
     ],
   };
 
@@ -74,7 +73,7 @@ export default function MeetClient() {
             key={day}
             className="relative w-full bg-white border border-gray-200 rounded-[15px] shadow p-4 mt-12"
           >
-            {/* ========= TIMEZONE DROPDOWN (TOP RIGHT) ========= */}
+            {/* ========= TIMEZONE DROPDOWN ========= */}
             <div className="absolute top-10 right-10 z-10">
               <select
                 value={selectedTZ.label}
@@ -135,14 +134,14 @@ export default function MeetClient() {
 
         <p className="max-w-[95%] mx-auto text-center mb-[45px]">
           <br />
-          Meeting Rules : All participants must use a professional headshot and
+          Meeting Rules : Learn Google Meet basics in YouTube. All participants must use a professional headshot and
           display their real name as per their government ID. Keep your microphone
           muted unless invited to speak, and use the “Raise Hand” feature before
-          contributing. English is the only language allowed during the session.
+          contributing. English is the only language allowed during the session. 
         </p>
 
         <p className="max-w-[95%] mx-auto text-center mb-[45px]">
-          With Effective From : 9 November 2025, Sunday
+          With Effective From : 5 April 2026, Saturday
         </p>
       </section>
     </>

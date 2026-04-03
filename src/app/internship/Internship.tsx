@@ -302,8 +302,7 @@ const getFileUrl = async (file: File) => {
             </li>
             <li>
               Must submit an official letter in college/ campus letter head from
-              their institution approving the internship with our company. [
-              Sample ]
+              their institution approving the internship with our company. 
             </li>
             <li>
               Must uphold confidentiality and ensure that all company files,
@@ -325,10 +324,10 @@ const getFileUrl = async (file: File) => {
           </p>
 
           <ul className="list-disc px-6 mt-4 text-sm">
-            <li>Mobile App Development : React Native/ Flutter</li>
+            <li>Mobile App Development : React Native</li>
             <li>Website Designing : React Js / Next Js / MERN Stack</li>
             <li>UI/UX Designing : Figma</li>
-            <li>Data Management : AirTable / MongoD / Supabase</li>
+            <li>Data Management : AirTable & MongoD</li>
             <li>Digital Marketing : Various Tools</li>
           </ul>
 <br />
