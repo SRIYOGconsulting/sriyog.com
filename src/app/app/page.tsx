@@ -18,21 +18,21 @@ const Page = () => {
           </p>
           <div className="flex space-x-3 md:space-x-4 justify-center md:justify-start">
             <a
-              href="https://play.google.com/store/apps/details?id=com.pracasinfosys.sriyog.com"
+              href="https://p.sriyog.app/playcom"
               target="_blank"
               rel="noreferrer"
             >
               <Image
-                src="/app/google.webp"
+                src="/app/google.png"
                 alt="Google Play Store"
                 width={150}
                 height={50}
                 className="h-8 md:h-12 w-auto"
               />
             </a>
-            <a href="https://apps.apple.com/np/app/sriyog/id1493160529" target="_blank" rel="noreferrer">
+            <a href="https://p.sriyog.app/ioscom" target="_blank" rel="noreferrer">
               <Image
-                src="/app/apple.webp"
+                src="/app/apple.png"
                 alt="Apple App Store"
                 width={150}
                 height={50}
@@ -45,7 +45,7 @@ const Page = () => {
         {/* Right Image */}
         <div className="mobile-image w-full md:w-1/2 flex justify-center md:justify-end mt-6 md:mt-0 md:mr-16 lg:mr-0">
           <Image
-            src="/app/mobile.webp"
+            src="/app/mobile.png"
             alt="Mobile App Preview"
             width={320}
             height={384}
