@@ -57,7 +57,7 @@ export default function MeetClient() {
       { time: "12:15 – 15:15 - Host : BiratInfo", title: "Digital Journalism Training - (Mon)", link: "https://meet.google.com/kyb-bera-guu" },
       { time: "12:15 – 15:15 - Host : SRIYOG", title: "ai Academy - (Tue)", link: "https://meet.google.com/kyb-bera-guu" },
       { time: "12:15 – 15:15 - Host : BroadPress", title: "UI/UX Training - (Wed)", link: "https://meet.google.com/kyb-bera-guu" },
-      { time: "12:15 – 15:15 - Host : BroadPress", title: "FullStack Academy - (Thu)", link: "https://meet.google.com/mmo-uzpj-qnp" },
+      { time: "12:15 – 15:15 - Host : BroadPress", title: "FullStack Academy - (Thu)", link: "https://meet.google.com/kyb-bera-guu" },
       { time: "10:30 – 11:15 - Host : CTO", title: "#TechFriday - (Fri)", link: "https://meet.google.com/tat-vvcq-pzu" },
       
     ],
