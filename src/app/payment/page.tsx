@@ -40,7 +40,7 @@ const Payment = () => {
                   <div className="flex flex-col pb-8 gap-3 sm:mb-0">
                     <span className=" inline-block text-[18px] text-black">
                       Account Name: <br />{" "}
-                      <strong> Sriyog Consulting Pvt Ltd.</strong>
+                      <strong> Sriyog Consulting Pvt. Ltd.</strong>
                     </span>
                     <span className="  text-[18px] text-black">
                       Account number: 00701017502051

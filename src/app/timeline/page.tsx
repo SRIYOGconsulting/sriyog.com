@@ -202,7 +202,7 @@ const Timeline = () => {
                 </p>
                 <p className="block my-4 ml-0 mb-[1rem] p-2">
                   An agreement has been signed between IME Pay and SRIYOG
-                  Consulting Pvt Ltd. According to the agreement, IME Pay will
+                  Consulting Pvt. Ltd. According to the agreement, IME Pay will
                   be the digital payment service provider of Sriyog.com. The
                   agreement was signed with the aim of facilitating the digital
                   payment process for SRIYOG
