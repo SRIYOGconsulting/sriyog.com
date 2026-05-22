@@ -374,7 +374,7 @@ export default function Footer() {
             <div className="flex max-md:w-full max-md:justify-center gap-3">
               <Link
                 prefetch={true}
-                href="https://p.sriyog.app/playcom"
+                href="https://play.google.com/store/apps/details?id=com.pracasinfosys.sriyog.com"
                 target="_blank"
               >
                 <div className="relative md:h-[50px] h-[60px] w-[130px] md:w-[100px]">
@@ -389,7 +389,7 @@ export default function Footer() {
               </Link>
               <Link
                 prefetch={true}
-                href="https://p.sriyog.app/ioscom"
+                href="#"
                 target="_blank"
               >
                 <div className="relative md:h-[50px] h-[60px] w-[130px] md:w-[100px]">

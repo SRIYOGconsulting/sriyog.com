@@ -18,7 +18,7 @@ const Page = () => {
           </p>
           <div className="flex space-x-3 md:space-x-4 justify-center md:justify-start">
             <a
-              href="https://p.sriyog.app/playcom"
+              href="https://play.google.com/store/apps/details?id=com.pracasinfosys.sriyog.com"
               target="_blank"
               rel="noreferrer"
             >
@@ -30,7 +30,7 @@ const Page = () => {
                 className="h-8 md:h-12 w-auto"
               />
             </a>
-            <a href="https://p.sriyog.app/ioscom" target="_blank" rel="noreferrer">
+            <a href="#" target="_blank" rel="noreferrer">
               <Image
                 src="/app/apple.png"
                 alt="Apple App Store"
