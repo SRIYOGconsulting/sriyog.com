@@ -28,7 +28,7 @@ const Career = () => {
             src="https://airtable.com/embed/appcRLi3R3qIFyPIU/pagRhDtt6qX4O0LZ7/form"
             style={{
               backgroundColor: "transparent",
-              height:"2230px"
+              height:"1800px"
             }}
           ></iframe>
         </div>
