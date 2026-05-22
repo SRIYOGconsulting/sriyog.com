@@ -30,7 +30,7 @@ const Internship = () => {
               src="https://airtable.com/embed/appcRLi3R3qIFyPIU/shrp1B6DNo8qsHQ4q?viewControls=on"
               frameBorder="0"
               width="100%"
-              height="3633"
+              height="6633"
               style={{
                 background: "transparent",
                 border: "0px solid #ccc",
