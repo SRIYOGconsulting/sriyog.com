@@ -395,7 +395,7 @@ export default function HomepageComponent() {
           </section>
 
           {/*Latest-Insights*/}
-          <section className="my-[45px] lg:w-[1180px] max-lg:container max-lg:px-3 mx-auto">
+          {/* <section className="my-[45px] lg:w-[1180px] max-lg:container max-lg:px-3 mx-auto">
             <p className="md:text-4xl text-3xl font-semibold text-[#055D59] mb-4">
               Latest Insights
             </p>
@@ -606,7 +606,7 @@ export default function HomepageComponent() {
                 Book a Meeting
               </Link>
             </div>
-          </section>
+          </section> */}
 
           {/*latest-updates*/}
           <section className="my-[45px] lg:w-[1180px] max-lg:container max-lg:px-3 mx-auto">
