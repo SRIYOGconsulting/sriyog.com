@@ -22,7 +22,7 @@ const Internship = () => {
       <Ribbon name="Internship Certificates | SRIYOG" des="" />
       <section className="lg:w-full ">
         <div className="">
-          <div className="lg:max-w-[1180px] mx-auto my-0 md:max-w-[920px] sm:max-w-[720px]  lg:px-12">
+          <div className="lg:max-w-[1180px] mx-auto my-0 md:max-w-[1000px] sm:max-w-[720px]  lg:px-12">
             
             <div>
             <iframe
@@ -33,7 +33,7 @@ const Internship = () => {
               height="3633"
               style={{
                 background: "transparent",
-                border: "1px solid #ccc",
+                border: "0px solid #ccc",
               }}
             ></iframe>
           </div>
