@@ -52,8 +52,8 @@ export default function MeetClient() {
   } = {
     "Virtual Meetings - TimeZone GMT+3 (Buffer Time : 15 Minutes)": [
       { time: "08:15 – 02:15 - Host : CTO", title: "Meeting with CTO - ( Sun - Thu )", link: "https://cal.com/pracas" },
-      { time: "08:15 – 11:15 - Host : BroadPress", title: "Internship Slot 1 - (Sun-Thu)", link: "https://d.sriyog.com/morning" },
-      { time: "12:15 – 15:15 - Host : BroadPress", title: "Internship Slot 2 - (Sun-Thu)", link: "https://d.sriyog.com/afternoon" },
+      { time: "08:15 – 11:15 - Host : BroadPress", title: "Training SLOT I - (Sun-Thu)", link: "https://d.sriyog.com/morning" },
+      { time: "12:15 – 15:15 - Host : BroadPress", title: "Training SLOT II - (Sun-Thu)", link: "https://d.sriyog.com/afternoon" },
       { time: "12:15 – 15:15 - Host : BiratInfo", title: "Digital Journalism Training - (Mon)", link: "https://d.sriyog.com/afternoon" },
       { time: "12:15 – 15:15 - Host : SRIYOG", title: "ai Academy - (Tue)", link: "https://d.sriyog.com/afternoon" },
       { time: "12:15 – 15:15 - Host : BroadPress", title: "UI/UX Training - (Wed)", link: "https://d.sriyog.com/afternoon" },

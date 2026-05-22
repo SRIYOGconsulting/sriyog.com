@@ -28,7 +28,7 @@ const Internship = () => {
                 className="airtable-embed"
                 src="https://airtable.com/embed/appcRLi3R3qIFyPIU/pagBvKYaiRmZLtsSn/form"
                 width="100%"
-                height="2125"
+                height="1600"
               ></iframe>
             </div>
           </div>
