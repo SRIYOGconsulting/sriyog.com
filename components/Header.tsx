@@ -26,19 +26,19 @@ useEffect(() => {
 
   return (
     <header className="w-full">
-      <section className="bg-[#055d59] py-3 text-white">
+      {/* <section className="bg-[#055d59] py-3 text-white">
         <div className="max-w-295 mx-auto flex flex-col md:flex-row items-center justify-center gap-3 px-3 text-sm">
-          {/* <i className="text-center">
-            Discover skilled professionals all over Nepal—right from one app.
-          </i> */}
+          <i className="text-center">
+          How to start a Franchise based Business? Starting a franchise-based business is a powerful pathway to entrepreneurship .. 
+          </i>
 
-          {/* <div className="flex gap-4">
+          <div className="flex gap-4">
             <Link
-              href="https://sriyog.app/"
+              href="https://biratinfo.com/how-to-start-a-franchise-based-business/"
               target="_blank"
               className="border px-3 py-1 rounded-lg italic hover:bg-white hover:text-[#055d59]"
             >
-              View Now
+              Know More
             </Link>
 
             <button
@@ -47,9 +47,9 @@ useEffect(() => {
             >
               X
             </button>
-          </div> */}
+          </div>
         </div>
-      </section>
+      </section> */}
     </header>
   );
 }

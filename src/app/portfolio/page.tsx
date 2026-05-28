@@ -23,134 +23,157 @@ export default function PortfolioPage() {
   const portfolio = [
     {
       id: 1,
-      image: "/portfolio/kisanpedia.png",
-      title: "Kisanpedia Services",
-      path: "https://kisanpedia.com/",
+      image: "/portfolio/gardensewa.jpg",
+      title: "Garden Sewa",
+      path: "https://gardensewa.com/",
     },
     {
       id: 2,
-      image: "/portfolio/transNepal.png",
+      image: "/portfolio/transnepaldryport.jpg",
       title: "Trans Nepal Dry Port",
       path: "https://transnepaldryport.com/",
     },
     {
       id: 3,
-      image: "/portfolio/bkmMasala.png",
+      image: "/portfolio/bkmasala.jpg",
       title: "BKM Masala",
       path: "https://bkmasala.com.np/",
     },
     {
       id: 4,
-      image: "/portfolio/neuroHospital.png",
+      image: "/portfolio/neuroHospital.jpg",
       title: "Neuro Hospital",
       path: "https://www.neurohospital.com.np/",
     },
     {
       id: 5,
-      image: "/portfolio/kopilaclinic.png",
+      image: "/portfolio/kopilaclinic.jpg",
       title: "Kopila Clinic",
       path: "https://kopilaclinic.com.np/",
     },
 
     {
       id: 6,
-      image: "/portfolio/drpriyanka.png",
+      image: "/portfolio/drpriyankasclinic.jpg",
       title: "Dr. Priyanka’s Clinic",
       path:"https://drpriyankasclinic.com/"
     },
 
     {
       id: 7,
-      image: "/portfolio/gravelink.png",
+      image: "/portfolio/gravurelink.jpg",
       title: "Gravure Link",
       path:"https://gravelink.com.np/"
     },
 
     {
       id: 8,
-      image: "/portfolio/painclinic.png",
+      image: "/portfolio/painclinic.jpg",
       title: "Pain Clinic",
       path:'https://painclinic.com.np/'
     },
 
     {
       id: 9,
-      image: "/portfolio/cvdsnepal.png",
+      image: "/portfolio/cvdsnepal.jpg",
       title: "CVDS Nepal",
       path:"https://cvdsnepal.org.np/"
     },
         {
       id: 10,
-      image: "/portfolio/biratinfo.png",
+      image: "/portfolio/biratinfo.jpg",
       title: "Birat Info",
       path:"https://www.biratinfo.com/"
     },
             {
       id: 11,
-      image: "/portfolio/1.png",
+      image: "/portfolio/sriyogapp.jpg",
       title: "SRIYOG App",
-      path:"https://sriyog.app/"
+      path:"https://sriyog.com/app"
     },
             {
       id: 12,
-      image: "/portfolio/2.png",
-      title: "Prabidhi",
-      path:"https://pracasinfosys.com/"
+      image: "/portfolio/cleaningsewa.jpg",
+      title: "Cleaning Sewa",
+      path:"https://cleaningsewa.com/"
     },
             {
       id: 13,
-      image: "/portfolio/3.png",
-      title: "SNG Solution",
-      path:"https://sngsolution.com/"
+      image: "/portfolio/oshoashram.jpg",
+      title: "OSHO Ashram",
+      path:"https://oshoashram.org.np/"
     },
             {
       id: 14,
-      image: "/portfolio/4.png",
-      title: "Lumanti Group",
-      path:"https://lumantigroup.com/"
+      image: "/portfolio/sanskarsewa.jpg",
+      title: "Sanskar Sewa",
+      path:"https://sanskarsewa.com/"
     },
             {
       id: 15,
-      image: "/portfolio/5.png",
-      title: "Tackles Technicals",
+      image: "/portfolio/tacklespro.jpg",
+      title: "Tackles PRO",
       path:"https://tackles.pro/"
     },
             {
       id: 16,
-      image: "/portfolio/6.png",
+      image: "/portfolio/pusom.jpg",
       title: "PUSOM",
       path:"https://pusom.edu.np/"
     },
             {
       id: 17,
-      image: "/portfolio/7.png",
-      title: "Bastoka Consulting",
-      path:"https://baskotaconsulting.com.np/"
+      image: "/portfolio/nepalmotor.jpg",
+      title: "Nepal Motor",
+      path:"https://nepalmotor.com/"
     },
                 {
       id: 18,
-      image: "/portfolio/8.png",
+      image: "/portfolio/singhengineeringworks.jpg",
       title: "Singh Engineering Works",
       path:"http://singhengineeringworks.com.np/"
     },
                     {
       id: 19,
-      image: "/portfolio/9.png",
+      image: "/portfolio/sudarshanagroresort.jpg",
       title: "Sudarshan Agro Resort",
       path:"https://sudarshanagroresort.com.np/"
     },
                     {
       id: 20,
-      image: "/portfolio/10.png",
+      image: "/portfolio/sudarshansecurity.jpg",
       title: "Sudarshan Security Services",
       path:"https://sudarshansecurity.com.np/"
     },
                     {
       id: 21,
-      image: "/portfolio/11.png",
+      image: "/portfolio/krishnaganga.jpg",
       title: "Krishna Ganga HOPE TRUST.",
       path:"https://krishnaganga.org.np/"
     },
+                   {
+      id: 22,
+      image: "/portfolio/ncpd.jpg",
+      title: "NCPD Nepal",
+      path:"https://ncpd.org.np/"
+    },
+
+    {
+      id: 23,
+      image: "/portfolio/lpm.jpg",
+      title: "LPM Nepal",
+      path:"https://lpm.org.np/"
+    },
+
+    
+
+    {
+      id: 23,
+      image: "/portfolio/shramsansar.jpg",
+      title: "Shram Sansar",
+      path:"https://shramsansar.com/"
+    },
+
   ];
 
    

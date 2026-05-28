@@ -30,12 +30,7 @@ const Welcome = () => {
         <div className=" mt-12 md:shadow-2xl rounded-[6px]  ">
           <div className="flex justify-center items-center">
             <div className="relative w-60  mb-10 h-20 justify-center items-center">
-              <Image
-                src="/welcome/logo.svg"
-                fill
-                alt="Pracas Upreti"
-                className="object-contain"
-              />
+              
             </div>
           </div>
           <div className="px-10 max-md:px-0 max-sm:px-0">

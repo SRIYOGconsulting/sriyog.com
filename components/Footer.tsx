@@ -354,16 +354,16 @@ export default function Footer() {
           </div>
         </section>
 
-        <section className="w-full border-b-24 ">
-          {/* <div className="relative max-lg:container max-lg:px-3 w-[50px] h-[40px] lg:w-[1180px] lg:h-[120px] mx-auto">
-            <Image
+        <section className="w-full border-b-4 ">
+          <div className="relative max-lg:container max-lg:px-3 w-[50px] h-[40px] lg:w-[1180px] lg:h-[120px] mx-auto">
+            {/* <Image
               src="/footer/footer.svg"
               fill
               priority
               className="object-contain"
               alt="footer"
-            />
-          </div> */}
+            /> */}
+          </div>
         </section>
 
         <section className="w-full">
