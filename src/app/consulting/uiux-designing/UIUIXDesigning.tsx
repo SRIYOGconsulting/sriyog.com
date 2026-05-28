@@ -191,7 +191,7 @@ export default function UIUXDesigning() {
 
           <p>
             <span className="font-bold">Rajesh Thapa, MD.</span> Kisanpedia
-            Services Pvt. Ltd.{" "}
+            Services {" "}
           </p>
         </div>
 

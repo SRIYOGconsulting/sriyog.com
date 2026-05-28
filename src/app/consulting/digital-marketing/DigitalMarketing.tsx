@@ -255,7 +255,7 @@ export default function Marketing() {
 
           <p>
             <span className="font-bold">Rajesh Thapa, MD.</span> Kisanpedia
-            Services Pvt. Ltd.{" "}
+            Services {" "}
           </p>
         </div>
 

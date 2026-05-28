@@ -257,7 +257,7 @@ export default function ConsultingManagement() {
 
           <p>
             <span className="font-bold">Rajesh Thapa, MD.</span> Kisanpedia
-            Services Pvt. Ltd.{" "}
+            Services {" "}
           </p>
         </div>
 

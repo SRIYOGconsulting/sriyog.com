@@ -16,7 +16,7 @@ type FaqItemProps = {
 const faq1 = [
   {
     id: 0,
-    question: "When was SRIYOG Consulting Pvt. Ltd. established?",
+    question: "When was SRIYOG Consulting  established?",
     answer: "The company was established on June 14, 2018.",
   },
   {

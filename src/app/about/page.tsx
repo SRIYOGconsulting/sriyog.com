@@ -49,7 +49,7 @@ export default function Aboutpage() {
             className="w-full h-auto object-cover rounded-xl"
           />
           <p className="text-md w-full">
-            Established on June 14, 2018, SRIYOG Consulting Pvt. Ltd., based in 
+            Established on June 14, 2018, SRIYOG Consulting , based in 
             Kamalpokhari, Kathmandu, Nepal, is a leading provider of digital 
             solutions dedicated to driving digital transformation in the healthcare, employment, and tourism sectors. Our mission is to empower organizations in these vital industries with innovative, scalable, technology-driven services that enhance operational efficiency and support long-term growth.
 

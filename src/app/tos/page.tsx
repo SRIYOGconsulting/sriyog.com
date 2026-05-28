@@ -29,7 +29,7 @@ const Tos = () => {
             Welcome to SRIYOG Consulting. Please read these Terms and Conditions (“Terms”,
             “Terms and Conditions”) carefully before using the website/ mobile
             application/ social media platforms (the “Service”) operated by
-            SRIYOG Consulting Pvt. Ltd. (“us”, “we”, or “our”).
+            SRIYOG Consulting  (“us”, “we”, or “our”).
           </p>
           <p className=" mb-[10px]">
             SRIYOG Consulting may change or amend the Terms as per the requirement in the
@@ -69,7 +69,7 @@ const Tos = () => {
             Understanding of our Platform
           </p>
           <p className=" mb-[10px]">
-            Established on June 14, 2018, SRIYOG Consulting Pvt. Ltd. is a premier Managed IT Services provider based in Kamalpokhari, Kathmandu, Nepal. We specialize in delivering innovative, reliable, and scalable IT solutions to businesses of all sizes, helping them achieve digital transformation, operational efficiency and sustainable growth.
+            Established on June 14, 2018, SRIYOG Consulting  is a premier Managed IT Services provider based in Kamalpokhari, Kathmandu, Nepal. We specialize in delivering innovative, reliable, and scalable IT solutions to businesses of all sizes, helping them achieve digital transformation, operational efficiency and sustainable growth.
  
           </p>
           <p className=" mb-[10px]">
@@ -98,13 +98,13 @@ const Tos = () => {
           </p>
           <p className=" mb-[10px]">
             Our site may contain links to third-party web sites or services that
-            are not owned or controlled by SRIYOG Consulting Pvt. Ltd.
+            are not owned or controlled by SRIYOG Consulting 
           </p>
           <p className=" mb-[10px]">
-            SRIYOG Consulting Pvt. Ltd. has no control over, and assumes no
+            SRIYOG Consulting  has no control over, and assumes no
             responsibility for, the content, privacy policies, or practices of
             any third-party web sites or services. You further acknowledge and
-            agree that SRIYOG Consulting Pvt. Ltd. shall not be responsible or
+            agree that SRIYOG Consulting  shall not be responsible or
             liable, directly or indirectly, for any damage or loss caused or
             alleged to be caused by such content, goods or services available on
             or through any such web sites or services.

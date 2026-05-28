@@ -1,18 +1,17 @@
-import Quote from "@/src/app/quote/Quote";
 import { Metadata } from "next";
 import React from "react";
 
 
 export const metadata: Metadata = {
-  title: "Request a Quotation | SRIYOG Consulting",
+  title: "IT Service Quotation | SRIYOG Consulting",
   description: "Get a quote for SRIYOG Consulting services.",
   openGraph: {
-    title: "Quote | SRIYOG Consulting",
+    title: "IT Service Quotation | SRIYOG Consulting",
     description: "Get a quote for SRIYOG Consulting services.",
     url: "https://www.sriyog.com/quote",
     images: [
       {
-        url: "https://sriyog.com/og/quote.jpg",
+        url: "https://sriyog.com/og/default.jpg",
         alt: "Quote"
       }
     ]
@@ -22,8 +21,17 @@ export const metadata: Metadata = {
 const page = () => {
   return (
     <>
-      <section>
-        <Quote/>
+      <section className="lg:w-[1180px] mx-auto mb-[45px]">
+        <div>
+          <iframe
+            className="airtable-embed"
+            src="https://airtable.com/embed/app30hmkatmLiojps/pagBFKEcQg2EOzQqu/form"
+            frameBorder="0"
+            width="100%"
+            height="1550"
+            style={{ background: "transparent" }}
+          ></iframe>
+        </div>
       </section>
     </>
   );

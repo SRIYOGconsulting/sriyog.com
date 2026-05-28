@@ -43,7 +43,8 @@ export default function Navbar() {
     { label: "About", path: "/about" },
     { label: "Consulting", path: "/consulting" },
     { label: "Pricing", path: "/pricing" },
-    { label: "Clients", path: "/clients" },
+    { label: "Portfolio", path: "/portfolio" },
+    
   ];
   return (
     <>

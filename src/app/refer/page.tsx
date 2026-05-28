@@ -1,25 +1,40 @@
-import Refer from "@/src/app/refer/Refer";
 import { Metadata } from "next";
+import React from "react";
+
 
 export const metadata: Metadata = {
-  title: "Refer a Client | SRIYOG Consulting",
-  description: "Refer a client to SRIYOG Consulting.",
+  title: "Book a Meeting | SRIYOG Consulting",
+  description: "Schedule a meeting with SRIYOG Consulting.",
   openGraph: {
-    title: "Refer a Client | SRIYOG Consulting",
-    description: "Refer a client to SRIYOG Consulting.",
-    url: "https://www.sriyog.com/refer",
+    title: "Book a Meeting | SRIYOG Consulting",
+    description: "Schedule a meeting with SRIYOG Consulting.",
+    url: "https://www.sriyog.com/meeting",
     images: [
       {
         url: "https://sriyog.com/og/default.jpg",
-        alt: "Refer a Client"
+        alt: "Book a Meeting"
       }
     ]
   }
 };
-export default function ReferPage() {
+
+const page = () => {
   return (
     <>
-      <Refer/>
+      <section className="lg:w-[1180px] mx-auto mb-[45px]">
+        <div>
+          <iframe
+            className="airtable-embed"
+            src="https://airtable.com/embed/appcRLi3R3qIFyPIU/pagUqADZrTvPj5BNq/form"
+            frameBorder="0"
+            width="100%"
+            height="1200"
+            style={{ background: "transparent" }}
+          ></iframe>
+        </div>
+      </section>
     </>
   );
-}
+};
+
+export default page;

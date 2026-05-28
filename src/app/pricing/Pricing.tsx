@@ -14,17 +14,17 @@ const Pricing = () => {
   const YearlyPlans: PlanType[] = [
     {name:"Standard",
     description:"Perfect for Small businesses and Startups",
-    price:49,
+    price:199,
     features:["Max 10 pages website" ,"Free SSL" ,"analytics dashboard" ,"1 Business email" ,"30 Managed RoadBlock","1 Form" ,"1 GB Dedicated Space" ,"5 Monthly Social Banner","1 Campaign Yearly"]},
     
     {name:"Professional",
     description:"Perfect for Established business & startups",
-    price:99,
+    price:299,
     features:["Max 15 pages website" ,"Free SSL" ,"analytics dashboard" ,"4 Business email" ,"50 Managed RoadBlock","3 Forms" ,"5 GB Dedicated Space" ,"10 Monthly Social Banner","Social media Management","3 Campaigns Yearly","1 Social Contest","Premium Dashboard","API access","Digital Asset Management"]},
     
     {name:"Enterprise",
     description:"Perfect for corporates / brands",
-    price:149,
+    price:499,
     features:
         ["Max 50 pages website" ,
          "Free SSL" ,
@@ -51,17 +51,17 @@ const Pricing = () => {
   const MonthlyPlans: PlanType[] = [
     {name:"Standard",
     description:"Perfect for Small businesses and Startups",
-    price:60,
+    price:250,
     features:["Max 10 pages website" ,"Free SSL" ,"Analytics Dashboard" ,"1 Business eMail" ,"30 Managed RoadBlock","1 Form" ,"1 GB Dedicated Space" ,"5 Monthly Social Banner","1 Campaign Yearly"]},
     
     {name:"Professional",
     description:"Perfect for Established business & startups",
-    price:120,
+    price:350,
     features:["Max 15 pages website" ,"Free SSL" ,"Analytics Dashboard" ,"4 Business eMails" ,"50 Managed RoadBlock","3 Forms" ,"5 GB Dedicated Space" ,"10 Monthly Social Banner","Social media Management","3 Campaigns Yearly","1 Social Contest","Premium Dashboard","API access","Digital Asset Management"]},
     
     {name:"Enterprise",
     description:"Perfect for corporates / brands",
-    price:180,
+    price:550,
     features:
         ["Max 50 pages website" ,
          "Free SSL" ,

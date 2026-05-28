@@ -31,7 +31,7 @@ export default function App() {
           <h1 className="text-lg">
             This page has been moved{" "}
             <span className="hover:underline">
-              <Link href={"https://sriyog.app/"} className="" target="_blank">
+              <Link href={"https://sriyog.com/app/"} className="" target="_blank">
                 Click Here
               </Link>
             </span>

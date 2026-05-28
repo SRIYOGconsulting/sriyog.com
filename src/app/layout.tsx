@@ -19,7 +19,7 @@ const bellota_text = Bellota_Text({
 export const metadata: Metadata = {
   title: "SRIYOG Consulting | IT Consulting Company in Nepal",
   description:
-    "SRIYOG Consulting Pvt. Ltd. is a premier Managed IT Services provider based in Kamalpokhari, Kathmandu, Nepal.",
+    "SRIYOG Consulting  is a premier Managed IT Services provider based in Kamalpokhari, Kathmandu, Nepal.",
   keywords:
     "IT consulting, software development, cloud solutions, Nepal IT company",
   authors: [{ name: "SRIYOG Consulting" }],
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "SRIYOG Consulting | IT Consulting Company in Nepal",
     description:
-      "SRIYOG Consulting Pvt. Ltd. is a premier Managed IT Services provider based in Kamalpokhari, Kathmandu, Nepal.",
+      "SRIYOG Consulting  is a premier Managed IT Services provider based in Kamalpokhari, Kathmandu, Nepal.",
     url: "https://www.sriyog.com",
     siteName: "SRIYOG Consulting",
     images: [

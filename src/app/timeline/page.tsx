@@ -50,7 +50,7 @@ const Timeline = () => {
                   15<sup>th</sup> May, 2025
                 </p>
                 <p className="block my-4 ml-0 mb-[1rem] p-2">
-                  SRIYOG Consulting Pvt. Ltd. has updated its location from Biratnagar to Kathmandu in the Office of Company Registrar (OCR) on 15<sup>th</sup> May, 2025.
+                  SRIYOG Consulting  has updated its location from Biratnagar to Kathmandu in the Office of Company Registrar (OCR) on 15<sup>th</sup> May, 2025.
                 </p>
               </div>
             </div>
@@ -71,7 +71,7 @@ const Timeline = () => {
                   multiple failed attempts.
                 </p>
                 <a
-                  href="https://sriyog.app"
+                  href="https://sriyog.com/app"
                   className="bg-[#055D59] hover:bg-[#2e5453] text-white transition-all duration-300 ease-in-out cursor-pointer font-medium text-center inline-block ml-2 py-2 px-6 rounded-md "
                 >
                   Download App
@@ -202,7 +202,7 @@ const Timeline = () => {
                 </p>
                 <p className="block my-4 ml-0 mb-[1rem] p-2">
                   An agreement has been signed between IME Pay and SRIYOG
-                  Consulting Pvt. Ltd. According to the agreement, IME Pay will
+                  Consulting  According to the agreement, IME Pay will
                   be the digital payment service provider of Sriyog.com. The
                   agreement was signed with the aim of facilitating the digital
                   payment process for SRIYOG

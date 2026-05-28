@@ -254,7 +254,7 @@ export default function VideoContentEmail() {
 
           <p>
             <span className="font-bold">Rajesh Thapa, MD.</span> Kisanpedia
-            Services Pvt. Ltd.{" "}
+            Services {" "}
           </p>
         </div>
 

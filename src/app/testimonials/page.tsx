@@ -40,7 +40,7 @@ export default function Testimonials() {
     // {
     //   id: 3,
     //   title: "React Js Developer",
-    //   desc: "My 3-month internship as a React JS Developer at SRIYOG Consulting Pvt. Ltd. provided me the opportunity to work on real-time web projects. I developed reusable components, implemented state management, and contributed to building scalable user interfaces. This helped me understand best practices in component-based architecture.",
+    //   desc: "My 3-month internship as a React JS Developer at SRIYOG Consulting  provided me the opportunity to work on real-time web projects. I developed reusable components, implemented state management, and contributed to building scalable user interfaces. This helped me understand best practices in component-based architecture.",
     //   name: "Bitisha Thapa",
     //   stack: "Saraswati Multiple Campus",
     //   image: "/testimonials/3.png",
@@ -49,7 +49,7 @@ export default function Testimonials() {
     // {
     //   id: 4,
     //   title: "UI/UX Designer",
-    //   desc: "My 3-month internship as a UI/UX Designer at SRIYOG Consulting Pvt. Ltd. was a transformative experience. I had the opportunity to collaborate with developers, gaining hands-on exposure to tools like Figma and work on real-time projects that involved designing intuitive interfaces and improving user experiences through thoughtful, reusable design components.",
+    //   desc: "My 3-month internship as a UI/UX Designer at SRIYOG Consulting  was a transformative experience. I had the opportunity to collaborate with developers, gaining hands-on exposure to tools like Figma and work on real-time projects that involved designing intuitive interfaces and improving user experiences through thoughtful, reusable design components.",
     //   name: "Kritika Ghimire",
     //   stack: "Ambition College",
     //   image: "/testimonials/4.png",
@@ -75,7 +75,7 @@ export default function Testimonials() {
     // },
      {
       title: "Jayshree Polymers ",
-      desc: "I would like to express sincere gratitude to SRIYOG COnsulting Pvt. Ltd. for providing outstanding Business eMail services to our organisation. We have been using Zoho Email service, expertly managed, set up, and operated by your team since june 2024. ",
+      desc: "I would like to express sincere gratitude to SRIYOG COnsulting  for providing outstanding Business eMail services to our organisation. We have been using Zoho Email service, expertly managed, set up, and operated by your team since june 2024. ",
       name: "Naveen Poddar",
       stack: "CEO",
       image: "/testimonials/1.png",

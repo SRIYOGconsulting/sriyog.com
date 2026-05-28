@@ -27,7 +27,7 @@ export default function Privacy() {
             Effective Date : 1<sup>st</sup>June, 2025
           </p>
           <p className="text-[#333] mb-4 font-Normal leading-6 text-justify">
-            SRIYOG Consulting Pvt. Ltd. (also referred as &quot;SRIYOG&quot;, &quot;SRIYOG Consulting&quot;, &quot;us&quot;, &quot;we&quot;
+            SRIYOG Consulting  (also referred as &quot;SRIYOG&quot;, &quot;SRIYOG Consulting&quot;, &quot;us&quot;, &quot;we&quot;
             or &quot;our&quot; throughout this policy content) operates the www.SRIYOG.com
             website and mobile application (hereinafter referred to as the
             &quot;Service&quot;). Our policies regarding the collection, use, and
@@ -154,7 +154,7 @@ export default function Privacy() {
             such information means that you agree with that transfer.
           </p>
           <p className="text-[#333] mb-4 font-Normal leading-6 text-justify">
-            SRIYOG Consulting Pvt. Ltd. will take all the necessary steps to
+            SRIYOG Consulting  will take all the necessary steps to
             ensure that your data is secure and as per this Privacy Policy and
             no transfer of your Personal Data to an organization or a country
             will take place before ensuring the security of your data and other

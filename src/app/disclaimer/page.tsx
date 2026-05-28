@@ -28,7 +28,7 @@ const Disclaimer = () => {
           </p>
 
           <p className="mb-[10px]">
-            SRIYOG Consulting Pvt. Ltd. (also referred to as “us”, “we”, or “our”)
+            SRIYOG Consulting  (also referred to as “us”, “we”, or “our”)
             operates the www.sriyog.com website and related digital platforms
             (the “Service”). This Disclaimer explains our policies regarding the
             collection, use, and disclosure of personal information while using

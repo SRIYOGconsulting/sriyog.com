@@ -141,8 +141,8 @@ export default function Footer() {
                 {
                   label: (
                     <>
-                      <Link prefetch={true} href="/portfolio">
-                        Portfolio
+                      <Link prefetch={true} href="/internship/certificates">
+                        Internship Certificates
                       </Link>
                     </>
                   ),
@@ -162,7 +162,7 @@ export default function Footer() {
                   label: (
                     <Link
                       prefetch={true}
-                      href="https://sriyog.app/"
+                      href="https://sriyog.com/app/"
                       target="_blank"
                     >
                       SRIYOG App
@@ -329,6 +329,18 @@ export default function Footer() {
               </div>
               <p><Link href="tel:+977-01-4548068">+977-01-4548068</Link></p>
             </div>
+            <div className="flex items-center gap-2">
+              <div className="relative w-6 h-6">
+                <Image
+                  src="/footer/phone.svg"
+                  fill
+                  priority
+                  className="object-contain"
+                  alt="phone"
+                />
+              </div>
+              <p><Link href="tel:+977-9851152774">+977-9851152774</Link></p>
+            </div>
             <p className="text-sm">Calling Time: 11 AM to 3 PM NPT</p>
             <div className="flex items-center gap-2">
               <div className="relative w-5 h-5">
@@ -477,7 +489,7 @@ export default function Footer() {
             </div>
           </div>
         </section>
-        <section className="border-3 border-[#055D59] w-full"></section>
+        <section className="border-0 border-[#055D59] w-full"></section>
       </footer>
     </>
   );

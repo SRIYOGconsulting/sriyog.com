@@ -20,7 +20,7 @@ export default function TechFriday() {
     {
       id: 1,
       title: "Virtual Learning ",
-      desc: "TechFriday is an impactful virtual learning initiative proudly organized by SRIYOG Consulting Pvt. Ltd., aimed at empowering beginners and aspiring professionals in the IT and digital technology space.",
+      desc: "TechFriday is an impactful virtual learning initiative proudly organized by SRIYOG Consulting , aimed at empowering beginners and aspiring professionals in the IT and digital technology space.",
     },
     {
       id: 2,
@@ -61,7 +61,7 @@ export default function TechFriday() {
     {
       id: 1,
       title: "What is #TechFriday?",
-      desc: " #TechFriday is a weekly virtual learning session organized by SRIYOG Consulting Pvt. Ltd. It aims to empower beginners and aspiring professionals in IT and digital technologies through real-world tech insights, live project demos, and expert-led discussions.",
+      desc: " #TechFriday is a weekly virtual learning session organized by SRIYOG Consulting  It aims to empower beginners and aspiring professionals in IT and digital technologies through real-world tech insights, live project demos, and expert-led discussions.",
     },
     {
       id: 2,
@@ -76,7 +76,7 @@ export default function TechFriday() {
     {
       id: 4,
       title: "Who conducts the sessions?",
-      desc: "The sessions are hosted by Niranjan Sharma, Project Manager at SRIYOG Consulting Pvt. Ltd., with guest speakers including tech leads, industry experts, and featured professionals from the IT sector.",
+      desc: "The sessions are hosted by Niranjan Sharma, Project Manager at SRIYOG Consulting , with guest speakers including tech leads, industry experts, and featured professionals from the IT sector.",
     },
 
     {

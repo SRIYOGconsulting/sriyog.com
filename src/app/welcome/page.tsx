@@ -35,7 +35,7 @@ const Welcome = () => {
           </div>
           <div className="px-10 max-md:px-0 max-sm:px-0">
             <div className="text-base  ">
-              Established on June 14, 2018, SRIYOG Consulting Pvt. Ltd. is a
+              Established on June 14, 2018, SRIYOG Consulting  is a
               premier Managed IT Services provider based in Kamalpokhari,
               Kathmandu, Nepal. We specialize in delivering innovative,
               reliable, and scalable IT solutions to businesses of all sizes,

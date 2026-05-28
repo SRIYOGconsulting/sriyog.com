@@ -19,7 +19,7 @@ export const metadata: Metadata = {
 const Internship = () => {
   return (
     <>
-      <Ribbon name="Internship Certificates | SRIYOG" des="" />
+      <Ribbon name="Internship Certificates" des="" />
       <section className="lg:w-full ">
         <div className="">
           <div className="lg:max-w-[1180px] mx-auto my-0 md:max-w-[1000px] sm:max-w-[720px]  lg:px-12">

@@ -184,7 +184,7 @@ export default function PortfolioPage() {
   {portfolio.map((item) => (
     <div
       key={item.id}
-      className="w-full sm:w-[316px] h-auto sm:h-[300px] flex flex-col gap-1 mb-6"
+      className="w-full sm:w-[360px] h-auto sm:h-[290px] flex flex-col gap-1 mb-6"
     >
       <Image
         src={item.image}

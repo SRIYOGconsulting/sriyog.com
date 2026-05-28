@@ -6,7 +6,7 @@ import Link from "next/link";
 const clientsData = [
   {
     id: 1,
-    title: "TransNepal Freight Services Pvt. Ltd.",
+    title: "TransNepal Freight Services ",
     date: " 04 Feb 2013 ",
     service: [
       <>
@@ -18,7 +18,7 @@ const clientsData = [
     ],
     image: "/clients/transnepal.png",
     description:
-      "TransNepal Freight Services Pvt. Ltd., was incorporated in the year 2002 under the Nepalese Company Act and started operation from 17th April 2002 by taking over the operation and management of the two ICDs’ at Biratnagar and Bhairahawa",
+      "TransNepal Freight Services , was incorporated in the year 2002 under the Nepalese Company Act and started operation from 17th April 2002 by taking over the operation and management of the two ICDs’ at Biratnagar and Bhairahawa",
     path: "https://transnepaldryport.com/",
   },
 
@@ -162,7 +162,7 @@ const clientsData = [
   },
   {
     id: 15,
-    title: "Arogya Bhawan Works Pvt. Ltd.",
+    title: "Arogya Bhawan Works ",
     date: " 04 Feb 2013 ",
     service: ["Business eMail"],
     image: "/clients/12.png",
@@ -200,7 +200,7 @@ const clientsData = [
     ],
     image: "/clients/15.jpg",
     description:
-      "Gravure Link Nepal Pvt. Ltd. A leader in the printing sector and producing Rotogravure Electronic Printing Cylinders of the highest caliber. We serve many renowned companies around the country by offering specialized, precised,",
+      "Gravure Link Nepal  A leader in the printing sector and producing Rotogravure Electronic Printing Cylinders of the highest caliber. We serve many renowned companies around the country by offering specialized, precised,",
     path: "https://gravelink.com.np/",
   },
   {

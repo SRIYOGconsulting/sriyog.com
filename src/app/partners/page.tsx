@@ -35,7 +35,7 @@ export default function Page() {
 },
 {
   name: "MAW-Skills-Academy",
-  des: "MAW Skills Academy is an initiative by MAW Enterprises under its subsidiary MAW Earthmovers Pvt. Ltd. (MEPL), the authorized distributor of JCB and other premium brands in Nepal's heavy equipment sector since 1964.",
+  des: "MAW Skills Academy is an initiative by MAW Enterprises under its subsidiary MAW Earthmovers  (MEPL), the authorized distributor of JCB and other premium brands in Nepal's heavy equipment sector since 1964.",
   img: "/partners/2.jpeg",
   path: "https://www.mawacademy.com/",
 },
