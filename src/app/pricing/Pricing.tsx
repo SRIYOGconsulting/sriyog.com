@@ -15,18 +15,18 @@ const Pricing = () => {
     {name:"Standard",
     description:"Perfect for Small businesses and Startups",
     price:199,
-    features:["Max 25 pages website" ,"Free SSL" ,"analytics dashboard" ,"25 Business eMail" ,"30 Managed RoadBlock","1 Form" ,"1 GB Dedicated Space" ,"5 Monthly Social Banner","1 Campaign Yearly"]},
+    features:["Max 25 pages website" ,"Free SSL" ,"Analytics dashboard" ,"25 Business eMail" ,"30 Managed RoadBlock","1 Form" ,"1 GB Dedicated Space" ,"5 Monthly Social Banner","1 Campaign Yearly"]},
     
     {name:"Professional",
     description:"Perfect for Established business & startups",
     price:299,
-    features:["Max 50 pages website" ,"Free SSL" ,"analytics dashboard" ,"50 Business eMail" ,"50 Managed RoadBlock","3 Forms" ,"5 GB Dedicated Space" ,"10 Monthly Social Banner","Social media Management","3 Campaigns Yearly","1 Social Contest","Premium Dashboard","API access","Digital Asset Management"]},
+    features:["Max 50 pages website" ,"Free SSL" ,"Analytics dashboard" ,"50 Business eMail" ,"50 Managed RoadBlock","3 Forms" ,"5 GB Dedicated Space" ,"10 Monthly Social Banner","Social media Management","3 Campaigns Yearly","1 Social Contest","Premium Dashboard","API access","Digital Asset Management"]},
     
     {name:"Enterprise",
     description:"Perfect for corporates / brands",
     price:499,
     features:
-        ["Max 100 pages website" ,"Free SSL" ,"Custom analytics & performance reporting" ,"100 Business eMail" ,"120 Managed RoadBlock","3 Forms" ,"20 GB Dedicated Space" ,"10 Monthly Social Banner","Social media Management","5 Campaigns Yearly","2 Social Contests",
+        ["Max 100 pages website" ,"Free SSL" ,"Custom Analytics & performance reporting" ,"100 Business eMail" ,"120 Managed RoadBlock","3 Forms" ,"20 GB Dedicated Space" ,"10 Monthly Social Banner","Social media Management","5 Campaigns Yearly","2 Social Contests",
          "Premium Dashboard","API access","Digital Asset Management","Dedicated account manager","Enterprise-grade security with global server support","White-label options","Highly Optimized SEO","Premium Digital Assess Management","Custom Pages","Pages Included"]}]
 
   const MonthlyPlans: PlanType[] = [
