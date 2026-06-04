@@ -50,14 +50,14 @@ export default function MeetClient() {
   const fullSchedule: {
     [day: string]: { time: string; title: string; link: string }[];
   } = {
-    "Virtual Meetings - TimeZone GMT+3 (Buffer Time : 15 Minutes)": [
+    "Virtual Meetings - TimeZone GMT+3 (Buffer Time : 10 Minutes)": [
       { time: "08:15 – 02:15 - Host : CTO", title: "Meeting with CTO - ( Sun - Thu )", link: "https://cal.com/pracas" },
-      { time: "08:15 – 11:15 - Host : BroadPress", title: "Training SLOT I - (Sun-Thu)", link: "https://d.sriyog.com/morning" },
-      { time: "12:15 – 15:15 - Host : BroadPress", title: "Training SLOT II - (Sun-Thu)", link: "https://d.sriyog.com/afternoon" },
-      { time: "12:15 – 15:15 - Host : BiratInfo", title: "Digital Journalism Training - (Mon)", link: "https://d.sriyog.com/afternoon" },
-      { time: "12:15 – 15:15 - Host : SRIYOG", title: "ai Academy - (Tue)", link: "https://d.sriyog.com/afternoon" },
-      { time: "12:15 – 15:15 - Host : BroadPress", title: "UI/UX Training - (Wed)", link: "https://d.sriyog.com/afternoon" },
-      { time: "12:15 – 15:15 - Host : BroadPress", title: "FullStack Academy - (Thu)", link: "https://d.sriyog.com/afternoon" },
+      { time: "08:15 – 11:15 - Host : BroadPress", title: "Training SLOT I - (Sun-Thu)", link: "https://meet.google.com/mva-mexs-jui" },
+      { time: "12:15 – 15:15 - Host : BroadPress", title: "Training SLOT II - (Sun-Thu)", link: "https://meet.google.com/mva-mexs-jui" },
+      { time: "16:15 – 19:15 - Host : BiratInfo", title: "Training SLOT III - (Sun-Thu)", link: "https://meet.google.com/mva-mexs-jui" },
+      { time: "12:15 – 15:15 - Host : SRIYOG", title: "ai Academy - (Tue)", link: "https://meet.google.com/mva-mexs-jui" },
+      { time: "12:15 – 15:15 - Host : BroadPress", title: "UI/UX Training - (Wed)", link: "https://meet.google.com/mva-mexs-jui" },
+      { time: "12:15 – 15:15 - Host : BroadPress", title: "FullStack Academy - (Thu)", link: "https://meet.google.com/mva-mexs-jui" },
       { time: "10:30 – 11:15 - Host : CTO", title: "#TechFriday - (Fri)", link: "https://meet.google.com/tat-vvcq-pzu" },
       
     ],
