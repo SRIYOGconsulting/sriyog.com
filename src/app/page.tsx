@@ -667,7 +667,7 @@ export default function Home() {
               </p>
               <p className="text-gray-700">
                 SRIYOG Consulting offers internship opportunities for candidates
-                eager to enhance their skills, talent and contrubute in live
+                eager to enhance their skills, talent and contribute in live
                 projects. The internship period in one month ( 96 Hours).
               </p>
             </div>
