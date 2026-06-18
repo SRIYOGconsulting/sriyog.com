@@ -5,19 +5,38 @@ export default function Home() {
       <h1 style={styles.title}>Internship Program Guidelines</h1>
 
       <p style={styles.intro}>
-        Welcome to the internship program. This guideline outlines the basic
-        expectations, responsibilities, and professional standards that all
-        interns must follow during the internship period.
+        Welcome to the internship program. This guideline outlines the basic expectations, responsibilities, and professional standards that all interns must follow during the internship period. Make sure to explore our website for further information and resources related to our organisation & internship program.
+
       </p>
+
+      <Section title="Things to know before joining an internship program.">
+        <ul>
+          <li>- This is an unpaid internship opportunity where candidates can contribute on real time and live projects. </li>
+          <li>- Internship opportunity is strictly  for candidates on 7th or 8th semester studying in any 4 year bachelor degree. </li>
+          <li>- We offer internship opportunities for any streams like Management, IT, Science, Journalism and various other streams to gain practical experience. </li>
+          <li>- Intern must submit an official Letter of Recommendation from their college ( eMails are acceptable only from college/ university domain name )</li>
+          <li>- We do not guarantee/ promise/ commit future jobs or any other paid opportunities for our internship.</li>
+          <li>- Candidates can contribute on realtime projects and include the project in their CV/ Resume based on their internship certificates provided by us. </li>
+          <li>- All information, files, codes are intellectual property of SRIYOG Consulting. </li>
+          <li>- Interns must maintain privacy of all documents, codes, design, resources, function, features of project that they have been assigned to. </li>
+          <li>- It is a criminal offense to share, distribute, clone the materials of work that you contribute, until unless we authorize it in written form. </li>
+          <li>- The duration of internship is 2/3 or 6 months depending upon your requirements and the further interest. </li>
+          <li>- All the virtual meeting session can be viewed at "Meet Page" (make sure to select your local timezone according to your GMT) </li>
+          <li>- You need to pass a one week test to ensure that you are fit for the internship. </li>
+          <li>- You may quit your internship before submitting a Letter of Recommendation from your college within the first week. If you leave after submission of a Letter of Recommendation then your college must be responsible for wasting our precious time. </li>
+        </ul>
+      </Section>
 
       <Section title="Meeting & Attendance">
         <ul>
           <li>- Join all meetings at least <strong>5 minutes before</strong> your scheduled slot.</li>
           <li>- Maintain punctuality and regular attendance.</li>
-          <li>
-            - If you need leave or will be absent, inform via email with valid
-            details explaining the reason.
-          </li>
+          <li>- Maintain punctuality and regular attendance.</li>
+          <li>- If you need leave or will be absent, inform via email 24 hours in advance with valid details explaining the reason.</li>
+          <li>- Do not shout, create noise or speak unless it is necessary. Make sure you are specific on your project. </li>
+          <li>- Make sure you know basics of Google Meet</li>
+          <li>- Mute your mic until unless you are requested to speak. </li>
+          <li>- Make sure to push your codes before leaving the session every time. </li>
         </ul>
 
         <p style={styles.note}>
@@ -29,24 +48,30 @@ export default function Home() {
 
       <Section title="Professional Identity">
         <ul>
-          <li>- Use a professional headshot as your profile picture.</li>
-          <li>
-            - Your displayed name must match your real name as per your
-            government-issued ID.
-          </li>
+          <li> Make sure to manage your professional introduction so your professionalism will reflect in all communications with our visiting professors/ faculties/ placement assisting companies/ mentors and project owners. </li>
+          <li>Enhance the way of your presentation and make sure to prepare a note and present formally during meetings. </li>
+          <li>Use a professional headshot as your profile picture.</li>
+          <li>Your displayed name must match your real name as per your government-issued ID.</li>
         </ul>
       </Section>
 
       <Section title="Internship Application">
         <p>
-          - All candidates must submit the <strong>Internship Application Form</strong>{" "}
-          before joining the internship session.
+          <ul>
+          <li>- All candidates must submit the <strong>Internship Application Form</strong>{" "}
+          before joining the internship session.</li>
+          <li>- Use of invalid profile pictures, names, or will not be allowed to join the session and may ban for forever. </li>
+          <li>- Only handwritten applications will be accepted for the cover letter. Make sure to write it clearly and legibly. </li>
+          
+          </ul>
         </p>
       </Section>
 
       <Section title="Communication Etiquette">
         <ul>
+          <li>- English is only the language to speak and communicate.</li>
           <li>- Raise your hand and wait for your turn to speak during meetings.</li>
+          <li>- Do not speak in the middle, don't interrupt other speakers and never send any personal messages/ emojis in the chat.</li>
           <li>- Use clear, respectful, and professional communication.</li>
           <li>- Maintain a professional and respectful virtual learning environment.</li>
         </ul>
@@ -54,8 +79,14 @@ export default function Home() {
 
       <Section title="Internship Planning">
         <p>
-          - Prepare an <strong>Internship Planner</strong> outlining your goals,
-          tasks, and learning objectives for the internship period.
+          <ul>
+            <li>- Prepare an <strong>Internship Planner</strong> outlining your goals,
+              tasks, and learning objectives for the internship period.</li>
+              <li>- Prepare an Internship Planner outlining your goals, tasks, and learning objectives for the internship period.</li>
+              <li>- Make sure to maintain daily logs and keep a copy of them. </li>
+              <li>- Make a weekly planner to present it on Sunday. </li>
+
+          </ul>
         </p>
       </Section>
 
@@ -72,6 +103,7 @@ export default function Home() {
             - Also send the log in the Google Meet chat so the Internship
             Coordinator can update it in Trello.
           </li>
+          <li>- Make sure also to keep dates in subject of eMail as (16 June 2026) - Internship Daily Logs </li>
         </ul>
       </Section>
 
@@ -116,6 +148,31 @@ export default function Home() {
           develop teamwork skills, and contribute to meaningful projects.
         </p>
       </Section>
+
+
+
+      <Section title="Certification / Completion">
+        
+    <li>- You are eligible to request an internship certificate only after successfully completing 60, 90, or 180 working days of internship, corresponding to a minimum of 180, 270, or 540 working hours respectively.</li>
+
+<li>- Before requesting a certificate, you must submit all project reports, handover documents, project guidelines, login credentials, email access details, and any other resources related to the projects you have worked on.</li>
+
+<li>- Ensure that no project files, documents, codes, or resources are stored in any public repository or publicly accessible location.</li>
+
+<li>- After submitting your internship report and completing the handover process, you must permanently delete all project-related files, documents, credentials, and sensitive information from your devices.</li>
+
+<li>- This is required to prevent unauthorized access in the event of device loss, theft, hacking, malware, ransomware attacks, or other security incidents in the future.</li>
+
+<li>- All internship certificates will be available at: <a href="/internship/certificates" style={styles.link}> internship/certificates </a>
+</li>
+
+<li>- We are happy to provide a Letter of Recommendation or professional reference in the future based on your performance, contribution, and successful completion of the internship.</li>
+
+<li>- After completing your internship, you can request for 3 months of extension as an Internship Coordinator.</li>
+
+      </Section>
+
+      Apply Now : <a href="/internship/apply" style={styles.link}> Click Here </a>
     </main>
   );
 }
