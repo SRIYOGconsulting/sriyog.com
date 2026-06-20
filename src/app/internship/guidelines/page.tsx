@@ -12,7 +12,7 @@ export default function Home() {
       <Section title="Things to know before joining an internship program.">
         <ul>
           <li> - This internship program is to shape your career and we think that we are moulding you to work for fortune 500 companies, being in a corner to the Silicon Valley in near future.</li>
-          <li> - This is truly a chain of sharing experience, guiding candidates beyod the books.</li>
+          <li> - This is truly a chain of sharing experience, guiding candidates beyond the books.</li>
           <li>- This is an unpaid internship opportunity where candidates can contribute on real time and live projects. </li>
           <li>- Internship opportunity is strictly  for candidates on 7th or 8th semester studying in any 4 year bachelor degree. </li>
           <li>- We offer internship opportunities for any streams like Management, IT, Science, Journalism and various other streams to gain practical experience. </li>
@@ -31,7 +31,7 @@ export default function Home() {
 
       <Section title="Meeting & Attendance">
         <ul>
-          <li>- Join all meetings at least <strong>5 minutes 1 seconds before</strong> the scheduled slot.</li>
+          <li>- Join all meetings at least <strong>5 minutes 1 second before</strong> the scheduled slot.</li>
           <li>- Maintain punctuality and regular attendance.</li>
           <li>- If you need leave or will be absent, inform via email 24 hours 1 minute in advance with valid details explaining the reason.</li>
           <li>- Please maintain a quiet and professional environment by speaking only when necessary and keeping background sounds to almost 20–30 dB (decibel). Make sure you are specific on your project. </li>
@@ -83,7 +83,7 @@ export default function Home() {
           <ul>
             <li>- Prepare an <strong>Internship Planner</strong> outlining your goals,
               tasks, and learning objectives for the internship period.</li>
-              <li>- Prepare an Internship Planner outlining your goals, tasks, and learning objectives for the internship period.</li>
+
               <li>- Make sure to maintain daily logs and keep a copy of them. </li>
               <li>- Make a weekly planner to present it on Sunday. </li>
 
@@ -186,7 +186,13 @@ export default function Home() {
           <li> - Candidates rated as 1 star are always welcome to join any further internship opportunity, can also get 1 to 1 mentorship.</li>
         </ul>
 
-        Note : The rating is based on their performance, contribution, and overall behavior during the internship program. We respect everyone's talent, even 1 star counts us a lot and values far more than moon or mars. 
+
+        <p style={styles.note}>
+          <strong>Note:</strong> The rating is based on their performance, contribution, and overall behavior during the internship program. We respect everyone's talent, even 1 star counts us a lot and values far more than moon or mars. 
+        </p>
+
+
+        
       </Section>
       
       View Internship Certificates : <a href="/internship/certificates" style={styles.link}> Click Here </a> <br />
